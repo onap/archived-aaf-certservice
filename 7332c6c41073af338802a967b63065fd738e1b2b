@@ -16,6 +16,24 @@
       "revId": "7332c6c41073af338802a967b63065fd738e1b2b",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5fd81843_5faf3d7b",
+        "filename": "certService/pom.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-04T10:27:01Z",
+      "side": 1,
+      "message": "From OParent readme:\nelalto branch 2.X will continue to be used for Java 8/Java 9 dependencies\nmaster branch 3.X will be used for JAva 11 dependencies",
+      "parentUuid": "38e82c96_d61dd542",
+      "revId": "7332c6c41073af338802a967b63065fd738e1b2b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
