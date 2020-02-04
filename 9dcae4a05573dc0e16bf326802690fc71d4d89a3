@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4189f546_39e58462",
+        "filename": "certService/src/main/resources/application.properties",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-04T14:18:10Z",
+      "side": 1,
+      "message": "After \nhttps://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html#production-ready-endpoints-enabling-endpoints \n\"By default, all endpoints except for shutdown are enabled. \"\n\nYou should disable all endpoints that you don\u0027t need!",
+      "revId": "9dcae4a05573dc0e16bf326802690fc71d4d89a3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
