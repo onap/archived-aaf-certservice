@@ -18,3 +18,20 @@
      mvn clean package
 
     ```
+    
+### Health Check
+ Browser:
+ 
+    ```
+     http://<localhost>:8080/actuator/health
+     
+    ```
+     
+ Curl:   
+ 
+    ```
+     curl localhost:8080/actuator/health 
+     
+    ```   
+ Should return {"status":"UP"}
+  
