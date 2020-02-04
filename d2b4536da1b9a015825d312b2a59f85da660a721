@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "45b08afb_159676a5",
+        "filename": "certService/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-04T14:28:02Z",
+      "side": 1,
+      "message": "I\u0027m waiting for official ONAP Java 11 docker image name so this line may change in the future",
+      "revId": "d2b4536da1b9a015825d312b2a59f85da660a721",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "97c27ad7_a7578e3c",
+        "filename": "certService/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-04T14:28:02Z",
+      "side": 1,
+      "message": "It would be better to provide version as argument\n\nBTW: typo - target instead of taget",
+      "revId": "d2b4536da1b9a015825d312b2a59f85da660a721",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
