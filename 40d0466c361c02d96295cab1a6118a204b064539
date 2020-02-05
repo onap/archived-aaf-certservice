@@ -34,6 +34,24 @@
       "revId": "40d0466c361c02d96295cab1a6118a204b064539",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "55698ccc_466e0570",
+        "filename": ".gitreview",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-02-05T08:56:20Z",
+      "side": 1,
+      "message": "I checked a few other repositories, like AAF and AAI and in both .gitreview is not present in .gitignore. So I assume it\u0027s should be in repo.\nThe only problem with this file was formatting.",
+      "parentUuid": "dbddd893_eb61c2f2",
+      "revId": "40d0466c361c02d96295cab1a6118a204b064539",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
