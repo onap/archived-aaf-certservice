@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "38f23288_51d20996",
+        "filename": "certService/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-02-05T08:52:24Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "45b08afb_159676a5",
+      "revId": "d2b4536da1b9a015825d312b2a59f85da660a721",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "97c27ad7_a7578e3c",
         "filename": "certService/Dockerfile",
         "patchSetId": 1
@@ -33,6 +51,24 @@
       "revId": "d2b4536da1b9a015825d312b2a59f85da660a721",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "66318c51_ec0c9d8c",
+        "filename": "certService/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-02-05T08:52:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "97c27ad7_a7578e3c",
+      "revId": "d2b4536da1b9a015825d312b2a59f85da660a721",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
