@@ -2,6 +2,40 @@
   "comments": [
     {
       "key": {
+        "uuid": "ec23b909_8ed38b0c",
+        "filename": "certService/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-05T06:17:55Z",
+      "side": 1,
+      "message": "Commands/code/urls mark as ```....``` as above.",
+      "revId": "9dcae4a05573dc0e16bf326802690fc71d4d89a3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f8b21388_a06eb1fe",
+        "filename": "certService/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-05T06:17:55Z",
+      "side": 1,
+      "message": "Start sentence from capital letter.\nCommands/code/urls mark as ```....``` as above.",
+      "revId": "9dcae4a05573dc0e16bf326802690fc71d4d89a3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "4189f546_39e58462",
         "filename": "certService/src/main/resources/application.properties",
         "patchSetId": 2
