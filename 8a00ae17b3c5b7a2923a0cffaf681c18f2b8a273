@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "de138d1b_21753693",
+        "filename": "certService/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-05T06:18:56Z",
+      "side": 1,
+      "message": "Commands/code/urls mark as ```....``` as above.",
+      "revId": "8a00ae17b3c5b7a2923a0cffaf681c18f2b8a273",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "16669092_5c491237",
+        "filename": "certService/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-05T06:18:56Z",
+      "side": 1,
+      "message": "Commands/code/urls mark as ```....``` as above.",
+      "revId": "8a00ae17b3c5b7a2923a0cffaf681c18f2b8a273",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
