@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fe14d44_f1fe7b2d",
+        "filename": "certService/src/main/resources/application.properties",
+        "patchSetId": 3
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-05T09:28:40Z",
+      "side": 1,
+      "message": "Not exposure, enabling. Enabling also reduces memory footprint. See such statement - \"Each individual endpoint can be enabled or disabled. This controls whether or not the endpoint is created and its bean exists in the application context.\"\n\nYou should use:\nmanagement.endpoints.enabled-by-default\u003dfalse\nmanagement.endpoint.health.enabled\u003dtrue",
+      "revId": "1dd86146c0213348cfd90bc17f464f153e1c4827",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
