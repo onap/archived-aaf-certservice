@@ -16,6 +16,24 @@
       "revId": "c2d6570c85b48086125f6e4273c65c576f7f43b9",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5355600f_acf0cc68",
+        "filename": "certService/src/main/resources/log4j2.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 3435
+      },
+      "writtenOn": "2020-02-06T16:02:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2b42c436_4e0d11cf",
+      "revId": "c2d6570c85b48086125f6e4273c65c576f7f43b9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
