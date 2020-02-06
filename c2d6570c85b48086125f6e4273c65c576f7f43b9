@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2b42c436_4e0d11cf",
+        "filename": "certService/src/main/resources/log4j2.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-02-06T15:27:19Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this file be named debug.log?",
+      "revId": "c2d6570c85b48086125f6e4273c65c576f7f43b9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
