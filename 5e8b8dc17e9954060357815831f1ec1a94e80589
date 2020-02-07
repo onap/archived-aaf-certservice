@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "07720417_ec110345",
+        "filename": "certService/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-07T13:25:08Z",
+      "side": 1,
+      "message": "missing forward slash at beginning (/)",
+      "revId": "5e8b8dc17e9954060357815831f1ec1a94e80589",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ab9210e0_97b8b27d",
+        "filename": "certService/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-07T13:25:08Z",
+      "side": 1,
+      "message": "The same?",
+      "revId": "5e8b8dc17e9954060357815831f1ec1a94e80589",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
