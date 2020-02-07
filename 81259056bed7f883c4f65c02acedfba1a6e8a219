@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1d2c4d8f_4745d792",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/rest/CertificationRest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-07T07:48:47Z",
+      "side": 1,
+      "message": "CertificationService,not Rest. We should not use technical terms (such as Rest) in code names.",
+      "revId": "81259056bed7f883c4f65c02acedfba1a6e8a219",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "830b9d20_3e70dcb8",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/rest/CertificationRest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-07T07:48:47Z",
+      "side": 1,
+      "message": "caName. In java variables should start from lower letter.",
+      "revId": "81259056bed7f883c4f65c02acedfba1a6e8a219",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b9c8a7ea_94ed09b5",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/rest/CertificationRest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-07T07:48:47Z",
+      "side": 1,
+      "message": "csr",
+      "revId": "81259056bed7f883c4f65c02acedfba1a6e8a219",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "775fc457_e5d7e597",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/rest/CertificationRest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-07T07:48:47Z",
+      "side": 1,
+      "message": "1. privateKey\n2. code duplication. Extract Base64.getDecoder() to final variable and reuse it",
+      "revId": "81259056bed7f883c4f65c02acedfba1a6e8a219",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "184293d9_99e2a0bf",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/rest/CertificationRest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-07T07:48:47Z",
+      "side": 1,
+      "message": "All logs should begin from capital leter",
+      "revId": "81259056bed7f883c4f65c02acedfba1a6e8a219",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
