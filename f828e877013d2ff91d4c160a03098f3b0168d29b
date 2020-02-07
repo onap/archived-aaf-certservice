@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9521aabf_d07ccfc8",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/rest/CertificationService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 3435
+      },
+      "writtenOn": "2020-02-07T08:13:30Z",
+      "side": 1,
+      "message": "consider create method for new String(DECODER.decode(someString)); duplicated code. Variable privateKey is not use right now.",
+      "revId": "f828e877013d2ff91d4c160a03098f3b0168d29b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
