@@ -54,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "d81a7388_aa993036",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/rest/CertificationService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-02-07T08:32:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "640249b5_c1ad0ae6",
+      "revId": "f828e877013d2ff91d4c160a03098f3b0168d29b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6ed0d974_73ca9d9e",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/rest/CertificationService.java",
         "patchSetId": 2
