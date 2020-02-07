@@ -34,6 +34,24 @@
       "revId": "c2d6570c85b48086125f6e4273c65c576f7f43b9",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "87f1ffe5_7accba9a",
+        "filename": "certService/src/main/resources/log4j2.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-07T06:34:49Z",
+      "side": 1,
+      "message": "No, it should be trace. We will use trace log file for tracking application.",
+      "parentUuid": "5355600f_acf0cc68",
+      "revId": "c2d6570c85b48086125f6e4273c65c576f7f43b9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
