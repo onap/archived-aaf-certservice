@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "ac994d83_77acc2a9",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/rest/CertificationService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-07T08:31:35Z",
+      "side": 1,
+      "message": "Why do you need this endpoint? If this is an endpoint for enrolling certificates I propose to use /{caName}/certificate or /certificate/{caName} - Please also change method name. In the end this method will return certificate and trusted certs.",
+      "revId": "f828e877013d2ff91d4c160a03098f3b0168d29b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "9521aabf_d07ccfc8",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/rest/CertificationService.java",
         "patchSetId": 2
@@ -31,6 +48,40 @@
       "side": 1,
       "message": "privateKey is not used, but it will be. We do not want to log it.\nyep. Method should be created.",
       "parentUuid": "9521aabf_d07ccfc8",
+      "revId": "f828e877013d2ff91d4c160a03098f3b0168d29b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6ed0d974_73ca9d9e",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/rest/CertificationService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-07T08:31:35Z",
+      "side": 1,
+      "message": "Received certificate request...",
+      "revId": "f828e877013d2ff91d4c160a03098f3b0168d29b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "88b61589_5e8285f8",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/rest/CertificationService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-07T08:31:35Z",
+      "side": 1,
+      "message": "I might be wrong, but DECODER above will just decode Base64 once, without decoding CSR in fact. So here, CSR is still Base64 encoded and must be mapped to Bouncy Castle PKCS10CertificationRequest class. See https://stackoverflow.com/questions/21912390/decode-read-a-csr-certificate-signing-request-using-java-or-bouncycastle",
       "revId": "f828e877013d2ff91d4c160a03098f3b0168d29b",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
