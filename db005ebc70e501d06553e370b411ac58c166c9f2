@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f373743a_ad4be8f0",
+        "filename": "certService/src/main/resources/log4j2.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-07T06:42:56Z",
+      "side": 1,
+      "message": "wrong log folder: error log file should be stored in /var/log/onap/aaf/certservice",
+      "range": {
+        "startLine": 13,
+        "startChar": 35,
+        "endLine": 13,
+        "endChar": 36
+      },
+      "revId": "db005ebc70e501d06553e370b411ac58c166c9f2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "80753c73_f15c6b39",
+        "filename": "certService/src/main/resources/log4j2.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-07T06:42:56Z",
+      "side": 1,
+      "message": "wrong log folder: trace log file should be stored in /var/log/onap/aaf/certservice",
+      "revId": "db005ebc70e501d06553e370b411ac58c166c9f2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "642a7bfe_ff8e68cc",
+        "filename": "certService/src/main/resources/log4j2.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-07T06:42:56Z",
+      "side": 1,
+      "message": "wrong log folder:audit log file should be stored in /var/log/onap/aaf/certservice",
+      "revId": "db005ebc70e501d06553e370b411ac58c166c9f2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
