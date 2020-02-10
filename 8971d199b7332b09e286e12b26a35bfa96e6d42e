@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "796c55fc_d7a66872",
+        "filename": "pom.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-10T11:08:47Z",
+      "side": 1,
+      "message": "aaf-certservice-parent",
+      "revId": "8971d199b7332b09e286e12b26a35bfa96e6d42e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a0ca8120_7bcc2c96",
+        "filename": "pom.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-10T11:08:47Z",
+      "side": 1,
+      "message": "AAF Certification Service parent",
+      "revId": "8971d199b7332b09e286e12b26a35bfa96e6d42e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}

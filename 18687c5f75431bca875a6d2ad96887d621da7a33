@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e722593c_17d564bb",
+        "filename": "certService/pom.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 142,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-10T11:08:47Z",
+      "side": 0,
+      "message": "why it was deleted?",
+      "revId": "18687c5f75431bca875a6d2ad96887d621da7a33",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
