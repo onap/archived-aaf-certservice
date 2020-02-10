@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "eecedcde_d493f9f6",
+        "filename": "certService/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-10T15:31:07Z",
+      "side": 1,
+      "message": "Are you planning to expose /docs in runtime? Why? I understand that for R\u0026D it is ok, but should we expose it?",
+      "revId": "f85918c4c0c6cada28d7384bad63396225751868",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "c2f85f84_f1f31811",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/api/CertificationService.java",
         "patchSetId": 2
