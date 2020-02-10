@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c816fd32_c3251500",
+        "filename": "certService/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 3663
+      },
+      "writtenOn": "2020-02-10T14:37:04Z",
+      "side": 1,
+      "message": "Invalid readme. Lets make two independent steps - one for building image using mavens docker profile and one for simple install step",
+      "revId": "03d9b628971f6d2261dbffb1a33df7a132f013f6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
