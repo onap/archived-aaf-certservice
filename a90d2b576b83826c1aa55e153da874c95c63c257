@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "218c1340_cfb1b4b0",
+        "filename": "certService/pom.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 3435
+      },
+      "writtenOn": "2020-02-10T13:44:16Z",
+      "side": 1,
+      "message": "please remove duplicated code",
+      "revId": "a90d2b576b83826c1aa55e153da874c95c63c257",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7e45f3ea_b45b7765",
+        "filename": "pom.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 3435
+      },
+      "writtenOn": "2020-02-10T13:44:16Z",
+      "side": 1,
+      "message": "duplicated code",
+      "revId": "a90d2b576b83826c1aa55e153da874c95c63c257",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
