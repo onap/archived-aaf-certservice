@@ -1,0 +1,208 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c6bd5317_5be5d3db",
+        "filename": "certService/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-10T10:23:52Z",
+      "side": 1,
+      "message": "Are we planning to keep such endpoint in production code (runtime)? My requirement was to provide offline documentation using Swagger, so such documentation can be embedded into API description page.",
+      "revId": "b1870b797eb4f60e126e3def0b15d3f84e800c47",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2bf61d54_1d2809aa",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/api/CertificationService.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-10T10:23:52Z",
+      "side": 1,
+      "message": "Please add JavaDoc",
+      "revId": "b1870b797eb4f60e126e3def0b15d3f84e800c47",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "462523ed_c9c74099",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/api/CertificationService.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-10T10:23:52Z",
+      "side": 1,
+      "message": "\"Received certificate signing request for CA named:\" instead of \"Received CSR...\"",
+      "revId": "b1870b797eb4f60e126e3def0b15d3f84e800c47",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "03bd5dd7_7cef78f3",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/api/CertificationService.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-10T10:23:52Z",
+      "side": 1,
+      "message": "Exception occurred during certificate signing:",
+      "revId": "b1870b797eb4f60e126e3def0b15d3f84e800c47",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "108093b6_8e0d8bf1",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/api/CertificationService.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-10T10:23:52Z",
+      "side": 1,
+      "message": "signing instead of sign",
+      "revId": "b1870b797eb4f60e126e3def0b15d3f84e800c47",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9ce07641_16f3d830",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/CSRFactory.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-10T10:23:52Z",
+      "side": 1,
+      "message": "CSRMetaFactory",
+      "revId": "b1870b797eb4f60e126e3def0b15d3f84e800c47",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7e1300d6_bb237ed1",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/CSRFactory.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-10T10:23:52Z",
+      "side": 1,
+      "message": "Method name - createCSRModel",
+      "revId": "b1870b797eb4f60e126e3def0b15d3f84e800c47",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "caa4ae94_73dc81b0",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/CSRFactory.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-10T10:23:52Z",
+      "side": 1,
+      "message": "decodedCSR",
+      "revId": "b1870b797eb4f60e126e3def0b15d3f84e800c47",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "78a1eb2d_cf94e850",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/CSRFactory.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-10T10:23:52Z",
+      "side": 1,
+      "message": "decodedPrivateKey",
+      "revId": "b1870b797eb4f60e126e3def0b15d3f84e800c47",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0cc00e31_003b4ae0",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/CSRFactory.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-10T10:23:52Z",
+      "side": 1,
+      "message": "Why inner class if used externally?",
+      "revId": "b1870b797eb4f60e126e3def0b15d3f84e800c47",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3e3b24ca_35131d28",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/model/CSRModel.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-10T10:23:52Z",
+      "side": 1,
+      "message": "We are going to use \"plain\" CSR data so it is required to add new properties (e.g. SANs, publicKey, subjectData) to this object and fill in them in constructor.",
+      "revId": "b1870b797eb4f60e126e3def0b15d3f84e800c47",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "722102de_0c326fc1",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/model/CSRModel.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-10T10:23:52Z",
+      "side": 1,
+      "message": "Missing closing } ?",
+      "revId": "b1870b797eb4f60e126e3def0b15d3f84e800c47",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
