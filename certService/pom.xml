@@ -16,10 +16,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.onap.oparent</groupId>
-        <artifactId>oparent</artifactId>
-        <version>3.0.0</version>
-        <relativePath/>
+        <groupId>org.onap.aaf</groupId>
+        <artifactId>cert-service-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>org.onap.aaf</groupId>
     <artifactId>cert-service</artifactId>
@@ -135,29 +134,6 @@
                     <execution>
                         <goals>
                             <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <configuration>
-                    <quiet>true</quiet>
-                    <verbose>false</verbose>
-                    <useStandardDocletOptions>false</useStandardDocletOptions>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>aggregate</id>
-                        <phase>site</phase>
-                        <goals>
-                            <goal>aggregate</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>attach-javadoc</id>
-                        <goals>
-                            <goal>jar</goal>
                         </goals>
                     </execution>
                 </executions>
