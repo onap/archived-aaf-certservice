@@ -104,6 +104,24 @@
     },
     {
       "key": {
+        "uuid": "ec36d535_b86091dc",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/CSRFactory.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-10T10:43:57Z",
+      "side": 1,
+      "message": "CSRModelFactory",
+      "parentUuid": "9ce07641_16f3d830",
+      "revId": "b1870b797eb4f60e126e3def0b15d3f84e800c47",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "7e1300d6_bb237ed1",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/CSRFactory.java",
         "patchSetId": 3
