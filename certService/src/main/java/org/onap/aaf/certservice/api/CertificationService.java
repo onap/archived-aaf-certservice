@@ -18,10 +18,15 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.rest;
+package org.onap.aaf.certservice.api;
 
+import org.onap.aaf.certservice.certification.exceptions.CSRDecryptionException;
+import org.onap.aaf.certservice.certification.model.CSRModel;
+import org.onap.aaf.certservice.certification.CSRFactory;
+import org.onap.aaf.certservice.certification.CSRFactory.StringBase64;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -29,33 +34,36 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Base64;
 
 @RestController
 public class CertificationService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CertificationService.class);
-    private static final Base64.Decoder DECODER = Base64.getDecoder();
 
-    @GetMapping("/csr/{caName}")
-    public ResponseEntity<String> getEncodesCSR(
+    private CSRFactory csrFactory;
+
+    @Autowired
+    CertificationService(CSRFactory csrFactory) {
+        this.csrFactory = csrFactory;
+    }
+
+    @GetMapping("/certificate/{caName}")
+    public ResponseEntity<String> signCertificate(
             @PathVariable String caName,
             @RequestHeader("CSR") String encodedCSR,
             @RequestHeader("PK") String encodedPrivateKey
     ) {
+        LOGGER.info("Received CSR for CA named: {}", caName);
 
-        String csr = decode(encodedCSR);
-        String privateKey = decode(encodedPrivateKey);
-
-        LOGGER.info("Received CSR for CA named: {}",caName);
-        LOGGER.debug("Decoded received CSR: \n{}", csr);
-
-        return new ResponseEntity<>(csr, HttpStatus.OK);
-
+        try {
+            CSRModel csrModel = csrFactory.createCSR(new StringBase64(encodedCSR), new StringBase64(encodedPrivateKey));
+            LOGGER.debug("Received CSR meta data: \n{}", csrModel.toString());
+            return new ResponseEntity<>(csrModel.toString(), HttpStatus.OK);
+        } catch (CSRDecryptionException e) {
+            LOGGER.trace("Exception occur during signing certificate:", e);
+            return new ResponseEntity<>("Wrong certificate sign request (CSR) format", HttpStatus.BAD_REQUEST);
+        }
     }
 
-    private String decode(String encodedData) {
-        return new String(DECODER.decode(encodedData));
-    }
 
 }
