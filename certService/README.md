@@ -84,3 +84,11 @@ audit.log  error.log  trace.log
      
      
 
+### RestAPI
+API is described by Swagger ( OpenAPI 3.0 ) on endpoint /docs 
+( endpoint is defined in properties as springdoc.swagger-ui.path )
+  
+    ```
+    http://localchost:8080/docs
+    
+    ```
