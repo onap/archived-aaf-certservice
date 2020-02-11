@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f60171f3_4a2eb93f",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/PemObjectFactory.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-02-11T12:40:10Z",
+      "side": 1,
+      "message": "typo, should be createPemObject",
+      "range": {
+        "startLine": 34,
+        "startChar": 21,
+        "endLine": 34,
+        "endChar": 35
+      },
+      "revId": "bddd4f0e38e09fb8479e9f97313fdb41297c2990",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
