@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2ada1f8d_d168a9c6",
+        "filename": "certService/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 200,
+      "author": {
+        "id": 3435
+      },
+      "writtenOn": "2020-02-11T14:30:27Z",
+      "side": 1,
+      "message": "extract to vairbale, for example ${springdoc-openapi-maven-plugin.apiDocsUrl}",
+      "revId": "4f1e875b35586f7d3eb3592ee3f2e1ebd4c58a76",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
