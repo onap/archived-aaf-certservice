@@ -42,11 +42,11 @@ public class CsrModelFactory {
         LOGGER.debug("Decoded CSR: \n{}", csr.asString());
 
         try {
-            PemObject pemObject = pemObjectFactory.createPmObject(csr.asString());
+            PemObject pemObject = pemObjectFactory.createPemObject(csr.asString());
             PKCS10CertificationRequest decodedCsr = new PKCS10CertificationRequest(
                     pemObject.getContent()
             );
-            PemObject decodedPrivateKey = pemObjectFactory.createPmObject(privateKey.asString());
+            PemObject decodedPrivateKey = pemObjectFactory.createPemObject(privateKey.asString());
             return new CsrModel(decodedCsr, decodedPrivateKey);
         } catch (IOException e) {
             throw new CsrDecryptionException("Incorrect CSR, decryption failed", e);
