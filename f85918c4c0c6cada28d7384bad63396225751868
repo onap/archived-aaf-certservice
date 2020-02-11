@@ -19,6 +19,40 @@
     },
     {
       "key": {
+        "uuid": "ffb4ac3e_ae2a24c2",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/api/CertificationService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-11T07:27:11Z",
+      "side": 1,
+      "message": "make it final",
+      "revId": "f85918c4c0c6cada28d7384bad63396225751868",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "adb1219d_5bfc88b5",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/api/CertificationService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-11T07:27:11Z",
+      "side": 1,
+      "message": "doubled colon",
+      "revId": "f85918c4c0c6cada28d7384bad63396225751868",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "c2f85f84_f1f31811",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/api/CertificationService.java",
         "patchSetId": 2
@@ -30,6 +64,142 @@
       "writtenOn": "2020-02-10T14:34:18Z",
       "side": 1,
       "message": "Exception occurred... \n\nWhy TRACE level, not ERROR?",
+      "revId": "f85918c4c0c6cada28d7384bad63396225751868",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0b45f8ac_19e2b572",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/CSRModelFactory.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-11T07:27:11Z",
+      "side": 1,
+      "message": "Change to \u0027Decoded CSR: \\n{}\u0027",
+      "revId": "f85918c4c0c6cada28d7384bad63396225751868",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "71fb3c50_4ce5e790",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/PemObjectFactory.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-11T07:27:11Z",
+      "side": 1,
+      "message": "Change to \u0027Unable to create PEM object from pem string data\u0027",
+      "revId": "f85918c4c0c6cada28d7384bad63396225751868",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "34c755a8_2beecde6",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/PemObjectFactory.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-11T07:27:11Z",
+      "side": 1,
+      "message": "remove empty lines",
+      "revId": "f85918c4c0c6cada28d7384bad63396225751868",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "da9632dd_f65b1979",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/api/CertificationServiceTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-11T07:27:11Z",
+      "side": 1,
+      "message": "method is not used. Remove it.",
+      "revId": "f85918c4c0c6cada28d7384bad63396225751868",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ca19d5c9_aec3f35e",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/certification/TestUtils.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-11T07:27:11Z",
+      "side": 1,
+      "message": "add final and make private constructor \u003c- all tool classes should be written in this way",
+      "revId": "f85918c4c0c6cada28d7384bad63396225751868",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "22c4ba5f_54df1d82",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/certification/TestUtils.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-11T07:27:11Z",
+      "side": 1,
+      "message": "Split class on TestData and TestUtils.\n\nTo TestData move all constants.",
+      "revId": "f85918c4c0c6cada28d7384bad63396225751868",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6ee0ea8c_754ac511",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/certification/model/CSRModelTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-11T07:27:11Z",
+      "side": 1,
+      "message": "import not used. Remove it",
+      "revId": "f85918c4c0c6cada28d7384bad63396225751868",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7ab2fe74_7bb2b699",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/certification/model/CSRModelTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-11T07:27:11Z",
+      "side": 1,
+      "message": "each test should start from should and should match to pattern:\n\u0027should....when....\u0027\n\nTest should be read in order:\nCSRModel (Name of class without Test postfix) should.... when",
       "revId": "f85918c4c0c6cada28d7384bad63396225751868",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
