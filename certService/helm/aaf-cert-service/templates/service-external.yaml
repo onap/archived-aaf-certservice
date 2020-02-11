@@ -1,0 +1,13 @@
+{{if .Values.serviceExposed -}}
+apiVersion: v1
+kind: Service
+metadata:
+  name: aaf-cert-service-external-service
+spec:
+  type: NodePort
+  selector:
+    app: {{ .Values.appLabel }}
+  ports:
+    - protocol: TCP
+      port: {{ .Values.containerPort }}
+{{- end }}

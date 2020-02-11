@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: aaf-cert-service-internal-service
+spec:
+  type: ClusterIP
+  selector:
+    app: {{ .Values.appLabel }}
+  ports:
+    - protocol: TCP
+      port: {{ .Values.containerPort }}

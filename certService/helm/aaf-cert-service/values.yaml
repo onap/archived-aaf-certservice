@@ -1,0 +1,5 @@
+appLabel: aaf-cert-service
+replicaCount: 1
+image: onap-dev-local.esisoj70.emea.nsn-net.net/kasperki/cert-service:1.0.0
+containerPort: 8080
+serviceExposed: false
