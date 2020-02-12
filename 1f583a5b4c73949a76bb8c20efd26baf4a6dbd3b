@@ -88,6 +88,24 @@
     },
     {
       "key": {
+        "uuid": "21898b69_b4219e82",
+        "filename": "certService/helm/aaf-cert-service/templates/deployment.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-12T13:01:52Z",
+      "side": 1,
+      "message": "From mariadb-galera helm chart:\nValues:\nresources:\n  small:\n    limits:\n      cpu: 2\n      memory: 4Gi\n    requests:\n      cpu: 1\n      memory: 2Gi\n  large:\n    limits:\n      cpu: 2\n      memory: 4Gi\n    requests:\n      cpu: 1\n      memory: 2Gi\n  unlimited: {}\n\n\nUsage in helm chart:\n          resources:\n{{ include \"common.resources\" . | indent 12 }}\n\nWe don\u0027t need to provide profiles like in mariadb-galera, so we can use:\nValues:\nresources:\n  limits:\n    cpu: X\n    memory: YGi\n  requests:\n    cpu: Z\n    memory: AGi\n\nand usage in helm chart:\n          resources:\n{{ toYaml .Values.resources | indent ?? }}",
+      "parentUuid": "ec0e8de5_5c42b847",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "be5688e6_4879db0f",
         "filename": "certService/helm/aaf-cert-service/templates/service-external.yaml",
         "patchSetId": 1
