@@ -16,6 +16,24 @@
       "revId": "7a0d3be554e3a86f90cf425fa3003c1dc3a088a3",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f7e66d43_639eaf64",
+        "filename": "certService/helm/aaf-cert-service/values.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-02-12T15:26:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ad9a5f69_8730d4ba",
+      "revId": "7a0d3be554e3a86f90cf425fa3003c1dc3a088a3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
