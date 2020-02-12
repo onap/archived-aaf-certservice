@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a04fc43d_ca29d94f",
+        "filename": "certService/pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-12T11:55:24Z",
+      "side": 1,
+      "message": "use the newest version 2.8.6",
+      "revId": "68cb90dd59cd1a3c67b124fadb5dc33b7b077f37",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2831185e_d2c310a1",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/CertificationData.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-12T11:55:24Z",
+      "side": 1,
+      "message": "final",
+      "revId": "68cb90dd59cd1a3c67b124fadb5dc33b7b077f37",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1aaa1cac_97d28a71",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/model/CertificationModel.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-12T11:55:24Z",
+      "side": 1,
+      "message": "You should never return collection which is stored inside object.\nPlease use Collections.unmodifiableList()",
+      "revId": "68cb90dd59cd1a3c67b124fadb5dc33b7b077f37",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "31cad2c7_c8a4f922",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/model/CertificationModel.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-12T11:55:24Z",
+      "side": 1,
+      "message": "same as above",
+      "revId": "68cb90dd59cd1a3c67b124fadb5dc33b7b077f37",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
