@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3899d8e8_06cb65fa",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/api/CertificationService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-12T11:37:09Z",
+      "side": 1,
+      "message": "From what I can see in other code, this exception can be thrown if private key has incorrect value. But error log is misleading. Please improve exception flow.",
+      "revId": "db0b943293c3d657d8aaca728e5aaec160ecd5d0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7e7362a9_fa6fde88",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/CertificationData.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-12T11:37:09Z",
+      "side": 1,
+      "message": "Please call it EXTRA_CA_CERT, as this one is extra provided (e.g. from CertService or CMPv2 server)",
+      "revId": "db0b943293c3d657d8aaca728e5aaec160ecd5d0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "86d7b027_b99c3ece",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/CertificationModelFactory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-12T11:37:09Z",
+      "side": 1,
+      "message": "Please revert order, ENTITY_CERT should be first. The order wasn\u0027t specified so far so I added appropriate info to design page.",
+      "revId": "db0b943293c3d657d8aaca728e5aaec160ecd5d0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d4105424_1be77fb5",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/api/CertificationServiceTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-12T11:37:09Z",
+      "side": 1,
+      "message": "Please revert order",
+      "revId": "db0b943293c3d657d8aaca728e5aaec160ecd5d0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
