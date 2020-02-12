@@ -40,6 +40,7 @@
         <springdoc-openapi-ui.version>1.2.21</springdoc-openapi-ui.version>
         <bouncycastle.version>1.60</bouncycastle.version>
         <docker-maven-plugin.version>0.33.0</docker-maven-plugin.version>
+        <httpclient.version>4.5.6</httpclient.version>
         <docker.tag>${project.version}</docker.tag>
         <springdoc-openapi-maven-plugin.apiDocsUrl>http://localhost:8080/v3/api-docs
         </springdoc-openapi-maven-plugin.apiDocsUrl>
@@ -80,12 +81,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <version>${spring-boot-starter.version}</version>
             <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
@@ -118,6 +113,42 @@
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcprov-jdk15on</artifactId>
             <version>${bouncycastle.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${httpclient.version}</version>
+        </dependency>
+
+<!--dependencies which have to be removed after refactor of legacy code-->
+
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-module-junit4</artifactId>
+            <version>2.0.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-api-mockito2</artifactId>
+            <version>2.0.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.6</version>
+        </dependency>
+        <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xercesImpl</artifactId>
+            <version>2.11.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>xerces</groupId>
+                    <artifactId>xmlParserAPIs</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 
