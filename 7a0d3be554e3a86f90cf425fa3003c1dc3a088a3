@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ad9a5f69_8730d4ba",
+        "filename": "certService/helm/aaf-cert-service/values.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-12T14:37:13Z",
+      "side": 1,
+      "message": "By convention you should provide two variables - repository and image. So split this into:\nrepository: onap-dev-local.esisoj70.emea.nsn-net.net\nimage: kasperki/cert-service:1.0.0\n\nand use: \nimage: \"{{ .Values.repository }}/{{ .Values.image }}\"\n\n\nAfter this change +1 from me.",
+      "revId": "7a0d3be554e3a86f90cf425fa3003c1dc3a088a3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
