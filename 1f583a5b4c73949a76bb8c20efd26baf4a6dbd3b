@@ -336,6 +336,24 @@
     },
     {
       "key": {
+        "uuid": "0d965a25_e5476ace",
+        "filename": "certService/helm/aaf-cert-service/templates/service-external.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-02-12T14:04:56Z",
+      "side": 1,
+      "message": "From my perspective, it\u0027s fine that \"Values.containerPort\" suggests container port, because that\u0027s my intention with that variable. It\u0027s intended to specify the container port in Deployment.\nHowever, because I don\u0027t want to specify a different port on Service, I use it also inhere.\n\nFor me, current implementation means \"For service port use the same port as in container\".\nSo I don\u0027t find it confusing, as far as someone is familiar with Kubernetes Service specification. \n\nDo you want me to split it into two sperate variables and explicitly declare port and targetPort here anyway?",
+      "parentUuid": "349319fe_793aa623",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b7ae983c_06626287",
         "filename": "certService/helm/aaf-cert-service/templates/service-external.yaml",
         "patchSetId": 1
