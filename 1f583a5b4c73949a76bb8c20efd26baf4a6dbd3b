@@ -1,0 +1,174 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6503a080_f7c770c6",
+        "filename": "certService/helm/aaf-cert-service/templates/deployment.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-12T12:15:02Z",
+      "side": 1,
+      "message": "Derive from chart name,e.g. {{.Chart.Name}}-deployment",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9088f62a_a6c17ee5",
+        "filename": "certService/helm/aaf-cert-service/templates/deployment.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-12T12:15:02Z",
+      "side": 1,
+      "message": "Please add configurable readiness and liveness probes against health endpoint",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f3aaf54f_a9db081c",
+        "filename": "certService/helm/aaf-cert-service/templates/deployment.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-12T12:15:02Z",
+      "side": 1,
+      "message": "Please add configurable image pull policy: imagePullPolicy: {{ .Values.global.pullPolicy | default .Values.pullPolicy }}",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7955fa47_9bb3d3cc",
+        "filename": "certService/helm/aaf-cert-service/templates/deployment.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-12T12:15:02Z",
+      "side": 1,
+      "message": "Please add configurable resources",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "be5688e6_4879db0f",
+        "filename": "certService/helm/aaf-cert-service/templates/service-external.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-12T12:15:02Z",
+      "side": 1,
+      "message": "Remove this line",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c24b1b4a_c5952215",
+        "filename": "certService/helm/aaf-cert-service/templates/service-external.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-12T12:15:02Z",
+      "side": 1,
+      "message": "Remove -external and derive name from .Chart.name",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f5ec83d0_6507c18c",
+        "filename": "certService/helm/aaf-cert-service/templates/service-external.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-12T12:15:02Z",
+      "side": 1,
+      "message": "Provide extra variable and use it here, e.g. type: {{ .Values.service.type }}",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1f4f5407_6984c2ab",
+        "filename": "certService/helm/aaf-cert-service/templates/service-external.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-12T12:15:02Z",
+      "side": 1,
+      "message": "Wrong usage, you should add new line: \ntargetPort: {{ .Values.containerPort }}\n\nand parametrize port on Service level via new configuration property: \nport: {{ .Values.service.port }",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b7ae983c_06626287",
+        "filename": "certService/helm/aaf-cert-service/templates/service-external.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-12T12:15:02Z",
+      "side": 1,
+      "message": "Remove this line",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "156fbe06_dfc5a5be",
+        "filename": "certService/helm/aaf-cert-service/templates/service-internal.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-12T12:15:02Z",
+      "side": 1,
+      "message": "Remove this file",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
