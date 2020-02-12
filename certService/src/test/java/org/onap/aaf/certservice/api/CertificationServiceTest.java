@@ -20,19 +20,24 @@
 
 package org.onap.aaf.certservice.api;
 
+import com.google.gson.Gson;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.onap.aaf.certservice.certification.CertificationModelFactory;
 import org.onap.aaf.certservice.certification.CsrModelFactory;
 import org.onap.aaf.certservice.certification.CsrModelFactory.StringBase64;
 import org.onap.aaf.certservice.certification.exceptions.CsrDecryptionException;
+import org.onap.aaf.certservice.certification.model.CertificationModel;
 import org.onap.aaf.certservice.certification.model.CsrModel;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
 import java.io.IOException;
+import java.util.Arrays;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
@@ -47,30 +52,42 @@ class CertificationServiceTest {
     @Mock
     private CsrModelFactory csrModelFactory;
 
+    @Mock
+    private CertificationModelFactory certificationModelFactory;
+
     @BeforeEach
     void serUp() {
         MockitoAnnotations.initMocks(this);
-        certificationService = new CertificationService(csrModelFactory);
+        certificationService = new CertificationService(csrModelFactory, certificationModelFactory);
     }
 
     @Test
     void shouldReturnDataAboutCsrBaseOnEncodedParameters() throws CsrDecryptionException {
         // given
         final String testStringCsr = "testData";
+        final String testCaName = "TestCa";
         CsrModel mockedCsrModel = mock(CsrModel.class);
+        CertificationModel testCertificationModel = new CertificationModel(
+                Arrays.asList("INTERMEDIATE_CERT", "ENTITY_CERT"),
+                Arrays.asList("CA_CERT", "NEW_CA_CERT")
+        );
         when(mockedCsrModel.toString()).thenReturn(testStringCsr);
         when(csrModelFactory.createCsrModel(any(StringBase64.class), any(StringBase64.class)))
                 .thenReturn(mockedCsrModel);
+        when(certificationModelFactory.createCertificationModel(mockedCsrModel, testCaName))
+                .thenReturn(testCertificationModel);
 
         // when
         ResponseEntity<String> testResponse =
-                certificationService.signCertificate("TestCa", "encryptedCSR", "encryptedPK");
+                certificationService.signCertificate(testCaName, "encryptedCSR", "encryptedPK");
+
+        CertificationModel responseCertificationModel = new Gson().fromJson(testResponse.getBody(), CertificationModel.class);
 
         // then
         assertEquals(HttpStatus.OK, testResponse.getStatusCode());
-        assertTrue(
-                testResponse.toString().contains(testStringCsr)
-        );
+        assertThat(responseCertificationModel
+        ).isEqualToComparingFieldByField(testCertificationModel);
+
     }
 
     @Test
