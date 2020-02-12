@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1a1e084a_5de932aa",
+        "filename": "certService/helm/aaf-cert-service/templates/deployment.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-02-12T13:35:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6503a080_f7c770c6",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9088f62a_a6c17ee5",
         "filename": "certService/helm/aaf-cert-service/templates/deployment.yaml",
         "patchSetId": 1
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "2ef98d13_998a7594",
+        "filename": "certService/helm/aaf-cert-service/templates/deployment.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-02-12T13:35:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9088f62a_a6c17ee5",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f3aaf54f_a9db081c",
         "filename": "certService/helm/aaf-cert-service/templates/deployment.yaml",
         "patchSetId": 1
@@ -50,6 +86,24 @@
       "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "89f2a7ed_59cf245d",
+        "filename": "certService/helm/aaf-cert-service/templates/deployment.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-02-12T13:35:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f3aaf54f_a9db081c",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -106,6 +160,24 @@
     },
     {
       "key": {
+        "uuid": "8cfbceeb_8dbfec79",
+        "filename": "certService/helm/aaf-cert-service/templates/deployment.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-02-12T13:35:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "21898b69_b4219e82",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "be5688e6_4879db0f",
         "filename": "certService/helm/aaf-cert-service/templates/service-external.yaml",
         "patchSetId": 1
@@ -120,6 +192,24 @@
       "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "36cace2a_16616d85",
+        "filename": "certService/helm/aaf-cert-service/templates/service-external.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-02-12T13:35:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "be5688e6_4879db0f",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -140,6 +230,24 @@
     },
     {
       "key": {
+        "uuid": "cf07fe01_d5d5adf4",
+        "filename": "certService/helm/aaf-cert-service/templates/service-external.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-02-12T13:35:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c24b1b4a_c5952215",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f5ec83d0_6507c18c",
         "filename": "certService/helm/aaf-cert-service/templates/service-external.yaml",
         "patchSetId": 1
@@ -154,6 +262,24 @@
       "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fc9658df_6a59338b",
+        "filename": "certService/helm/aaf-cert-service/templates/service-external.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-02-12T13:35:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f5ec83d0_6507c18c",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -174,6 +300,24 @@
     },
     {
       "key": {
+        "uuid": "f964de56_1da01678",
+        "filename": "certService/helm/aaf-cert-service/templates/service-external.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-02-12T13:35:39Z",
+      "side": 1,
+      "message": "It\u0027s not wrong actually. According to documentation for targetPort field - \"If this is not specified, the value of the \u0027port\u0027 field is used (an identity map).  https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#serviceport-v1-core",
+      "parentUuid": "1f4f5407_6984c2ab",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b7ae983c_06626287",
         "filename": "certService/helm/aaf-cert-service/templates/service-external.yaml",
         "patchSetId": 1
@@ -191,6 +335,24 @@
     },
     {
       "key": {
+        "uuid": "f062ad20_f33b9e04",
+        "filename": "certService/helm/aaf-cert-service/templates/service-external.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-02-12T13:35:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b7ae983c_06626287",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "156fbe06_dfc5a5be",
         "filename": "certService/helm/aaf-cert-service/templates/service-internal.yaml",
         "patchSetId": 1
@@ -205,6 +367,24 @@
       "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e4bb8dd3_e401e933",
+        "filename": "certService/helm/aaf-cert-service/templates/service-internal.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-02-12T13:35:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "156fbe06_dfc5a5be",
+      "revId": "1f583a5b4c73949a76bb8c20efd26baf4a6dbd3b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
