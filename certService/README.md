@@ -39,7 +39,7 @@
 
 ### Running Docker container
     ```
-    docker run -p 8080:8080 --name cert-service cert-service
+    docker run -p 8080:8080 --name cert-service onap/cert-service
 
     ```
 
