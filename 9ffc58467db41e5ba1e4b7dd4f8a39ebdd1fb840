@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e9ac579b_3c45f4cf",
+        "filename": "certServiceClient/src/main/java/org/onap/certservice/client/CertServiceClientApp.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-16T13:04:49Z",
+      "side": 1,
+      "message": "Wrong package name. It should be org.onap.aaf.certservice.client",
+      "revId": "9ffc58467db41e5ba1e4b7dd4f8a39ebdd1fb840",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "02283b0d_f1f8da57",
+        "filename": "certServiceClient/src/test/java/org/onap/certservice/client/CertServiceClientAppTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-16T13:04:49Z",
+      "side": 1,
+      "message": "Pls put comment above the method why nosonar marker was used.",
+      "revId": "9ffc58467db41e5ba1e4b7dd4f8a39ebdd1fb840",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
