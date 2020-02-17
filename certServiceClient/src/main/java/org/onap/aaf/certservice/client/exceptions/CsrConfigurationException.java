@@ -1,5 +1,6 @@
-/*============LICENSE_START=======================================================
- * aaf-certservice-client
+/*
+ * ============LICENSE_START=======================================================
+ * PROJECT
  * ================================================================================
  * Copyright (C) 2020 Nokia. All rights reserved.
  * ================================================================================
@@ -16,19 +17,11 @@
  * limitations under the License.
  * ============LICENSE_END=========================================================
  */
+package org.onap.aaf.certservice.client.exceptions;
 
-package org.onap.aaf.certservice.client;
 
-
-import org.junit.jupiter.api.Test;
-
-class CertServiceClientAppTest {
-    //  Sonar check for this test disabled due to lack of assertion in test.
-    //  Intention of this test is to check if app runs without exiting Java.
-    @Test
-    public void mainShouldSucceed() {   //NOSONAR
-        String[] params = {""};
-        CertServiceClientApp.main(params);
+public class CsrConfigurationException extends RuntimeException {
+    public CsrConfigurationException(String message) {
+        super(message);
     }
-
 }
