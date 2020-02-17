@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4a8eed73_de786dc7",
+        "filename": "certService/docker-compose.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-17T11:09:31Z",
+      "side": 1,
+      "message": "update README.md file",
+      "revId": "360407d19127cc515e89a81c65a8a3a075c22060",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "01113c2d_cae87b1e",
+        "filename": "certService/src/main/resources/scripts/ejbca-configuration.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-17T11:09:31Z",
+      "side": 1,
+      "message": "there is no #! information at the beginning of script\n\n#!/bin/bash\n\nwhy 30 seconds?",
+      "revId": "360407d19127cc515e89a81c65a8a3a075c22060",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "620d7e15_83bcbc4d",
+        "filename": "certService/src/main/resources/scripts/ejbca-configuration.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-17T11:09:31Z",
+      "side": 1,
+      "message": "split on fuctions\n\n1. .... { sleep 30}\n2. configureEjbca(){rest part of commands}",
+      "revId": "360407d19127cc515e89a81c65a8a3a075c22060",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
