@@ -19,12 +19,15 @@
 
 package org.onap.aaf.certservice.client;
 
+import com.ginsberg.junit.exit.ExpectSystemExitWithStatus;
 import org.junit.jupiter.api.Test;
 
 class CertServiceClientAppTest {
+
     //  Sonar check for this test disabled due to lack of assertion in test.
     //  Intention of this test is to check if app runs without exiting Java.
     @Test
+    @ExpectSystemExitWithStatus(0)
     public void mainShouldSucceed() {   //NOSONAR
         String[] params = {""};
         CertServiceClientApp.main(params);

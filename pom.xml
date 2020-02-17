@@ -53,6 +53,7 @@
         <gson.version>2.8.6</gson.version>
         <docker-maven-plugin.version>0.33.0</docker-maven-plugin.version>
         <junit.version>5.6.0</junit.version>
+        <junit5-system-exit.version>1.0.0</junit5-system-exit.version>
 
         <!-- Docker -->
         <skipDockerPush>true</skipDockerPush>
@@ -75,13 +76,72 @@
         <pluginManagement>
             <plugins>
                 <plugin>
+                    <groupId>org.springdoc</groupId>
+                    <artifactId>springdoc-openapi-maven-plugin</artifactId>
+                    <version>${springdoc-openapi-maven-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <phase>integration-test</phase>
+                            <goals>
+                                <goal>generate</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <apiDocsUrl>${springdoc-openapi-maven-plugin.apiDocsUrl}</apiDocsUrl>
+                        <outputFileName>api-docs.json</outputFileName>
+                        <outputDir>${project.build.directory}</outputDir>
+                    </configuration>
+                </plugin>
+                <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
                     <version>${spring-boot-starter.version}</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>repackage</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>pre-integration-test</id>
+                            <goals>
+                                <goal>start</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>post-integration-test</id>
+                            <goals>
+                                <goal>stop</goal>
+                            </goals>
+                        </execution>
+                    </executions>
                 </plugin>
                 <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>${maven-javadoc-plugin.version}</version>
+                    <configuration>
+                        <quiet>true</quiet>
+                        <verbose>false</verbose>
+                        <useStandardDocletOptions>false</useStandardDocletOptions>
+                        <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>aggregate</id>
+                            <phase>site</phase>
+                            <goals>
+                                <goal>aggregate</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>attach-javadoc</id>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                        </execution>
+                    </executions>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -175,11 +235,10 @@
             </dependency>
 
             <!--   Test dependecies    -->
-
             <dependency>
-                <groupId>org.junit.jupiter</groupId>
-                <artifactId>junit-jupiter-engine</artifactId>
-                <version>${junit.version}</version>
+                <groupId>com.ginsberg</groupId>
+                <artifactId>junit5-system-exit</artifactId>
+                <version>${junit5-system-exit.version}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
