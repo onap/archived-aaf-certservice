@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9fe35762_198eca50",
+        "filename": "certService/pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-17T15:36:17Z",
+      "side": 1,
+      "message": "I forgot to add that this mode should be available only for dev profile\nMvn spring-boot:run -Pdev",
+      "revId": "c22b153a9f843241c4952c221e03a21b922ca818",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
