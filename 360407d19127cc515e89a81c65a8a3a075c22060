@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "69f57851_e347d1e8",
+        "filename": "certService/docker-compose.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-02-17T11:38:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4a8eed73_de786dc7",
+      "revId": "360407d19127cc515e89a81c65a8a3a075c22060",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "01113c2d_cae87b1e",
         "filename": "certService/src/main/resources/scripts/ejbca-configuration.sh",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2020-02-17T11:09:31Z",
       "side": 1,
       "message": "there is no #! information at the beginning of script\n\n#!/bin/bash\n\nwhy 30 seconds?",
+      "revId": "360407d19127cc515e89a81c65a8a3a075c22060",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "027314d2_c74e8510",
+        "filename": "certService/src/main/resources/scripts/ejbca-configuration.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-02-17T11:38:11Z",
+      "side": 1,
+      "message": "It\u0027s waiting time for EJBCA to start-up before configuration. The amount of time is the same as in bash script from Ericsson and it\u0027s reasonable.",
+      "parentUuid": "01113c2d_cae87b1e",
       "revId": "360407d19127cc515e89a81c65a8a3a075c22060",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
@@ -50,6 +86,24 @@
       "revId": "360407d19127cc515e89a81c65a8a3a075c22060",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "912d66e2_53c93e4a",
+        "filename": "certService/src/main/resources/scripts/ejbca-configuration.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-02-17T11:38:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "620d7e15_83bcbc4d",
+      "revId": "360407d19127cc515e89a81c65a8a3a075c22060",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
