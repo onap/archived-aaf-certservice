@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0121926f_ef0b4bed",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServers.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-18T13:07:44Z",
+      "side": 1,
+      "message": "configuration.model",
+      "revId": "06177b1f619f37924c3feaebb3daa3529f484a44",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9ebbda3f_aeef007d",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfig.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-18T13:07:44Z",
+      "side": 1,
+      "message": "why here is list?",
+      "revId": "06177b1f619f37924c3feaebb3daa3529f484a44",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0c848354_69a74b69",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfig.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-18T13:07:44Z",
+      "side": 1,
+      "message": "return Collections. public static \u003cT\u003e ListT\u003e \n    unmodifiableList(List\u003c? extends T\u003e list)\n\nand it will be NullPointerException when error occurs in loadConfiguration",
+      "revId": "06177b1f619f37924c3feaebb3daa3529f484a44",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "25c79265_54a1e93a",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfig.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-18T13:07:44Z",
+      "side": 1,
+      "message": "move method to separate class.\nCmpServerConfigLoader and expose load(String path) method",
+      "revId": "06177b1f619f37924c3feaebb3daa3529f484a44",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d1d0a492_932cf5b5",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/Cmpv2Server.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-18T13:07:44Z",
+      "side": 1,
+      "message": "configuration.model",
+      "revId": "06177b1f619f37924c3feaebb3daa3529f484a44",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c4fee0fa_5ca16951",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfigTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-18T13:07:44Z",
+      "side": 1,
+      "message": "follow the convention: should....When....",
+      "revId": "06177b1f619f37924c3feaebb3daa3529f484a44",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
