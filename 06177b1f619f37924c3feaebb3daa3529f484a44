@@ -87,6 +87,23 @@
     },
     {
       "key": {
+        "uuid": "1bd53519_dd6e60b7",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/Cmpv2Server.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-02-18T13:08:31Z",
+      "side": 1,
+      "message": "This should be enum with: [RA, CLIENT] values.",
+      "revId": "06177b1f619f37924c3feaebb3daa3529f484a44",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "c4fee0fa_5ca16951",
         "filename": "certService/src/test/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfigTest.java",
         "patchSetId": 2
