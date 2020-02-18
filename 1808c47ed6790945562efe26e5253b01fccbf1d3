@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ffea15f_5dc17884",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-18T13:15:46Z",
+      "side": 1,
+      "message": "pls see my comments from previous patch. There was some problem with builds and I fixed project structure and applied changes from master. Now build works correctly.",
+      "revId": "1808c47ed6790945562efe26e5253b01fccbf1d3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
