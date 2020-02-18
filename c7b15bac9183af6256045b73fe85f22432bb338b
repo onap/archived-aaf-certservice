@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c2e88716_fb9ea0d1",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/CertServiceClientAppTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-18T06:49:30Z",
+      "side": 1,
+      "message": "You can use plain Java rather fancy library.\n\nFor example:\npublic class Main {\n\n  public static void main(String[] args) {\n    Application app \u003d new Application();\n    app.run(args);\n  }\n}\n\npublic class Application {\n\n  public void run(String[] args) {\n    this.exit(0);\n  }\n\n  public void exit(int statusCode) {\n    System.exit(statusCode);\n  }\n}\n\n\nimport org.junit.Test;\nimport org.junit.runner.RunWith;\nimport org.mockito.Mockito;\nimport org.mockito.Spy;\nimport org.mockito.junit.MockitoJUnitRunner;\n\n\n@RunWith(MockitoJUnitRunner.class)\npublic class ApplicationTest {\n\n    @Spy\n   Application app \u003d new Application();\n\n    @Test\n    public void shouldCallExit(){\n        Mockito.doNothing().when(app).exit(0);\n\n        app.run(new String[]{});\n        Mockito.verify(app).exit(0);\n    }\n}",
+      "revId": "c7b15bac9183af6256045b73fe85f22432bb338b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
