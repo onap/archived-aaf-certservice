@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "55308623_81eae517",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-18T19:29:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "068a9a22_95bd1d16",
+      "revId": "2ef30f9e1b4bf96e77d5ad9380a9395418c74afb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "79ffa1b9_213965a2",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2020-02-18T11:43:48Z",
       "side": 1,
       "message": "Maybe better name will be generateCertificate ?",
+      "revId": "2ef30f9e1b4bf96e77d5ad9380a9395418c74afb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c3514663_8b94f7aa",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-18T19:29:42Z",
+      "side": 1,
+      "message": "I think that generateCertificate may give the wrong impression - the methods function is to create and send a certificate request and receive and validate the response and return the cert, not to generate the certificate entirely within itself. What do you think?",
+      "parentUuid": "79ffa1b9_213965a2",
       "revId": "2ef30f9e1b4bf96e77d5ad9380a9395418c74afb",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "60da49d9_0dad854c",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-18T19:29:42Z",
+      "side": 1,
+      "message": "CmpClientException is for generic errors that occur with the cmpv2Client, however the PkiErrorException is for handling errors that occur because of the pkiResponse we receive from the EJBCA server, while the IOException is for any errors that occur due to the connection to the CA failing, or the url being incorrect etc.",
+      "parentUuid": "8cd03745_0d79b46d",
+      "revId": "2ef30f9e1b4bf96e77d5ad9380a9395418c74afb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "347c40e5_67c3a0c9",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
         "patchSetId": 1
@@ -64,6 +118,24 @@
       "writtenOn": "2020-02-18T11:43:48Z",
       "side": 1,
       "message": "maybe better name is revokeCertificate",
+      "revId": "2ef30f9e1b4bf96e77d5ad9380a9395418c74afb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f4a40590_0db386db",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-18T19:29:42Z",
+      "side": 1,
+      "message": "its been removed, so no longer a problem :)",
+      "parentUuid": "347c40e5_67c3a0c9",
       "revId": "2ef30f9e1b4bf96e77d5ad9380a9395418c74afb",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
