@@ -16,6 +16,108 @@
       "revId": "1808c47ed6790945562efe26e5253b01fccbf1d3",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4778ae45_7df890a0",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientException.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-18T13:46:20Z",
+      "side": 1,
+      "message": "2020",
+      "revId": "1808c47ed6790945562efe26e5253b01fccbf1d3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f8b82214_0f407457",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-18T13:46:20Z",
+      "side": 1,
+      "message": "2020",
+      "revId": "1808c47ed6790945562efe26e5253b01fccbf1d3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "44bcce13_34462909",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-18T13:46:20Z",
+      "side": 1,
+      "message": "it should be caName - java naming convention",
+      "revId": "1808c47ed6790945562efe26e5253b01fccbf1d3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "79bde84e_ef172b93",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-18T13:46:20Z",
+      "side": 1,
+      "message": "it should be caProfile - java naming convention",
+      "revId": "1808c47ed6790945562efe26e5253b01fccbf1d3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0312156c_d0bcc620",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-18T13:46:20Z",
+      "side": 1,
+      "message": "why do you return null?",
+      "revId": "1808c47ed6790945562efe26e5253b01fccbf1d3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d8dda6a0_8e6081cb",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-18T13:46:20Z",
+      "side": 1,
+      "message": "This method is not implemented. Pls remove it or implement.",
+      "revId": "1808c47ed6790945562efe26e5253b01fccbf1d3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
