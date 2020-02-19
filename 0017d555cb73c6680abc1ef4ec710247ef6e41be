@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4151c83d_b19f4e6f",
+        "filename": "certServiceClient/pom.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-19T06:50:07Z",
+      "side": 1,
+      "message": "same here",
+      "range": {
+        "startLine": 49,
+        "startChar": 9,
+        "endLine": 49,
+        "endChar": 31
+      },
+      "revId": "0017d555cb73c6680abc1ef4ec710247ef6e41be",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d54baac0_064564f9",
+        "filename": "certServiceClient/pom.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-19T06:50:07Z",
+      "side": 1,
+      "message": "Scopes and version should be moved to parent pom.",
+      "range": {
+        "startLine": 68,
+        "startChar": 0,
+        "endLine": 69,
+        "endChar": 34
+      },
+      "revId": "0017d555cb73c6680abc1ef4ec710247ef6e41be",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "01956a42_d4b612e0",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/model/ClientConfigurationTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-19T06:50:07Z",
+      "side": 1,
+      "message": "Lets fallow covention where we have should and result at te beginning.\ne.g.\nshouldReturnConfigurationLoadedFromEnvironmentalVariables_whenReadEnvVariablesCalled()\n\nsame for other tests",
+      "range": {
+        "startLine": 40,
+        "startChar": 17,
+        "endLine": 40,
+        "endChar": 90
+      },
+      "revId": "0017d555cb73c6680abc1ef4ec710247ef6e41be",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
