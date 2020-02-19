@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "afd07553_cc661116",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/common/EnvValidationUtils.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-19T19:44:21Z",
+      "side": 1,
+      "message": "check missing access modifiers in class",
+      "revId": "e13838cb9043f286338912a2ab9b059e09eb0e92",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "297291e8_a930467d",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/common/EnvValidationUtils.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-19T19:44:21Z",
+      "side": 1,
+      "message": "Remove constructor.",
+      "range": {
+        "startLine": 27,
+        "startChar": 2,
+        "endLine": 27,
+        "endChar": 35
+      },
+      "revId": "e13838cb9043f286338912a2ab9b059e09eb0e92",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3189412e_03cf910d",
+        "filename": "pom.xml",
+        "patchSetId": 8
+      },
+      "lineNbr": 243,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-19T19:44:21Z",
+      "side": 1,
+      "message": "remove this",
+      "range": {
+        "startLine": 239,
+        "startChar": 0,
+        "endLine": 243,
+        "endChar": 25
+      },
+      "revId": "e13838cb9043f286338912a2ab9b059e09eb0e92",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
