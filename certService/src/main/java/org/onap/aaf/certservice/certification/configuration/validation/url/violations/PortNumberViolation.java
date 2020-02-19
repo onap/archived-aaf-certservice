@@ -18,33 +18,25 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.certification.configuration;
+package org.onap.aaf.certservice.certification.configuration.validation.url.violations;
 
-import java.util.Collections;
-import java.util.List;
-import javax.annotation.PostConstruct;
-import org.onap.aaf.certservice.certification.configuration.model.Cmpv2Server;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Service;
 
-@Configuration
-public class CmpServersConfig {
+import java.net.MalformedURLException;
+import java.net.URL;
 
-    private static final String CMP_SERVERS_CONFIG_FILENAME = "cmpServers.json";
-    private List<Cmpv2Server> cmpServers;
-    private CmpServersConfigLoader configLoader;
+@Service
+public class PortNumberViolation implements URLServerViolation {
 
-    @Autowired
-    public CmpServersConfig(CmpServersConfigLoader configLoader) {
-        this.configLoader = configLoader;
+    @Override
+    public boolean validate(String serverUrl) {
+        try {
+            URL url = new URL(serverUrl);
+            int port = url.getPort();
+            return port >= 1 && port <= 65535 || port == -1;
+        } catch (MalformedURLException e) {
+            return false;
+        }
     }
 
-    @PostConstruct
-    private void loadConfiguration() {
-        cmpServers = Collections.unmodifiableList(configLoader.load(CMP_SERVERS_CONFIG_FILENAME));
-    }
-
-    public List<Cmpv2Server> getCmpServers() {
-        return cmpServers;
-    }
 }
