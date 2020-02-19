@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1c63c91a_2cb53c30",
+        "filename": "certServiceClient/src/main/java/resources/logback.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T06:42:37Z",
+      "side": 1,
+      "message": "Why are you using loggback, not log4j?",
+      "revId": "5b7eec63fbb14eefd2963fd47a87279bca7fde23",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "81a551ab_e9f53cfc",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 236,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T06:42:37Z",
+      "side": 1,
+      "message": "Why are you using logback, not log4j as it is in certService?",
+      "revId": "5b7eec63fbb14eefd2963fd47a87279bca7fde23",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
