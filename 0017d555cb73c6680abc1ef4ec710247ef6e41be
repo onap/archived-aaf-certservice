@@ -150,6 +150,29 @@
     },
     {
       "key": {
+        "uuid": "4ee9ba60_ecf72bf9",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/model/ClientConfigurationTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-19T07:44:07Z",
+      "side": 1,
+      "message": "@Rule is Junit4 annotation no longer supported in Junit5. Since we are using Junit5 its better do avoid usage of this system-rules lib. This lib contain dependency of junit 4.",
+      "range": {
+        "startLine": 36,
+        "startChar": 4,
+        "endLine": 36,
+        "endChar": 9
+      },
+      "revId": "0017d555cb73c6680abc1ef4ec710247ef6e41be",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0d1fd013_6453dadb",
         "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/model/ClientConfigurationTest.java",
         "patchSetId": 4
