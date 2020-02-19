@@ -18,33 +18,36 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.certification.configuration;
 
+package org.onap.aaf.certservice.certification.configuration.validation.url.violations;
+
+import org.springframework.stereotype.Service;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import javax.annotation.PostConstruct;
-import org.onap.aaf.certservice.certification.configuration.model.Cmpv2Server;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Configuration;
+import java.util.concurrent.atomic.AtomicBoolean;
 
-@Configuration
-public class CmpServersConfig {
+@Service
+public class RequestTypeViolation implements URLServerViolation {
 
-    private static final String CMP_SERVERS_CONFIG_FILENAME = "cmpServers.json";
-    private List<Cmpv2Server> cmpServers;
-    private CmpServersConfigLoader configLoader;
+    private final static List<String> validRequests = Collections.singletonList("http");
 
-    @Autowired
-    public CmpServersConfig(CmpServersConfigLoader configLoader) {
-        this.configLoader = configLoader;
-    }
-
-    @PostConstruct
-    private void loadConfiguration() {
-        cmpServers = Collections.unmodifiableList(configLoader.load(CMP_SERVERS_CONFIG_FILENAME));
-    }
-
-    public List<Cmpv2Server> getCmpServers() {
-        return cmpServers;
+    @Override
+    public boolean validate(String serverUrl) {
+        try {
+            AtomicBoolean isValid = new AtomicBoolean(false);
+            String protocol = new URL(serverUrl).getProtocol();
+            validRequests.forEach(requestType -> {
+                if (protocol.equals(requestType)) {
+                    isValid.set(true);
+                }
+            });
+            return isValid.get();
+        } catch (MalformedURLException e) {
+            return false;
+        }
     }
 }
