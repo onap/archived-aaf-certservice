@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e2fbceff_e3ee2852",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/validation/Cmpv2ServerValidator.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-02-19T14:37:25Z",
+      "side": 1,
+      "message": "Extract creation of validator to method",
+      "revId": "47c570f5d1ee51da347d8940bf9fed190a83c39d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
