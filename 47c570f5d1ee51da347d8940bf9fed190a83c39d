@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3fbd1bb5_a546e92c",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/validation/Cmpv2ServerValidator.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-02-19T15:02:50Z",
+      "side": 1,
+      "message": "But on the other hand in URLValidator.java class constructor, we won\u0027t be able to inject all implementations of URLServerViolation interface in a cool way it is now.\nWithout @Service we would have to create object of every implementation. This impact on scalability of code.",
+      "parentUuid": "b5fce571_f50fc08c",
+      "revId": "47c570f5d1ee51da347d8940bf9fed190a83c39d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "e2fbceff_e3ee2852",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/validation/Cmpv2ServerValidator.java",
         "patchSetId": 3
