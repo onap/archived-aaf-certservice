@@ -150,6 +150,23 @@
     },
     {
       "key": {
+        "uuid": "0d1fd013_6453dadb",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/model/ClientConfigurationTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T07:15:22Z",
+      "side": 1,
+      "message": "Warning: This rule uses reflection for modifying internals of the environment variables map. It fails if your SecurityManager forbids such modifications.\n\nYou can fix this problem by changing implementation of configurations by provide EnvProvider which you will mock in test",
+      "revId": "0017d555cb73c6680abc1ef4ec710247ef6e41be",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "01956a42_d4b612e0",
         "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/model/ClientConfigurationTest.java",
         "patchSetId": 4
