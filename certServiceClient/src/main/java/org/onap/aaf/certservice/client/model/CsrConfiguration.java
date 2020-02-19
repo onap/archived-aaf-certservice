@@ -86,7 +86,7 @@ public class CsrConfiguration implements ConfigurationModel {
         return this;
     }
 
-    public String getSubjectAlternativeNames() {
+    public String getSans() {
         return subjectAlternativeNames;
     }
 
