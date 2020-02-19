@@ -13,12 +13,17 @@ More information about the project and all its functionalities you can find unde
         For IntelliJ use [https://plugins.jetbrains.com/plugin/8527-google-java-format]
         For other IDEs use []https://github.com/google/google-java-format]
 
+### Local project configuration
+    * Create directory on your system /etc/onap/aaf/certservice
+    * Copy sample configuration test/resources/cmpServers.json to that directory
+
 ### Running Locally
+    MANDATORY SEE 'Local project configuration' section
     ```
      mvn spring-boot:run
 
     ```
-    
+  
 ### Running Locally with Developer Tools
     ```
      mvn spring-boot:run -Pdev
