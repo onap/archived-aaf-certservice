@@ -17,13 +17,18 @@
  * limitations under the License.
  * ============LICENSE_END=========================================================
  */
+package org.onap.aaf.certservice.client.configuration.exceptions;
 
-package org.onap.aaf.certservice.client.common;
+import org.onap.aaf.certservice.client.api.ExitableException;
 
-import org.onap.aaf.certservice.client.exceptions.ClientConfigurationException;
+public class CsrConfigurationException extends ExitableException {
+    private static final int EXIT_CODE = 2;
 
-public class EnvProvider {
-    public String readEnvVariable(String envVariable) throws ClientConfigurationException {
-        return System.getProperty(envVariable);
+    public CsrConfigurationException(String message) {
+        super(message);
+    }
+
+    public int applicationExitCode() {
+        return EXIT_CODE;
     }
 }

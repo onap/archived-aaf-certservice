@@ -1,6 +1,6 @@
 /*
  * ============LICENSE_START=======================================================
- * aaf-certservice-client
+ * PROJECT
  * ================================================================================
  * Copyright (C) 2020 Nokia. All rights reserved.
  * ================================================================================
@@ -18,11 +18,10 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.client;
+package org.onap.aaf.certservice.client.configuration.factories;
 
-public class CertServiceClientApp {
-    public static void main(String[] args) {
-        CertServiceClient certServiceClient = new CertServiceClient();
-        certServiceClient.run(args);
-    }
+import org.onap.aaf.certservice.client.configuration.model.ConfigurationModel;
+
+public interface AbstractConfigurationFactory<T extends ConfigurationModel> {
+    T create();
 }
