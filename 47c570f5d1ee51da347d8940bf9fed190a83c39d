@@ -36,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "60518966_2a766b99",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/validation/Cmpv2ServerValidator.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-02-19T14:55:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e2fbceff_e3ee2852",
+      "revId": "47c570f5d1ee51da347d8940bf9fed190a83c39d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b13fa6a8_e21c784e",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/validation/url/URLValidator.java",
         "patchSetId": 3
