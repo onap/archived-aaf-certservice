@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "677f185e_9dbcf4cb",
+        "filename": "certServiceClient/src/main/resources/log4j2.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T16:24:17Z",
+      "side": 1,
+      "message": "follow Onap convention.\nYou should have three loggers.\n\n1. debug.log\n2. audit.log\n3. error.log\n\nsee logger configuration in certService project",
+      "revId": "3f4043757b92c6c39c934cc74fa8096de76575c6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
