@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2631e7cf_c21812b4",
+        "filename": "certServiceClient/pom.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T16:50:26Z",
+      "side": 1,
+      "message": "extract to properties in pom.xml as for other dependencies",
+      "revId": "624649ecbad300f78b9bdf3df3f7b2927264ab7a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5fa60e7c_45bc3ea9",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/model/FactoryProvider.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T16:50:26Z",
+      "side": 1,
+      "message": "enum will be better than string",
+      "revId": "624649ecbad300f78b9bdf3df3f7b2927264ab7a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9fc638d0_d294c197",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/model/FactoryProvider.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T16:50:26Z",
+      "side": 1,
+      "message": "throw new UnsupportedOperationException(...)",
+      "revId": "624649ecbad300f78b9bdf3df3f7b2927264ab7a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
