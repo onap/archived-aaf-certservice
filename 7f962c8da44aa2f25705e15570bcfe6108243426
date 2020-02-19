@@ -125,6 +125,24 @@
     },
     {
       "key": {
+        "uuid": "10616cdc_fc4406f2",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-19T14:15:41Z",
+      "side": 1,
+      "message": "yeah, fair enough",
+      "parentUuid": "c9d33aac_d40ac9c6",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "fbd0d86a_5674ecca",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/CSRMeta.java",
         "patchSetId": 4
