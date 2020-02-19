@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "0b37bc84_968d5a3f",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/validation/Cmpv2ServerValidator.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-02-19T15:13:10Z",
+      "side": 1,
+      "message": "Yes, but also now, all these Violations and Validator are visible in the whole Spring context and it\u0027s not necessary, because we need it only here. From my perspective it violates encapsulation. This code here is also way more complicated and the only benefit we get is scalability, which I think we don\u0027t need here.",
+      "parentUuid": "3fbd1bb5_a546e92c",
+      "revId": "47c570f5d1ee51da347d8940bf9fed190a83c39d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "e2fbceff_e3ee2852",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/validation/Cmpv2ServerValidator.java",
         "patchSetId": 3
