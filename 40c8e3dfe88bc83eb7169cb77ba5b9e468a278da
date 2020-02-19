@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4c0141cb_6b7b14f9",
+        "filename": "docs/conf.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 4857
+      },
+      "writtenOn": "2020-02-19T12:13:00Z",
+      "side": 1,
+      "message": "you need to add an extra line here",
+      "revId": "40c8e3dfe88bc83eb7169cb77ba5b9e468a278da",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5b443e19_dc2abf0a",
+        "filename": "docs/index.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 4857
+      },
+      "writtenOn": "2020-02-19T12:13:00Z",
+      "side": 1,
+      "message": "same here",
+      "revId": "40c8e3dfe88bc83eb7169cb77ba5b9e468a278da",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "48cfc980_7b0c0a48",
+        "filename": "docs/requirements-docs.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 4857
+      },
+      "writtenOn": "2020-02-19T12:13:00Z",
+      "side": 1,
+      "message": "Same here",
+      "revId": "40c8e3dfe88bc83eb7169cb77ba5b9e468a278da",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "25a11b49_44c9a0df",
+        "filename": "docs/tox.ini",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 4857
+      },
+      "writtenOn": "2020-02-19T12:13:00Z",
+      "side": 1,
+      "message": "same here",
+      "revId": "40c8e3dfe88bc83eb7169cb77ba5b9e468a278da",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
