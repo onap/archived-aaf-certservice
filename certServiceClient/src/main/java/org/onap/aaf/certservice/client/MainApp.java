@@ -20,9 +20,9 @@
 
 package org.onap.aaf.certservice.client;
 
-public class CertServiceClientApp {
+public class MainApp {
     public static void main(String[] args) {
-        CertServiceClient certServiceClient = new CertServiceClient();
-        certServiceClient.run(args);
+        CertServiceClient certServiceClient = new CertServiceClient(new AppExitHandler());
+        certServiceClient.run();
     }
 }

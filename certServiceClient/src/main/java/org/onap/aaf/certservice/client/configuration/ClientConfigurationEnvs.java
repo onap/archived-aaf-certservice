@@ -1,6 +1,6 @@
 /*
  * ============LICENSE_START=======================================================
- * PROJECT
+ * aaf-certservice-client
  * ================================================================================
  * Copyright (C) 2020 Nokia. All rights reserved.
  * ================================================================================
@@ -18,11 +18,11 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.client.exceptions;
+package org.onap.aaf.certservice.client.configuration;
 
-
-public class ClientConfigurationException extends RuntimeException {
-    public ClientConfigurationException(String message) {
-        super(message);
-    }
+public enum ClientConfigurationEnvs {
+    REQUEST_URL,
+    REQUEST_TIMEOUT,
+    OUTPUT_PATH,
+    CA_NAME
 }

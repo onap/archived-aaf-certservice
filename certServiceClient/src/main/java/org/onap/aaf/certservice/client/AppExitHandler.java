@@ -1,6 +1,5 @@
-/*
- * ============LICENSE_START=======================================================
- * PROJECT
+/*============LICENSE_START=======================================================
+ * aaf-certservice-client
  * ================================================================================
  * Copyright (C) 2020 Nokia. All rights reserved.
  * ================================================================================
@@ -17,9 +16,16 @@
  * limitations under the License.
  * ============LICENSE_END=========================================================
  */
+package org.onap.aaf.certservice.client;
 
-package org.onap.aaf.certservice.client.model;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-public interface AbstractConfigurationFactory<T extends ConfigurationModel> {
-    T create();
+public class AppExitHandler {
+    public static final Logger LOGGER = LoggerFactory.getLogger(AppExitHandler.class);
+
+    public void exit(int exitCode) {
+        LOGGER.debug("Application exits with following exit code: " + exitCode);
+        System.exit(exitCode);
+    }
 }
