@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "132bdd71_c9794dfa",
+        "filename": "certService/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T16:10:27Z",
+      "side": 1,
+      "message": "MANDATORY SEE \u0027Local project configuration\u0027 section",
+      "revId": "e2ccd11565b781bee2ed779fd9a45f1ba3c87480",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "99068f6e_d59482c3",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfig.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T16:10:27Z",
+      "side": 1,
+      "message": "pls write spring test for this file with mocked CmpServersConfigLoader.",
+      "revId": "e2ccd11565b781bee2ed779fd9a45f1ba3c87480",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "56324110_f3a8d509",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfig.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T16:10:27Z",
+      "side": 1,
+      "message": "something is wrong ... load method returns empty list and error when configuration cannot be loaded from file",
+      "revId": "e2ccd11565b781bee2ed779fd9a45f1ba3c87480",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "79be87ee_26a27f31",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfigLoaderTest.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T16:10:27Z",
+      "side": 1,
+      "message": "static final variables always should be in UPPER_CASE format.\nJava standard.\n\npls apply rule in all cases",
+      "revId": "e2ccd11565b781bee2ed779fd9a45f1ba3c87480",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
