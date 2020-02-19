@@ -13,7 +13,7 @@
 	============LICENSE_END=========================================================
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
@@ -57,19 +57,18 @@
         <docker-maven-plugin.version>0.33.0</docker-maven-plugin.version>
         <junit.version>5.5.2</junit.version>
         <mockito-junit-jupiter.version>2.17.0</mockito-junit-jupiter.version>
-        <maven-shade-plugin.version>3.2.2</maven-shade-plugin.version>
+        <vavr.version>0.10.2</vavr.version>
 
         <!-- Docker -->
         <skipDockerPush>true</skipDockerPush>
         <maven.build.timestamp.format>yyyyMMdd'T'HHmmss</maven.build.timestamp.format>
+        <maven-shade-plugin.version>3.2.2</maven-shade-plugin.version>
         <docker-image.registry>${onap.nexus.dockerregistry.daily}</docker-image.registry>
         <docker-image.namespace>onap</docker-image.namespace>
         <docker-image.name>${project.groupId}.${project.artifactId}</docker-image.name>
         <docker-image.latest>${project.version}</docker-image.latest>
         <version>${project.version}</version>
         <docker.http_proxy/>
-        <immutables.version>2.7.5</immutables.version>
-
 
     </properties>
 
@@ -267,6 +266,11 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>io.vavr</groupId>
+                <artifactId>vavr</artifactId>
+                <version>${vavr.version}</version>
+            </dependency>
 
             <!--   Test dependecies    -->
             <dependency>
@@ -293,7 +297,6 @@
                 <version>${mockito-core.version}</version>
                 <scope>test</scope>
             </dependency>
-
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-junit-jupiter</artifactId>

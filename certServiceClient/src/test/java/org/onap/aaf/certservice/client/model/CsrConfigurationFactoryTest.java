@@ -21,9 +21,11 @@
 package org.onap.aaf.certservice.client.model;
 
 import org.junit.jupiter.api.Test;
-import org.onap.aaf.certservice.client.common.CsrConfigurationEnvs;
-import org.onap.aaf.certservice.client.common.EnvsForCsr;
-import org.onap.aaf.certservice.client.exceptions.CsrConfigurationException;
+import org.onap.aaf.certservice.client.configuration.CsrConfigurationEnvs;
+import org.onap.aaf.certservice.client.configuration.EnvsForCsr;
+import org.onap.aaf.certservice.client.configuration.exceptions.CsrConfigurationException;
+import org.onap.aaf.certservice.client.configuration.factories.CsrConfigurationFactory;
+import org.onap.aaf.certservice.client.configuration.model.CsrConfiguration;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

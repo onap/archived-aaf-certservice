@@ -17,12 +17,18 @@
  * limitations under the License.
  * ============LICENSE_END=========================================================
  */
+package org.onap.aaf.certservice.client.configuration.exceptions;
 
-package org.onap.aaf.certservice.client.exceptions;
+import org.onap.aaf.certservice.client.api.ExitableException;
 
+public class ClientConfigurationException extends ExitableException {
+    private static final int EXIT_CODE = 1;
 
-public class ClientConfigurationException extends RuntimeException {
     public ClientConfigurationException(String message) {
         super(message);
+    }
+
+    public int applicationExitCode() {
+        return EXIT_CODE;
     }
 }

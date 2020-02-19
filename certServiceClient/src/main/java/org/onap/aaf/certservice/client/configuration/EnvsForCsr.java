@@ -18,7 +18,9 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.client.common;
+package org.onap.aaf.certservice.client.configuration;
+
+import static org.onap.aaf.certservice.client.configuration.EnvProvider.readEnvVariable;
 
 public class EnvsForCsr {
     private String commonName;
@@ -29,15 +31,14 @@ public class EnvsForCsr {
     private String country;
     private String subjectAlternativesName;
 
-    EnvsForCsr() {
-        EnvProvider envProvider = new EnvProvider();
-        this.commonName = envProvider.readEnvVariable(CsrConfigurationEnvs.COMMON_NAME.toString());
-        this.organization = envProvider.readEnvVariable(CsrConfigurationEnvs.ORGANIZATION.toString());
-        this.organizationUnit = envProvider.readEnvVariable(CsrConfigurationEnvs.ORGANIZATION_UNIT.toString());
-        this.location = envProvider.readEnvVariable(CsrConfigurationEnvs.LOCATION.toString());
-        this.state = envProvider.readEnvVariable(CsrConfigurationEnvs.STATE.toString());
-        this.country = envProvider.readEnvVariable(CsrConfigurationEnvs.COUNTRY.toString());
-        this.subjectAlternativesName = envProvider.readEnvVariable(CsrConfigurationEnvs.SANS.toString());
+    public EnvsForCsr() {
+        this.commonName = readEnvVariable(CsrConfigurationEnvs.COMMON_NAME.toString());
+        this.organization = readEnvVariable(CsrConfigurationEnvs.ORGANIZATION.toString());
+        this.organizationUnit = readEnvVariable(CsrConfigurationEnvs.ORGANIZATION_UNIT.toString());
+        this.location = readEnvVariable(CsrConfigurationEnvs.LOCATION.toString());
+        this.state = readEnvVariable(CsrConfigurationEnvs.STATE.toString());
+        this.country = readEnvVariable(CsrConfigurationEnvs.COUNTRY.toString());
+        this.subjectAlternativesName = readEnvVariable(CsrConfigurationEnvs.SANS.toString());
     }
 
     public String getCommonName() {

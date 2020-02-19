@@ -18,11 +18,10 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.client.exceptions;
+package org.onap.aaf.certservice.client.configuration.factories;
 
+import org.onap.aaf.certservice.client.configuration.model.ConfigurationModel;
 
-public class CsrConfigurationException extends RuntimeException {
-    public CsrConfigurationException(String message) {
-        super(message);
-    }
+public interface AbstractConfigurationFactory<T extends ConfigurationModel> {
+    T create();
 }

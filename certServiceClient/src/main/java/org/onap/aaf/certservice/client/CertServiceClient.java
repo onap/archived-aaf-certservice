@@ -19,18 +19,42 @@
 
 package org.onap.aaf.certservice.client;
 
+import org.onap.aaf.certservice.client.api.ExitableException;
+import org.onap.aaf.certservice.client.certification.KeyPairFactory;
+import org.onap.aaf.certservice.client.configuration.EnvsForClient;
+import org.onap.aaf.certservice.client.configuration.EnvsForCsr;
+import org.onap.aaf.certservice.client.configuration.factories.ClientConfigurationFactory;
+import org.onap.aaf.certservice.client.configuration.factories.CsrConfigurationFactory;
+import org.onap.aaf.certservice.client.configuration.model.ClientConfiguration;
+import org.onap.aaf.certservice.client.configuration.model.CsrConfiguration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import static org.onap.aaf.certservice.client.certification.EncryptionAlgorithmConstants.KEY_SIZE;
+import static org.onap.aaf.certservice.client.certification.EncryptionAlgorithmConstants.RSA_ENCRYPTION_ALGORITHM;
 
 public class CertServiceClient {
     private static final Logger LOGGER = LoggerFactory.getLogger(CertServiceClient.class);
 
-    public void run(String[] args) {
+    public void run() {
+        ClientConfiguration clientConfiguration;
+        CsrConfiguration csrConfiguration;
+        KeyPairFactory keyPairFactory = new KeyPairFactory(RSA_ENCRYPTION_ALGORITHM, KEY_SIZE);
+
+        try {
+            clientConfiguration = new ClientConfigurationFactory(new EnvsForClient()).create();
+            csrConfiguration = new CsrConfigurationFactory(new EnvsForCsr()).create();
+            keyPairFactory.create();
+        } catch (ExitableException e) {
+            exit(e.applicationExitCode());
+        }
+
         exit(0);
     }
 
-    protected void exit(int statusCode){
-        LOGGER.debug("Application exits with following exit code: " + statusCode);
-        System.exit(statusCode);
+    public void exit(int exitCode) {
+        LOGGER.debug("Application exits with following exit code: " + exitCode);
+        System.exit(exitCode);
     }
+
 }

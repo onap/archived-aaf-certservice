@@ -21,9 +21,11 @@
 package org.onap.aaf.certservice.client.model;
 
 import org.junit.jupiter.api.Test;
-import org.onap.aaf.certservice.client.common.ClientConfigurationEnvs;
-import org.onap.aaf.certservice.client.common.EnvsForClient;
-import org.onap.aaf.certservice.client.exceptions.ClientConfigurationException;
+import org.onap.aaf.certservice.client.configuration.ClientConfigurationEnvs;
+import org.onap.aaf.certservice.client.configuration.EnvsForClient;
+import org.onap.aaf.certservice.client.configuration.exceptions.ClientConfigurationException;
+import org.onap.aaf.certservice.client.configuration.factories.ClientConfigurationFactory;
+import org.onap.aaf.certservice.client.configuration.model.ClientConfiguration;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
