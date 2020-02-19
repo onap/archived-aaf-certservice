@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "14fd1cdb_3e81ac3e",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/Exceptions/CmpClientException.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-19T12:40:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa9bce64_c95120bf",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "83dbeadb_290d8011",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/Exceptions/PkiErrorException.java",
         "patchSetId": 4
@@ -33,6 +51,24 @@
       "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2f775223_babdd6d1",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/Exceptions/PkiErrorException.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-19T12:40:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "83dbeadb_290d8011",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -106,6 +142,24 @@
     },
     {
       "key": {
+        "uuid": "016fcf57_ede51843",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/CSRMeta.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-19T12:40:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "eadfe77b_84bbea94",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6b4be2f3_cad2631b",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
         "patchSetId": 4
@@ -123,6 +177,24 @@
     },
     {
       "key": {
+        "uuid": "cae6da6f_b5aa2cbe",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-19T12:40:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6b4be2f3_cad2631b",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1fc01718_20aed761",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
         "patchSetId": 4
@@ -134,6 +206,24 @@
       "writtenOn": "2020-02-19T11:10:50Z",
       "side": 1,
       "message": "why didn\u0027t you pass HttpClient instance by constructor argument?\nIt will be easier to mock logic and loose coupling between components.",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cc70dbf4_5e6bb639",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-19T12:40:14Z",
+      "side": 1,
+      "message": "the closeableHttpClient has nothing to do with what would actually be needed for constructing the certRequest toward the ejbca server, and is entirely to do with how internally we\u0027re sending and receiving the request. It would confuse and add unneeded complexity to the api, when we can simply generate the CloseableHttpClient like this, still making it easy to mock and test. what do you think?\n\n(also check my comment on the optional variables in CmpClient, also wondering on your opinion regarding my response.)",
+      "parentUuid": "1fc01718_20aed761",
       "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
@@ -157,6 +247,24 @@
     },
     {
       "key": {
+        "uuid": "74e87a96_b228b5e2",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-19T12:40:14Z",
+      "side": 1,
+      "message": "the original cmpv2Client code that you were putting up didn\u0027t return the certificate and didn\u0027t have code for handling the response from the server in order to extract the certificate either - There\u0027s a fairly significant amount of code involved with parsing the response and would cause this already large review to be even bigger, which is why I\u0027m planning on pushing that code up in a separate review. I think for now it has to return a null.",
+      "parentUuid": "d5ad53e4_94df5cad",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "1a3a37be_980766d4",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
         "patchSetId": 4
@@ -168,6 +276,24 @@
       "writtenOn": "2020-02-19T11:10:50Z",
       "side": 1,
       "message": "If you will inject HttpClient by constructor then this method will not be needed.",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "94c368f3_fd845669",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-19T12:40:14Z",
+      "side": 1,
+      "message": "see my comment above, I believe we should leave it like this for api sake.",
+      "parentUuid": "1a3a37be_980766d4",
       "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
@@ -191,6 +317,24 @@
     },
     {
       "key": {
+        "uuid": "8726b266_755088f3",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpMessageHelper.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-19T12:40:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c2ce1ca1_b2634405",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "69be17a7_94925349",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpMessageHelper.java",
         "patchSetId": 4
@@ -205,6 +349,24 @@
       "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "34a15b16_7b974f7a",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpMessageHelper.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-19T12:40:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "69be17a7_94925349",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -225,6 +387,24 @@
     },
     {
       "key": {
+        "uuid": "ebbefce3_180c4b7e",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpMessageHelper.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-19T12:40:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "db05185a_742d1947",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f7b4ca59_f1bdd776",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpUtil.java",
         "patchSetId": 4
@@ -239,6 +419,24 @@
       "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "437a9385_f2fd808d",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpUtil.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-19T12:40:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f7b4ca59_f1bdd776",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -259,6 +457,24 @@
     },
     {
       "key": {
+        "uuid": "d3dd734f_a1c6eec2",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CreateCertRequest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-19T12:40:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f6eb125c_3160afb9",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "df7f775a_b65b0ffb",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/HttpClient.java",
         "patchSetId": 4
@@ -273,6 +489,24 @@
       "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "49dad2ae_1c63e22c",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/HttpClient.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-19T12:40:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "df7f775a_b65b0ffb",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -293,6 +527,24 @@
     },
     {
       "key": {
+        "uuid": "386488c4_5c0ed541",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2Client/Cmpv2ClientTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-19T12:40:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "58d3f1cf_649db1f6",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2b8ff0ed_57941824",
         "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2Client/Cmpv2ClientTest.java",
         "patchSetId": 4
@@ -307,6 +559,24 @@
       "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "43ae5821_19497f4e",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2Client/Cmpv2ClientTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-19T12:40:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2b8ff0ed_57941824",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
