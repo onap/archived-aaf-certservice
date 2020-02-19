@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2ea74e91_535a6816",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T08:37:05Z",
+      "side": 1,
+      "message": "1. Can we change method name to createCertificate?\n2. We should not use Optional parameters in method\nhttps://dzone.com/articles/using-optional-correctly-is-not-optional\n\nsee Item 16",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fbd0d86a_5674ecca",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/CSRMeta.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T08:37:05Z",
+      "side": 1,
+      "message": "We can skip any corrections in external package, because in the future we will remove this package ...",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
