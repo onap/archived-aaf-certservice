@@ -107,6 +107,24 @@
     },
     {
       "key": {
+        "uuid": "c9d33aac_d40ac9c6",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T13:20:21Z",
+      "side": 1,
+      "message": "always you can create two separate methods:\n\nIn this case dates are optional.\nX509Certificate createCertRequest(      String caName,\n      String profile,\n      CSRMeta csrMeta,\n      X509Certificate csr)\n      throws CmpClientException\n\nand \n\nin this case dates are mandatory.\nX509Certificate createCertRequest( \n      String caName,\n      String profile,\n      CSRMeta csrMeta,\n      X509Certificate csr,\n      Date notBefore,\n      Date notAfter)\n      throws CmpClientException",
+      "parentUuid": "22c54ffa_6262d95a",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "fbd0d86a_5674ecca",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/CSRMeta.java",
         "patchSetId": 4
