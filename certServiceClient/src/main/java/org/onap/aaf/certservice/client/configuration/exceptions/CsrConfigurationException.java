@@ -18,7 +18,20 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.client.model;
+package org.onap.aaf.certservice.client.configuration.exceptions;
 
-public interface ConfigurationModel {
+
+import org.onap.aaf.certservice.client.api.Exitable;
+
+public class CsrConfigurationException extends RuntimeException implements Exitable {
+
+    private static final int EXIT_CODE = 2;
+
+    public CsrConfigurationException(String message) {
+        super(message);
+    }
+
+    public int applicationExitCode() {
+        return EXIT_CODE;
+    }
 }

@@ -18,7 +18,9 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.client.common;
+package org.onap.aaf.certservice.client.configuration;
+
+import static org.onap.aaf.certservice.client.configuration.EnvProvider.readEnvVariable;
 
 public class EnvsForClient {
 
@@ -27,12 +29,11 @@ public class EnvsForClient {
     private String outputPath;
     private String caName;
 
-    EnvsForClient() {
-        EnvProvider envProvider = new EnvProvider();
-        this.urlToCertService = envProvider.readEnvVariable(ClientConfigurationEnvs.REQUEST_URL.toString());
-        this.requestTimeOut = envProvider.readEnvVariable(ClientConfigurationEnvs.REQUEST_TIMEOUT.toString());
-        this.outputPath = envProvider.readEnvVariable(ClientConfigurationEnvs.OUTPUT_PATH.toString());
-        this.caName = envProvider.readEnvVariable(ClientConfigurationEnvs.CA_NAME.toString());
+    public EnvsForClient() {
+        this.urlToCertService = readEnvVariable(ClientConfigurationEnvs.REQUEST_URL.toString());
+        this.requestTimeOut = readEnvVariable(ClientConfigurationEnvs.REQUEST_TIMEOUT.toString());
+        this.outputPath = readEnvVariable(ClientConfigurationEnvs.OUTPUT_PATH.toString());
+        this.caName = readEnvVariable(ClientConfigurationEnvs.CA_NAME.toString());
     }
 
     public String getUrlToCertService() {

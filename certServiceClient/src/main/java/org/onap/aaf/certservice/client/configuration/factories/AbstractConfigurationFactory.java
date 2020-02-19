@@ -18,12 +18,10 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.client.common;
+package org.onap.aaf.certservice.client.configuration.factories;
 
-import org.onap.aaf.certservice.client.exceptions.ClientConfigurationException;
+import org.onap.aaf.certservice.client.configuration.model.ConfigurationModel;
 
-public class EnvProvider {
-    public String readEnvVariable(String envVariable) throws ClientConfigurationException {
-        return System.getProperty(envVariable);
-    }
+public interface AbstractConfigurationFactory<T extends ConfigurationModel> {
+    T create();
 }

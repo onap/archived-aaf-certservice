@@ -1,6 +1,5 @@
-/*
- * ============LICENSE_START=======================================================
- * PROJECT
+/*============LICENSE_START=======================================================
+ * aaf-certservice-client
  * ================================================================================
  * Copyright (C) 2020 Nokia. All rights reserved.
  * ================================================================================
@@ -17,12 +16,8 @@
  * limitations under the License.
  * ============LICENSE_END=========================================================
  */
+package org.onap.aaf.certservice.client.api;
 
-package org.onap.aaf.certservice.client.exceptions;
-
-
-public class CsrConfigurationException extends RuntimeException {
-    public CsrConfigurationException(String message) {
-        super(message);
-    }
+public interface Exitable {
+    int applicationExitCode();
 }

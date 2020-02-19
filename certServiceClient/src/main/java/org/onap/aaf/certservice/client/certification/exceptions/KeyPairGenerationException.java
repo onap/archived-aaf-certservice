@@ -1,5 +1,4 @@
-/*
- * ============LICENSE_START=======================================================
+/*============LICENSE_START=======================================================
  * aaf-certservice-client
  * ================================================================================
  * Copyright (C) 2020 Nokia. All rights reserved.
@@ -17,12 +16,23 @@
  * limitations under the License.
  * ============LICENSE_END=========================================================
  */
+package org.onap.aaf.certservice.client.certification.exceptions;
 
-package org.onap.aaf.certservice.client;
+import org.onap.aaf.certservice.client.api.Exitable;
 
-public class CertServiceClientApp {
-    public static void main(String[] args) {
-        CertServiceClient certServiceClient = new CertServiceClient();
-        certServiceClient.run();
+public class KeyPairGenerationException extends RuntimeException implements Exitable {
+    public static final int EXIT_CODE = 3;
+
+    public KeyPairGenerationException(Throwable e) {
+        super(e.getMessage(), e);
+    }
+
+    public static KeyPairGenerationException fromThrowable(Throwable e) {
+        return new KeyPairGenerationException(e);
+    }
+
+    @Override
+    public int applicationExitCode() {
+        return EXIT_CODE;
     }
 }

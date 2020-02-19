@@ -18,11 +18,20 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.client.exceptions;
+package org.onap.aaf.certservice.client.configuration.exceptions;
 
 
-public class ClientConfigurationException extends RuntimeException {
+import org.onap.aaf.certservice.client.api.Exitable;
+
+public class ClientConfigurationException extends RuntimeException implements Exitable {
+
+    private static final int EXIT_CODE = 1;
+
     public ClientConfigurationException(String message) {
         super(message);
+    }
+
+    public int applicationExitCode() {
+        return EXIT_CODE;
     }
 }
