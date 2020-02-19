@@ -18,33 +18,22 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.certification.configuration;
+package org.onap.aaf.certservice.certification.configuration.validation.constraints;
 
-import java.util.Collections;
-import java.util.List;
-import javax.annotation.PostConstruct;
-import org.onap.aaf.certservice.certification.configuration.model.Cmpv2Server;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Configuration;
+import javax.validation.Constraint;
+import javax.validation.Payload;
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
 
-@Configuration
-public class CmpServersConfig {
+import static java.lang.annotation.ElementType.ANNOTATION_TYPE;
+import static java.lang.annotation.ElementType.FIELD;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
-    private static final String CMP_SERVERS_CONFIG_FILENAME = "cmpServers.json";
-    private List<Cmpv2Server> cmpServers;
-    private CmpServersConfigLoader configLoader;
-
-    @Autowired
-    public CmpServersConfig(CmpServersConfigLoader configLoader) {
-        this.configLoader = configLoader;
-    }
-
-    @PostConstruct
-    private void loadConfiguration() {
-        cmpServers = Collections.unmodifiableList(configLoader.load(CMP_SERVERS_CONFIG_FILENAME));
-    }
-
-    public List<Cmpv2Server> getCmpServers() {
-        return cmpServers;
-    }
+@Target( { FIELD, ANNOTATION_TYPE })
+@Retention(RUNTIME)
+@Constraint(validatedBy = Cmpv2URLValidator.class)
+public @interface Cmpv2URL {
+    String message() default "Server URL is invalid.";
+    Class<?>[] groups() default {};
+    Class<? extends Payload>[] payload() default {};
 }

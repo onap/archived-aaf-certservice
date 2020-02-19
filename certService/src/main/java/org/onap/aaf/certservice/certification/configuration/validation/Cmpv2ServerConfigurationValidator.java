@@ -18,33 +18,31 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.certification.configuration;
+package org.onap.aaf.certservice.certification.configuration.validation;
 
-import java.util.Collections;
-import java.util.List;
-import javax.annotation.PostConstruct;
 import org.onap.aaf.certservice.certification.configuration.model.Cmpv2Server;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Service;
 
-@Configuration
-public class CmpServersConfig {
+import javax.validation.ConstraintViolation;
+import javax.validation.Validator;
+import java.security.InvalidParameterException;
+import java.util.Set;
 
-    private static final String CMP_SERVERS_CONFIG_FILENAME = "cmpServers.json";
-    private List<Cmpv2Server> cmpServers;
-    private CmpServersConfigLoader configLoader;
+@Service
+public class Cmpv2ServerConfigurationValidator {
+
+    private final Validator validator;
 
     @Autowired
-    public CmpServersConfig(CmpServersConfigLoader configLoader) {
-        this.configLoader = configLoader;
+    public Cmpv2ServerConfigurationValidator(Validator validator) {
+        this.validator = validator;
     }
 
-    @PostConstruct
-    private void loadConfiguration() {
-        cmpServers = Collections.unmodifiableList(configLoader.load(CMP_SERVERS_CONFIG_FILENAME));
-    }
-
-    public List<Cmpv2Server> getCmpServers() {
-        return cmpServers;
+    public void validate(Cmpv2Server serverDetails) {
+        Set<ConstraintViolation<Cmpv2Server>> violations = validator.validate(serverDetails);
+        if (!violations.isEmpty()) {
+            throw new InvalidParameterException(violations.toString());
+        }
     }
 }
