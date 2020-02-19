@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "22c54ffa_6262d95a",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-19T09:39:03Z",
+      "side": 1,
+      "message": "1. Sure, I\u0027ll change the name.\n2. I\u0027d actually argue that in this case it makes sense to keep the Optional\u0027s here, since it tells someone reading the code that null can be a valid value - without the Optional, its easy to assume that there NEEDS to be date values passed through, when the date variables are both entirely optional. what do you think?",
+      "parentUuid": "2ea74e91_535a6816",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "fbd0d86a_5674ecca",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/CSRMeta.java",
         "patchSetId": 4
@@ -30,6 +48,24 @@
       "writtenOn": "2020-02-19T08:37:05Z",
       "side": 1,
       "message": "We can skip any corrections in external package, because in the future we will remove this package ...",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "eadfe77b_84bbea94",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/CSRMeta.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-19T09:39:03Z",
+      "side": 1,
+      "message": "yeah, I presumed as much",
+      "parentUuid": "fbd0d86a_5674ecca",
       "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
