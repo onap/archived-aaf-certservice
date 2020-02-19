@@ -32,13 +32,18 @@ import java.util.List;
 
 @Configuration
 public class CmpServersConfig {
-    private static final String CMP_SERVERS_CONFIG_FILENAME = "cmpServers.json";
 
-    @Autowired
-    private CmpServersConfigLoader cmpServersConfigLoader;
-    @Value("${app.config.path}")
+    private static final String CMP_SERVERS_CONFIG_FILENAME = "cmpServers.json";
     private String configPath;
     private List<Cmpv2Server> cmpServers;
+    private final CmpServersConfigLoader cmpServersConfigLoader;
+
+    @Autowired
+    public CmpServersConfig(@Value("${app.config.path}") String configPath,
+                            CmpServersConfigLoader cmpServersConfigLoader) {
+        this.cmpServersConfigLoader = cmpServersConfigLoader;
+        this.configPath = configPath;
+    }
 
     @PostConstruct
     void loadConfiguration() {
