@@ -18,33 +18,37 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.certification.configuration;
+package org.onap.aaf.certservice.certification.configuration.validation.constraints.violations;
 
-import java.util.Collections;
-import java.util.List;
-import javax.annotation.PostConstruct;
-import org.onap.aaf.certservice.certification.configuration.model.Cmpv2Server;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Configuration;
+import org.junit.jupiter.api.Test;
 
-@Configuration
-public class CmpServersConfig {
+import static org.junit.jupiter.api.Assertions.*;
 
-    private static final String CMP_SERVERS_CONFIG_FILENAME = "cmpServers.json";
-    private List<Cmpv2Server> cmpServers;
-    private CmpServersConfigLoader configLoader;
+class RequestTypeViolationTest {
 
-    @Autowired
-    public CmpServersConfig(CmpServersConfigLoader configLoader) {
-        this.configLoader = configLoader;
+    private RequestTypeViolation violation = new RequestTypeViolation();
+
+    @Test
+    public void givenValidRequestTypeShouldReturnTrue() {
+        //given
+        String validURL = "http://127.0.0.1/ejbca/publicweb/cmp/cmp";
+
+        //when
+        boolean result = violation.validate(validURL);
+
+        //then
+        assertTrue(result);
     }
 
-    @PostConstruct
-    private void loadConfiguration() {
-        cmpServers = Collections.unmodifiableList(configLoader.load(CMP_SERVERS_CONFIG_FILENAME));
-    }
+    @Test
+    public void givenInvalidRequestTypeShouldReturnFalse() {
+        //given
+        String invalidURL = "htestps://127.0.0.1/ejbca/publicweb/cmp/cmp";
 
-    public List<Cmpv2Server> getCmpServers() {
-        return cmpServers;
+        //when
+        boolean result = violation.validate(invalidURL);
+
+        //then
+        assertFalse(result);
     }
 }
