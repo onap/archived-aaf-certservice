@@ -20,21 +20,31 @@
 
 package org.onap.aaf.certservice.certification.configuration;
 
+import java.io.File;
 import java.util.Collections;
 import java.util.List;
 import javax.annotation.PostConstruct;
 import org.onap.aaf.certservice.certification.configuration.model.Cmpv2Server;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class CmpServersConfig {
+    private static final Logger LOGGER = LoggerFactory.getLogger(CmpServersConfig.class);
 
     private static final String CMP_SERVERS_CONFIG_FILENAME = "cmpServers.json";
+
+    @Value("${app.config.path}")
+    private String configPath;
     private List<Cmpv2Server> cmpServers;
 
     @PostConstruct
     private void loadConfiguration() {
-        cmpServers = Collections.unmodifiableList(new CmpServersConfigLoader().load(CMP_SERVERS_CONFIG_FILENAME));
+        String configFilePath = configPath + File.separator + CMP_SERVERS_CONFIG_FILENAME;
+        this.cmpServers = Collections.unmodifiableList(new CmpServersConfigLoader().load(configFilePath));
+        LOGGER.info(String.format("CMP Servers configuration successfully loaded from file '%s'", configFilePath));
     }
 
     public List<Cmpv2Server> getCmpServers() {
