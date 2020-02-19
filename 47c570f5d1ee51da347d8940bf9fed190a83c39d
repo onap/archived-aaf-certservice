@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "751f804f_9ea17b44",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/validation/Cmpv2ServerValidator.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T16:45:50Z",
+      "side": 1,
+      "message": "pls rename class to Cmpv2ServerConfigurationValidator",
+      "revId": "47c570f5d1ee51da347d8940bf9fed190a83c39d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "b5fce571_f50fc08c",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/validation/Cmpv2ServerValidator.java",
         "patchSetId": 3
@@ -101,6 +118,24 @@
       "writtenOn": "2020-02-19T14:54:16Z",
       "side": 1,
       "message": "I would get rid of Spring here and convert it to plain Java object\nand create violations List as static final",
+      "revId": "47c570f5d1ee51da347d8940bf9fed190a83c39d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "65b96db9_ed2f4bb2",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/validation/url/URLValidator.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T16:45:50Z",
+      "side": 1,
+      "message": "violations should be final, not static",
+      "parentUuid": "b13fa6a8_e21c784e",
       "revId": "47c570f5d1ee51da347d8940bf9fed190a83c39d",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
