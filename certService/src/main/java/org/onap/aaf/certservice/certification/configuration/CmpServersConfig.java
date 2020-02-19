@@ -24,6 +24,7 @@ import java.util.Collections;
 import java.util.List;
 import javax.annotation.PostConstruct;
 import org.onap.aaf.certservice.certification.configuration.model.Cmpv2Server;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
@@ -31,10 +32,16 @@ public class CmpServersConfig {
 
     private static final String CMP_SERVERS_CONFIG_FILENAME = "cmpServers.json";
     private List<Cmpv2Server> cmpServers;
+    private CmpServersConfigLoader configLoader;
+
+    @Autowired
+    public CmpServersConfig(CmpServersConfigLoader configLoader) {
+        this.configLoader = configLoader;
+    }
 
     @PostConstruct
     private void loadConfiguration() {
-        cmpServers = Collections.unmodifiableList(new CmpServersConfigLoader().load(CMP_SERVERS_CONFIG_FILENAME));
+        cmpServers = Collections.unmodifiableList(configLoader.load(CMP_SERVERS_CONFIG_FILENAME));
     }
 
     public List<Cmpv2Server> getCmpServers() {
