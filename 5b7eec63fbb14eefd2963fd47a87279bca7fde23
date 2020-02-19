@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "e7dd53ef_f8445f0d",
+        "filename": "certServiceClient/pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T10:13:47Z",
+      "side": 1,
+      "message": "duplicated dependency",
+      "revId": "5b7eec63fbb14eefd2963fd47a87279bca7fde23",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "1c63c91a_2cb53c30",
         "filename": "certServiceClient/src/main/java/resources/logback.xml",
         "patchSetId": 2
