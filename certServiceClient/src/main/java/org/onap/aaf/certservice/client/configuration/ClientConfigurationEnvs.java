@@ -18,8 +18,11 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.client.model;
+package org.onap.aaf.certservice.client.configuration;
 
-public interface AbstractConfigurationFactory<T extends ConfigurationModel> {
-    T create();
+public enum ClientConfigurationEnvs {
+    REQUEST_URL,
+    REQUEST_TIMEOUT,
+    OUTPUT_PATH,
+    CA_NAME
 }
