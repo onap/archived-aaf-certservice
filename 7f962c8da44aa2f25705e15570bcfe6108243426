@@ -266,6 +266,24 @@
     },
     {
       "key": {
+        "uuid": "d722970a_36f01501",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T17:28:20Z",
+      "side": 1,
+      "message": "if we will construct classes by composition (passing dependencies by constructor parameters) we will have few pros\n\n1. low coupling \n\nNow class CmpClientImpl is highly coupled with HttpClient. \n\nTo proper work of HttpClient we must pass CloseableHttpClient instance as method argument (postRequest method).\nNext in this method we automatically closing this resource. This could generate some errors.\n\nWhat will happen when some other developer will execute below sequence?\nclient \u003d createCloseableHttpClient()\nHttpClient.postRequest(pkiMessage, csrMeta.caUrl(), caName, client);\nand then execute\nHttpClient.postRequest(pkiMessage, csrMeta.caUrl(), caName, client);\n\n.... it will receive an error,because closableHttpClient was closed by postRequest method. \nFrom HttpClient.postRequest we should not have any impact on closableHttpClient created outside method.\n\n2. user of api will exactly know what kind of objects are required to proper work \n\nNow we are hiding that in class is direct request over http to remote resource\n\n3. testing is easier\nFor example if we will have:\n\nclass  CmpClientImpl {\n  private final HttpClient httpClient;\n\n  public CmpClientImpl(HttpClient httpClient){\n    this.httpClient \u003d httpClient;\n  }\n}\n\nthen in test we can use Mockito\n   httpClient \u003d mock(HttpClient.class);\n   when(httpClient.postRequest(...).then(...)\n   new CmpClientImpl(httpClient).createCertificate(...)\n\nafter such modification  method\n  public CloseableHttpClient createCloseableHttpClient() {\n    return HttpClients.createDefault();\n}\n\ncould be moved to HttpClient class.",
+      "parentUuid": "cc70dbf4_5e6bb639",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "d5ad53e4_94df5cad",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
         "patchSetId": 4
@@ -295,6 +313,24 @@
       "side": 1,
       "message": "the original cmpv2Client code that you were putting up didn\u0027t return the certificate and didn\u0027t have code for handling the response from the server in order to extract the certificate either - There\u0027s a fairly significant amount of code involved with parsing the response and would cause this already large review to be even bigger, which is why I\u0027m planning on pushing that code up in a separate review. I think for now it has to return a null.",
       "parentUuid": "d5ad53e4_94df5cad",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b914f023_08bf6925",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T17:28:20Z",
+      "side": 1,
+      "message": "ok",
+      "parentUuid": "74e87a96_b228b5e2",
       "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
