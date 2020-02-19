@@ -1,6 +1,5 @@
-/*
- * ============LICENSE_START=======================================================
- * PROJECT
+/*============LICENSE_START=======================================================
+ * aaf-certservice-client
  * ================================================================================
  * Copyright (C) 2020 Nokia. All rights reserved.
  * ================================================================================
@@ -17,8 +16,20 @@
  * limitations under the License.
  * ============LICENSE_END=========================================================
  */
+package org.onap.aaf.certservice.client;
 
-package org.onap.aaf.certservice.client.model;
+import org.onap.aaf.certservice.client.api.ExitableException;
 
-public interface ConfigurationModel {
+class DummyExitableException extends ExitableException {
+    private static final int EXIT_CODE = 888;
+
+    DummyExitableException() {
+        super("This is Test Exitable Exception");
+    }
+
+    @Override
+    public int applicationExitCode() {
+        return EXIT_CODE;
+    }
+
 }
