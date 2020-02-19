@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "f20aafe3_04507d37",
+        "filename": "certServiceClient/pom.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T06:58:35Z",
+      "side": 1,
+      "message": "pls remove this dependency.\nIt has CPAL licence, not Apache or Mit.\nAdditionally it is a legacy library (2018).",
+      "revId": "0017d555cb73c6680abc1ef4ec710247ef6e41be",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4151c83d_b19f4e6f",
         "filename": "certServiceClient/pom.xml",
         "patchSetId": 4
@@ -48,6 +65,91 @@
     },
     {
       "key": {
+        "uuid": "0556748c_e89197c3",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/common/ClientConfigurationConstants.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T06:58:35Z",
+      "side": 1,
+      "message": "Why enum was not used?",
+      "revId": "0017d555cb73c6680abc1ef4ec710247ef6e41be",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a25c6e65_1c9070dd",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/common/CsrConfigurationConstants.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T06:58:35Z",
+      "side": 1,
+      "message": "Why enum was not used?",
+      "revId": "0017d555cb73c6680abc1ef4ec710247ef6e41be",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ea3389aa_44618716",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/model/ClientConfiguration.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T06:58:35Z",
+      "side": 1,
+      "message": "I don\u0027t think that storing url to endpoint is a good practice.\nWhen endpoint will change then you will need to modify interface.",
+      "revId": "0017d555cb73c6680abc1ef4ec710247ef6e41be",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6e13d341_6aae6db7",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/model/ClientConfiguration.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T06:58:35Z",
+      "side": 1,
+      "message": "Why did you put this logic in interface?\nI know that we are using java 11, but what will happen when some additional env will be required? -\u003e\nThen you will need to modify interface.",
+      "revId": "0017d555cb73c6680abc1ef4ec710247ef6e41be",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2e5b2d4c_33b8240d",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/model/CsrConfiguration.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T06:58:35Z",
+      "side": 1,
+      "message": "The same comment as in provious interface.\nPls move this static method to interface implementation.",
+      "revId": "0017d555cb73c6680abc1ef4ec710247ef6e41be",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "01956a42_d4b612e0",
         "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/model/ClientConfigurationTest.java",
         "patchSetId": 4
@@ -65,6 +167,74 @@
         "endLine": 40,
         "endChar": 90
       },
+      "revId": "0017d555cb73c6680abc1ef4ec710247ef6e41be",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "467cc0de_7320bb4e",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/model/ClientConfigurationTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T06:58:35Z",
+      "side": 1,
+      "message": "could you please follow convention in project?\nName of testcase should match to \"should....When....\"",
+      "revId": "0017d555cb73c6680abc1ef4ec710247ef6e41be",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "de8d875f_7ddbc228",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/model/ClientConfigurationTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T06:58:35Z",
+      "side": 1,
+      "message": "duplicate. Pls extract to const",
+      "revId": "0017d555cb73c6680abc1ef4ec710247ef6e41be",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "394ad91a_f018126e",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/model/ClientConfigurationTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T06:58:35Z",
+      "side": 1,
+      "message": "duplicate",
+      "revId": "0017d555cb73c6680abc1ef4ec710247ef6e41be",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e8bb8f6b_1fec5fc4",
+        "filename": "pom.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 247,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-19T06:58:35Z",
+      "side": 1,
+      "message": "What is this? \nNow we are using log4j, logback and now this.",
       "revId": "0017d555cb73c6680abc1ef4ec710247ef6e41be",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
