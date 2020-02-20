@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "66007b3d_7c5e71eb",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/KeyPairFactory.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-20T13:14:46Z",
+      "side": 1,
+      "message": "pass e as an argument not e.getMessage(), otherwise you will lose stacktrace",
+      "revId": "8cb06ac02c04d27af0e6228b9e8f6adf9ec530fa",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e26bd19b_eb95736f",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/KeyPairFactoryTest.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-20T13:14:46Z",
+      "side": 1,
+      "message": "and were is assertion?",
+      "revId": "8cb06ac02c04d27af0e6228b9e8f6adf9ec530fa",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
