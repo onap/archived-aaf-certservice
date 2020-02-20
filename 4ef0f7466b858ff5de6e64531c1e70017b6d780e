@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4ba3043d_9a0660c3",
+        "filename": "certService/pom.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-20T12:54:34Z",
+      "side": 1,
+      "message": "pls extract versions to master pom.xml as it is done for other dependencies",
+      "revId": "4ef0f7466b858ff5de6e64531c1e70017b6d780e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8f2f9ac5_d32a9919",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-20T12:54:34Z",
+      "side": 1,
+      "message": "could you pls remove CloseableHttpClient from interface?\n\n1.Inject HttpClient by constructor\nimport org.onap.aaf.certservice.cmpv2client.impl.HttpClient;\n\npublic class CmpClientImpl implements CmpClient {\n\n  ....\n\n  private final HttpClient httpClient;\n\n  public CmpClientImpl(HttpClient httpClient) {\n    this.httpClient \u003d httpClient;\n  }\n\n...\n\n@Override\n  public X509Certificate createCertificate(\n      String caName,\n      String profile,\n      CSRMeta csrMeta,\n      X509Certificate cert,\n      Date notBefore,\n      Date notAfter)\n      throws CmpClientException {\n   ...\n    final byte[] respBytes \u003d\n        httpClient.postRequest(pkiMessage, csrMeta.caUrl(), caName);\n    final PKIMessage respPkiMessage \u003d PKIMessage.getInstance(respBytes);\n    // todo: add response validation and return Certificate\n    return null;\n  }\n\n2. Inject ClosableHttpClient by constructor\npublic class HttpClient {\n\n ...\n  private CloseableHttpClient closeableHttpClient;\n\n  public HttpClient(CloseableHttpClient closeableHttpClient){\n\n    this.closeableHttpClient \u003d closeableHttpClient;\n  }\n\n...\npublic byte[] postRequest(\n      final PKIMessage pkiMessage,\n      final String urlString,\n      final String caName)\n      throws CmpClientException {\n    try (final ByteArrayOutputStream byteArrOutputStream \u003d new ByteArrayOutputStream()) {\n     ...\n\n      try (CloseableHttpResponse response \u003d this.closeableHttpClient.execute(postRequest)) {\n        response.getEntity().writeTo(byteArrOutputStream);\n      }\n      return byteArrOutputStream.toByteArray();\n    } catch (IOException ioe) {\n     ...\n    }\n  }\n}\n3. Fix tests\nRemove spy marker.\n\n     @Mock CloseableHttpClient closeableHttpClient;\n...\n    CmpClientImpl cmpClient \u003d new CmpClientImpl(new HttpClient(closeableHttpClient)\n...\n    // when\n    Certificate certificate \u003d\n        cmpClient.createCertificate(\"data\", \"RA\", csrMeta, cert, notBefore, notAfter);",
+      "revId": "4ef0f7466b858ff5de6e64531c1e70017b6d780e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
