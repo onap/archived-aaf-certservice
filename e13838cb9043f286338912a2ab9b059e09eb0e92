@@ -19,6 +19,23 @@
     },
     {
       "key": {
+        "uuid": "21df6c76_079045c8",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/common/EnvValidationUtils.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-20T10:31:11Z",
+      "side": 1,
+      "message": "mark class as final.\nconstructor should be private",
+      "revId": "e13838cb9043f286338912a2ab9b059e09eb0e92",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "297291e8_a930467d",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/common/EnvValidationUtils.java",
         "patchSetId": 8
@@ -39,6 +56,57 @@
       "revId": "e13838cb9043f286338912a2ab9b059e09eb0e92",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cbaee802_cfc745db",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/model/ClientConfigurationFactory.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-20T10:31:11Z",
+      "side": 1,
+      "message": "final",
+      "revId": "e13838cb9043f286338912a2ab9b059e09eb0e92",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7087ea91_5ff878d0",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/model/CsrConfiguration.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-20T10:31:11Z",
+      "side": 1,
+      "message": "by default String variables are null",
+      "revId": "e13838cb9043f286338912a2ab9b059e09eb0e92",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "34be6b9f_69099cc2",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/model/CsrConfigurationFactory.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-20T10:31:11Z",
+      "side": 1,
+      "message": "final",
+      "revId": "e13838cb9043f286338912a2ab9b059e09eb0e92",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     },
     {
       "key": {
