@@ -143,6 +143,24 @@
     },
     {
       "key": {
+        "uuid": "7a7ec229_d88a8b3d",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-20T12:00:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "10616cdc_fc4406f2",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fbd0d86a_5674ecca",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/CSRMeta.java",
         "patchSetId": 4
@@ -284,6 +302,24 @@
     },
     {
       "key": {
+        "uuid": "f4b33f17_e16d19e8",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-20T12:00:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d722970a_36f01501",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d5ad53e4_94df5cad",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
         "patchSetId": 4
@@ -337,6 +373,24 @@
     },
     {
       "key": {
+        "uuid": "0c512b90_1a0a74dd",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-20T12:00:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b914f023_08bf6925",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a3a37be_980766d4",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
         "patchSetId": 4
@@ -369,6 +423,24 @@
       "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e34ae8b6_afd49956",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-20T12:00:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "94c368f3_fd845669",
+      "revId": "7f962c8da44aa2f25705e15570bcfe6108243426",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
