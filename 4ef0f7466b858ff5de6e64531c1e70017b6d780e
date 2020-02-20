@@ -33,6 +33,23 @@
       "revId": "4ef0f7466b858ff5de6e64531c1e70017b6d780e",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f1917163_2bf0efd5",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-20T13:58:27Z",
+      "side": 1,
+      "message": "pls remove httpClient from interface",
+      "revId": "4ef0f7466b858ff5de6e64531c1e70017b6d780e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
