@@ -16,6 +16,24 @@
       "revId": "3f4043757b92c6c39c934cc74fa8096de76575c6",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f59db09c_8693dfbb",
+        "filename": "certServiceClient/src/main/resources/log4j2.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-20T06:47:54Z",
+      "side": 1,
+      "message": "additionally please create README.md and write information where logs are stored. See README.md in certService project. Similar file must be in certServiceClient.",
+      "parentUuid": "677f185e_9dbcf4cb",
+      "revId": "3f4043757b92c6c39c934cc74fa8096de76575c6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
