@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9abde7b3_66b00841",
+        "filename": "certServiceClient/Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-02-20T09:39:25Z",
+      "side": 1,
+      "message": "I think that this jar doesn\u0027t contain libs jars, so they also need to be copied.",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 103
+      },
+      "revId": "acae402ff4f744a11341b2b7f1c17f83dca92465",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
