@@ -230,6 +230,24 @@
     },
     {
       "key": {
+        "uuid": "9efd7d25_2a1388f1",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-20T12:54:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bbf6303a_13f97b21",
+      "revId": "1808c47ed6790945562efe26e5253b01fccbf1d3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d8dda6a0_8e6081cb",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
         "patchSetId": 3
