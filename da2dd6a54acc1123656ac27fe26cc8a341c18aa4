@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e05ad49d_e27a74ef",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/KeyPairFactory.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-02-20T12:47:02Z",
+      "side": 1,
+      "message": "typo",
+      "range": {
+        "startLine": 36,
+        "startChar": 19,
+        "endLine": 36,
+        "endChar": 24
+      },
+      "revId": "da2dd6a54acc1123656ac27fe26cc8a341c18aa4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
