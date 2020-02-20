@@ -34,6 +34,24 @@
       "revId": "5e6037f697dbd31a62f73bf9ea1390af670fc981",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cfb558b7_89407a1a",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/KeyPairFactory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-20T12:17:08Z",
+      "side": 1,
+      "message": "java is easier to understand. Pls use pure java.",
+      "parentUuid": "67ff3ef9_ee133239",
+      "revId": "5e6037f697dbd31a62f73bf9ea1390af670fc981",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
