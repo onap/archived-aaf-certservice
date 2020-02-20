@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "fd76c193_230e50d0",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/validation/url/URLValidator.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-02-20T11:45:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d1230aee_896fa4f4",
+      "revId": "5f6feb94bcc10bd2cb738c00201cb7b5abb4d707",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "80f06d32_89b2e930",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/validation/url/violations/PortNumberViolation.java",
         "patchSetId": 4
@@ -30,6 +48,24 @@
       "writtenOn": "2020-02-19T16:40:15Z",
       "side": 1,
       "message": "1.\n\n1. and 65535 are Magic Numbers. Pls extract to descriptive constants and reuse in code.\n\n2. I don\u0027t see unit test for this code. Pls create unit tests. Positive and negative scenario.",
+      "revId": "5f6feb94bcc10bd2cb738c00201cb7b5abb4d707",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7eb4e18b_97f90716",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/validation/url/violations/PortNumberViolation.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-02-20T11:45:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "80f06d32_89b2e930",
       "revId": "5f6feb94bcc10bd2cb738c00201cb7b5abb4d707",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "1c335508_44a5d274",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/validation/url/violations/PortNumberViolation.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-02-20T11:45:02Z",
+      "side": 1,
+      "message": "Error is logged when validating. It would be duplication.",
+      "parentUuid": "2fca4e43_7aeaa802",
+      "revId": "5f6feb94bcc10bd2cb738c00201cb7b5abb4d707",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "40dd4214_8f9c3680",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/validation/url/violations/RequestTypeViolation.java",
         "patchSetId": 4
@@ -64,6 +118,24 @@
       "writtenOn": "2020-02-19T16:40:15Z",
       "side": 1,
       "message": "pls create unit test for this class",
+      "revId": "5f6feb94bcc10bd2cb738c00201cb7b5abb4d707",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "00624091_097e0477",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/validation/url/violations/RequestTypeViolation.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-02-20T11:45:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "40dd4214_8f9c3680",
       "revId": "5f6feb94bcc10bd2cb738c00201cb7b5abb4d707",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "848feb6c_dad29b07",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/validation/url/violations/RequestTypeViolation.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-02-20T11:45:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "456754a2_f3deb2a1",
+      "revId": "5f6feb94bcc10bd2cb738c00201cb7b5abb4d707",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8b4120a2_83b7910d",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/validation/url/violations/RequestTypeViolation.java",
         "patchSetId": 4
@@ -104,6 +194,24 @@
     },
     {
       "key": {
+        "uuid": "99f2e024_cc2abc2d",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/validation/url/violations/RequestTypeViolation.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-02-20T11:45:02Z",
+      "side": 1,
+      "message": "Error is logged when validating. It would be duplication.",
+      "parentUuid": "8b4120a2_83b7910d",
+      "revId": "5f6feb94bcc10bd2cb738c00201cb7b5abb4d707",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f37b2e5e_1c51c8a3",
         "filename": "certService/src/test/java/org/onap/aaf/certservice/certification/configuration/validation/Cmpv2ServerValidatorTest.java",
         "patchSetId": 4
@@ -115,6 +223,24 @@
       "writtenOn": "2020-02-19T16:40:15Z",
       "side": 1,
       "message": "extract authentication to givenAuthenticationData()\nextract server to givenCmpv2ServerData()\n\nuse real data not asdsasd, etc. see json file with data",
+      "revId": "5f6feb94bcc10bd2cb738c00201cb7b5abb4d707",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "19ee9dc4_6a2fd9ec",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/certification/configuration/validation/Cmpv2ServerValidatorTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-02-20T11:45:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f37b2e5e_1c51c8a3",
       "revId": "5f6feb94bcc10bd2cb738c00201cb7b5abb4d707",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
