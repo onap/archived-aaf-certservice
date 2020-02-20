@@ -27,6 +27,9 @@ import org.onap.aaf.certservice.client.configuration.factory.ClientConfiguration
 import org.onap.aaf.certservice.client.configuration.factory.CsrConfigurationFactory;
 import org.onap.aaf.certservice.client.configuration.model.ClientConfiguration;
 import org.onap.aaf.certservice.client.configuration.model.CsrConfiguration;
+import org.onap.aaf.certservice.client.httpclient.CloseableHttpClientProvider;
+import org.onap.aaf.certservice.client.httpclient.HttpClient;
+import org.onap.aaf.certservice.client.httpclient.model.CertServiceResponse;
 
 import java.security.KeyPair;
 import java.util.Optional;
@@ -42,13 +45,29 @@ public class CertServiceClient {
     }
 
     public void run() {
-        ClientConfiguration clientConfiguration;
-        CsrConfiguration csrConfiguration;
-        clientConfiguration = new ClientConfigurationFactory(new EnvsForClient()).create();
-        csrConfiguration = new CsrConfigurationFactory(new EnvsForCsr()).create();
+        try {
 
-        KeyPairFactory keyPairFactory = new KeyPairFactory(RSA_ENCRYPTION_ALGORITHM, KEY_SIZE);
-        Optional<KeyPair> keyPair = generateKeyPair(keyPairFactory);
+            ClientConfiguration clientConfiguration;
+            CsrConfiguration csrConfiguration;
+            clientConfiguration = new ClientConfigurationFactory(new EnvsForClient()).create();
+            csrConfiguration = new CsrConfigurationFactory(new EnvsForCsr()).create();
+
+            KeyPairFactory keyPairFactory = new KeyPairFactory(RSA_ENCRYPTION_ALGORITHM, KEY_SIZE);
+            Optional<KeyPair> keyPair = generateKeyPair(keyPairFactory);
+
+            //HttpClient
+            String stubCaName = "testCa";
+            String stubPk = "pk";
+            String stubCsr = "csr";
+            int stubTimeout = 30000;
+            String stubCertServiceAddress = "http://localhost:8080";
+            CloseableHttpClientProvider provider = new CloseableHttpClientProvider(stubTimeout);
+            HttpClient httpClient = new HttpClient(provider, stubCertServiceAddress);
+            CertServiceResponse certServiceData = httpClient.getCertServiceData(stubCaName, stubPk, stubCsr);
+
+        } catch (ExitableException ex) {
+            appExitHandler.exit(ex.applicationExitCode());
+        }
 
         appExitHandler.exit(0);
     }

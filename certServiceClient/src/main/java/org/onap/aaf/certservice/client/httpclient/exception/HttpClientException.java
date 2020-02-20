@@ -1,4 +1,5 @@
-/*============LICENSE_START=======================================================
+/*
+ * ============LICENSE_START=======================================================
  * aaf-certservice-client
  * ================================================================================
  * Copyright (C) 2020 Nokia. All rights reserved.
@@ -16,19 +17,21 @@
  * limitations under the License.
  * ============LICENSE_END=========================================================
  */
-package org.onap.aaf.certservice.client.api;
 
-public abstract class ExitableException extends RuntimeException {
-    public ExitableException(Throwable e) {
+package org.onap.aaf.certservice.client.httpclient.exception;
+
+import org.onap.aaf.certservice.client.api.ExitCode;
+import org.onap.aaf.certservice.client.api.ExitableException;
+
+public class HttpClientException extends ExitableException {
+    private final ExitCode EXIT_CODE = ExitCode.HTTP_CLIENT_EXCEPTION;
+
+    public HttpClientException(Throwable e) {
         super(e);
     }
 
-    public ExitableException(String message) {
-        super(message);
+    @Override
+    public int applicationExitCode() {
+        return EXIT_CODE.getValue();
     }
-
-    public ExitableException() {
-    }
-
-    public abstract int applicationExitCode();
 }
