@@ -16,6 +16,24 @@
       "revId": "5e6037f697dbd31a62f73bf9ea1390af670fc981",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "67ff3ef9_ee133239",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/KeyPairFactory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-02-20T11:46:47Z",
+      "side": 1,
+      "message": "I think it will be something like this:\n\npublic KeyPair rateWithoutVavr() {\n        try {\n            return createKeyPairGenerator().generateKeyPair();\n\n        } catch (NoSuchAlgorithmException e) {\n            throw new KeyPairGenerationException(e.getMessage());\n        }\n}",
+      "parentUuid": "e2d32ebc_8c0dc74f",
+      "revId": "5e6037f697dbd31a62f73bf9ea1390af670fc981",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
