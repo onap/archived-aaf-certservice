@@ -108,6 +108,24 @@
     },
     {
       "key": {
+        "uuid": "3d2000cc_428951f7",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-20T12:54:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ada1b882_3ce79ee2",
+      "revId": "2ef30f9e1b4bf96e77d5ad9380a9395418c74afb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8cd03745_0d79b46d",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
         "patchSetId": 1
@@ -179,6 +197,24 @@
     },
     {
       "key": {
+        "uuid": "ef23a279_05698af0",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-20T12:54:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "eb03a0db_60f16317",
+      "revId": "2ef30f9e1b4bf96e77d5ad9380a9395418c74afb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "347c40e5_67c3a0c9",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
         "patchSetId": 1
@@ -211,6 +247,24 @@
       "revId": "2ef30f9e1b4bf96e77d5ad9380a9395418c74afb",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1726e90a_d4736529",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-20T12:54:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f4a40590_0db386db",
+      "revId": "2ef30f9e1b4bf96e77d5ad9380a9395418c74afb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
