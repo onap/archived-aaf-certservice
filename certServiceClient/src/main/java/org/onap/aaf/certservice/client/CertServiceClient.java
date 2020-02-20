@@ -27,6 +27,9 @@ import org.onap.aaf.certservice.client.configuration.factory.ClientConfiguration
 import org.onap.aaf.certservice.client.configuration.factory.CsrConfigurationFactory;
 import org.onap.aaf.certservice.client.configuration.model.ClientConfiguration;
 import org.onap.aaf.certservice.client.configuration.model.CsrConfiguration;
+import org.onap.aaf.certservice.client.httpclient.CloseableHttpClientProvider;
+import org.onap.aaf.certservice.client.httpclient.HttpClient;
+import org.onap.aaf.certservice.client.httpclient.model.CertServiceResponse;
 
 import java.security.KeyPair;
 
@@ -47,6 +50,17 @@ public class CertServiceClient {
             ClientConfiguration clientConfiguration = new ClientConfigurationFactory(new EnvsForClient()).create();
             CsrConfiguration csrConfiguration = new CsrConfigurationFactory(new EnvsForCsr()).create();
             KeyPair keyPair = keyPairFactory.create();
+
+            //HttpClient
+            String stubCaName = "testCa";
+            String stubPk = "pk";
+            String stubCsr = "csr";
+            int stubTimeout = 30000;
+            String stubCertServiceAddress = "http://localhost:8080";
+            CloseableHttpClientProvider provider = new CloseableHttpClientProvider(stubTimeout);
+            HttpClient httpClient = new HttpClient(provider, stubCertServiceAddress);
+            CertServiceResponse certServiceData = httpClient.getCertServiceData(stubCaName, stubPk, stubCsr);
+
         } catch (ExitableException e) {
             appExitHandler.exit(e.applicationExitCode());
         }

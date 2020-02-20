@@ -27,5 +27,8 @@ public abstract class ExitableException extends Exception {
         super(message);
     }
 
+    public ExitableException() {
+    }
+
     public abstract int applicationExitCode();
 }
