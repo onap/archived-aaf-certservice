@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "f09249f6_2995fe58",
+        "filename": "certService/pom.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-20T14:30:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4ba3043d_9a0660c3",
+      "revId": "4ef0f7466b858ff5de6e64531c1e70017b6d780e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8f2f9ac5_d32a9919",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
         "patchSetId": 7
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "e881d80d_c5a2226c",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-20T14:30:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8f2f9ac5_d32a9919",
+      "revId": "4ef0f7466b858ff5de6e64531c1e70017b6d780e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f1917163_2bf0efd5",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
         "patchSetId": 7
@@ -50,6 +86,24 @@
       "revId": "4ef0f7466b858ff5de6e64531c1e70017b6d780e",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3032453e_6f6088a2",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-20T14:30:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f1917163_2bf0efd5",
+      "revId": "4ef0f7466b858ff5de6e64531c1e70017b6d780e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
