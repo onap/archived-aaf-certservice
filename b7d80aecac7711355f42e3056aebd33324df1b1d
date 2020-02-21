@@ -37,6 +37,23 @@
     },
     {
       "key": {
+        "uuid": "492f2271_7a46b759",
+        "filename": "certService/docker-compose.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-02-21T15:45:05Z",
+      "side": 1,
+      "message": "I think it\u0027s better to attach cmpServer.json from test resources, because this helm directory might be removed in future",
+      "revId": "b7d80aecac7711355f42e3056aebd33324df1b1d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "61671f8e_8a40941d",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfig.java",
         "patchSetId": 1
