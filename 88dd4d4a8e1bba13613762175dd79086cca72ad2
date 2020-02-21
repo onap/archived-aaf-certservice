@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ce6efd7e_30d4e5e1",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/KeyPairFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-21T08:20:00Z",
+      "side": 1,
+      "message": "it should be private final",
+      "revId": "88dd4d4a8e1bba13613762175dd79086cca72ad2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "aaf5f403_9e195747",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/KeyPairFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-21T08:20:00Z",
+      "side": 1,
+      "message": "this method should be tested",
+      "revId": "88dd4d4a8e1bba13613762175dd79086cca72ad2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "62d7e8ab_2de17390",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/KeyPairFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-21T08:20:00Z",
+      "side": 1,
+      "message": "it should be private",
+      "revId": "88dd4d4a8e1bba13613762175dd79086cca72ad2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "92268e05_b3e0d378",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/exceptions/KeyPairGenerationException.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-21T08:20:00Z",
+      "side": 1,
+      "message": "pls change to KeyPairGenerationException(String msg, Exception cause)",
+      "revId": "88dd4d4a8e1bba13613762175dd79086cca72ad2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "587bd8de_1f010768",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/exceptions/KeyPairGenerationException.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-21T08:20:00Z",
+      "side": 1,
+      "message": "not used",
+      "revId": "88dd4d4a8e1bba13613762175dd79086cca72ad2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "811ee3c2_a222265a",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/KeyPairFactoryTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-21T08:20:00Z",
+      "side": 1,
+      "message": "where is assertion?",
+      "revId": "88dd4d4a8e1bba13613762175dd79086cca72ad2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
