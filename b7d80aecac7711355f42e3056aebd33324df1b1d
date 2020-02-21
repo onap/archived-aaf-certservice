@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6469e1ba_e39904f5",
+        "filename": "certService/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-21T15:01:40Z",
+      "side": 1,
+      "message": "Why do we need vim?",
+      "revId": "b7d80aecac7711355f42e3056aebd33324df1b1d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "61671f8e_8a40941d",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfig.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-21T15:01:40Z",
+      "side": 1,
+      "message": "Pls move this log to load method. There are other logged informations.",
+      "revId": "b7d80aecac7711355f42e3056aebd33324df1b1d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
