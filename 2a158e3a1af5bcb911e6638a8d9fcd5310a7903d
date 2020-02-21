@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "c37d2131_b1bbf9f6",
+        "filename": "certServiceClient/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-02-21T07:44:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c1139ce7_8731968b",
+      "range": {
+        "startLine": 26,
+        "startChar": 10,
+        "endLine": 26,
+        "endChar": 23
+      },
+      "revId": "2a158e3a1af5bcb911e6638a8d9fcd5310a7903d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "8106efb8_13ae043c",
         "filename": "certServiceClient/README.md",
         "patchSetId": 5
@@ -59,6 +83,54 @@
       "writtenOn": "2020-02-20T17:10:15Z",
       "side": 1,
       "message": "good point. I forgot. This client container will start and stop. There is no reason to have debug, audit and error logs. My bad. Sorry for unnecessary work. Pls revert changes.",
+      "parentUuid": "8106efb8_13ae043c",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 42,
+        "endChar": 43
+      },
+      "revId": "2a158e3a1af5bcb911e6638a8d9fcd5310a7903d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f10cccec_96932055",
+        "filename": "certServiceClient/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-02-21T07:44:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "833c803c_9be0f2d9",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 42,
+        "endChar": 43
+      },
+      "revId": "2a158e3a1af5bcb911e6638a8d9fcd5310a7903d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fd106648_9adb732b",
+        "filename": "certServiceClient/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-02-21T07:44:50Z",
+      "side": 1,
+      "message": "Done",
       "parentUuid": "8106efb8_13ae043c",
       "range": {
         "startLine": 42,
