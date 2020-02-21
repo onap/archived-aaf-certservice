@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "064c0c3d_2cb10823",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-02-21T08:35:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a8dc27a_6fd82a06",
+      "revId": "eeac071ef8848be69f7c17e526e892166265d48d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "71ee0246_514fb193",
         "filename": "certServiceClient/src/main/resources/log4j2.xml",
         "patchSetId": 6
@@ -30,6 +48,24 @@
       "writtenOn": "2020-02-21T08:15:31Z",
       "side": 1,
       "message": "it should be status\u003d\"INFO\"",
+      "revId": "eeac071ef8848be69f7c17e526e892166265d48d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "72b3717e_a3913b52",
+        "filename": "certServiceClient/src/main/resources/log4j2.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-02-21T08:35:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "71ee0246_514fb193",
       "revId": "eeac071ef8848be69f7c17e526e892166265d48d",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
