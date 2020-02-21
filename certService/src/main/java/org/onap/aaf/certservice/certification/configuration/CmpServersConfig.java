@@ -21,29 +21,48 @@
 package org.onap.aaf.certservice.certification.configuration;
 
 import org.onap.aaf.certservice.certification.configuration.model.Cmpv2Server;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.cloud.context.scope.refresh.RefreshScopeRefreshedEvent;
 import org.springframework.context.annotation.Configuration;
 
 import javax.annotation.PostConstruct;
 import java.io.File;
 import java.util.Collections;
 import java.util.List;
+import org.springframework.context.event.EventListener;
 
+@RefreshScope
 @Configuration
 public class CmpServersConfig {
     private static final String CMP_SERVERS_CONFIG_FILENAME = "cmpServers.json";
 
-    @Autowired
-    private CmpServersConfigLoader cmpServersConfigLoader;
+    private static final Logger LOGGER = LoggerFactory.getLogger(CmpServersConfig.class);
+
     @Value("${app.config.path}")
     private String configPath;
+
+    private CmpServersConfigLoader cmpServersConfigLoader;
     private List<Cmpv2Server> cmpServers;
+
+    @Autowired
+    public CmpServersConfig(CmpServersConfigLoader cmpServersConfigLoader) {
+        this.cmpServersConfigLoader = cmpServersConfigLoader;
+    }
 
     @PostConstruct
     void loadConfiguration() {
         String configFilePath = configPath + File.separator + CMP_SERVERS_CONFIG_FILENAME;
+        LOGGER.info("Loading configuration from file: {}", configFilePath);
         this.cmpServers = Collections.unmodifiableList(cmpServersConfigLoader.load(configFilePath));
+    }
+
+    @EventListener
+    public void onRefreshScope(final RefreshScopeRefreshedEvent event) {
+        loadConfiguration();
     }
 
     public List<Cmpv2Server> getCmpServers() {
