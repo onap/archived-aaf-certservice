@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "42823622_d1a00188",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfigLoader.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-21T12:28:32Z",
+      "side": 1,
+      "message": "Validation of CMPv2 servers configuration failed",
+      "revId": "b0e0c05dfaad3dd2aadfebb7357ea037bf59b251",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5e6369ff_bda8f549",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/model/Cmpv2Server.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-21T12:28:32Z",
+      "side": 1,
+      "message": "and where is a validation for caName value? caName -\u003e (CLIENT|RA)",
+      "revId": "b0e0c05dfaad3dd2aadfebb7357ea037bf59b251",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
