@@ -16,6 +16,24 @@
       "revId": "64f2892852047996dee7a1debd38004e888b55f9",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fc16244e_1b01f402",
+        "filename": "certServiceClient/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-02-21T06:54:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5c062888_4259e3b8",
+      "revId": "64f2892852047996dee7a1debd38004e888b55f9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
