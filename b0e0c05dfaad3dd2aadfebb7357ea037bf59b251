@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "4c18375c_0924f5cc",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfigLoader.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-02-24T09:31:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "42823622_d1a00188",
+      "revId": "b0e0c05dfaad3dd2aadfebb7357ea037bf59b251",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5e6369ff_bda8f549",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/model/Cmpv2Server.java",
         "patchSetId": 8
@@ -33,6 +51,24 @@
       "revId": "b0e0c05dfaad3dd2aadfebb7357ea037bf59b251",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c2581a76_840e26a0",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/model/Cmpv2Server.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-02-24T09:31:44Z",
+      "side": 1,
+      "message": "It has enum type so if value is invalid then it won\u0027t even deserialize from JSON.",
+      "parentUuid": "5e6369ff_bda8f549",
+      "revId": "b0e0c05dfaad3dd2aadfebb7357ea037bf59b251",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
