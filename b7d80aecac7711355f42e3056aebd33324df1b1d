@@ -54,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "6a294e6e_d8dd4551",
+        "filename": "certService/docker-compose.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 3663
+      },
+      "writtenOn": "2020-02-24T09:28:53Z",
+      "side": 1,
+      "message": "agreed with @Bogumil that we will change this line when config is removed from helm",
+      "parentUuid": "492f2271_7a46b759",
+      "revId": "b7d80aecac7711355f42e3056aebd33324df1b1d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "61671f8e_8a40941d",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfig.java",
         "patchSetId": 1
@@ -65,6 +83,24 @@
       "writtenOn": "2020-02-21T15:01:40Z",
       "side": 1,
       "message": "Pls move this log to load method. There are other logged informations.",
+      "revId": "b7d80aecac7711355f42e3056aebd33324df1b1d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d844fcd8_bcca7faa",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfig.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 3663
+      },
+      "writtenOn": "2020-02-24T09:28:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "61671f8e_8a40941d",
       "revId": "b7d80aecac7711355f42e3056aebd33324df1b1d",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
