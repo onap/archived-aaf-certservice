@@ -69,6 +69,24 @@
       "revId": "7244c908edd4aa392e65d820c90845323918b47b",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ab269834_7ffaabf8",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfig.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-24T14:33:48Z",
+      "side": 1,
+      "message": "In current way file name is Java hardcoded, while path is configurable (outside Java, e.g. by overwriting application.properties using e.g. K8s/docker mechanisms). I don\u0027t insist :) Wanted to understand.",
+      "parentUuid": "55516522_c63b2e9a",
+      "revId": "7244c908edd4aa392e65d820c90845323918b47b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
