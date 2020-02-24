@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "40d0ce24_2f68fc23",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfig.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-24T10:05:25Z",
+      "side": 1,
+      "message": "Why use variable if used just once?",
+      "revId": "7244c908edd4aa392e65d820c90845323918b47b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c9d9854b_a6fae304",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfig.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-24T10:05:25Z",
+      "side": 1,
+      "message": "Why configPath is not full - why we need to append it with name?",
+      "revId": "7244c908edd4aa392e65d820c90845323918b47b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
