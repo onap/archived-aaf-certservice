@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "cc7bb83e_89c675ca",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-02-25T11:09:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4d9db419_3b02b1c7",
+      "revId": "f47a6bde0fa24f45c13f0faf20e390d7316d2510",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3911c370_c2cbd889",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
         "patchSetId": 1
