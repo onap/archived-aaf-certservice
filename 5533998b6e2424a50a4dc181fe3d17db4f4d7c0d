@@ -1,0 +1,176 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f29f5cd4_2315bfaf",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/CertServiceClientHttpClient.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-25T15:32:14Z",
+      "side": 1,
+      "message": "This name is a bit messy. Rename it to just HttpClient.",
+      "range": {
+        "startLine": 37,
+        "startChar": 13,
+        "endLine": 37,
+        "endChar": 40
+      },
+      "revId": "5533998b6e2424a50a4dc181fe3d17db4f4d7c0d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b0c45ff9_03747dfb",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/CertServiceClientHttpClient.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-25T15:32:14Z",
+      "side": 1,
+      "message": "Make it static and move to static fields above.",
+      "revId": "5533998b6e2424a50a4dc181fe3d17db4f4d7c0d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b5921a00_759d9631",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/CertServiceClientHttpClient.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-25T15:32:14Z",
+      "side": 1,
+      "message": "This is material for refactor. This method does far to much than should.\n1. Start it with fact that CertServiceHttpClientProvider should not contain address. Since this is \"...HttpClientProvider\".\n2. Pass to this method already created elsewhere HttpGet object.\n3. Consider name of high level method and possible new private methods. -\u003e think of Uncle Bob\n4. Create custom exception of course when merge of my MR will happened.",
+      "range": {
+        "startLine": 51,
+        "startChar": 2,
+        "endLine": 52,
+        "endChar": 43
+      },
+      "revId": "5533998b6e2424a50a4dc181fe3d17db4f4d7c0d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "13531e81_c2bfcd32",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/CertServiceHttpClientProvider.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-25T15:32:14Z",
+      "side": 1,
+      "message": "to be removed from here",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 31,
+        "endChar": 42
+      },
+      "revId": "5533998b6e2424a50a4dc181fe3d17db4f4d7c0d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e06ff52c_4a6db0e1",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/CertServiceHttpClientProvider.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-25T15:32:14Z",
+      "side": 1,
+      "message": "To be removed from here.",
+      "range": {
+        "startLine": 47,
+        "startChar": 0,
+        "endLine": 49,
+        "endChar": 3
+      },
+      "revId": "5533998b6e2424a50a4dc181fe3d17db4f4d7c0d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "06273c05_d30f7748",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/exceptions/CertServiceResponseException.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-25T15:32:14Z",
+      "side": 1,
+      "message": "rename it to httpResponseCode",
+      "range": {
+        "startLine": 26,
+        "startChar": 20,
+        "endLine": 26,
+        "endChar": 32
+      },
+      "revId": "5533998b6e2424a50a4dc181fe3d17db4f4d7c0d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dd1f00a1_5627963a",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/TestData.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-25T15:32:14Z",
+      "side": 1,
+      "message": "This file to be removed. Read necessary files in code directly. Add throws description in test method signature.",
+      "revId": "5533998b6e2424a50a4dc181fe3d17db4f4d7c0d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "993cc96b_c7ac3480",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/TestData.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-25T15:32:14Z",
+      "side": 1,
+      "message": "Here and elsewhere define project name.",
+      "range": {
+        "startLine": 3,
+        "startChar": 3,
+        "endLine": 3,
+        "endChar": 10
+      },
+      "revId": "5533998b6e2424a50a4dc181fe3d17db4f4d7c0d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
