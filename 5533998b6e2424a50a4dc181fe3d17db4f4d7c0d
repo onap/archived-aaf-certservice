@@ -88,6 +88,29 @@
     },
     {
       "key": {
+        "uuid": "0dce5b03_6c11b01e",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/CertServiceHttpClientProvider.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-02-25T16:09:51Z",
+      "side": 1,
+      "message": "As far as I know, time is provided in milliseconds as default.",
+      "range": {
+        "startLine": 34,
+        "startChar": 70,
+        "endLine": 34,
+        "endChar": 85
+      },
+      "revId": "5533998b6e2424a50a4dc181fe3d17db4f4d7c0d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "e06ff52c_4a6db0e1",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/CertServiceHttpClientProvider.java",
         "patchSetId": 9
