@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "cfcc7c6e_208136cf",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/CertServiceClientHttpClient.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-02-25T08:26:07Z",
+      "side": 1,
+      "message": "Consider accepting response argument as string (method is used only in line 66, and response is already read in line 61). Also HttpEntities may be unrepeatable meaning they could be read only once (not sure about this use though).",
+      "range": {
+        "startLine": 95,
+        "startChar": 69,
+        "endLine": 97,
+        "endChar": 66
+      },
+      "revId": "c03472f91aed1d6b2bc20feb5c1f6a68fb8b7c86",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "f402498d_264feadb",
         "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/httpclient/CertServiceClientHttpClientTest.java",
         "patchSetId": 7
@@ -30,6 +53,144 @@
       "writtenOn": "2020-02-25T08:13:34Z",
       "side": 1,
       "message": "as above",
+      "revId": "c03472f91aed1d6b2bc20feb5c1f6a68fb8b7c86",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c12d9123_7c4aca78",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/httpclient/CertServiceClientHttpClientTest.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-02-25T08:26:07Z",
+      "side": 1,
+      "message": "Expected should be first.",
+      "range": {
+        "startLine": 86,
+        "startChar": 17,
+        "endLine": 86,
+        "endChar": 43
+      },
+      "revId": "c03472f91aed1d6b2bc20feb5c1f6a68fb8b7c86",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c5ea8c1c_74278198",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/httpclient/CertServiceClientHttpClientTest.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-02-25T08:26:07Z",
+      "side": 1,
+      "message": "Same as above.",
+      "range": {
+        "startLine": 87,
+        "startChar": 17,
+        "endLine": 87,
+        "endChar": 45
+      },
+      "revId": "c03472f91aed1d6b2bc20feb5c1f6a68fb8b7c86",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "160082ea_de436035",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/httpclient/CertServiceClientHttpClientTest.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-02-25T08:26:07Z",
+      "side": 1,
+      "message": "A bit confusing as it can be error response also.",
+      "range": {
+        "startLine": 113,
+        "startChar": 65,
+        "endLine": 113,
+        "endChar": 80
+      },
+      "revId": "c03472f91aed1d6b2bc20feb5c1f6a68fb8b7c86",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "24af5d74_30c09cfe",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/httpclient/CertServiceClientHttpClientTest.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-02-25T08:26:07Z",
+      "side": 1,
+      "message": "Use static import.",
+      "range": {
+        "startLine": 120,
+        "startChar": 4,
+        "endLine": 120,
+        "endChar": 11
+      },
+      "revId": "c03472f91aed1d6b2bc20feb5c1f6a68fb8b7c86",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ead35af2_023d6866",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/httpclient/CertServiceClientHttpClientTest.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-02-25T08:26:07Z",
+      "side": 1,
+      "message": "Use static import.",
+      "range": {
+        "startLine": 124,
+        "startChar": 4,
+        "endLine": 124,
+        "endChar": 11
+      },
+      "revId": "c03472f91aed1d6b2bc20feb5c1f6a68fb8b7c86",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4c1abc49_18c0aafd",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/httpclient/CertServiceClientHttpClientTest.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-02-25T08:26:07Z",
+      "side": 1,
+      "message": "Consider not mocking tested class methods. By for example using:\n\n    when(httpClient.execute(any(HttpGet.class))).thenReturn(httpResponse);\n    when(httpEntity.getContent()).thenReturn(new ByteArrayInputStream(correctResponse.getBytes()));",
+      "range": {
+        "startLine": 119,
+        "startChar": 0,
+        "endLine": 126,
+        "endChar": 79
+      },
       "revId": "c03472f91aed1d6b2bc20feb5c1f6a68fb8b7c86",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
