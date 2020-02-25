@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6087bb5e_1e061133",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-02-25T14:38:13Z",
+      "side": 1,
+      "message": "Why split declaration and assignment?",
+      "range": {
+        "startLine": 47,
+        "startChar": 0,
+        "endLine": 50,
+        "endChar": 82
+      },
+      "revId": "bb133c027059ba2bbebfc59371dc30b589ccff69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c01ffa29_c2792405",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-02-25T14:38:13Z",
+      "side": 1,
+      "message": "Also ClientConfigurationException and CsrConfigurationException are never caught.",
+      "range": {
+        "startLine": 49,
+        "startChar": 8,
+        "endLine": 50,
+        "endChar": 82
+      },
+      "revId": "bb133c027059ba2bbebfc59371dc30b589ccff69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f82d72e2_0376f8bb",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/exceptions/ClientConfigurationException.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-02-25T14:38:13Z",
+      "side": 1,
+      "message": "Consider storing exit codes in enum.",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 43
+      },
+      "revId": "bb133c027059ba2bbebfc59371dc30b589ccff69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c870f4a5_ac70655a",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/CertServiceClientTest.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-02-25T14:38:13Z",
+      "side": 1,
+      "message": "Unused import",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 2
+      },
+      "revId": "bb133c027059ba2bbebfc59371dc30b589ccff69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
