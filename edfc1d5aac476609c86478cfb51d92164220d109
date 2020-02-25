@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0f4d9003_ad48a05f",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/EnvProvider.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-25T09:46:29Z",
+      "side": 1,
+      "message": "pls do not use static methods, because later it is harder to create tests",
+      "revId": "edfc1d5aac476609c86478cfb51d92164220d109",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
