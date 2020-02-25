@@ -1,0 +1,225 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4d9db419_3b02b1c7",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-25T08:42:28Z",
+      "side": 1,
+      "message": "do not use asterisk",
+      "revId": "f47a6bde0fa24f45c13f0faf20e390d7316d2510",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3911c370_c2cbd889",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-25T08:42:28Z",
+      "side": 1,
+      "message": "private final",
+      "revId": "f47a6bde0fa24f45c13f0faf20e390d7316d2510",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5c430c97_636cf00e",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-25T08:42:28Z",
+      "side": 1,
+      "message": "config object is used only for creating X500Principal, so subject can be pass as method argument",
+      "revId": "f47a6bde0fa24f45c13f0faf20e390d7316d2510",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c3ca6240_898261b6",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-25T08:42:28Z",
+      "side": 1,
+      "message": "move this section to try. \n\nIt is good habit to have code instantiation and invocation in one place",
+      "revId": "f47a6bde0fa24f45c13f0faf20e390d7316d2510",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b2149b7e_658539b9",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-25T08:42:28Z",
+      "side": 1,
+      "message": "use try-autoclosable mechanism\n\nIt may happen that pemWriter.close() will be never executed.",
+      "revId": "f47a6bde0fa24f45c13f0faf20e390d7316d2510",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c4991ede_447feaad",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-25T08:42:28Z",
+      "side": 1,
+      "message": "misleading method name",
+      "revId": "f47a6bde0fa24f45c13f0faf20e390d7316d2510",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9cdf31ea_1ba5c13e",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/EncryptionAlgorithmConstants.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-25T08:42:28Z",
+      "side": 1,
+      "message": "make class as final with private constructor",
+      "revId": "f47a6bde0fa24f45c13f0faf20e390d7316d2510",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7d634465_b8b31d8f",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/KeyPairFactory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-25T08:42:28Z",
+      "side": 1,
+      "message": "make fields as private final",
+      "revId": "f47a6bde0fa24f45c13f0faf20e390d7316d2510",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "95cdf73b_f32a944c",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/KeyPairFactory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-25T08:42:28Z",
+      "side": 1,
+      "message": "here you will lose information about exception couse",
+      "revId": "f47a6bde0fa24f45c13f0faf20e390d7316d2510",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cf9d9ff6_e4802519",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/KeyPairFactory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-25T08:42:28Z",
+      "side": 1,
+      "message": "why public?",
+      "revId": "f47a6bde0fa24f45c13f0faf20e390d7316d2510",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "80b455db_37378a12",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/exceptions/KeyPairGenerationException.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-25T08:42:28Z",
+      "side": 1,
+      "message": "passing exception message is not enough",
+      "revId": "f47a6bde0fa24f45c13f0faf20e390d7316d2510",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9ca5bb40_8fb78dbf",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/CsrProcedureTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-25T08:42:28Z",
+      "side": 1,
+      "message": "yyy .... where is an assert?\nThis is not a test.",
+      "revId": "f47a6bde0fa24f45c13f0faf20e390d7316d2510",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "882259df_9011c17c",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/KeyPairFactoryTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-25T08:42:28Z",
+      "side": 1,
+      "message": "where is an assert?\nThis is not a test.",
+      "revId": "f47a6bde0fa24f45c13f0faf20e390d7316d2510",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
