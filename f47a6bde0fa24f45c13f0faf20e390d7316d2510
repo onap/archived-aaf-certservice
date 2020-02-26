@@ -54,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "5a224906_705a66d7",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-02-26T10:58:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3911c370_c2cbd889",
+      "revId": "f47a6bde0fa24f45c13f0faf20e390d7316d2510",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5c430c97_636cf00e",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
         "patchSetId": 1
@@ -65,6 +83,24 @@
       "writtenOn": "2020-02-25T08:42:28Z",
       "side": 1,
       "message": "config object is used only for creating X500Principal, so subject can be pass as method argument",
+      "revId": "f47a6bde0fa24f45c13f0faf20e390d7316d2510",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2918ac0d_6e48462d",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-02-26T10:58:51Z",
+      "side": 1,
+      "message": "The config object is also taking part in SANs creation.",
+      "parentUuid": "5c430c97_636cf00e",
       "revId": "f47a6bde0fa24f45c13f0faf20e390d7316d2510",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
