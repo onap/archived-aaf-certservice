@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b7298907_182ac157",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-26T11:30:59Z",
+      "side": 1,
+      "message": "Really don\u0027t understand why public and private keys are class members while they are used just in utility (createCsrInPem) method.",
+      "revId": "f8f2a455d44887caafdfc7f3891293830a0b6aa7",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b9cc343f_6819b847",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/CsrProcedureTest.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-26T11:30:59Z",
+      "side": 1,
+      "message": "Joke? Replace dupa with example!!!!!",
+      "revId": "f8f2a455d44887caafdfc7f3891293830a0b6aa7",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
