@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "afb32abd_ba93dab3",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-02-26T13:22:44Z",
+      "side": 1,
+      "message": "Consider extracting to method like createPKC10Csr() which would return PKC10Csr",
+      "range": {
+        "startLine": 67,
+        "startChar": 0,
+        "endLine": 72,
+        "endChar": 118
+      },
+      "revId": "f7bf032adbf54bc7561dcdc46db62169c7636d99",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c5a40aff_60c70f5b",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-02-26T13:22:44Z",
+      "side": 1,
+      "message": "Consider returning generator.generate() and renaming to generateSansExtension()",
+      "range": {
+        "startLine": 109,
+        "startChar": 0,
+        "endLine": 117,
+        "endChar": 5
+      },
+      "revId": "f7bf032adbf54bc7561dcdc46db62169c7636d99",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
