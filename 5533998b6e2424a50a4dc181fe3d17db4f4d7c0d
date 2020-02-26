@@ -42,6 +42,24 @@
     },
     {
       "key": {
+        "uuid": "90dc2140_a83cddee",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/CertServiceClientHttpClient.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-26T06:36:42Z",
+      "side": 1,
+      "message": "I disagree. It should be a member of object.\nhttps://stackoverflow.com/questions/7026507/why-are-static-variables-considered-evil",
+      "parentUuid": "b0c45ff9_03747dfb",
+      "revId": "5533998b6e2424a50a4dc181fe3d17db4f4d7c0d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b5921a00_759d9631",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/CertServiceClientHttpClient.java",
         "patchSetId": 9
