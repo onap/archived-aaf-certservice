@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e0ac868d_e708d3c3",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-26T06:33:07Z",
+      "side": 1,
+      "message": "pls do not return null use Optional",
+      "revId": "097e9a709b17c1deeaba747340655568dce3cc05",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f5b544a_cd0550ef",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/KeyPairFactory.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-26T06:33:07Z",
+      "side": 1,
+      "message": "wrong class",
+      "revId": "097e9a709b17c1deeaba747340655568dce3cc05",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5c33354e_6b23ffbe",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/EnvsForCsr.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-26T06:33:07Z",
+      "side": 1,
+      "message": "pls remove static\n\nWhy are static variables considered evil?\nhttps://stackoverflow.com/questions/7026507/why-are-static-variables-considered-evil\n\nIts not very object oriented: One reason statics might be considered \"evil\" by some people is they are contrary the object-oriented paradigm. In particular, it violates the principle that data is encapsulated in objects (that can be extended, information hiding, etc). Statics, in the way you are describing using them, are essentially to use them as a global variable to avoid dealing with issues like scope. However, global variables is one of the defining characteristics of procedural or imperative programming paradigm, not a characteristic of \"good\" object oriented code. This is not to say the procedural paradigm is bad, but I get the impression your supervisor expects you to be writing \"good object oriented code\" and you\u0027re really wanting to write \"good procedural code\".\n\nThere are many gotchyas in Java when you start using statics that are not always immediately obvious. For example, if you have two copies of your program running in the same VM, will they shre the static variable\u0027s value and mess with the state of each other? Or what happens when you extend the class, can you override the static member? Is your VM running out of memory because you have insane numbers of statics and that memory cannot be reclaimed for other needed instance objects?\n\nObject Lifetime: Additionally, statics have a lifetime that matches the entire runtime of the program. This means, even once you\u0027re done using your class, the memory from all those static variables cannot be garbage collected. If, for example, instead, you made your variables non-static, and in your main() function you made a single instance of your class, and then asked your class to execute a particular function 10,000 times, once those 10,000 calls were done, and you delete your references to the single instance, all your static variables could be garbage collected and reused.\n\nPrevents certain re-use: Also, static methods cannot be used to implement an interface, so static methods can prevent certain object oriented features from being usable.",
+      "revId": "097e9a709b17c1deeaba747340655568dce3cc05",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "20280d12_b0cead65",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/exceptions/ClientConfigurationException.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-26T06:33:07Z",
+      "side": 1,
+      "message": "it should be exception, not exceptions",
+      "revId": "097e9a709b17c1deeaba747340655568dce3cc05",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
