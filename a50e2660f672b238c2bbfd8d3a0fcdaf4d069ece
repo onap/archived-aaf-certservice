@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "051cee0d_c2e032a5",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/certification/CertificationModelFactoryTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 3435
+      },
+      "writtenOn": "2020-02-26T10:10:46Z",
+      "side": 1,
+      "message": "pls create constant variable for example TEST_CA",
+      "revId": "a50e2660f672b238c2bbfd8d3a0fcdaf4d069ece",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4e87f41f_3b5879c3",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/certification/configuration/Cmpv2ServerProviderTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 3435
+      },
+      "writtenOn": "2020-02-26T10:10:46Z",
+      "side": 1,
+      "message": "pls create constant variable for example TEST_CA",
+      "revId": "a50e2660f672b238c2bbfd8d3a0fcdaf4d069ece",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
