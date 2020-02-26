@@ -21,6 +21,9 @@ package org.onap.aaf.certservice.client;
 
 import org.onap.aaf.certservice.client.api.ExitableException;
 import org.onap.aaf.certservice.client.certification.KeyPairFactory;
+import org.onap.aaf.certservice.client.certification.conversion.PKCS12FilesCreator;
+import org.onap.aaf.certservice.client.certification.conversion.PemToPKCS12Converter;
+import org.onap.aaf.certservice.client.certification.conversion.RandomPasswordGenerator;
 import org.onap.aaf.certservice.client.configuration.EnvsForClient;
 import org.onap.aaf.certservice.client.configuration.EnvsForCsr;
 import org.onap.aaf.certservice.client.configuration.factory.ClientConfigurationFactory;
@@ -49,6 +52,17 @@ public class CertServiceClient {
 
         KeyPairFactory keyPairFactory = new KeyPairFactory(RSA_ENCRYPTION_ALGORITHM, KEY_SIZE);
         Optional<KeyPair> keyPair = generateKeyPair(keyPairFactory);
+
+        //==============================================
+        PemToPKCS12Converter converter = new PemToPKCS12Converter(keyPair.get().getPrivate());
+        PKCS12FilesCreator creator = new PKCS12FilesCreator(clientConfiguration.getCertsOutputPath());
+        RandomPasswordGenerator generator = new RandomPasswordGenerator();
+//        creator.saveKeystoreData(converter.convertKeystore(certificatesChain, generator.generate(24), "keystoreEntry"));
+//        creator.saveKeystoreData(converter.convertKeystore(trustedCertificates, generator.generate(24), "keystoreEntry"));
+
+
+        //==============================================
+
 
         appExitHandler.exit(0);
     }
