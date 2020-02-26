@@ -19,19 +19,30 @@
 
 package org.onap.aaf.certservice.client.certification;
 
-public final class EncryptionAlgorithmConstants {
 
-    private EncryptionAlgorithmConstants() {}
+import org.junit.jupiter.api.Test;
+import org.onap.aaf.certservice.client.configuration.model.CsrConfiguration;
 
-    public static final String RSA_ENCRYPTION_ALGORITHM = "RSA";
-    public static final String SIGN_ALGORITHM = "SHA1withRSA";
-    public static final int KEY_SIZE = 2048;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
-    public static final String COMMON_NAME = "CN";
-    public static final String ORGANIZATION = "O";
-    public static final String ORGANIZATION_UNIT = "OU";
-    public static final String LOCATION = "L";
-    public static final String STATE = "ST";
-    public static final String COUNTRY = "C";
 
+public class CsrProcedureTest {
+
+    CsrConfiguration config = mock(CsrConfiguration.class);
+
+    @Test
+    void createCsrInPem_shouldSucceedWhenAllFieldsAreSetCorrectly() {
+        when(config.getCommonName()).thenReturn("onap.org");
+        when(config.getSans()).thenReturn("onapexample.com:onapexample.com.pl:onapexample.pl");
+        when(config.getCountry()).thenReturn("US");
+        when(config.getLocation()).thenReturn("San-Francisco");
+        when(config.getOrganization()).thenReturn("Linux-Foundation");
+        when(config.getOrganizationUnit()).thenReturn("ONAP");
+        when(config.getState()).thenReturn("California");
+
+        assertThat(new CsrProcedure(config).createCsrInPem()).isNotEmpty();
+     }
 }
+
