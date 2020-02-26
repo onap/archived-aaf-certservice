@@ -2,6 +2,52 @@
   "comments": [
     {
       "key": {
+        "uuid": "df896c39_9717eed2",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-26T14:05:55Z",
+      "side": 1,
+      "message": "Check CertServiceClient and reconsider usage of this method. In mentioned class there is run method which suppose to be place where each part of code should be invoked. Think of app as a whole pipeline.\n\nIf we will take facade approach (like is proposed here) than update run method appropriately.",
+      "range": {
+        "startLine": 59,
+        "startChar": 8,
+        "endLine": 59,
+        "endChar": 90
+      },
+      "revId": "f7bf032adbf54bc7561dcdc46db62169c7636d99",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "67f1deb5_a6b6532e",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-26T14:05:55Z",
+      "side": 1,
+      "message": "I think better idea is to prepare mandatory parameters first and than later on decorate it with optional.\n\nMy proposal look like this:\nString csrParameters \u003d generateMandatoryParameters().append(generateOptionalParameters()).toString();\n\nPrivate methods could look like this:\n\n    private StringBuilder generateMandatoryParameters() {\n        return new StringBuilder(\n                String.format(\"%s\u003d%s, %s\u003d%s, %s\u003d%s, %s\u003d%s\",\n                        COMMON_NAME, configuration.getCommonName(),\n                        COUNTRY, configuration.getCountry(),\n                        STATE, configuration.getState(),\n                        ORGANIZATION, configuration.getOrganization()\n                ));\n    }\n\n    private String generateOptionalParameters() {\n        StringBuilder stringBuilder \u003d new StringBuilder();\n        Optional.ofNullable(configuration.getOrganizationUnit())\n....\n        return stringBuilder.toString();\n    }",
+      "range": {
+        "startLine": 63,
+        "startChar": 8,
+        "endLine": 63,
+        "endChar": 99
+      },
+      "revId": "f7bf032adbf54bc7561dcdc46db62169c7636d99",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "afb32abd_ba93dab3",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
         "patchSetId": 7
