@@ -1,0 +1,157 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a30ce684_183cb9cd",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-26T13:54:17Z",
+      "side": 1,
+      "message": "In interfaces we should use the most generic types. In this case pls replace ArrayList by List interfce",
+      "revId": "7dbf8e7ec9f2e208eb6963d5a5ec2a7ae5854ac8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d89739dd_e11c1c97",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-26T13:54:17Z",
+      "side": 1,
+      "message": "ArrayList -\u003e List",
+      "revId": "7dbf8e7ec9f2e208eb6963d5a5ec2a7ae5854ac8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "73a9ec2d_2841b2f5",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-26T13:54:17Z",
+      "side": 1,
+      "message": "it will be more readable if you will extract all the new code to a new method. For example: List\u003cList\u003cX509Certificate\u003e\u003e createResponse(...) throws CmpClientException",
+      "revId": "7dbf8e7ec9f2e208eb6963d5a5ec2a7ae5854ac8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a8880768_cd87ca55",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-26T13:54:17Z",
+      "side": 1,
+      "message": "too high complexity.\n\nPls split to few methods",
+      "revId": "7dbf8e7ec9f2e208eb6963d5a5ec2a7ae5854ac8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f72cef16_fbd5a34f",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-26T13:54:17Z",
+      "side": 1,
+      "message": "why 0? 0 is a magic number.\nYou can extract certRepMessage.getResponse()[] to some method with descriptive name",
+      "revId": "7dbf8e7ec9f2e208eb6963d5a5ec2a7ae5854ac8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a40876d7_41b7798f",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpMessageHelper.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-26T13:54:17Z",
+      "side": 1,
+      "message": "This class has too many responsibilities.\n\nCan you split this one class to few classes?",
+      "revId": "7dbf8e7ec9f2e208eb6963d5a5ec2a7ae5854ac8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "217dc9f9_ff62b7e6",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpMessageHelper.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 310,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-26T13:54:17Z",
+      "side": 1,
+      "message": "it will be better to return Optional rather null",
+      "revId": "7dbf8e7ec9f2e208eb6963d5a5ec2a7ae5854ac8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0ab22f0c_3254e988",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpMessageHelper.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 339,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-26T13:54:17Z",
+      "side": 1,
+      "message": "to high complexity. Pls reduce it.",
+      "revId": "7dbf8e7ec9f2e208eb6963d5a5ec2a7ae5854ac8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c7086a72_877e6935",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2Client/Cmpv2ClientTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-26T13:54:17Z",
+      "side": 1,
+      "message": "only one test and so many new code.\nCode coverage is at 65% so it pass onap standards, but probably not all edge cases were tested.",
+      "revId": "7dbf8e7ec9f2e208eb6963d5a5ec2a7ae5854ac8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
