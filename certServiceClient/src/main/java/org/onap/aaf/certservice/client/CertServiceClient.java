@@ -22,6 +22,12 @@ package org.onap.aaf.certservice.client;
 import org.onap.aaf.certservice.client.api.ExitableException;
 import org.onap.aaf.certservice.client.certification.CsrFactory;
 import org.onap.aaf.certservice.client.certification.KeyPairFactory;
+import org.onap.aaf.certservice.client.certification.conversion.KeystoreTruststoreCreator;
+import org.onap.aaf.certservice.client.certification.conversion.PKCS12FilesCreator;
+import org.onap.aaf.certservice.client.certification.conversion.PemToPKCS12Converter;
+import org.onap.aaf.certservice.client.certification.conversion.RandomPasswordGenerator;
+
+import java.security.KeyPair;
 import org.onap.aaf.certservice.client.configuration.EnvsForClient;
 import org.onap.aaf.certservice.client.configuration.EnvsForCsr;
 import org.onap.aaf.certservice.client.configuration.factory.ClientConfigurationFactory;
@@ -31,8 +37,6 @@ import org.onap.aaf.certservice.client.configuration.model.CsrConfiguration;
 import org.onap.aaf.certservice.client.httpclient.CloseableHttpClientProvider;
 import org.onap.aaf.certservice.client.httpclient.HttpClient;
 import org.onap.aaf.certservice.client.httpclient.model.CertServiceResponse;
-
-import java.security.KeyPair;
 
 import static org.onap.aaf.certservice.client.api.ExitCode.SUCCESS_EXIT_CODE;
 import static org.onap.aaf.certservice.client.certification.EncryptionAlgorithmConstants.KEY_SIZE;
@@ -63,6 +67,12 @@ public class CertServiceClient {
                             csrFactory.createEncodedCsr(keyPair),
                             encode(keyPair.getPrivate().toString()));
 
+            KeystoreTruststoreCreator filesCreator = new KeystoreTruststoreCreator(
+                new PKCS12FilesCreator(clientConfiguration.getCertsOutputPath()),
+                new RandomPasswordGenerator(),
+                new PemToPKCS12Converter());
+            filesCreator.createKeystore(certServiceData.getCertificateChain(), 24, "certificate", keyPair.getPrivate());
+            filesCreator.createTruststore(certServiceData.getTrustedCertificates(), 24, "trusted-certificate-");
         } catch (ExitableException e) {
             appExitHandler.exit(e.applicationExitCode());
         }
