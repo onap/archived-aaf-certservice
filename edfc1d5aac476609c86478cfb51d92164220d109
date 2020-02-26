@@ -16,6 +16,24 @@
       "revId": "edfc1d5aac476609c86478cfb51d92164220d109",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8b130a57_6e5b20c7",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/EnvProvider.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-26T08:11:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0f4d9003_ad48a05f",
+      "revId": "edfc1d5aac476609c86478cfb51d92164220d109",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
