@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c8824ae1_3ce966da",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/certification/CertificationModelFactoryTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-26T08:28:44Z",
+      "side": 1,
+      "message": "use annotation -\u003e https://stackoverflow.com/questions/40961057/how-to-use-mockito-with-junit5",
+      "revId": "d2b0b5e3b0ff0cf55d6610ecf2657aab7862a59b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9c105e45_5be34232",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/certification/configuration/Cmpv2ServerProviderTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-02-26T08:28:44Z",
+      "side": 1,
+      "message": "pls use @ExtendWith(MockitoExtension.class)\nhttps://stackoverflow.com/questions/40961057/how-to-use-mockito-with-junit5",
+      "revId": "d2b0b5e3b0ff0cf55d6610ecf2657aab7862a59b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
