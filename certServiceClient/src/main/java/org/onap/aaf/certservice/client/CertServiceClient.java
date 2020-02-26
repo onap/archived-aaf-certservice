@@ -22,14 +22,17 @@ package org.onap.aaf.certservice.client;
 import org.onap.aaf.certservice.client.api.ExitableException;
 import org.onap.aaf.certservice.client.certification.CsrFactory;
 import org.onap.aaf.certservice.client.certification.KeyPairFactory;
+import org.onap.aaf.certservice.client.certification.conversion.PKCS12FilesCreator;
+import org.onap.aaf.certservice.client.certification.conversion.PemToPKCS12Converter;
+import org.onap.aaf.certservice.client.certification.conversion.RandomPasswordGenerator;
+
+import java.security.KeyPair;
 import org.onap.aaf.certservice.client.configuration.EnvsForClient;
 import org.onap.aaf.certservice.client.configuration.EnvsForCsr;
 import org.onap.aaf.certservice.client.configuration.factory.ClientConfigurationFactory;
 import org.onap.aaf.certservice.client.configuration.factory.CsrConfigurationFactory;
 import org.onap.aaf.certservice.client.configuration.model.ClientConfiguration;
 import org.onap.aaf.certservice.client.configuration.model.CsrConfiguration;
-
-import java.security.KeyPair;
 
 import static org.onap.aaf.certservice.client.api.ExitCode.SUCCESS_EXIT_CODE;
 import static org.onap.aaf.certservice.client.certification.EncryptionAlgorithmConstants.KEY_SIZE;
@@ -50,6 +53,21 @@ public class CertServiceClient {
             KeyPair keyPair = keyPairFactory.create();
             CsrFactory csrFactory = new CsrFactory(csrConfiguration);
             String csr = csrFactory.createEncodedCsr(keyPair);
+
+
+
+
+            //==============================================
+            PemToPKCS12Converter converter = new PemToPKCS12Converter(keyPair.getPrivate());
+            PKCS12FilesCreator creator = new PKCS12FilesCreator(clientConfiguration.getCertsOutputPath());
+            RandomPasswordGenerator generator = new RandomPasswordGenerator();
+//        creator.saveKeystoreData(converter.convertKeystore(certificatesChain, generator.generate(24), "keystoreEntry"));
+//        creator.saveKeystoreData(converter.convertKeystore(trustedCertificates, generator.generate(24), "keystoreEntry"));
+
+
+            //==============================================
+
+
         } catch (ExitableException e) {
             appExitHandler.exit(e.applicationExitCode());
         }
