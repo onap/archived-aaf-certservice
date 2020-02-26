@@ -2,6 +2,115 @@
   "comments": [
     {
       "key": {
+        "uuid": "743fae76_cd3707f4",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-26T21:23:58Z",
+      "side": 1,
+      "message": "Add logging of some basic events. It will be helpful in case of debugging.",
+      "revId": "1428fd08312d43986a0dab56bb558a76e2228be4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7f88c210_82430afb",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-26T21:23:58Z",
+      "side": 1,
+      "message": "I think CsrFactory or CsrProvider suits here better.",
+      "range": {
+        "startLine": 57,
+        "startChar": 14,
+        "endLine": 57,
+        "endChar": 25
+      },
+      "revId": "1428fd08312d43986a0dab56bb558a76e2228be4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c32df4e5_1723bcb0",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-26T21:23:58Z",
+      "side": 1,
+      "message": "private static final",
+      "range": {
+        "startLine": 59,
+        "startChar": 4,
+        "endLine": 59,
+        "endChar": 25
+      },
+      "revId": "1428fd08312d43986a0dab56bb558a76e2228be4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b6d828e1_9b1eede2",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-26T21:23:58Z",
+      "side": 1,
+      "message": "I asked you to check run method because of 2 reasons:\n1. create() method throws exception - not handled here\n2. KeyPair could be passed to createEncodedCsr method and I tend to do it so. To be confirmed together.",
+      "range": {
+        "startLine": 62,
+        "startChar": 4,
+        "endLine": 62,
+        "endChar": 100
+      },
+      "revId": "1428fd08312d43986a0dab56bb558a76e2228be4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f6b3c46d_a59330ff",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-26T21:23:58Z",
+      "side": 1,
+      "message": "Introduce new custom exception since CsrConfigurationException is dedicated for config validation.\ne.g. CsrCreationException",
+      "range": {
+        "startLine": 76,
+        "startChar": 22,
+        "endLine": 76,
+        "endChar": 70
+      },
+      "revId": "1428fd08312d43986a0dab56bb558a76e2228be4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fbec280a_f6039bbe",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
         "patchSetId": 9
@@ -22,6 +131,75 @@
       "revId": "1428fd08312d43986a0dab56bb558a76e2228be4",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b23fb0bc_6cf18ded",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-26T21:23:58Z",
+      "side": 1,
+      "message": "Also here and elsewhere add meaningful names.\nHere it could be unit.",
+      "range": {
+        "startLine": 99,
+        "startChar": 21,
+        "endLine": 99,
+        "endChar": 23
+      },
+      "revId": "1428fd08312d43986a0dab56bb558a76e2228be4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "35ab0020_fa7e47e6",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-26T21:23:58Z",
+      "side": 1,
+      "message": "same like location",
+      "range": {
+        "startLine": 99,
+        "startChar": 84,
+        "endLine": 99,
+        "endChar": 95
+      },
+      "revId": "1428fd08312d43986a0dab56bb558a76e2228be4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "107e4f20_abe0571b",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-26T21:23:58Z",
+      "side": 1,
+      "message": "Why do it like this? It could be done in previous append.",
+      "range": {
+        "startLine": 102,
+        "startChar": 74,
+        "endLine": 102,
+        "endChar": 84
+      },
+      "revId": "1428fd08312d43986a0dab56bb558a76e2228be4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -48,6 +226,29 @@
     },
     {
       "key": {
+        "uuid": "c031394e_ab1fc48a",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-26T21:23:58Z",
+      "side": 1,
+      "message": "Add trace log here",
+      "range": {
+        "startLine": 131,
+        "startChar": 12,
+        "endLine": 131,
+        "endChar": 32
+      },
+      "revId": "1428fd08312d43986a0dab56bb558a76e2228be4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8c3619c4_63925cd8",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
         "patchSetId": 9
@@ -68,6 +269,70 @@
       "revId": "1428fd08312d43986a0dab56bb558a76e2228be4",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "322d1963_d2334b18",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 146,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-26T21:23:58Z",
+      "side": 1,
+      "message": "Or even just isParameterPresent. It could be used for every String.",
+      "parentUuid": "8c3619c4_63925cd8",
+      "range": {
+        "startLine": 146,
+        "startChar": 27,
+        "endLine": 146,
+        "endChar": 52
+      },
+      "revId": "1428fd08312d43986a0dab56bb558a76e2228be4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b0e84d86_4527dd13",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrProcedure.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-26T21:23:58Z",
+      "side": 1,
+      "message": "I would rename it to encodeToBase64.\n\n// for future\nDecoder implementation could be found in CsrModelFactory inner class StringBase64. I think It will be good idea to make it shared for both subprojects.",
+      "range": {
+        "startLine": 150,
+        "startChar": 26,
+        "endLine": 150,
+        "endChar": 38
+      },
+      "revId": "1428fd08312d43986a0dab56bb558a76e2228be4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7b8b97ad_ff9f1c2c",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/CsrProcedureTest.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-26T21:23:58Z",
+      "side": 1,
+      "message": "Tests for exceptional cases tests needed here.",
+      "revId": "1428fd08312d43986a0dab56bb558a76e2228be4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
