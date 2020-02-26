@@ -16,21 +16,18 @@
  * limitations under the License.
  * ============LICENSE_END=========================================================
  */
-package org.onap.aaf.certservice.client.api;
 
-public enum ExitCode {
-    CLIENT_CONFIGURATION_EXCEPTION(1),
-    CSR_CONFIGURATION_EXCEPTION(2),
-    KEY_PAIR_GENERATION_EXCEPTION(3),
-    PKCS12_CONVERSION_EXCEPTION(4);
+package org.onap.aaf.certservice.client.certification.conversion;
 
-    private final int value;
+import java.io.IOException;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
+import java.security.cert.Certificate;
+import java.security.cert.CertificateException;
 
-    ExitCode(int value) {
-        this.value = value;
-    }
-
-    public int getValue() {
-        return value;
-    }
+@FunctionalInterface
+public interface StoreEntryOperation {
+    KeyStore getStore(Certificate[] certificates)
+        throws CertificateException, NoSuchAlgorithmException, KeyStoreException, IOException;
 }

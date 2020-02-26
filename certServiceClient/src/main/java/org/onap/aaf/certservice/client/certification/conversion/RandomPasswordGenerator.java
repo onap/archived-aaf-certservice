@@ -16,21 +16,32 @@
  * limitations under the License.
  * ============LICENSE_END=========================================================
  */
-package org.onap.aaf.certservice.client.api;
 
-public enum ExitCode {
-    CLIENT_CONFIGURATION_EXCEPTION(1),
-    CSR_CONFIGURATION_EXCEPTION(2),
-    KEY_PAIR_GENERATION_EXCEPTION(3),
-    PKCS12_CONVERSION_EXCEPTION(4);
+package org.onap.aaf.certservice.client.certification.conversion;
 
-    private final int value;
+import java.security.SecureRandom;
+import org.apache.commons.lang3.RandomStringUtils;
 
-    ExitCode(int value) {
-        this.value = value;
-    }
+public class RandomPasswordGenerator {
+    public String generate(int passwordLength) {
+        final String alpha = "abcdefghijklmnopqrstuvwxyz";
+        final String numbers = "0123456789";
+        final String specialChars = "_$#";
+        final char[] setOfChars = (alpha + alpha.toUpperCase() + numbers + specialChars).toCharArray();
 
-    public int getValue() {
-        return value;
+        final char startPositionInAsciiChars = 0;
+        final char endPositionInAsciiChars = 0;
+        final boolean useLettersOnly = false;
+        final boolean useNumbersOnly = false;
+
+        return RandomStringUtils.random(
+            passwordLength,
+            startPositionInAsciiChars,
+            endPositionInAsciiChars,
+            useLettersOnly,
+            useNumbersOnly,
+            setOfChars,
+            new SecureRandom());
     }
 }
+
