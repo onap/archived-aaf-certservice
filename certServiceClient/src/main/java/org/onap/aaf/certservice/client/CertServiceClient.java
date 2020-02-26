@@ -20,6 +20,7 @@
 package org.onap.aaf.certservice.client;
 
 import org.onap.aaf.certservice.client.api.ExitableException;
+import org.onap.aaf.certservice.client.certification.CsrFactory;
 import org.onap.aaf.certservice.client.certification.KeyPairFactory;
 import org.onap.aaf.certservice.client.configuration.EnvsForClient;
 import org.onap.aaf.certservice.client.configuration.EnvsForCsr;
@@ -50,12 +51,26 @@ public class CertServiceClient {
         KeyPairFactory keyPairFactory = new KeyPairFactory(RSA_ENCRYPTION_ALGORITHM, KEY_SIZE);
         Optional<KeyPair> keyPair = generateKeyPair(keyPairFactory);
 
+        CsrFactory csrFactory = new CsrFactory(csrConfiguration);
+        Optional<String> csr = generateCsr(csrFactory, keyPair.get());
+
+        //ToDo: private key from keyPair.getPrivateKey() should be (Base64) encoded before passing it to an http header
+
         appExitHandler.exit(0);
     }
 
     public Optional<KeyPair> generateKeyPair(KeyPairFactory keyPairFactory) {
         try {
             return Optional.of(keyPairFactory.create());
+        } catch (ExitableException e) {
+            appExitHandler.exit(e.applicationExitCode());
+        }
+        return Optional.empty();
+    }
+
+    public Optional<String> generateCsr(CsrFactory csrFactory, KeyPair keyPair) {
+        try {
+            return Optional.of(csrFactory.createEncodedCsr(keyPair));
         } catch (ExitableException e) {
             appExitHandler.exit(e.applicationExitCode());
         }

@@ -17,21 +17,19 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.client.certification;
+package org.onap.aaf.certservice.client.certification.exception;
 
-public final class EncryptionAlgorithmConstants {
+import org.onap.aaf.certservice.client.api.ExitCode;
+import org.onap.aaf.certservice.client.api.ExitableException;
 
-    private EncryptionAlgorithmConstants() {}
+public class CsrGenerationException extends ExitableException {
+    private static final ExitCode EXIT_CODE = ExitCode.KEY_PAIR_GENERATION_EXCEPTION;
 
-    public static final String RSA_ENCRYPTION_ALGORITHM = "RSA";
-    public static final String SIGN_ALGORITHM = "SHA1withRSA";
-    public static final int KEY_SIZE = 2048;
+    public CsrGenerationException(Throwable e) {
+        super(e);
+    }
 
-    public static final String COMMON_NAME = "CN";
-    public static final String ORGANIZATION = "O";
-    public static final String ORGANIZATION_UNIT = "OU";
-    public static final String LOCATION = "L";
-    public static final String STATE = "ST";
-    public static final String COUNTRY = "C";
-
+    public int applicationExitCode() {
+        return EXIT_CODE.getValue();
+    }
 }
