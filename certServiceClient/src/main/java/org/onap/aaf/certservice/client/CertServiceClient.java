@@ -52,5 +52,4 @@ public class CertServiceClient {
         }
         appExitHandler.exit(SUCCESS_EXIT_CODE.getValue());
     }
-
 }
