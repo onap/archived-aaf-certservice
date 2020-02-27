@@ -22,6 +22,30 @@
       "revId": "9289773445e8870aa0bc7ccbb7d7f6792200e122",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0c7a003a_a4b8e607",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/exception/CertServiceApiResponseException.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-02-27T15:01:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6fed5475_70d7248c",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 51,
+        "endChar": 5
+      },
+      "revId": "9289773445e8870aa0bc7ccbb7d7f6792200e122",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
