@@ -19,6 +19,8 @@
  */
 package org.onap.aaf.certservice.client.configuration;
 
+import org.onap.aaf.certservice.client.configuration.exception.ClientConfigurationException;
+
 public class EnvsForClient {
     private static final EnvProvider envProvider = new EnvProvider();
     private final String urlToCertService;
@@ -26,7 +28,7 @@ public class EnvsForClient {
     private final String outputPath;
     private final String caName;
 
-    public EnvsForClient() {
+    public EnvsForClient() throws ClientConfigurationException {
         this.urlToCertService = envProvider.readEnvVariable(ClientConfigurationEnvs.REQUEST_URL.toString());
         this.requestTimeOut = envProvider.readEnvVariable(ClientConfigurationEnvs.REQUEST_TIMEOUT.toString());
         this.outputPath = envProvider.readEnvVariable(ClientConfigurationEnvs.OUTPUT_PATH.toString());
