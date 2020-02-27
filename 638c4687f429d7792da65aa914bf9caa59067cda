@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "940d5181_df2b6624",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/EnvsForClient.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-02-27T10:09:39Z",
+      "side": 1,
+      "message": "Can\u0027t be thrown here (issue is in EnvProvider class)",
+      "range": {
+        "startLine": 31,
+        "startChar": 27,
+        "endLine": 31,
+        "endChar": 62
+      },
+      "revId": "638c4687f429d7792da65aa914bf9caa59067cda",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "89261950_4df2c6b0",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/EnvsForCsr.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-02-27T10:09:39Z",
+      "side": 1,
+      "message": "Can\u0027t be thrown here (issue is in EnvProvider class)",
+      "range": {
+        "startLine": 35,
+        "startChar": 24,
+        "endLine": 35,
+        "endChar": 59
+      },
+      "revId": "638c4687f429d7792da65aa914bf9caa59067cda",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
