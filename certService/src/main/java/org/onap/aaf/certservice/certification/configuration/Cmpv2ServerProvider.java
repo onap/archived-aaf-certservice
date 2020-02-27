@@ -21,10 +21,9 @@
 package org.onap.aaf.certservice.certification.configuration;
 
 import org.onap.aaf.certservice.certification.configuration.model.Cmpv2Server;
+import org.onap.aaf.certservice.certification.exception.Cmpv2ServerNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import java.util.Optional;
 
 @Component
 public class Cmpv2ServerProvider {
@@ -36,11 +35,13 @@ public class Cmpv2ServerProvider {
         this.cmpServersConfig = cmpServersConfig;
     }
 
-    public Optional<Cmpv2Server> getCmpv2Server(String caName) {
+    public Cmpv2Server getCmpv2Server(String caName) {
         return cmpServersConfig.getCmpServers()
                 .stream()
                 .filter(server -> server.getCaName().equals(caName))
-                .findFirst();
+                .findFirst().orElseThrow(
+                        () -> new Cmpv2ServerNotFoundException("No server found for given CA name")
+                );
     }
 
 }

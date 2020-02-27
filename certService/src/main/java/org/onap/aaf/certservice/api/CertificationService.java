@@ -24,6 +24,8 @@ import com.google.gson.Gson;
 import org.onap.aaf.certservice.certification.CertificationModelFactory;
 import org.onap.aaf.certservice.certification.CsrModelFactory;
 import org.onap.aaf.certservice.certification.CsrModelFactory.StringBase64;
+import org.onap.aaf.certservice.certification.configuration.Cmpv2ServerProvider;
+import org.onap.aaf.certservice.certification.configuration.model.Cmpv2Server;
 import org.onap.aaf.certservice.certification.exception.DecryptionException;
 import org.onap.aaf.certservice.certification.model.CertificationModel;
 import org.onap.aaf.certservice.certification.model.CsrModel;
@@ -43,12 +45,10 @@ public class CertificationService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CertificationService.class);
 
-    private final CsrModelFactory csrModelFactory;
     private final CertificationModelFactory certificationModelFactory;
 
     @Autowired
-    CertificationService(CsrModelFactory csrModelFactory, CertificationModelFactory certificationModelFactory) {
-        this.csrModelFactory = csrModelFactory;
+    CertificationService(CertificationModelFactory certificationModelFactory) {
         this.certificationModelFactory = certificationModelFactory;
     }
 
@@ -67,16 +67,10 @@ public class CertificationService {
             @RequestHeader("CSR") String encodedCsr,
             @RequestHeader("PK") String encodedPrivateKey
     ) throws DecryptionException {
-
         caName = caName.replaceAll("[\n|\r|\t]", "_");
         LOGGER.info("Received certificate signing request for CA named: {}", caName);
-        CsrModel csrModel = csrModelFactory.createCsrModel(
-                new StringBase64(encodedCsr),
-                new StringBase64(encodedPrivateKey)
-        );
-        LOGGER.debug("Received CSR meta data: \n{}", csrModel);
         CertificationModel certificationModel = certificationModelFactory
-                .createCertificationModel(csrModel, caName);
+                .createCertificationModel(encodedCsr, encodedPrivateKey, caName);
         return new ResponseEntity<>(new Gson().toJson(certificationModel), HttpStatus.OK);
 
     }
