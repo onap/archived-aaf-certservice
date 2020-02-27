@@ -56,7 +56,9 @@ import org.slf4j.LoggerFactory;
 
 public class CmpResponseHelper {
 
-  private static final Logger LOG = LoggerFactory.getLogger(CmpMessageHelper.class);
+  private static final Logger LOG = LoggerFactory.getLogger(CmpResponseHelper.class);
+
+  private CmpResponseHelper() {}
 
   public static void checkIfCmpResponseContainsError(PKIMessage respPkiMessage)
       throws CmpClientException {
@@ -192,7 +194,7 @@ public class CmpResponseHelper {
         CertPathValidator.getInstance("PKIX", BouncyCastleProvider.PROVIDER_NAME);
     PKIXCertPathValidatorResult result = (PKIXCertPathValidatorResult) cpv.validate(cp, params);
     if (LOG.isDebugEnabled()) {
-      LOG.debug("Certificate verify result:{} ", result.toString());
+      LOG.debug("Certificate verify result:{} ", result);
     }
   }
 
@@ -287,14 +289,16 @@ public class CmpResponseHelper {
       PKIMessage respPkiMessage,
       CertRepMessage certRepMessage,
       X509Certificate leafCertificate,
-      ArrayList<X509Certificate> certChain,
-      ArrayList<X509Certificate> trustStore)
+      List<X509Certificate> certChain,
+      List<X509Certificate> trustStore)
       throws CertificateParsingException, IOException, CmpClientException {
     List<String> certNames = getNamesOfCerts(certChain);
     LOG.debug("Verifying the following certificates in the cert chain: {}", certNames);
     certChain.add(leafCertificate);
     addExtraCertsToChain(respPkiMessage, certRepMessage, certChain);
     verify(certChain);
+    trustStore.add(certChain.get(certChain.size()-1));
+    certChain.remove(certChain.size()-1);
     List<List<X509Certificate>> listOfArray = new ArrayList<>();
     listOfArray.add(certChain);
     listOfArray.add(trustStore);
@@ -303,7 +307,7 @@ public class CmpResponseHelper {
 
   public static List<String> getNamesOfCerts(List<X509Certificate> certChain) {
     List<String> certNames = new ArrayList<>();
-    certChain.forEach((cert) -> certNames.add(cert.getSubjectDN().getName()));
+    certChain.forEach(cert -> certNames.add(cert.getSubjectDN().getName()));
     return certNames;
   }
 
@@ -318,24 +322,30 @@ public class CmpResponseHelper {
    * @throws CmpClientException thrown if there are errors creating CertificateFactory
    */
   public static void addExtraCertsToChain(
-      PKIMessage respPkiMessage,
-      CertRepMessage certRepMessage,
-      ArrayList<X509Certificate> certChain)
+      PKIMessage respPkiMessage, CertRepMessage certRepMessage, List<X509Certificate> certChain)
       throws CertificateParsingException, IOException, CmpClientException {
     if (respPkiMessage.getExtraCerts() != null) {
       final CMPCertificate[] extraCerts = respPkiMessage.getExtraCerts();
       for (CMPCertificate cmpCert : extraCerts) {
         Optional<X509Certificate> cert =
             getCertfromByteArray(cmpCert.getEncoded(), X509Certificate.class);
-        LOG.debug("Adding certificate {} to cert chain", cert.get().getSubjectDN().getName());
-        certChain.add(cert.get());
+        if (cert.isPresent()) {
+          LOG.debug("Adding certificate from extra certs {} to cert chain", cert.get().getSubjectDN().getName());
+          certChain.add(cert.get());
+        } else {
+          LOG.debug("Couldn't add certificate from extra certs, certificate wasn't an X509Certificate");
+        }
       }
     } else {
       final CMPCertificate respCmpCaCert = getRootCa(certRepMessage);
       Optional<X509Certificate> cert =
           getCertfromByteArray(respCmpCaCert.getEncoded(), X509Certificate.class);
-      LOG.debug("Adding certificate {} to TrustStore", cert.get().getSubjectDN().getName());
-      certChain.add(cert.get());
+      if (cert.isPresent()) {
+        LOG.debug("Adding certificate from CaPubs {} to TrustStore", cert.get().getSubjectDN().getName());
+        certChain.add(cert.get());
+      } else {
+        LOG.debug("Couldn't add certificate from CaPubs, certificate wasn't an X509Certificate");
+      }
     }
   }
 
