@@ -19,8 +19,11 @@
  */
 package org.onap.aaf.certservice.client.configuration;
 
+import java.util.Optional;
+
 public class EnvProvider {
-    public String readEnvVariable(String envVariable) {
-        return System.getProperty(envVariable);
+    public Optional<String> readEnvVariable(String envVariable) {
+        return Optional.ofNullable(System.getenv(envVariable))
+                .filter(EnvValidationUtils::isEnvPresent);
     }
 }

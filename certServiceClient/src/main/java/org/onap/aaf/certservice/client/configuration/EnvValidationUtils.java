@@ -34,7 +34,7 @@ public final class EnvValidationUtils {
         return caName.matches("^[a-zA-Z0-9]*$");
     }
 
-    public static Boolean isEnvExists(String envValue) {
+    public static Boolean isEnvPresent(String envValue) {
         return envValue != null && !"".equals(envValue);
     }
 
