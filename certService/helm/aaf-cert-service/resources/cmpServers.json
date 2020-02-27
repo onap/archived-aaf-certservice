@@ -1,13 +1,13 @@
 {
   "cmpv2Servers": [
     {
-      "caName": "TEST",
-      "url": "http://127.0.0.1/ejbca/publicweb/cmp/cmp",
-      "issuerDN": "CN=ManagementCA",
-      "caMode": "CLIENT",
+      "caName": "ManagementCA",
+      "url": "http://mycontainer:8080/ejbca/publicweb/cmp/cmp",
+      "issuerDN": "CN=Node123",
+      "caMode": "RA",
       "authentication": {
-        "iak": "xxx",
-        "rv": "yyy"
+        "iak": "mypassword",
+        "rv": "Node123"
       }
     },
     {
