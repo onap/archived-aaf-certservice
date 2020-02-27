@@ -25,6 +25,52 @@
     },
     {
       "key": {
+        "uuid": "37c7534e_b28d3873",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrFactory.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-02-27T10:15:47Z",
+      "side": 1,
+      "message": "Consider to use logger here.",
+      "range": {
+        "startLine": 121,
+        "startChar": 12,
+        "endLine": 121,
+        "endChar": 32
+      },
+      "revId": "b685bc68191e23e639f63e560306c29c0fdc5d36",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8c812213_259ba690",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrFactory.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-02-27T10:15:47Z",
+      "side": 1,
+      "message": "same above",
+      "range": {
+        "startLine": 131,
+        "startChar": 10,
+        "endLine": 131,
+        "endChar": 32
+      },
+      "revId": "b685bc68191e23e639f63e560306c29c0fdc5d36",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "62bb44d0_b7d6b4af",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/exception/CsrGenerationException.java",
         "patchSetId": 10
