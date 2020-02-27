@@ -1,6 +1,6 @@
 /*
  * ============LICENSE_START=======================================================
- * PROJECT
+ * Cert Service
  * ================================================================================
  * Copyright (C) 2020 Nokia. All rights reserved.
  * ================================================================================
@@ -18,18 +18,25 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.certification.configuration.model;
+package org.onap.aaf.certservice.certification.adapter;
 
-public enum CaMode {
-    RA("RA"), CLIENT("Client");
+import java.io.InputStream;
+import java.security.NoSuchProviderException;
+import java.security.Security;
+import java.security.cert.CertificateException;
+import java.security.cert.CertificateFactory;
+import java.security.cert.X509Certificate;
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
+import org.springframework.stereotype.Component;
 
-    private String profile;
+@Component
+public class CertificateFactoryProvider {
 
-    CaMode(String profile) {
-        this.profile = profile;
+    static {
+        Security.addProvider(new BouncyCastleProvider());
     }
 
-    public String getProfile(){
-        return profile;
+    X509Certificate generateCertificate(InputStream inStream) throws CertificateException, NoSuchProviderException {
+        return (X509Certificate) CertificateFactory.getInstance("X.509", "BC").generateCertificate(inStream);
     }
 }
