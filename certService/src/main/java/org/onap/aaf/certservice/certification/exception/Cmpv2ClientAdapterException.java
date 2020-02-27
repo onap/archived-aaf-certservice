@@ -1,6 +1,6 @@
 /*
  * ============LICENSE_START=======================================================
- * PROJECT
+ * Cert Service
  * ================================================================================
  * Copyright (C) 2020 Nokia. All rights reserved.
  * ================================================================================
@@ -18,18 +18,11 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.certification.configuration.model;
+package org.onap.aaf.certservice.certification.exception;
 
-public enum CaMode {
-    RA("RA"), CLIENT("Client");
+public class Cmpv2ClientAdapterException extends Exception {
 
-    private String profile;
-
-    CaMode(String profile) {
-        this.profile = profile;
-    }
-
-    public String getProfile(){
-        return profile;
+    public Cmpv2ClientAdapterException(Throwable cause) {
+        super(cause);
     }
 }
