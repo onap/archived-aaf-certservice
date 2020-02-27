@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3318bc1c_b13b3577",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-27T10:14:18Z",
+      "side": 1,
+      "message": "This method will change after review of https://gerrit.onap.org/r/#/c/aaf/certservice/+/102468/",
+      "range": {
+        "startLine": 45,
+        "startChar": 3,
+        "endLine": 45,
+        "endChar": 23
+      },
+      "revId": "b685bc68191e23e639f63e560306c29c0fdc5d36",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "62bb44d0_b7d6b4af",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/exception/CsrGenerationException.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-27T10:14:18Z",
+      "side": 1,
+      "message": "Is that Exception for generation of KeyPair?\nPlease rename it.",
+      "range": {
+        "startLine": 26,
+        "startChar": 55,
+        "endLine": 26,
+        "endChar": 85
+      },
+      "revId": "b685bc68191e23e639f63e560306c29c0fdc5d36",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "756d2dc6_f00a9429",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/CsrFactoryTest.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-27T10:14:18Z",
+      "side": 1,
+      "message": "remove asterisk",
+      "range": {
+        "startLine": 29,
+        "startChar": 14,
+        "endLine": 29,
+        "endChar": 36
+      },
+      "revId": "b685bc68191e23e639f63e560306c29c0fdc5d36",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
