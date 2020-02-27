@@ -1,6 +1,6 @@
 /*
  * ============LICENSE_START=======================================================
- * PROJECT
+ * Cert Service
  * ================================================================================
  * Copyright (C) 2020 Nokia. All rights reserved.
  * ================================================================================
@@ -17,19 +17,31 @@
  * limitations under the License.
  * ============LICENSE_END=========================================================
  */
+package org.onap.aaf.certservice.certification.configuration;
 
-package org.onap.aaf.certservice.certification.configuration.model;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.onap.aaf.certservice.cmpv2client.api.CmpClient;
+import org.onap.aaf.certservice.cmpv2client.impl.CmpClientImpl;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
-public enum CaMode {
-    RA("RA"), CLIENT("Client");
+@Configuration
+public class CmpClientConfig {
 
-    private String profile;
-
-    CaMode(String profile) {
-        this.profile = profile;
+    @Bean
+    CmpClient cmpClient(CloseableHttpClient closeableHttpClient){
+        return new CmpClientImpl(closeableHttpClient);
     }
 
-    public String getProfile(){
-        return profile;
+    @Bean
+    CloseableHttpClient closeableHttpClient(HttpClientBuilder httpClientBuilder){
+        return httpClientBuilder.build();
     }
+
+    @Bean
+    HttpClientBuilder httpClientBuilder(){
+        return HttpClientBuilder.create();
+    }
+
 }
