@@ -1,0 +1,140 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c34251bf_c06cb666",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-27T08:34:55Z",
+      "side": 1,
+      "message": "Not needed import",
+      "revId": "7054ccc8ac3ae271eeb530ce51242a9bf9278e86",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "53c59f2c_cdb2ac1e",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-27T08:34:55Z",
+      "side": 1,
+      "message": "This needs to be refactored later on",
+      "revId": "7054ccc8ac3ae271eeb530ce51242a9bf9278e86",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8c460652_9a84d10b",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/api/CmpClient.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-27T08:34:55Z",
+      "side": 1,
+      "message": "This needs to be refactored later on",
+      "revId": "7054ccc8ac3ae271eeb530ce51242a9bf9278e86",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b80dae39_3a11afc3",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-27T08:34:55Z",
+      "side": 1,
+      "message": "Sentence style",
+      "revId": "7054ccc8ac3ae271eeb530ce51242a9bf9278e86",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "012b1797_a738b059",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelper.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-27T08:34:55Z",
+      "side": 1,
+      "message": "Sentence style + debug level",
+      "revId": "7054ccc8ac3ae271eeb530ce51242a9bf9278e86",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "55c2a1dc_a5868c46",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelper.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 254,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-27T08:34:55Z",
+      "side": 1,
+      "message": "Sentence style + debug level",
+      "revId": "7054ccc8ac3ae271eeb530ce51242a9bf9278e86",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b327c872_33f1666f",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelper.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 290,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-27T08:34:55Z",
+      "side": 1,
+      "message": "Sentence style + debug level",
+      "revId": "7054ccc8ac3ae271eeb530ce51242a9bf9278e86",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7fd415ca_aff0a924",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelper.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 315,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-27T08:34:55Z",
+      "side": 1,
+      "message": "Sentence style + debug level",
+      "revId": "7054ccc8ac3ae271eeb530ce51242a9bf9278e86",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
