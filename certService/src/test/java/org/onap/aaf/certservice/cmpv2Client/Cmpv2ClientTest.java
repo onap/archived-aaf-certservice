@@ -27,12 +27,18 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.security.KeyFactory;
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
+import java.security.PrivateKey;
+import java.security.PublicKey;
 import java.security.Security;
 import java.security.cert.X509Certificate;
+import java.security.spec.InvalidKeySpecException;
+import java.security.spec.PKCS8EncodedKeySpec;
+import java.security.spec.X509EncodedKeySpec;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -77,11 +83,13 @@ class Cmpv2ClientTest {
   private static ArrayList<RDN> rdns;
 
   @BeforeEach
-  void setUp() throws NoSuchProviderException, NoSuchAlgorithmException {
+  void setUp()
+      throws NoSuchProviderException, NoSuchAlgorithmException, IOException,
+          InvalidKeySpecException {
     KeyPairGenerator keyGenerator;
     keyGenerator = KeyPairGenerator.getInstance("RSA", BouncyCastleProvider.PROVIDER_NAME);
     keyGenerator.initialize(2048);
-    keyPair = keyGenerator.generateKeyPair();
+    keyPair = LoadKeyPair();
     rdns = new ArrayList<>();
     try {
       rdns.add(new RDN("O=CommonCompany"));
@@ -89,6 +97,27 @@ class Cmpv2ClientTest {
       e.printStackTrace();
     }
     initMocks(this);
+  }
+
+  public KeyPair LoadKeyPair()
+      throws IOException, NoSuchAlgorithmException, InvalidKeySpecException,
+          NoSuchProviderException {
+
+    final InputStream privateInputStream = this.getClass().getResourceAsStream("/privateKey");
+    final InputStream publicInputStream = this.getClass().getResourceAsStream("/publicKey");
+    BufferedInputStream bis = new BufferedInputStream(privateInputStream);
+    byte[] privateBytes = IOUtils.toByteArray(bis);
+    bis = new BufferedInputStream(publicInputStream);
+    byte[] publicBytes = IOUtils.toByteArray(bis);
+
+    KeyFactory keyFactory = KeyFactory.getInstance("RSA", BouncyCastleProvider.PROVIDER_NAME);
+    X509EncodedKeySpec publicKeySpec = new X509EncodedKeySpec(publicBytes);
+    PublicKey publicKey = keyFactory.generatePublic(publicKeySpec);
+
+    PKCS8EncodedKeySpec privateKeySpec = new PKCS8EncodedKeySpec(privateBytes);
+    PrivateKey privateKey = keyFactory.generatePrivate(privateKeySpec);
+
+    return new KeyPair(publicKey, privateKey);
   }
 
   @Test
@@ -103,7 +132,7 @@ class Cmpv2ClientTest {
         "CN=ManagementCA",
         "CommonName.com",
         "CommonName@cn.com",
-        "password",
+        "mypassword",
         "http://127.0.0.1/ejbca/publicweb/cmp/cmp",
         beforeDate,
         afterDate);
@@ -152,16 +181,16 @@ class Cmpv2ClientTest {
     when(httpResponse.getEntity()).thenReturn(httpEntity);
 
     try (final InputStream is =
-        this.getClass().getResourceAsStream("/ReturnedSuccessPKIMessageWithCertificateFile");
+            this.getClass().getResourceAsStream("/ReturnedSuccessPKIMessageWithCertificateFile");
         BufferedInputStream bis = new BufferedInputStream(is)) {
 
       byte[] ba = IOUtils.toByteArray(bis);
       doAnswer(
-          invocation -> {
-            OutputStream os = (ByteArrayOutputStream) invocation.getArguments()[0];
-            os.write(ba);
-            return null;
-          })
+              invocation -> {
+                OutputStream os = (ByteArrayOutputStream) invocation.getArguments()[0];
+                os.write(ba);
+                return null;
+              })
           .when(httpEntity)
           .writeTo(any(OutputStream.class));
     }
