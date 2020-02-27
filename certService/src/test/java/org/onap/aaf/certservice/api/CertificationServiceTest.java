@@ -26,17 +26,16 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.onap.aaf.certservice.certification.CertificationModelFactory;
-import org.onap.aaf.certservice.certification.CsrModelFactory;
-import org.onap.aaf.certservice.certification.CsrModelFactory.StringBase64;
+import org.onap.aaf.certservice.certification.exception.Cmpv2ClientAdapterException;
+import org.onap.aaf.certservice.certification.exception.Cmpv2ServerNotFoundException;
 import org.onap.aaf.certservice.certification.exception.CsrDecryptionException;
 import org.onap.aaf.certservice.certification.exception.DecryptionException;
 import org.onap.aaf.certservice.certification.exception.KeyDecryptionException;
 import org.onap.aaf.certservice.certification.model.CertificationModel;
-import org.onap.aaf.certservice.certification.model.CsrModel;
+import org.onap.aaf.certservice.cmpv2client.exceptions.CmpClientException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-import java.io.IOException;
 import java.util.Arrays;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -49,10 +48,14 @@ import static org.mockito.Mockito.when;
 
 class CertificationServiceTest {
 
-    private CertificationService certificationService;
+    private static final String TEST_CA_NAME = "TestCa";
+    private static final String TEST_ENCODED_CSR = "encodedCSR";
+    private static final String TEST_ENCODED_PK = "encodedPK";
+    private static final String TEST_WRONG_ENCODED_CSR = "wrongEncodedCSR";
+    private static final String TEST_WRONG_ENCODED_PK = "wrongEncodedPK";
+    private static final String TEST_WRONG_CA_NAME = "wrongTestCa";
 
-    @Mock
-    private CsrModelFactory csrModelFactory;
+    private CertificationService certificationService;
 
     @Mock
     private CertificationModelFactory certificationModelFactory;
@@ -60,28 +63,23 @@ class CertificationServiceTest {
     @BeforeEach
     void serUp() {
         MockitoAnnotations.initMocks(this);
-        certificationService = new CertificationService(csrModelFactory, certificationModelFactory);
+        certificationService = new CertificationService(certificationModelFactory);
     }
 
     @Test
-    void shouldReturnDataAboutCsrBaseOnEncodedParameters() throws DecryptionException {
+    void shouldReturnDataAboutCsrBaseOnEncodedParameters()
+            throws DecryptionException, CmpClientException, Cmpv2ClientAdapterException {
         // given
-        final String testStringCsr = "testData";
-        final String testCaName = "TestCa";
-        CsrModel mockedCsrModel = mock(CsrModel.class);
         CertificationModel testCertificationModel = new CertificationModel(
                 Arrays.asList("ENTITY_CERT", "INTERMEDIATE_CERT"),
                 Arrays.asList("CA_CERT", "EXTRA_CA_CERT")
         );
-        when(mockedCsrModel.toString()).thenReturn(testStringCsr);
-        when(csrModelFactory.createCsrModel(any(StringBase64.class), any(StringBase64.class)))
-                .thenReturn(mockedCsrModel);
-        when(certificationModelFactory.createCertificationModel(mockedCsrModel, testCaName))
+        when(certificationModelFactory.createCertificationModel(TEST_ENCODED_CSR, TEST_ENCODED_PK, TEST_CA_NAME))
                 .thenReturn(testCertificationModel);
 
         // when
         ResponseEntity<String> testResponse =
-                certificationService.signCertificate(testCaName, "encryptedCSR", "encryptedPK");
+                certificationService.signCertificate(TEST_CA_NAME, TEST_ENCODED_CSR, TEST_ENCODED_PK);
 
         CertificationModel responseCertificationModel = new Gson().fromJson(testResponse.getBody(), CertificationModel.class);
 
@@ -93,16 +91,17 @@ class CertificationServiceTest {
     }
 
     @Test
-    void shouldThrowCsrDecryptionExceptionWhenCreatingCsrModelFails() throws DecryptionException {
+    void shouldThrowCsrDecryptionExceptionWhenCreatingCsrModelFails()
+            throws DecryptionException, CmpClientException, Cmpv2ClientAdapterException {
         // given
         String expectedMessage = "Incorrect CSR, decryption failed";
-        when(csrModelFactory.createCsrModel(any(StringBase64.class), any(StringBase64.class)))
-                .thenThrow(new CsrDecryptionException(expectedMessage,new IOException()));
+        when(certificationModelFactory.createCertificationModel(TEST_WRONG_ENCODED_CSR, TEST_ENCODED_PK, TEST_CA_NAME))
+                .thenThrow(new CsrDecryptionException(expectedMessage));
 
         // when
         Exception exception = assertThrows(
-                CsrDecryptionException.class, () -> certificationService.
-                        signCertificate("TestCa", "encryptedCSR", "encryptedPK")
+                CsrDecryptionException.class, () ->
+                        certificationService.signCertificate(TEST_CA_NAME, TEST_WRONG_ENCODED_CSR, TEST_ENCODED_PK)
         );
 
         String actualMessage = exception.getMessage();
@@ -112,16 +111,17 @@ class CertificationServiceTest {
     }
 
     @Test
-    void shouldThrowPemDecryptionExceptionWhenCreatingPemModelFails() throws DecryptionException {
+    void shouldThrowPemDecryptionExceptionWhenCreatingPemModelFails()
+            throws DecryptionException, CmpClientException, Cmpv2ClientAdapterException {
         // given
         String expectedMessage = "Incorrect PEM, decryption failed";
-        when(csrModelFactory.createCsrModel(any(StringBase64.class), any(StringBase64.class)))
-                .thenThrow(new KeyDecryptionException(expectedMessage,new IOException()));
+        when(certificationModelFactory.createCertificationModel(TEST_ENCODED_CSR, TEST_WRONG_ENCODED_PK, TEST_CA_NAME))
+                .thenThrow(new KeyDecryptionException(expectedMessage));
 
         // when
         Exception exception = assertThrows(
-                KeyDecryptionException.class, () -> certificationService.
-                        signCertificate("TestCa", "encryptedCSR", "encryptedPK")
+                KeyDecryptionException.class, () ->
+                        certificationService.signCertificate(TEST_CA_NAME, TEST_ENCODED_CSR, TEST_WRONG_ENCODED_PK)
         );
 
         String actualMessage = exception.getMessage();
@@ -130,4 +130,23 @@ class CertificationServiceTest {
         assertEquals(expectedMessage, actualMessage);
     }
 
+    @Test
+    void shouldThrowCmpv2ServerNotFoundWhenGivenWrongCaName()
+            throws DecryptionException, CmpClientException, Cmpv2ClientAdapterException {
+        // given
+        String expectedMessage = "No server found for given CA name";
+        when(certificationModelFactory.createCertificationModel(TEST_ENCODED_CSR, TEST_ENCODED_PK, TEST_WRONG_CA_NAME))
+                .thenThrow(new Cmpv2ServerNotFoundException(expectedMessage));
+
+        // when
+        Exception exception = assertThrows(
+                Cmpv2ServerNotFoundException.class, () ->
+                        certificationService.signCertificate(TEST_WRONG_CA_NAME, TEST_ENCODED_CSR, TEST_ENCODED_PK)
+        );
+
+        String actualMessage = exception.getMessage();
+
+        // then
+        assertEquals(expectedMessage, actualMessage);
+    }
 }

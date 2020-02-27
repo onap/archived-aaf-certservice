@@ -29,10 +29,14 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.onap.aaf.certservice.certification.configuration.model.Authentication;
 import org.onap.aaf.certservice.certification.configuration.model.CaMode;
 import org.onap.aaf.certservice.certification.configuration.model.Cmpv2Server;
+import org.onap.aaf.certservice.certification.exception.Cmpv2ServerNotFoundException;
+import org.onap.aaf.certservice.cmpv2client.exceptions.CmpClientException;
 
 import java.util.Collections;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -59,26 +63,26 @@ class Cmpv2ServerProviderTest {
 
         // when
         Cmpv2Server receivedServer = cmpv2ServerProvider
-                .getCmpv2Server(TEST_CA)
-                .get();
+                .getCmpv2Server(TEST_CA);
 
         // then
         assertThat(receivedServer).isEqualToComparingFieldByField(testServer);
     }
 
-
     @Test
     void shouldReturnEmptyOptionalWhenServerWithGivenCaNameIsNotPresentInConfig() {
         // given
+        String expectedMessage = "No server found for given CA name";
         when(cmpServersConfig.getCmpServers()).thenReturn(Collections.emptyList());
 
         // when
-        Boolean isEmpty = cmpv2ServerProvider
-                .getCmpv2Server(TEST_CA)
-                .isEmpty();
+        Exception exception = assertThrows(
+                Cmpv2ServerNotFoundException.class, () ->
+                        cmpv2ServerProvider.getCmpv2Server(TEST_CA)
+        );
 
         // then
-        assertThat(isEmpty).isTrue();
+        assertTrue(exception.getMessage().contains(expectedMessage));
     }
 
     private Cmpv2Server createTestServer() {
