@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "1a118a67_56797181",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/CsrFactoryTest.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-27T13:21:47Z",
+      "side": 1,
+      "message": "reformat it line is to long.",
+      "parentUuid": "3b195370_4d6be24b",
+      "range": {
+        "startLine": 37,
+        "startChar": 22,
+        "endLine": 37,
+        "endChar": 26
+      },
+      "revId": "b7e4501484e9933e73491a592d0f60e9d798a6b7",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b20e72f0_3341bcee",
         "filename": "certServiceClient/src/test/resources/mockito-extensions/org.mockito.plugins.MockMaker",
         "patchSetId": 11
