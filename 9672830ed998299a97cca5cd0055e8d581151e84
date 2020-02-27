@@ -1,0 +1,211 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "84623532_ac0cdb02",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-27T16:16:46Z",
+      "side": 1,
+      "message": "Use parameters from CsrConfiguration",
+      "range": {
+        "startLine": 57,
+        "startChar": 0,
+        "endLine": 59,
+        "endChar": 33
+      },
+      "revId": "9672830ed998299a97cca5cd0055e8d581151e84",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "96d62930_e34f53a0",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/api/ExitCode.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-27T16:16:46Z",
+      "side": 1,
+      "message": "take next available number",
+      "range": {
+        "startLine": 27,
+        "startChar": 4,
+        "endLine": 28,
+        "endChar": 30
+      },
+      "revId": "9672830ed998299a97cca5cd0055e8d581151e84",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "43675288_240a640e",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/HttpClient.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-27T16:16:46Z",
+      "side": 1,
+      "message": "\"retrieve\" fits better here.",
+      "range": {
+        "startLine": 56,
+        "startChar": 31,
+        "endLine": 56,
+        "endChar": 34
+      },
+      "revId": "9672830ed998299a97cca5cd0055e8d581151e84",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "156c278a_bb787f6b",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/HttpClient.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-27T16:16:46Z",
+      "side": 1,
+      "message": "Use string format method to follow the same convention.",
+      "range": {
+        "startLine": 81,
+        "startChar": 22,
+        "endLine": 81,
+        "endChar": 81
+      },
+      "revId": "9672830ed998299a97cca5cd0055e8d581151e84",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a12c5b05_247aa758",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/CerServiceRequestTestData.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-27T16:16:46Z",
+      "side": 1,
+      "message": "move it before Request parameters",
+      "range": {
+        "startLine": 45,
+        "startChar": 3,
+        "endLine": 45,
+        "endChar": 70
+      },
+      "revId": "9672830ed998299a97cca5cd0055e8d581151e84",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "568e926b_5c240b76",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/httpclient/HttpClientTest.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-27T16:16:46Z",
+      "side": 1,
+      "message": "proceed it with \"_\" to make it readable",
+      "range": {
+        "startLine": 70,
+        "startChar": 75,
+        "endLine": 70,
+        "endChar": 99
+      },
+      "revId": "9672830ed998299a97cca5cd0055e8d581151e84",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "83c8b439_242bf137",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/httpclient/HttpClientTest.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-27T16:16:46Z",
+      "side": 1,
+      "message": "Use static imports where its possible.\nCheck this file against this.",
+      "range": {
+        "startLine": 74,
+        "startChar": 27,
+        "endLine": 74,
+        "endChar": 96
+      },
+      "revId": "9672830ed998299a97cca5cd0055e8d581151e84",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7e3ee9bf_22a8ec91",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/httpclient/HttpClientTest.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-27T16:16:46Z",
+      "side": 1,
+      "message": "like above",
+      "range": {
+        "startLine": 78,
+        "startChar": 46,
+        "endLine": 78,
+        "endChar": 141
+      },
+      "revId": "9672830ed998299a97cca5cd0055e8d581151e84",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a108b3db_1e9cdcb9",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/httpclient/HttpClientTest.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-27T16:16:46Z",
+      "side": 1,
+      "message": "like above",
+      "range": {
+        "startLine": 94,
+        "startChar": 51,
+        "endLine": 94,
+        "endChar": 72
+      },
+      "revId": "9672830ed998299a97cca5cd0055e8d581151e84",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
