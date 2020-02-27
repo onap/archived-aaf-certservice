@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6fed5475_70d7248c",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/exception/CertServiceApiResponseException.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-02-27T14:31:25Z",
+      "side": 1,
+      "message": "Consider using passing message in constructor to super(message) instead of overriding getMessage() and storing url, responseCode and messageFromAPI here.",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 51,
+        "endChar": 5
+      },
+      "revId": "9289773445e8870aa0bc7ccbb7d7f6792200e122",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
