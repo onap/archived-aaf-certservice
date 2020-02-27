@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2f556e6b_bfbd0c6b",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfigLoader.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-27T08:42:06Z",
+      "side": 1,
+      "message": "Does it mean that service will start and response to health checks with OK?",
+      "revId": "15e8c3bd2bbe5ee32f2ff041450cbc276863d0d0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cef858fb_e067f411",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfigLoader.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-27T08:42:06Z",
+      "side": 1,
+      "message": "Does it mean that service will start and response to health checks with OK?",
+      "revId": "15e8c3bd2bbe5ee32f2ff041450cbc276863d0d0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
