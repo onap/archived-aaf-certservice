@@ -20,6 +20,8 @@
 package org.onap.aaf.certservice.client.configuration;
 
 
+import org.onap.aaf.certservice.client.configuration.exception.ClientConfigurationException;
+
 public class EnvsForCsr {
     private final EnvProvider envProvider = new EnvProvider();
     private String commonName;
@@ -30,7 +32,7 @@ public class EnvsForCsr {
     private String country;
     private String subjectAlternativesName;
 
-    public EnvsForCsr() {
+    public EnvsForCsr() throws ClientConfigurationException {
         this.commonName = envProvider.readEnvVariable(CsrConfigurationEnvs.COMMON_NAME.toString());
         this.organization = envProvider.readEnvVariable(CsrConfigurationEnvs.ORGANIZATION.toString());
         this.organizationUnit = envProvider.readEnvVariable(CsrConfigurationEnvs.ORGANIZATION_UNIT.toString());
