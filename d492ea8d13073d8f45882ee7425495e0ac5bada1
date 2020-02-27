@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "23af5da6_5c5f6769",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrFactory.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-27T14:28:04Z",
+      "side": 1,
+      "message": "Reformat in Intellij whole file. To many empty lines.",
+      "revId": "d492ea8d13073d8f45882ee7425495e0ac5bada1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "45784751_5c5494f0",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrFactory.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-27T14:28:04Z",
+      "side": 1,
+      "message": "Extract it to method e.g. getContentSigner",
+      "range": {
+        "startLine": 99,
+        "startChar": 8,
+        "endLine": 106,
+        "endChar": 9
+      },
+      "revId": "d492ea8d13073d8f45882ee7425495e0ac5bada1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
