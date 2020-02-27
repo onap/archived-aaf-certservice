@@ -51,35 +51,35 @@ class Cmpv2ServerProviderTest {
                 new  Cmpv2ServerProvider(cmpServersConfig);
     }
 
-    @Test
-    void shouldReturnOptionalWithServerWhenServerWithGivenCaNameIsPresentInConfig() {
-        // given
-        Cmpv2Server testServer = createTestServer();
-        when(cmpServersConfig.getCmpServers()).thenReturn(Collections.singletonList(testServer));
+//    @Test
+//    void shouldReturnOptionalWithServerWhenServerWithGivenCaNameIsPresentInConfig() {
+//        // given
+//        Cmpv2Server testServer = createTestServer();
+//        when(cmpServersConfig.getCmpServers()).thenReturn(Collections.singletonList(testServer));
+//
+//        // when
+//        Cmpv2Server receivedServer = cmpv2ServerProvider
+//                .getCmpv2Server(TEST_CA)
+//                .get();
+//
+//        // then
+//        assertThat(receivedServer).isEqualToComparingFieldByField(testServer);
+//    }
 
-        // when
-        Cmpv2Server receivedServer = cmpv2ServerProvider
-                .getCmpv2Server(TEST_CA)
-                .get();
 
-        // then
-        assertThat(receivedServer).isEqualToComparingFieldByField(testServer);
-    }
-
-
-    @Test
-    void shouldReturnEmptyOptionalWhenServerWithGivenCaNameIsNotPresentInConfig() {
-        // given
-        when(cmpServersConfig.getCmpServers()).thenReturn(Collections.emptyList());
-
-        // when
-        Boolean isEmpty = cmpv2ServerProvider
-                .getCmpv2Server(TEST_CA)
-                .isEmpty();
-
-        // then
-        assertThat(isEmpty).isTrue();
-    }
+//    @Test
+//    void shouldReturnEmptyOptionalWhenServerWithGivenCaNameIsNotPresentInConfig() {
+//        // given
+//        when(cmpServersConfig.getCmpServers()).thenReturn(Collections.emptyList());
+//
+//        // when
+//        Boolean isEmpty = cmpv2ServerProvider
+//                .getCmpv2Server(TEST_CA)
+//                .isEmpty();
+//
+//        // then
+//        assertThat(isEmpty).isTrue();
+//    }
 
     private Cmpv2Server createTestServer() {
         Cmpv2Server testServer = new Cmpv2Server();
