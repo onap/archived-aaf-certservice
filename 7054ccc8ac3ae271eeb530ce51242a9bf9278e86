@@ -70,6 +70,24 @@
     },
     {
       "key": {
+        "uuid": "3d3afb5e_e4024d40",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-02-27T09:45:06Z",
+      "side": 1,
+      "message": "do you have a specific sentence style in mind that you\u0027d want me to follow? or would making the log more descriptive be enough?",
+      "parentUuid": "b80dae39_3a11afc3",
+      "revId": "7054ccc8ac3ae271eeb530ce51242a9bf9278e86",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "012b1797_a738b059",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelper.java",
         "patchSetId": 2
