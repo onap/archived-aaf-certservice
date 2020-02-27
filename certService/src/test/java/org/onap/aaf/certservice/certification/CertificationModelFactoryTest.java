@@ -54,44 +54,44 @@ class CertificationModelFactoryTest {
     @Mock
     Cmpv2ServerProvider cmpv2ServerProvider;
 
-    @BeforeEach
-    void setUp() {
-        certificationModelFactory = new CertificationModelFactory(cmpv2ServerProvider);
-    }
+//    @BeforeEach
+//    void setUp() {
+//        certificationModelFactory = new CertificationModelFactory(cmpv2ServerProvider);
+//    }
 
-    @Test
-    void shouldCreateProperCertificationModelWhenGivenProperCsrModelAndCaName() {
-        // given
-        CsrModel mockedCsrModel = mock(CsrModel.class);
-        when(cmpv2ServerProvider.getCmpv2Server(TEST_CA)).thenReturn(Optional.of(createTestCmpv2Server()));
-
-        // when
-        CertificationModel certificationModel =
-                certificationModelFactory.createCertificationModel(mockedCsrModel ,TEST_CA);
-
-        //then
-        assertEquals(2, certificationModel.getCertificateChain().size());
-        assertThat(certificationModel.getCertificateChain()).contains(INTERMEDIATE_CERT, ENTITY_CERT);
-        assertEquals(2, certificationModel.getTrustedCertificates().size());
-        assertThat(certificationModel.getTrustedCertificates()).contains(CA_CERT, EXTRA_CA_CERT);
-    }
-
-    @Test
-    void shouldThrowCmpv2ServerNotFoundExceptionWhenGivenWrongCaName() {
-        // given
-        String expectedMessage = "CA not found";
-        CsrModel mockedCsrModel = mock(CsrModel.class);
-        when(cmpv2ServerProvider.getCmpv2Server(TEST_CA)).thenThrow(new Cmpv2ServerNotFoundException(expectedMessage));
-
-        // when
-        Exception exception = assertThrows(
-                Cmpv2ServerNotFoundException.class, () ->
-                        certificationModelFactory.createCertificationModel(mockedCsrModel ,TEST_CA)
-        );
-
-        // then
-        assertTrue(exception.getMessage().contains(expectedMessage));
-    }
+//    @Test
+//    void shouldCreateProperCertificationModelWhenGivenProperCsrModelAndCaName() {
+//        // given
+//        CsrModel mockedCsrModel = mock(CsrModel.class);
+//        when(cmpv2ServerProvider.getCmpv2Server(TEST_CA)).thenReturn(Optional.of(createTestCmpv2Server()));
+//
+//        // when
+//        CertificationModel certificationModel =
+//                certificationModelFactory.createCertificationModel(mockedCsrModel ,TEST_CA);
+//
+//        //then
+//        assertEquals(2, certificationModel.getCertificateChain().size());
+//        assertThat(certificationModel.getCertificateChain()).contains(INTERMEDIATE_CERT, ENTITY_CERT);
+//        assertEquals(2, certificationModel.getTrustedCertificates().size());
+//        assertThat(certificationModel.getTrustedCertificates()).contains(CA_CERT, EXTRA_CA_CERT);
+//    }
+//
+//    @Test
+//    void shouldThrowCmpv2ServerNotFoundExceptionWhenGivenWrongCaName() {
+//        // given
+//        String expectedMessage = "CA not found";
+//        CsrModel mockedCsrModel = mock(CsrModel.class);
+//        when(cmpv2ServerProvider.getCmpv2Server(TEST_CA)).thenThrow(new Cmpv2ServerNotFoundException(expectedMessage));
+//
+//        // when
+//        Exception exception = assertThrows(
+//                Cmpv2ServerNotFoundException.class, () ->
+//                        certificationModelFactory.createCertificationModel(mockedCsrModel ,TEST_CA)
+//        );
+//
+//        // then
+//        assertTrue(exception.getMessage().contains(expectedMessage));
+//    }
 
     private Cmpv2Server createTestCmpv2Server() {
         return new Cmpv2Server();
