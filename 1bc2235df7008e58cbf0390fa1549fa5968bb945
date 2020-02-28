@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0c6f4c07_6e177447",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/api/ExitCode.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-02-28T14:14:41Z",
+      "side": 1,
+      "message": "Use next code number",
+      "range": {
+        "startLine": 27,
+        "startChar": 4,
+        "endLine": 27,
+        "endChar": 34
+      },
+      "revId": "1bc2235df7008e58cbf0390fa1549fa5968bb945",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3750fc82_f27b1616",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12FilesCreator.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-02-28T14:14:41Z",
+      "side": 1,
+      "message": "Consider to extract constans",
+      "range": {
+        "startLine": 41,
+        "startChar": 37,
+        "endLine": 41,
+        "endChar": 52
+      },
+      "revId": "1bc2235df7008e58cbf0390fa1549fa5968bb945",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "37644a4a_bd2480ce",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-02-28T14:14:41Z",
+      "side": 1,
+      "message": "Consider to move up static field.",
+      "range": {
+        "startLine": 46,
+        "startChar": 4,
+        "endLine": 47,
+        "endChar": 52
+      },
+      "revId": "1bc2235df7008e58cbf0390fa1549fa5968bb945",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dd64b5eb_8a9b5b7a",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-02-28T14:14:41Z",
+      "side": 1,
+      "message": "Consider to refactor it to isValidate or isCorrectPasswordPattern with return boolean if is correct.",
+      "range": {
+        "startLine": 55,
+        "startChar": 8,
+        "endLine": 55,
+        "endChar": 35
+      },
+      "revId": "1bc2235df7008e58cbf0390fa1549fa5968bb945",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c207d0d4_d024edc5",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/KeystoreTruststoreCreatorTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-02-28T14:14:41Z",
+      "side": 1,
+      "message": "Consider to refactor {\"a\" , \"b\"} without new String",
+      "range": {
+        "startLine": 42,
+        "startChar": 56,
+        "endLine": 42,
+        "endChar": 78
+      },
+      "revId": "1bc2235df7008e58cbf0390fa1549fa5968bb945",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e09219b6_9d6c4178",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/KeystoreTruststoreCreatorTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-02-28T14:14:41Z",
+      "side": 1,
+      "message": "as above",
+      "range": {
+        "startLine": 63,
+        "startChar": 56,
+        "endLine": 63,
+        "endChar": 77
+      },
+      "revId": "1bc2235df7008e58cbf0390fa1549fa5968bb945",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
