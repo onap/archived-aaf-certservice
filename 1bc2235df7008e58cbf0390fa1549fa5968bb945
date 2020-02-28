@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "e034f83c_f0824fc0",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-28T15:13:45Z",
+      "side": 1,
+      "message": "Could you please change alias to \"certificate\"",
+      "revId": "1bc2235df7008e58cbf0390fa1549fa5968bb945",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "0c6f4c07_6e177447",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/api/ExitCode.java",
         "patchSetId": 6
@@ -48,6 +65,40 @@
     },
     {
       "key": {
+        "uuid": "1a928d2a_2a96979b",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-28T15:13:45Z",
+      "side": 1,
+      "message": "Used once, do we need to have it as a member of this class?",
+      "revId": "1bc2235df7008e58cbf0390fa1549fa5968bb945",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "701d3eb6_1cc5ef3c",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-28T15:13:45Z",
+      "side": 1,
+      "message": "Hmmm, see $ and # but not _ :)",
+      "revId": "1bc2235df7008e58cbf0390fa1549fa5968bb945",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "37644a4a_bd2480ce",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
         "patchSetId": 6
@@ -88,6 +139,40 @@
         "endLine": 55,
         "endChar": 35
       },
+      "revId": "1bc2235df7008e58cbf0390fa1549fa5968bb945",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ac391867_6b567f48",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-28T15:13:45Z",
+      "side": 1,
+      "message": "Here we don\u0027t have certificate chain but list of separate trust anchors. You should handle every entry separately. See below that they are handled separately, so here you should call List\u003cString\u003e differently, e.g. trustAnchors :D",
+      "revId": "1bc2235df7008e58cbf0390fa1549fa5968bb945",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "810cb1cb_ea82207b",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-02-28T15:13:45Z",
+      "side": 1,
+      "message": "Don\u0027t understand why we validate random generated password?",
       "revId": "1bc2235df7008e58cbf0390fa1549fa5968bb945",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
