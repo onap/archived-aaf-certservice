@@ -272,14 +272,14 @@ class Cmpv2ClientTest {
       Date notBefore,
       Date notAfter) {
     csrMeta = new CSRMeta(rdns);
-    csrMeta.cn(cn);
-    csrMeta.san(san);
-    csrMeta.password(password);
-    csrMeta.email(email);
-    csrMeta.issuerCn(issuerCn);
+    csrMeta.setCn(cn);
+    csrMeta.addSan(san);
+    csrMeta.setPassword(password);
+    csrMeta.setEmail(email);
+    csrMeta.setIssuerCn(issuerCn);
     when(kpg.generateKeyPair()).thenReturn(keyPair);
-    csrMeta.keypair();
-    csrMeta.caUrl(externalCaUrl);
+    csrMeta.getKeyPairOrGenerateIfNull();
+    csrMeta.setCaUrl(externalCaUrl);
 
     this.notBefore = notBefore;
     this.notAfter = notAfter;
