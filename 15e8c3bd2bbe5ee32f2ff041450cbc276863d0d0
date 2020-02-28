@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "193a4fd6_0af9af31",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfigLoader.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-02-28T09:23:29Z",
+      "side": 1,
+      "message": "yes and same below, although I\u0027m not sure if, we shouldn\u0027t start service at all if configuration loading fail, or just inform client about it when he send sign request or reload",
+      "parentUuid": "2f556e6b_bfbd0c6b",
+      "revId": "15e8c3bd2bbe5ee32f2ff041450cbc276863d0d0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "cef858fb_e067f411",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfigLoader.java",
         "patchSetId": 1
