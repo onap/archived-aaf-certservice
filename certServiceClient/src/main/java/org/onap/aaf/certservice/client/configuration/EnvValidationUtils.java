@@ -58,7 +58,7 @@ public final class EnvValidationUtils {
     }
 
     static Boolean isHttpProtocolsPresent(String stringToCheck) {
-        return Pattern.compile("[h][t][t][p][:][/][/]|[h][t][t][p][s][:][/][/]").matcher(stringToCheck).find();
+        return Pattern.compile("http://|https://").matcher(stringToCheck).find();
     }
 
     public static Boolean isSpecialCharsPresent(String stringToCheck) {

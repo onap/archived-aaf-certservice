@@ -22,20 +22,18 @@ package org.onap.aaf.certservice.client.configuration.model;
 
 public class ClientConfiguration implements ConfigurationModel {
 
-    Integer DEFAULT_TIMEOUT_MS = 30000;
-    String DEFAULT_REQUEST_URL = "http://cert-service:8080/v1/certificate/";
+    private static final Integer DEFAULT_TIMEOUT_MS = 30000;
+    private static final String DEFAULT_REQUEST_URL = "http://cert-service:8080/v1/certificate/";
 
     private String urlToCertService;
     private Integer requestTimeout;
     private String certsOutputPath;
     private String caName;
 
-
     public ClientConfiguration() {
-        urlToCertService = DEFAULT_REQUEST_URL;
-        requestTimeout = DEFAULT_TIMEOUT_MS;
+        this.urlToCertService = DEFAULT_REQUEST_URL;
+        this.requestTimeout = DEFAULT_TIMEOUT_MS;
     }
-
 
     public String getUrlToCertService() {
         return urlToCertService;
