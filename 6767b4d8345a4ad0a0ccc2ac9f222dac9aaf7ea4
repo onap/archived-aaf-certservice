@@ -1,0 +1,90 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "950def7a_1de98190",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/EnvProvider.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-28T08:20:34Z",
+      "side": 1,
+      "message": "I would rename it to \"..Name\"",
+      "range": {
+        "startLine": 25,
+        "startChar": 54,
+        "endLine": 25,
+        "endChar": 62
+      },
+      "revId": "6767b4d8345a4ad0a0ccc2ac9f222dac9aaf7ea4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "657fb255_7b62f72f",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/EnvValidationUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-28T08:20:34Z",
+      "side": 1,
+      "message": "I think good idea here is to make test cases for validation methods. This is really missing here.",
+      "revId": "6767b4d8345a4ad0a0ccc2ac9f222dac9aaf7ea4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c1f75e1b_421102a8",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/EnvValidationUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-28T08:20:34Z",
+      "side": 1,
+      "message": "Optional is providing part of this functionality by itself. I mean if argument passed to Optional.ofNullable is null than Optional.empty is already returned\ne.g.\nOptional\u003cString\u003e justNull \u003d Optional.ofNullable(null); \u003d\u003e Optional.empty\nOptional\u003cString\u003e emptySign \u003d Optional.ofNullable(\"\"); \u003d\u003e Optional[\"\"]\n\nSo I would remove envValue !\u003d null condition.",
+      "range": {
+        "startLine": 38,
+        "startChar": 8,
+        "endLine": 38,
+        "endChar": 56
+      },
+      "revId": "6767b4d8345a4ad0a0ccc2ac9f222dac9aaf7ea4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ec722b72_137c0f68",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/EnvsForClient.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-28T08:20:34Z",
+      "side": 1,
+      "message": "\"private static final\" its just for primitives and String.\nRemove static.",
+      "range": {
+        "startLine": 25,
+        "startChar": 4,
+        "endLine": 25,
+        "endChar": 25
+      },
+      "revId": "6767b4d8345a4ad0a0ccc2ac9f222dac9aaf7ea4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
