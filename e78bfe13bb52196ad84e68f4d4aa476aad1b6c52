@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0a12fb00_320031b4",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/HttpClient.java",
+        "patchSetId": 16
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-28T13:03:00Z",
+      "side": 1,
+      "message": "In next mr:\nPass here already defined HttpGet.",
+      "range": {
+        "startLine": 56,
+        "startChar": 56,
+        "endLine": 56,
+        "endChar": 98
+      },
+      "revId": "e78bfe13bb52196ad84e68f4d4aa476aad1b6c52",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "45722c99_a044b2ab",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/HttpClient.java",
+        "patchSetId": 16
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-28T13:03:00Z",
+      "side": 1,
+      "message": "In next mr:\nSince its used once, move it to place of usage.",
+      "range": {
+        "startLine": 76,
+        "startChar": 31,
+        "endLine": 76,
+        "endChar": 58
+      },
+      "revId": "e78bfe13bb52196ad84e68f4d4aa476aad1b6c52",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5c2d09b1_0d622603",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/HttpClient.java",
+        "patchSetId": 16
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-28T13:03:00Z",
+      "side": 1,
+      "message": "In next mr:\nShould be handled in place. Rethrow it to custom one.",
+      "range": {
+        "startLine": 85,
+        "startChar": 60,
+        "endLine": 85,
+        "endChar": 80
+      },
+      "revId": "e78bfe13bb52196ad84e68f4d4aa476aad1b6c52",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dd882711_34782396",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/HttpClient.java",
+        "patchSetId": 16
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-02-28T13:03:00Z",
+      "side": 1,
+      "message": "In next mr:\ncreateHttpRequest",
+      "range": {
+        "startLine": 89,
+        "startChar": 20,
+        "endLine": 89,
+        "endChar": 37
+      },
+      "revId": "e78bfe13bb52196ad84e68f4d4aa476aad1b6c52",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
