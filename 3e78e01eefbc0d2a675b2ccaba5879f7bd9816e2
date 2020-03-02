@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fcb9cc0f_6baf4976",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-03-02T12:27:46Z",
+      "side": 1,
+      "message": "Invoke this after csrFactory creation (line: 58) here pass variable.",
+      "range": {
+        "startLine": 67,
+        "startChar": 20,
+        "endLine": 67,
+        "endChar": 56
+      },
+      "revId": "3e78e01eefbc0d2a675b2ccaba5879f7bd9816e2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f0883806_7a13636f",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-03-02T12:27:46Z",
+      "side": 1,
+      "message": "On this level there is no need to pass here this magic values. This is messing high level api.\nPlace them in KeystoreTruststoreCreator as a private static final and use them there.",
+      "range": {
+        "startLine": 72,
+        "startChar": 79,
+        "endLine": 72,
+        "endChar": 96
+      },
+      "revId": "3e78e01eefbc0d2a675b2ccaba5879f7bd9816e2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7430c799_81694d82",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/RandomPasswordGenerator.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-03-02T12:27:46Z",
+      "side": 1,
+      "message": "I think same like above, private static final.",
+      "range": {
+        "startLine": 33,
+        "startChar": 8,
+        "endLine": 36,
+        "endChar": 45
+      },
+      "revId": "3e78e01eefbc0d2a675b2ccaba5879f7bd9816e2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
