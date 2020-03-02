@@ -1,0 +1,225 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "47db9c1b_4c546d36",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12FilesCreator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-02T09:20:18Z",
+      "side": 1,
+      "message": "class is public, but methods are default",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "44cc1ff8_a6fe1bf4",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12FilesCreator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-02T09:20:18Z",
+      "side": 1,
+      "message": "loosing information about cause",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "17a1f866_793debc8",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-02T09:20:18Z",
+      "side": 1,
+      "message": "class is public, but methods are default??\nreduce class visibility or add public to methods\n\nmake password as value object and move method isCorrectPasswordPattern",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cc1dff8d_c9803b61",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-02T09:20:18Z",
+      "side": 1,
+      "message": "move log to convert method",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "341f2cce_bdbe868e",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-02T09:20:18Z",
+      "side": 1,
+      "message": "we are loosing information about exception. pls log full exception, not only message",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ed83fe4e_0159b2db",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-02T09:20:18Z",
+      "side": 1,
+      "message": "null? why null?",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f969c4ac_1b60b2c0",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-02T09:20:18Z",
+      "side": 1,
+      "message": "what goes wrong?",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ade8d335_6da7cd1f",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/RandomPasswordGenerator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-02T09:20:18Z",
+      "side": 1,
+      "message": "class public, but method default",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c4492de4_228ab0c1",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/RandomPasswordGenerator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-02T09:20:18Z",
+      "side": 1,
+      "message": "static final, capital letters",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "755e47af_946fc48b",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/RandomPasswordGenerator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-02T09:20:18Z",
+      "side": 1,
+      "message": "static final, capital letters",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5882230d_806c678d",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/RandomPasswordGenerator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-02T09:20:18Z",
+      "side": 1,
+      "message": "static final, capital letters",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c95efdb2_ca814de5",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/RandomPasswordGenerator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-02T09:20:18Z",
+      "side": 1,
+      "message": "in each case the same comment: static final, capital letters",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8591432c_b9ea880b",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12ConverterTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-02T09:20:18Z",
+      "side": 1,
+      "message": "move to given section",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
