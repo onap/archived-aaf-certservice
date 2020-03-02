@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f117f1d5_c5db63ce",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-02T08:28:19Z",
+      "side": 1,
+      "message": "My comment was about keystore only. \nPlease revert to trusted-certificate- in truststore :)",
+      "revId": "d2e8d2b3f937340b30e4d6337f22010ccd8a9031",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fcf4003d_3af54cb3",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12FilesCreator.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-02T08:28:19Z",
+      "side": 1,
+      "message": "error level if we stop processing",
+      "revId": "d2e8d2b3f937340b30e4d6337f22010ccd8a9031",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ba8da931_7508e9b0",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-02T08:28:19Z",
+      "side": 1,
+      "message": "error level if we stop processing",
+      "revId": "d2e8d2b3f937340b30e4d6337f22010ccd8a9031",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6688bb4e_6f9a7c6a",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-02T08:28:19Z",
+      "side": 1,
+      "message": "error level if we stop processing",
+      "revId": "d2e8d2b3f937340b30e4d6337f22010ccd8a9031",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "35f21c7a_0af5a508",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-02T08:28:19Z",
+      "side": 1,
+      "message": "error level if we stop processing",
+      "revId": "d2e8d2b3f937340b30e4d6337f22010ccd8a9031",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "af8f6690_4859c5f7",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-02T08:28:19Z",
+      "side": 1,
+      "message": "error level if we stop processing",
+      "revId": "d2e8d2b3f937340b30e4d6337f22010ccd8a9031",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
