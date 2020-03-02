@@ -143,6 +143,24 @@
     },
     {
       "key": {
+        "uuid": "caf980ea_a5b3c613",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-02T13:33:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "056763af_06cfb8f6",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "cc1dff8d_c9803b61",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
         "patchSetId": 8
@@ -236,6 +254,30 @@
     },
     {
       "key": {
+        "uuid": "3c3e2864_e6a5b70f",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-02T13:33:51Z",
+      "side": 1,
+      "message": "It\u0027s just a private method which doesn\u0027t use any non static fields, but I will remove the static modifier if it introduces an unnecessary mess.",
+      "parentUuid": "b25894b9_59ee303b",
+      "range": {
+        "startLine": 88,
+        "startChar": 4,
+        "endLine": 88,
+        "endChar": 18
+      },
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3c796add_c11ec86b",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
         "patchSetId": 8
@@ -247,6 +289,30 @@
       "writtenOn": "2020-03-02T12:03:06Z",
       "side": 1,
       "message": "rename to certificate",
+      "range": {
+        "startLine": 93,
+        "startChar": 47,
+        "endLine": 93,
+        "endChar": 50
+      },
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cddf458e_79cb3ea4",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-02T13:33:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3c796add_c11ec86b",
       "range": {
         "startLine": 93,
         "startChar": 47,
@@ -521,6 +587,24 @@
     },
     {
       "key": {
+        "uuid": "741e2529_0862bc10",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/KeystoreTruststoreCreatorTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-02T13:33:51Z",
+      "side": 1,
+      "message": "It tests if the methods that really do the job are invoked, so I think it\u0027s not that useless. For example if someone accidently removes an important method call, the test will fail. But the final word is yours :)",
+      "parentUuid": "2cc9b1f1_a0b6aae3",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8591432c_b9ea880b",
         "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12ConverterTest.java",
         "patchSetId": 8
@@ -579,6 +663,30 @@
     },
     {
       "key": {
+        "uuid": "c0d1d4eb_455bc9db",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12ConverterTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 169,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-02T13:33:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "daf561d1_1076415b",
+      "range": {
+        "startLine": 167,
+        "startChar": 8,
+        "endLine": 169,
+        "endChar": 10
+      },
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6bebed4f_4a1ca334",
         "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12ConverterTest.java",
         "patchSetId": 8
@@ -590,6 +698,30 @@
       "writtenOn": "2020-03-02T12:03:06Z",
       "side": 1,
       "message": "same here and elsewhere",
+      "range": {
+        "startLine": 185,
+        "startChar": 8,
+        "endLine": 187,
+        "endChar": 10
+      },
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "de6457a0_8bc52a57",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12ConverterTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 187,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-02T13:33:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6bebed4f_4a1ca334",
       "range": {
         "startLine": 185,
         "startChar": 8,
