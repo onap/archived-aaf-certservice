@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "b332c04f_5229f215",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12FilesCreator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-02T11:53:29Z",
+      "side": 1,
+      "message": "Factory added as discussed f2f.",
+      "parentUuid": "a1d94bc4_8f5cc223",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "44cc1ff8_a6fe1bf4",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12FilesCreator.java",
         "patchSetId": 8
