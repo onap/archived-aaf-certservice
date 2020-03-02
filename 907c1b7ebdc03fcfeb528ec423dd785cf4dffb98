@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "a1d94bc4_8f5cc223",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12FilesCreator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-02T11:22:00Z",
+      "side": 1,
+      "message": "The constructor is public and I create this object in CertServiceClient (from a different package), so I need this class to be public. The default methods are called only by KeystoreTruststoreCreator, which is located in the same package as this class, so I thought it would be unnecessary to enable those methods directly for everyone. They should use KeystoreTruststoreCreator public methods instead.",
+      "parentUuid": "47db9c1b_4c546d36",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "44cc1ff8_a6fe1bf4",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12FilesCreator.java",
         "patchSetId": 8
@@ -30,6 +48,24 @@
       "writtenOn": "2020-03-02T09:20:18Z",
       "side": 1,
       "message": "loosing information about cause",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "36529f79_5aff99da",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12FilesCreator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-02T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "44cc1ff8_a6fe1bf4",
       "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "3d6317e4_eea29e29",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-02T11:22:00Z",
+      "side": 1,
+      "message": "The same as in PKCS12FilesCreator. My intention was to enable only creation of the object with appropriate parameters publicly. The methods are called only from inside the package.",
+      "parentUuid": "17a1f866_793debc8",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "cc1dff8d_c9803b61",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
         "patchSetId": 8
@@ -64,6 +118,24 @@
       "writtenOn": "2020-03-02T09:20:18Z",
       "side": 1,
       "message": "move log to convert method",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "803d3a95_dcdb05c3",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-02T11:22:00Z",
+      "side": 1,
+      "message": "I can do this, but the log messages for keystore and truststore are slightly different, so we will lose the information about which one is being converted currently.",
+      "parentUuid": "cc1dff8d_c9803b61",
       "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "9d02bb4c_38e552b2",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-02T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "341f2cce_bdbe868e",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ed83fe4e_0159b2db",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
         "patchSetId": 8
@@ -98,6 +188,24 @@
       "writtenOn": "2020-03-02T09:20:18Z",
       "side": 1,
       "message": "null? why null?",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8c516ca7_f606eb2d",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-02T11:22:00Z",
+      "side": 1,
+      "message": "Because we are creating a new KeyStore here and not loading an existing one.\nhttps://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html#load(java.security.KeyStore.LoadStoreParameter)",
+      "parentUuid": "ed83fe4e_0159b2db",
       "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
@@ -121,6 +229,24 @@
     },
     {
       "key": {
+        "uuid": "3f13d3c4_3cbd285e",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-02T11:22:00Z",
+      "side": 1,
+      "message": "If there is something wrong with the certificate (it can\u0027t be parsed correctly), a NullPointerException is thrown here. Changed the error message for a more meaningful one.",
+      "parentUuid": "f969c4ac_1b60b2c0",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ade8d335_6da7cd1f",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/RandomPasswordGenerator.java",
         "patchSetId": 8
@@ -132,6 +258,24 @@
       "writtenOn": "2020-03-02T09:20:18Z",
       "side": 1,
       "message": "class public, but method default",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "928f24ae_0844e6c1",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/RandomPasswordGenerator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-02T11:22:00Z",
+      "side": 1,
+      "message": "Replied in PKCS12FilesCreator and PemToPKCS12Converter.",
+      "parentUuid": "ade8d335_6da7cd1f",
       "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
@@ -155,6 +299,24 @@
     },
     {
       "key": {
+        "uuid": "fab77799_a0e651c7",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/RandomPasswordGenerator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-02T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c4492de4_228ab0c1",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "755e47af_946fc48b",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/RandomPasswordGenerator.java",
         "patchSetId": 8
@@ -166,6 +328,24 @@
       "writtenOn": "2020-03-02T09:20:18Z",
       "side": 1,
       "message": "static final, capital letters",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d1bdd0e3_0f4e4db3",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/RandomPasswordGenerator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-02T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "755e47af_946fc48b",
       "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
@@ -189,6 +369,24 @@
     },
     {
       "key": {
+        "uuid": "c213655f_0a6cde28",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/RandomPasswordGenerator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-02T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5882230d_806c678d",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c95efdb2_ca814de5",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/RandomPasswordGenerator.java",
         "patchSetId": 8
@@ -206,6 +404,24 @@
     },
     {
       "key": {
+        "uuid": "bbeda7ce_341322a9",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/RandomPasswordGenerator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-02T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c95efdb2_ca814de5",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8591432c_b9ea880b",
         "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12ConverterTest.java",
         "patchSetId": 8
@@ -217,6 +433,24 @@
       "writtenOn": "2020-03-02T09:20:18Z",
       "side": 1,
       "message": "move to given section",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3b8bad4c_7d5fbc85",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12ConverterTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-02T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8591432c_b9ea880b",
       "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
