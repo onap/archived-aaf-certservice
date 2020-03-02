@@ -48,6 +48,52 @@
     },
     {
       "key": {
+        "uuid": "10326ab0_28c4b8cc",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-03-02T13:02:17Z",
+      "side": 1,
+      "message": "Could be moved to convert method. Duplication with lines 60-63.",
+      "range": {
+        "startLine": 50,
+        "startChar": 0,
+        "endLine": 53,
+        "endChar": 9
+      },
+      "revId": "3e78e01eefbc0d2a675b2ccaba5879f7bd9816e2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8a477066_32d6ce4f",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-03-02T13:02:17Z",
+      "side": 1,
+      "message": "Consider extracting to something like parseCertificate(String certificate) and refactor for each to:\n\n    private Certificate[] convertToCertificateArray(List\u003cString\u003e certificates)\n        throws PemToPKCS12ConverterException {\n        Certificate[] parsedCertificates \u003d new Certificate[certificates.size()];\n        for (String c : certificates) {\n            parsedCertificates[certificates.indexOf(c)] \u003d parseCertificate(c);\n        }\n        return parsedCertificates;\n    }\n\n    private X509Certificate parseCertificate(String c) throws PemToPKCS12ConverterException {\n        try (PEMParser pem \u003d new PEMParser(new StringReader(c))) {\n            X509CertificateHolder certHolder \u003d Optional.ofNullable((X509CertificateHolder) pem.readObject())\n                    .orElseThrow(\n                            () -\u003e new PemToPKCS12ConverterException(\"The certificate couldn\u0027t be parsed correctly. \" + c));\n            return new JcaX509CertificateConverter()\n                    .setProvider(new BouncyCastleProvider())\n                    .getCertificate(certHolder);\n        } catch (IOException | CertificateException e) {\n            LOGGER.error(\"Certificates conversion failed, cause: \" + e);\n            throw new PemToPKCS12ConverterException(e);\n        }\n    }",
+      "range": {
+        "startLine": 109,
+        "startChar": 12,
+        "endLine": 119,
+        "endChar": 13
+      },
+      "revId": "3e78e01eefbc0d2a675b2ccaba5879f7bd9816e2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "7430c799_81694d82",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/RandomPasswordGenerator.java",
         "patchSetId": 10
