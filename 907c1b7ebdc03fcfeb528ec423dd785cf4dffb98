@@ -125,6 +125,24 @@
     },
     {
       "key": {
+        "uuid": "056763af_06cfb8f6",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-03-02T12:03:06Z",
+      "side": 1,
+      "message": "So reduce aceess modifier for class itself. Bogumił also asked for creation of Password value object which could hold method for password validation.",
+      "parentUuid": "3d6317e4_eea29e29",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "cc1dff8d_c9803b61",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
         "patchSetId": 8
@@ -189,6 +207,52 @@
       "side": 1,
       "message": "Done",
       "parentUuid": "341f2cce_bdbe868e",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b25894b9_59ee303b",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-03-02T12:03:06Z",
+      "side": 1,
+      "message": "Does it make sense to use static here?",
+      "range": {
+        "startLine": 88,
+        "startChar": 4,
+        "endLine": 88,
+        "endChar": 18
+      },
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3c796add_c11ec86b",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-03-02T12:03:06Z",
+      "side": 1,
+      "message": "rename to certificate",
+      "range": {
+        "startLine": 93,
+        "startChar": 47,
+        "endLine": 93,
+        "endChar": 50
+      },
       "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
@@ -440,6 +504,23 @@
     },
     {
       "key": {
+        "uuid": "2cc9b1f1_a0b6aae3",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/KeystoreTruststoreCreatorTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-03-02T12:03:06Z",
+      "side": 1,
+      "message": "In my opinion this doesn\u0027t test anything besides that stubs are working. If so to be removed.",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8591432c_b9ea880b",
         "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12ConverterTest.java",
         "patchSetId": 8
@@ -469,6 +550,52 @@
       "side": 1,
       "message": "Done",
       "parentUuid": "8591432c_b9ea880b",
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "daf561d1_1076415b",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12ConverterTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 169,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-03-02T12:03:06Z",
+      "side": 1,
+      "message": "Use assertj way of testing",
+      "range": {
+        "startLine": 167,
+        "startChar": 8,
+        "endLine": 169,
+        "endChar": 10
+      },
+      "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6bebed4f_4a1ca334",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12ConverterTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 187,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-03-02T12:03:06Z",
+      "side": 1,
+      "message": "same here and elsewhere",
+      "range": {
+        "startLine": 185,
+        "startChar": 8,
+        "endLine": 187,
+        "endChar": 10
+      },
       "revId": "907c1b7ebdc03fcfeb528ec423dd785cf4dffb98",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
