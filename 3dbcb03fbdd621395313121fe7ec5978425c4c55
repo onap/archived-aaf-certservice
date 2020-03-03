@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "057061d1_dadfda1c",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/Base64PkEncoder.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-03-03T12:43:51Z",
+      "side": 1,
+      "message": "duplicated code",
+      "range": {
+        "startLine": 47,
+        "startChar": 31,
+        "endLine": 47,
+        "endChar": 51
+      },
+      "revId": "3dbcb03fbdd621395313121fe7ec5978425c4c55",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3a2d9739_525bef48",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/Base64PkEncoder.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-03-03T12:43:51Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 48,
+        "startChar": 76,
+        "endLine": 48,
+        "endChar": 96
+      },
+      "revId": "3dbcb03fbdd621395313121fe7ec5978425c4c55",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
