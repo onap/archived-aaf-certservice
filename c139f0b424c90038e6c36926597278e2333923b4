@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7bb6373b_1f8370a3",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/common/Base64Coder.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-03T12:20:03Z",
+      "side": 1,
+      "message": "if private consturctor, then class should be final",
+      "revId": "c139f0b424c90038e6c36926597278e2333923b4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3951e8fa_656aae99",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/common/Base64Coder.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-03T12:20:03Z",
+      "side": 1,
+      "message": "remove static",
+      "revId": "c139f0b424c90038e6c36926597278e2333923b4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "00e1be6a_f8c6a901",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/HttpClient.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-03T12:20:03Z",
+      "side": 1,
+      "message": "log exception",
+      "revId": "c139f0b424c90038e6c36926597278e2333923b4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
