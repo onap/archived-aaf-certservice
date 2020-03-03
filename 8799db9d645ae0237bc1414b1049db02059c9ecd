@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "826ce72e_33768951",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/api/ReloadConfigEndpoint.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-03-03T16:28:22Z",
+      "side": 1,
+      "message": "I would recommend changing name to ReloadConfigService or changing CertificationService name to CertificationEndpoint to keep name consistent",
+      "range": {
+        "startLine": 32,
+        "startChar": 13,
+        "endLine": 32,
+        "endChar": 33
+      },
+      "revId": "8799db9d645ae0237bc1414b1049db02059c9ecd",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "c6dc93a1_24d8537c",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/api/ReloadConfigEndpoint.java",
         "patchSetId": 1
@@ -19,6 +42,23 @@
     },
     {
       "key": {
+        "uuid": "336adb01_57d0c11a",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/api/ReloadConfigEndpoint.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-03-03T16:28:22Z",
+      "side": 1,
+      "message": "maybe we can use CertificationExceptionController instead of creating LoadingStatus. We could throw exception from reloadConfiguration method and handle it in CertificationExceptionController, like for CertificationService ??",
+      "revId": "8799db9d645ae0237bc1414b1049db02059c9ecd",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "f4b76814_cdbb6b3f",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfig.java",
         "patchSetId": 1
@@ -30,6 +70,29 @@
       "writtenOn": "2020-03-03T16:05:12Z",
       "side": 1,
       "message": "Message is too generic, especially if you check deeper implementation, \n\"Exception occurred during CMP Servers configuration loading\" vs \"Validation of CMPv2 servers configuration failed\"\nWhat exception happened in first case? FileNotExists or wrong syntax?",
+      "revId": "8799db9d645ae0237bc1414b1049db02059c9ecd",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a9806eaa_8edf72d5",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/api/ReloadConfigEndpointTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-03-03T16:28:22Z",
+      "side": 1,
+      "message": "@ExtendWith(MockitoExtension.class) class annotation can be used, instead of initMocks",
+      "range": {
+        "startLine": 44,
+        "startChar": 8,
+        "endLine": 44,
+        "endChar": 43
+      },
       "revId": "8799db9d645ae0237bc1414b1049db02059c9ecd",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
