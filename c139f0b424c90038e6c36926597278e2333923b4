@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "3609a043_5c933974",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/common/Base64Coder.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-03T13:13:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "af6f3778_cbe9906f",
+      "revId": "c139f0b424c90038e6c36926597278e2333923b4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3951e8fa_656aae99",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/common/Base64Coder.java",
         "patchSetId": 3
@@ -69,6 +87,24 @@
       "revId": "c139f0b424c90038e6c36926597278e2333923b4",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b8d54c94_9303b05e",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/common/Base64Coder.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-03T13:13:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "805a91ef_a17835a7",
+      "revId": "c139f0b424c90038e6c36926597278e2333923b4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
