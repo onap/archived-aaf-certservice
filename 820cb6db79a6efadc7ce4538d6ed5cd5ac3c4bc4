@@ -1,0 +1,123 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d94d6920_f09a7338",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/CSRMeta.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-03T12:00:20Z",
+      "side": 1,
+      "message": "Please call it after RFC4210 - referenceValue or referenceNumber",
+      "revId": "820cb6db79a6efadc7ce4538d6ed5cd5ac3c4bc4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f128315f_e6101a48",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-03T12:00:20Z",
+      "side": 1,
+      "message": "pk is too short and meaningless. Please refactor",
+      "revId": "820cb6db79a6efadc7ce4538d6ed5cd5ac3c4bc4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1477fcd2_9066b3a7",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-03T12:00:20Z",
+      "side": 1,
+      "message": "Please use sentences understandable to Operation team, not R\u0026D jargon. So \"Public Key is not available, hence cannot verify signature\"",
+      "revId": "820cb6db79a6efadc7ce4538d6ed5cd5ac3c4bc4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ec5afdb9_2526d728",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-03T12:00:20Z",
+      "side": 1,
+      "message": "The same",
+      "revId": "820cb6db79a6efadc7ce4538d6ed5cd5ac3c4bc4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cc06029c_bb1c4fbc",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-03T12:00:20Z",
+      "side": 1,
+      "message": "The same",
+      "revId": "820cb6db79a6efadc7ce4538d6ed5cd5ac3c4bc4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a5e244cc_841f21a9",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-03T12:00:20Z",
+      "side": 1,
+      "message": "The same",
+      "revId": "820cb6db79a6efadc7ce4538d6ed5cd5ac3c4bc4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0dd345f3_2a7ac142",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelper.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 300,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-03T12:00:20Z",
+      "side": 1,
+      "message": "Why like this? Needs to be handled on lower level. I was expecting that from caPubs and extraCerts you will create MAP\u003cX500Name, Certificate\u003e and from that you will just create certificate chain, using recurrently issuerDN from certificate (signed certificate as first, further on intermediate CAs) until you will create full chain and last certificate (either self signed or one for which you can\u0027t find issuer in the map) you will put in trustedCerts.",
+      "revId": "820cb6db79a6efadc7ce4538d6ed5cd5ac3c4bc4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
