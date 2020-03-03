@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c6dc93a1_24d8537c",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/api/ReloadConfigEndpoint.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 3435
+      },
+      "writtenOn": "2020-03-03T14:36:20Z",
+      "side": 1,
+      "message": "consider change method name for example reloadConfiguration",
+      "revId": "8799db9d645ae0237bc1414b1049db02059c9ecd",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6945bddc_e43c5f13",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/certification/configuration/validation/Cmpv2ServerConfigurationValidatorTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 3435
+      },
+      "writtenOn": "2020-03-03T14:36:20Z",
+      "side": 1,
+      "message": "consider to extract \"\" to variable",
+      "range": {
+        "startLine": 100,
+        "startChar": 32,
+        "endLine": 100,
+        "endChar": 33
+      },
+      "revId": "8799db9d645ae0237bc1414b1049db02059c9ecd",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
