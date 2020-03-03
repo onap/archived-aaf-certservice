@@ -19,6 +19,23 @@
     },
     {
       "key": {
+        "uuid": "f4b76814_cdbb6b3f",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfig.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-03T16:05:12Z",
+      "side": 1,
+      "message": "Message is too generic, especially if you check deeper implementation, \n\"Exception occurred during CMP Servers configuration loading\" vs \"Validation of CMPv2 servers configuration failed\"\nWhat exception happened in first case? FileNotExists or wrong syntax?",
+      "revId": "8799db9d645ae0237bc1414b1049db02059c9ecd",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "6945bddc_e43c5f13",
         "filename": "certService/src/test/java/org/onap/aaf/certservice/certification/configuration/validation/Cmpv2ServerConfigurationValidatorTest.java",
         "patchSetId": 1
