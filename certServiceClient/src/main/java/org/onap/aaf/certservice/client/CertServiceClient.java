@@ -20,8 +20,10 @@
 package org.onap.aaf.certservice.client;
 
 import org.onap.aaf.certservice.client.api.ExitableException;
+import org.onap.aaf.certservice.client.certification.PrivateKeyToPemEncoder;
 import org.onap.aaf.certservice.client.certification.CsrFactory;
 import org.onap.aaf.certservice.client.certification.KeyPairFactory;
+import org.onap.aaf.certservice.client.common.Base64Encoder;
 import org.onap.aaf.certservice.client.configuration.EnvsForClient;
 import org.onap.aaf.certservice.client.configuration.EnvsForCsr;
 import org.onap.aaf.certservice.client.configuration.factory.ClientConfigurationFactory;
@@ -37,7 +39,6 @@ import java.security.KeyPair;
 import static org.onap.aaf.certservice.client.api.ExitCode.SUCCESS_EXIT_CODE;
 import static org.onap.aaf.certservice.client.certification.EncryptionAlgorithmConstants.KEY_SIZE;
 import static org.onap.aaf.certservice.client.certification.EncryptionAlgorithmConstants.RSA_ENCRYPTION_ALGORITHM;
-import static org.onap.aaf.certservice.client.common.Base64Coder.encode;
 
 public class CertServiceClient {
     private AppExitHandler appExitHandler;
@@ -48,6 +49,8 @@ public class CertServiceClient {
 
     public void run() {
         KeyPairFactory keyPairFactory = new KeyPairFactory(RSA_ENCRYPTION_ALGORITHM, KEY_SIZE);
+        PrivateKeyToPemEncoder pkEncoder = new PrivateKeyToPemEncoder();
+        Base64Encoder base64Encoder = new Base64Encoder();
         try {
             ClientConfiguration clientConfiguration = new ClientConfigurationFactory(new EnvsForClient()).create();
             CsrConfiguration csrConfiguration = new CsrConfigurationFactory(new EnvsForCsr()).create();
@@ -57,11 +60,13 @@ public class CertServiceClient {
             CloseableHttpClientProvider provider = new CloseableHttpClientProvider(clientConfiguration.getRequestTimeout());
             HttpClient httpClient = new HttpClient(provider, clientConfiguration.getUrlToCertService());
 
+            String csrInPem = csrFactory.createCsrInPem(keyPair);
+            String pkInPem = pkEncoder.encodePrivateKey(keyPair.getPrivate());
             CertServiceResponse certServiceData =
                     httpClient.retrieveCertServiceData(
                             clientConfiguration.getCaName(),
-                            csrFactory.createEncodedCsr(keyPair),
-                            encode(keyPair.getPrivate().toString()));
+                            base64Encoder.encode(csrInPem),
+                            base64Encoder.encode(pkInPem));
 
         } catch (ExitableException e) {
             appExitHandler.exit(e.applicationExitCode());

@@ -16,25 +16,13 @@
  * limitations under the License.
  * ============LICENSE_END=========================================================
  */
-package org.onap.aaf.certservice.client.api;
 
-public enum ExitCode {
-    SUCCESS_EXIT_CODE(0),
-    CLIENT_CONFIGURATION_EXCEPTION(1),
-    CSR_CONFIGURATION_EXCEPTION(2),
-    KEY_PAIR_GENERATION_EXCEPTION(3),
-    CSR_GENERATION_EXCEPTION(4),
-    CERT_SERVICE_API_CONNECTION_EXCEPTION(5),
-    HTTP_CLIENT_EXCEPTION(6),
-    PK_ENCODING_EXCEPTION(7);
+package org.onap.aaf.certservice.client.common;
 
-    private final int value;
+import org.bouncycastle.util.encoders.Base64;
 
-    ExitCode(int value) {
-        this.value = value;
-    }
-
-    public int getValue() {
-        return value;
+public class Base64Encoder {
+    public String encode(String string){
+        return new String(Base64.encode(string.getBytes()));
     }
 }
