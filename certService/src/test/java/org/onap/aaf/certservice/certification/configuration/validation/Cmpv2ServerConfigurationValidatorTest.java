@@ -20,6 +20,9 @@
 
 package org.onap.aaf.certservice.certification.configuration.validation;
 
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 import org.bouncycastle.asn1.x500.X500Name;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -31,9 +34,6 @@ import org.onap.aaf.certservice.certification.configuration.model.Cmpv2Server;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
-
-import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = CertServiceApplication.class)
@@ -52,53 +52,121 @@ class Cmpv2ServerConfigurationValidatorTest {
     }
 
     @Test
-    public void givenValidServerDetailsWhenValidatingShouldNotThrowAnyException() {
-        //then
+    public void shouldNotThrowExceptionWhenServerConfigurationIsValid() {
+        // Then
         assertDoesNotThrow(() -> validator.validate(server));
     }
 
     @Test
-    public void givenWrongProtocolInURLServerDetailsWhenValidatingShouldThrowException() {
-        //given
+    public void shouldThrowExceptionWhenWrongProtocolInURL() {
+        // Given
         server.setUrl("https://test.test.test:60000/");
 
-        //then
-        assertThrows(IllegalArgumentException.class, () -> {validator.validate(server);});
+        // Then
+        assertExceptionIsThrown();
     }
 
     @Test
-    public void givenWrongPortInURLServerDetailsWhenValidatingShouldThrowException() {
-        //given
+    public void shouldThrowExceptionWhenWrongPortInURL() {
+        // Given
         server.setUrl("http://test.test.test:70000/");
 
-        //then
-        assertThrows(IllegalArgumentException.class, () -> validator.validate(server));
+        // Then
+        assertExceptionIsThrown();
     }
 
     @Test
-    public void givenWrongCANameLengthInURLServerDetailsWhenValidatingShouldThrowException() {
-        //given
+    public void shouldThrowExceptionWhenWrongCANameLength() {
+        // Given
         server.setCaName("");
 
-        //then
-        assertThrows(IllegalArgumentException.class, () -> validator.validate(server));
+        // Then
+        assertExceptionIsThrown();
     }
 
     @Test
-    public void givenWrongRVLengthInURLServerDetailsWhenValidatingShouldThrowException() {
-        //given
+    public void shouldThrowExceptionWhenWrongRVLength() {
+        // Given
         authentication.setRv("");
 
-        //then
-        assertThrows(IllegalArgumentException.class, () -> validator.validate(server));
+        // Then
+        assertExceptionIsThrown();
+    }
+
+
+    @Test
+    public void shouldThrowExceptionWhenWrongIAKLength() {
+        // Given
+        authentication.setIak("");
+
+        // Then
+        assertExceptionIsThrown();
     }
 
     @Test
-    public void givenWrongIAKLengthInURLServerDetailsWhenValidatingShouldThrowException() {
-        //given
-        authentication.setIak("");
+    public void shouldThrowExceptionWhenCaNameIsNull() {
+        // Given
+        server.setCaName(null);
 
-        //then
+        // Then
+        assertExceptionIsThrown();
+    }
+
+    @Test
+    public void shouldThrowExceptionWhenIssuerDnIsNull() {
+        // Given
+        server.setIssuerDN(null);
+
+        // Then
+        assertExceptionIsThrown();
+    }
+
+    @Test
+    public void shouldThrowExceptionWhenCaModeIsNull() {
+        // Given
+        server.setCaMode(null);
+
+        // Then
+        assertExceptionIsThrown();
+    }
+
+    @Test
+    public void shouldThrowExceptionWhenUrlIsNull() {
+        // Given
+        server.setUrl(null);
+
+        // Then
+        assertExceptionIsThrown();
+    }
+
+    @Test
+    public void shouldThrowExceptionWhenAuthenticationIsNull() {
+        // Given
+        server.setAuthentication(null);
+
+        // Then
+        assertExceptionIsThrown();
+    }
+
+    @Test
+    public void shouldThrowExceptionWhenIakIsNull() {
+        // Given
+        authentication.setIak(null);
+
+        // Then
+        assertExceptionIsThrown();
+    }
+
+    @Test
+    public void shouldThrowExceptionWhenRvIsNull() {
+        // Given
+        authentication.setRv(null);
+
+        // Then
+        assertExceptionIsThrown();
+    }
+
+    private void assertExceptionIsThrown() {
         assertThrows(IllegalArgumentException.class, () -> validator.validate(server));
     }
 
