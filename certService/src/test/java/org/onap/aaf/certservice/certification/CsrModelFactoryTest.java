@@ -51,7 +51,7 @@ class CsrModelFactoryTest {
         // given
         String encoderCsr = new String(Base64.encode(TEST_CSR.getBytes()));
         String encoderPK = new String(Base64.encode(TEST_PK.getBytes()));
-
+        System.out.println(encoderPK);
         // when
         CsrModel decryptedCsr = csrModelFactory
                 .createCsrModel(new StringBase64(encoderCsr), new StringBase64(encoderPK));

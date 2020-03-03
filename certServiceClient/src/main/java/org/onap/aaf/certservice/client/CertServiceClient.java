@@ -20,6 +20,7 @@
 package org.onap.aaf.certservice.client;
 
 import org.onap.aaf.certservice.client.api.ExitableException;
+import org.onap.aaf.certservice.client.certification.Base64PkEncoder;
 import org.onap.aaf.certservice.client.certification.CsrFactory;
 import org.onap.aaf.certservice.client.certification.KeyPairFactory;
 import org.onap.aaf.certservice.client.configuration.EnvsForClient;
@@ -37,7 +38,6 @@ import java.security.KeyPair;
 import static org.onap.aaf.certservice.client.api.ExitCode.SUCCESS_EXIT_CODE;
 import static org.onap.aaf.certservice.client.certification.EncryptionAlgorithmConstants.KEY_SIZE;
 import static org.onap.aaf.certservice.client.certification.EncryptionAlgorithmConstants.RSA_ENCRYPTION_ALGORITHM;
-import static org.onap.aaf.certservice.client.common.Base64Coder.encode;
 
 public class CertServiceClient {
     private AppExitHandler appExitHandler;
@@ -48,6 +48,7 @@ public class CertServiceClient {
 
     public void run() {
         KeyPairFactory keyPairFactory = new KeyPairFactory(RSA_ENCRYPTION_ALGORITHM, KEY_SIZE);
+        Base64PkEncoder pkEncoder = new Base64PkEncoder();
         try {
             ClientConfiguration clientConfiguration = new ClientConfigurationFactory(new EnvsForClient()).create();
             CsrConfiguration csrConfiguration = new CsrConfigurationFactory(new EnvsForCsr()).create();
@@ -61,7 +62,7 @@ public class CertServiceClient {
                     httpClient.retrieveCertServiceData(
                             clientConfiguration.getCaName(),
                             csrFactory.createEncodedCsr(keyPair),
-                            encode(keyPair.getPrivate().toString()));
+                            pkEncoder.encodePrivateKey(keyPair.getPrivate()));
 
         } catch (ExitableException e) {
             appExitHandler.exit(e.applicationExitCode());
