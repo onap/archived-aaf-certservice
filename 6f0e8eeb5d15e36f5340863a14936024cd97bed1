@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "961046f4_93f740f6",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/Password.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-03T13:10:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4a2cd092_cef163e4",
+      "revId": "6f0e8eeb5d15e36f5340863a14936024cd97bed1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "eee30518_b6231626",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
         "patchSetId": 11
@@ -84,6 +102,30 @@
     },
     {
       "key": {
+        "uuid": "b0267876_b35eefd7",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-03T13:10:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a5fa770_b9837b55",
+      "range": {
+        "startLine": 61,
+        "startChar": 12,
+        "endLine": 61,
+        "endChar": 64
+      },
+      "revId": "6f0e8eeb5d15e36f5340863a14936024cd97bed1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1fafd355_3b4a8803",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/RandomPasswordGenerator.java",
         "patchSetId": 11
@@ -128,6 +170,30 @@
       "revId": "6f0e8eeb5d15e36f5340863a14936024cd97bed1",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cc93b12b_10b59eda",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/RandomPasswordGenerator.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-03T13:10:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0b53694a_4d67e3ce",
+      "range": {
+        "startLine": 37,
+        "startChar": 16,
+        "endLine": 44,
+        "endChar": 32
+      },
+      "revId": "6f0e8eeb5d15e36f5340863a14936024cd97bed1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
