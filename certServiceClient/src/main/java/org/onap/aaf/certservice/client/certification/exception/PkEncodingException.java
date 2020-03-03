@@ -1,5 +1,4 @@
-/*
- * ============LICENSE_START=======================================================
+/*============LICENSE_START=======================================================
  * aaf-certservice-client
  * ================================================================================
  * Copyright (C) 2020 Nokia. All rights reserved.
@@ -18,12 +17,19 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.client.common;
+package org.onap.aaf.certservice.client.certification.exception;
 
-import org.bouncycastle.util.encoders.Base64;
+import org.onap.aaf.certservice.client.api.ExitCode;
+import org.onap.aaf.certservice.client.api.ExitableException;
 
-public class Base64Coder {
-    public static String encode(String string){
-        return new String(Base64.encode(string.getBytes()));
+public class PkEncodingException extends ExitableException {
+    private static final ExitCode EXIT_CODE = ExitCode.PK_ENCODING_EXCEPTION;
+
+    public PkEncodingException(Throwable e) {
+        super(e);
+    }
+
+    public int applicationExitCode() {
+        return EXIT_CODE.getValue();
     }
 }
