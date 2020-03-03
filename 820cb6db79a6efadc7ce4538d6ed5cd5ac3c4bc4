@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9bd1a9c5_1fd8fa6d",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/CSRMeta.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-03-03T13:21:22Z",
+      "side": 1,
+      "message": "https://tools.ietf.org/html/rfc4210#section-5.1.1\n\nit is actually referred to as a senderKID in rfc 4210.",
+      "parentUuid": "d94d6920_f09a7338",
+      "revId": "820cb6db79a6efadc7ce4538d6ed5cd5ac3c4bc4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "a35393fe_799da230",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
         "patchSetId": 3
@@ -53,6 +71,24 @@
     },
     {
       "key": {
+        "uuid": "d251759f_74da6695",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-03-03T13:21:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f128315f_e6101a48",
+      "revId": "820cb6db79a6efadc7ce4538d6ed5cd5ac3c4bc4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1477fcd2_9066b3a7",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
         "patchSetId": 3
@@ -67,6 +103,24 @@
       "revId": "820cb6db79a6efadc7ce4538d6ed5cd5ac3c4bc4",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "daa3c5da_da72c032",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-03-03T13:21:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1477fcd2_9066b3a7",
+      "revId": "820cb6db79a6efadc7ce4538d6ed5cd5ac3c4bc4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -87,6 +141,24 @@
     },
     {
       "key": {
+        "uuid": "75332239_7cd53a39",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-03-03T13:21:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ec5afdb9_2526d728",
+      "revId": "820cb6db79a6efadc7ce4538d6ed5cd5ac3c4bc4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "cc06029c_bb1c4fbc",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
         "patchSetId": 3
@@ -101,6 +173,24 @@
       "revId": "820cb6db79a6efadc7ce4538d6ed5cd5ac3c4bc4",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ec6f0620_b97eda37",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-03-03T13:21:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cc06029c_bb1c4fbc",
+      "revId": "820cb6db79a6efadc7ce4538d6ed5cd5ac3c4bc4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -121,6 +211,24 @@
     },
     {
       "key": {
+        "uuid": "ffc2b522_755c3109",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-03-03T13:21:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a5e244cc_841f21a9",
+      "revId": "820cb6db79a6efadc7ce4538d6ed5cd5ac3c4bc4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0dd345f3_2a7ac142",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelper.java",
         "patchSetId": 3
@@ -132,6 +240,24 @@
       "writtenOn": "2020-03-03T12:00:20Z",
       "side": 1,
       "message": "Why like this? Needs to be handled on lower level. I was expecting that from caPubs and extraCerts you will create MAP\u003cX500Name, Certificate\u003e and from that you will just create certificate chain, using recurrently issuerDN from certificate (signed certificate as first, further on intermediate CAs) until you will create full chain and last certificate (either self signed or one for which you can\u0027t find issuer in the map) you will put in trustedCerts.",
+      "revId": "820cb6db79a6efadc7ce4538d6ed5cd5ac3c4bc4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cb31bcb7_426fea5a",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelper.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 300,
+      "author": {
+        "id": 4439
+      },
+      "writtenOn": "2020-03-03T13:21:22Z",
+      "side": 1,
+      "message": "The verify method above is doing a more in-depth verification for each certificate in the chain using bouncy castle tools, which will also includes checking the issuerDn. Since the last certificate in the chain is always going to be the rootCA this works - I don\u0027t want to remove the verification code I\u0027m using here, since its doing a thorough verification of the certs, and while I agree that there\u0027s probably a cleaner way of adding the cert to the trust store I can\u0027t really see a way with the current implementation that won\u0027t be messy in a different way, or obfuscates the code in some way. What do you think?",
+      "parentUuid": "0dd345f3_2a7ac142",
       "revId": "820cb6db79a6efadc7ce4538d6ed5cd5ac3c4bc4",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
