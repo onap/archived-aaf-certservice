@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "39cb1cea_b2e0e7bb",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/Base64PkEncoder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-03-03T10:56:26Z",
+      "side": 1,
+      "message": "Consider replacing it with a more meaningful name. (stream or outputStream)",
+      "range": {
+        "startLine": 39,
+        "startChar": 34,
+        "endLine": 39,
+        "endChar": 38
+      },
+      "revId": "20729d596f1c81e0066697b100e921b8cf7681c6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "024282f5_fad28f7c",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/Base64PkEncoder.java",
         "patchSetId": 1
