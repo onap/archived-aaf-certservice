@@ -37,7 +37,7 @@ import java.security.KeyPair;
 import static org.onap.aaf.certservice.client.api.ExitCode.SUCCESS_EXIT_CODE;
 import static org.onap.aaf.certservice.client.certification.EncryptionAlgorithmConstants.KEY_SIZE;
 import static org.onap.aaf.certservice.client.certification.EncryptionAlgorithmConstants.RSA_ENCRYPTION_ALGORITHM;
-import static org.onap.aaf.certservice.client.common.Base64Coder.encode;
+import static org.onap.aaf.certservice.client.certification.Base64PkEncoder.encodePrivateKey;
 
 public class CertServiceClient {
     private AppExitHandler appExitHandler;
@@ -61,7 +61,7 @@ public class CertServiceClient {
                     httpClient.retrieveCertServiceData(
                             clientConfiguration.getCaName(),
                             csrFactory.createEncodedCsr(keyPair),
-                            encode(keyPair.getPrivate().toString()));
+                            encodePrivateKey(keyPair.getPrivate()));
 
         } catch (ExitableException e) {
             appExitHandler.exit(e.applicationExitCode());
