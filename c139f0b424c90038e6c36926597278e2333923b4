@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "af6f3778_cbe9906f",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/common/Base64Coder.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-03T12:45:04Z",
+      "side": 1,
+      "message": "It will be refactor on:\nhttps://gerrit.onap.org/r/c/aaf/certservice/+/102829",
+      "parentUuid": "7bb6373b_1f8370a3",
+      "revId": "c139f0b424c90038e6c36926597278e2333923b4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "3951e8fa_656aae99",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/common/Base64Coder.java",
         "patchSetId": 3
@@ -30,6 +48,24 @@
       "writtenOn": "2020-03-03T12:20:03Z",
       "side": 1,
       "message": "remove static",
+      "revId": "c139f0b424c90038e6c36926597278e2333923b4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "805a91ef_a17835a7",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/common/Base64Coder.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-03T12:45:04Z",
+      "side": 1,
+      "message": "as above",
+      "parentUuid": "3951e8fa_656aae99",
       "revId": "c139f0b424c90038e6c36926597278e2333923b4",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
@@ -50,6 +86,24 @@
       "revId": "c139f0b424c90038e6c36926597278e2333923b4",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9b7f0a53_9f2f3e2e",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/HttpClient.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-03T12:45:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "00e1be6a_f8c6a901",
+      "revId": "c139f0b424c90038e6c36926597278e2333923b4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
