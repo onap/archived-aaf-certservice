@@ -25,6 +25,23 @@
     },
     {
       "key": {
+        "uuid": "d7d2aeca_cc856f95",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/Base64PkEncoder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-03T11:44:16Z",
+      "side": 1,
+      "message": "remove static",
+      "revId": "20729d596f1c81e0066697b100e921b8cf7681c6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "39cb1cea_b2e0e7bb",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/Base64PkEncoder.java",
         "patchSetId": 1
