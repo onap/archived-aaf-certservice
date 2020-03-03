@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "db04667c_8e33491d",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/Base64PkEncoder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-03-03T12:33:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "62e813fd_3d27d3af",
+      "range": {
+        "startLine": 31,
+        "startChar": 13,
+        "endLine": 31,
+        "endChar": 28
+      },
+      "revId": "20729d596f1c81e0066697b100e921b8cf7681c6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d7d2aeca_cc856f95",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/Base64PkEncoder.java",
         "patchSetId": 1
@@ -39,6 +63,24 @@
       "revId": "20729d596f1c81e0066697b100e921b8cf7681c6",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "820f190e_a932ef9d",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/Base64PkEncoder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-03-03T12:33:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d7d2aeca_cc856f95",
+      "revId": "20729d596f1c81e0066697b100e921b8cf7681c6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -65,6 +107,30 @@
     },
     {
       "key": {
+        "uuid": "0fd01e32_f1ce04a0",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/Base64PkEncoder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-03-03T12:33:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "39cb1cea_b2e0e7bb",
+      "range": {
+        "startLine": 39,
+        "startChar": 34,
+        "endLine": 39,
+        "endChar": 38
+      },
+      "revId": "20729d596f1c81e0066697b100e921b8cf7681c6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "024282f5_fad28f7c",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/Base64PkEncoder.java",
         "patchSetId": 1
@@ -76,6 +142,30 @@
       "writtenOn": "2020-03-03T09:44:55Z",
       "side": 1,
       "message": "Suggestion: Put white spaces between operators and operands.",
+      "range": {
+        "startLine": 42,
+        "startChar": 27,
+        "endLine": 43,
+        "endChar": 96
+      },
+      "revId": "20729d596f1c81e0066697b100e921b8cf7681c6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1e946daf_6551e7dd",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/Base64PkEncoder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-03-03T12:33:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "024282f5_fad28f7c",
       "range": {
         "startLine": 42,
         "startChar": 27,
