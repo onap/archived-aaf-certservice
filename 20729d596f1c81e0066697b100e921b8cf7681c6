@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "62e813fd_3d27d3af",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/Base64PkEncoder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-03-03T10:59:15Z",
+      "side": 1,
+      "message": "Add UT for this class.",
+      "range": {
+        "startLine": 31,
+        "startChar": 13,
+        "endLine": 31,
+        "endChar": 28
+      },
+      "revId": "20729d596f1c81e0066697b100e921b8cf7681c6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "39cb1cea_b2e0e7bb",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/Base64PkEncoder.java",
         "patchSetId": 1
