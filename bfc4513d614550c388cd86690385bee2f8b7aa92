@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "72241ba5_ecb70f28",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/api/ReloadConfigControllerTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-04T11:06:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "06e3bfac_055e5b41",
+      "range": {
+        "startLine": 64,
+        "startChar": 37,
+        "endLine": 64,
+        "endChar": 42
+      },
+      "revId": "bfc4513d614550c388cd86690385bee2f8b7aa92",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d31a534e_5a8497ee",
         "filename": "certService/src/test/java/org/onap/aaf/certservice/api/ReloadConfigControllerTest.java",
         "patchSetId": 2
@@ -45,6 +69,30 @@
       "revId": "bfc4513d614550c388cd86690385bee2f8b7aa92",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "866e8af7_de4667e9",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/api/ReloadConfigControllerTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-04T11:06:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d31a534e_5a8497ee",
+      "range": {
+        "startLine": 79,
+        "startChar": 34,
+        "endLine": 79,
+        "endChar": 42
+      },
+      "revId": "bfc4513d614550c388cd86690385bee2f8b7aa92",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
