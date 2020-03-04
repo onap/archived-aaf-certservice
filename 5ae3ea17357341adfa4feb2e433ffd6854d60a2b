@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "c78d0711_81a2f5d7",
+        "filename": "certService/docker-compose.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 3663
+      },
+      "writtenOn": "2020-03-04T09:30:01Z",
+      "side": 1,
+      "message": "agreed that it will be part of csit PR for this feature",
+      "parentUuid": "c8c22a78_f08f6e4f",
+      "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "e8663499_238d2602",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/adapter/CSRMetaBuilder.java",
         "patchSetId": 9
@@ -30,6 +48,24 @@
       "writtenOn": "2020-03-04T07:49:42Z",
       "side": 1,
       "message": "reformat code",
+      "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e3404e1d_ced751fd",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/adapter/CSRMetaBuilder.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 3663
+      },
+      "writtenOn": "2020-03-04T09:30:01Z",
+      "side": 1,
+      "message": "already done",
+      "parentUuid": "e8663499_238d2602",
       "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "422d3b83_eb85a520",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/adapter/CSRMetaBuilder.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 3663
+      },
+      "writtenOn": "2020-03-04T09:30:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a3bdc980_e6f51a0e",
+      "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "6c8f6a44_746d1482",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/adapter/Cmpv2ClientAdapter.java",
         "patchSetId": 9
@@ -64,6 +118,24 @@
       "writtenOn": "2020-03-04T07:49:42Z",
       "side": 1,
       "message": "hmm, here is potential bug.\nWhat will happen when exception will be thrown in try section?\nError will be logged and some string will be returned. Strange.",
+      "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "34e4b9f0_9a5faadb",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/adapter/Cmpv2ClientAdapter.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 3663
+      },
+      "writtenOn": "2020-03-04T09:30:01Z",
+      "side": 1,
+      "message": "Empty string is handled in caller business logic",
+      "parentUuid": "6c8f6a44_746d1482",
       "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "0d16b720_024ecdd4",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/adapter/Cmpv2ClientAdapter.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 3663
+      },
+      "writtenOn": "2020-03-04T09:30:01Z",
+      "side": 1,
+      "message": "seems to be already formatted",
+      "parentUuid": "5e98dc62_82881434",
+      "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "cb1b5ef7_147b9d7f",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpClientConfig.java",
         "patchSetId": 9
@@ -98,6 +188,24 @@
       "writtenOn": "2020-03-04T07:49:42Z",
       "side": 1,
       "message": "Here is potential problem. ClosableHttpClient will be created only once and as I remember inside Ericsson code this client is closing.",
+      "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "68877e52_248b1b2c",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpClientConfig.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 3663
+      },
+      "writtenOn": "2020-03-04T09:30:01Z",
+      "side": 1,
+      "message": "Will add requestScope",
+      "parentUuid": "cb1b5ef7_147b9d7f",
       "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
@@ -121,6 +229,24 @@
     },
     {
       "key": {
+        "uuid": "2a6fe90c_9f5a349b",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/Cmpv2ServerProvider.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 3663
+      },
+      "writtenOn": "2020-03-04T09:30:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6cf24a0f_42e1bcfa",
+      "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "dd492e58_f5e48ea8",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/model/CsrModel.java",
         "patchSetId": 9
@@ -132,6 +258,24 @@
       "writtenOn": "2020-03-04T07:49:42Z",
       "side": 1,
       "message": "reformat code",
+      "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "73310f8e_80a0af81",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/model/CsrModel.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 3663
+      },
+      "writtenOn": "2020-03-04T09:30:01Z",
+      "side": 1,
+      "message": "it seems to be already formatted",
+      "parentUuid": "dd492e58_f5e48ea8",
       "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
@@ -155,6 +299,24 @@
     },
     {
       "key": {
+        "uuid": "c0302e12_c198f718",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/RDN.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 3663
+      },
+      "writtenOn": "2020-03-04T09:30:01Z",
+      "side": 1,
+      "message": "email - and generally is required but not handled here",
+      "parentUuid": "96456113_18af697f",
+      "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "cff3836f_bae76763",
         "filename": "certService/src/test/java/org/onap/aaf/certservice/certification/adapter/Cmpv2ClientAdapterTest.java",
         "patchSetId": 9
@@ -166,6 +328,24 @@
       "writtenOn": "2020-03-04T07:49:42Z",
       "side": 1,
       "message": "pls mark section given when then in all tests",
+      "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "48dd81bd_92eddccc",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/certification/adapter/Cmpv2ClientAdapterTest.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 3663
+      },
+      "writtenOn": "2020-03-04T09:30:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cff3836f_bae76763",
       "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
