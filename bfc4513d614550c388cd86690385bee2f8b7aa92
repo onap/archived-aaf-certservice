@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "06e3bfac_055e5b41",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/api/ReloadConfigControllerTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-03-04T10:36:16Z",
+      "side": 1,
+      "message": "I suggest using error messages that are similar to real messages that can occur, thanks to that it will be easier to understand what error is expected",
+      "range": {
+        "startLine": 64,
+        "startChar": 37,
+        "endLine": 64,
+        "endChar": 42
+      },
+      "revId": "bfc4513d614550c388cd86690385bee2f8b7aa92",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d31a534e_5a8497ee",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/api/ReloadConfigControllerTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-03-04T10:36:16Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 79,
+        "startChar": 34,
+        "endLine": 79,
+        "endChar": 42
+      },
+      "revId": "bfc4513d614550c388cd86690385bee2f8b7aa92",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
