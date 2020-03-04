@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f8c31069_50cd60b7",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/Base64PkEncoderTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-03-04T08:35:44Z",
+      "side": 1,
+      "message": "Use consequently assertj.",
+      "range": {
+        "startLine": 55,
+        "startChar": 8,
+        "endLine": 55,
+        "endChar": 52
+      },
+      "revId": "3e147f807a6a7cd0b139079550e99a7f4c9d347f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3465a8b4_d5184635",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/CsrFactoryTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-03-04T08:35:44Z",
+      "side": 1,
+      "message": "assertj here also",
+      "range": {
+        "startLine": 55,
+        "startChar": 8,
+        "endLine": 55,
+        "endChar": 80
+      },
+      "revId": "3e147f807a6a7cd0b139079550e99a7f4c9d347f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
