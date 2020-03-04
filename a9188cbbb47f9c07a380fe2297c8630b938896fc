@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b0932352_3e052d04",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelper.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 292,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-04T07:08:24Z",
+      "side": 1,
+      "message": "do not modify in-arguments in the method.\nNow you are modify certChain and trustStore inside the method.",
+      "revId": "a9188cbbb47f9c07a380fe2297c8630b938896fc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ea1aa592_be3efa1c",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelper.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 300,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-04T07:08:24Z",
+      "side": 1,
+      "message": "extract duplication certChain.size() - 1 to final variable",
+      "revId": "a9188cbbb47f9c07a380fe2297c8630b938896fc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "298c079b_994e9e74",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelper.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 325,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-04T07:08:24Z",
+      "side": 1,
+      "message": "remove certChain from method argument and return it.\nFunction should be atomic and should not modify in-arguments.",
+      "revId": "a9188cbbb47f9c07a380fe2297c8630b938896fc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "12ed181d_314d09e3",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelper.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 332,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-04T07:08:24Z",
+      "side": 1,
+      "message": "code is duplicated with else section",
+      "revId": "a9188cbbb47f9c07a380fe2297c8630b938896fc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
