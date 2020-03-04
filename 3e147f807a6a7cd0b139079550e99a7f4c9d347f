@@ -2,6 +2,52 @@
   "comments": [
     {
       "key": {
+        "uuid": "6c9a9470_457898c7",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-03-04T10:41:33Z",
+      "side": 1,
+      "message": "Unused.",
+      "range": {
+        "startLine": 41,
+        "startChar": 21,
+        "endLine": 41,
+        "endChar": 28
+      },
+      "revId": "3e147f807a6a7cd0b139079550e99a7f4c9d347f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "73390a63_0136ef74",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-03-04T10:41:33Z",
+      "side": 1,
+      "message": "Consider to inline both.",
+      "range": {
+        "startLine": 69,
+        "startChar": 12,
+        "endLine": 70,
+        "endChar": 78
+      },
+      "revId": "3e147f807a6a7cd0b139079550e99a7f4c9d347f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "f8c31069_50cd60b7",
         "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/Base64PkEncoderTest.java",
         "patchSetId": 8
