@@ -1,0 +1,174 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c8c22a78_f08f6e4f",
+        "filename": "certService/docker-compose.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-04T07:49:42Z",
+      "side": 1,
+      "message": "pls do the same in CSIT docker compose file",
+      "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e8663499_238d2602",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/adapter/CSRMetaBuilder.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-04T07:49:42Z",
+      "side": 1,
+      "message": "reformat code",
+      "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a3bdc980_e6f51a0e",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/adapter/CSRMetaBuilder.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-04T07:49:42Z",
+      "side": 1,
+      "message": "null? Return optional",
+      "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6c8f6a44_746d1482",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/adapter/Cmpv2ClientAdapter.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-04T07:49:42Z",
+      "side": 1,
+      "message": "hmm, here is potential bug.\nWhat will happen when exception will be thrown in try section?\nError will be logged and some string will be returned. Strange.",
+      "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5e98dc62_82881434",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/adapter/Cmpv2ClientAdapter.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-04T07:49:42Z",
+      "side": 1,
+      "message": "reformat code. Write in few lines.",
+      "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cb1b5ef7_147b9d7f",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpClientConfig.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-04T07:49:42Z",
+      "side": 1,
+      "message": "Here is potential problem. ClosableHttpClient will be created only once and as I remember inside Ericsson code this client is closing.",
+      "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6cf24a0f_42e1bcfa",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/Cmpv2ServerProvider.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-04T07:49:42Z",
+      "side": 1,
+      "message": "reformat code",
+      "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dd492e58_f5e48ea8",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/model/CsrModel.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-04T07:49:42Z",
+      "side": 1,
+      "message": "reformat code",
+      "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "96456113_18af697f",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/RDN.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-04T07:49:42Z",
+      "side": 1,
+      "message": "what does \u0027E\u0027 mean?",
+      "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cff3836f_bae76763",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/certification/adapter/Cmpv2ClientAdapterTest.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-04T07:49:42Z",
+      "side": 1,
+      "message": "pls mark section given when then in all tests",
+      "revId": "5ae3ea17357341adfa4feb2e433ffd6854d60a2b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
