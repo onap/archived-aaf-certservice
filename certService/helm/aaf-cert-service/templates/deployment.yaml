@@ -31,7 +31,7 @@ spec:
         readinessProbe:
           httpGet:
             port: {{ .Values.containerPort }}
-            path: {{ .Values.healthcheck.path }}
+            path: {{ .Values.readiness.path }}
             initialDelaySeconds: {{ .Values.readiness.initialDelaySeconds }}
             periodSeconds: {{ .Values.readiness.periodSeconds }}
         volumeMounts:

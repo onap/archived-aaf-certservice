@@ -12,6 +12,7 @@ liveness:
 readiness:
   initialDelaySeconds: 30
   periodSeconds: 10
+  path: /ready
 healthcheck:
   path: /actuator/health
 volume:
