@@ -16,6 +16,24 @@
       "revId": "139c6a8ea7d211c5b8bf165509089d6c5fdaf2f4",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f6b1614b_9b13270b",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfig.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-05T13:48:53Z",
+      "side": 1,
+      "message": "According to Nam San\u0027s comment from https://stackoverflow.com/questions/3786825/volatile-boolean-vs-atomicboolean\n\n\"The memory effects of reading/writing to volatile boolean are identical to the get and set methods of AtomicBoolean respectively.\"\n\nSo I will make this variable volatile. That solution is minimalistic and does not require refactoring :)",
+      "parentUuid": "7450f6e7_7fcfd7e2",
+      "revId": "139c6a8ea7d211c5b8bf165509089d6c5fdaf2f4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
