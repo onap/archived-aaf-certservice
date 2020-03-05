@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7450f6e7_7fcfd7e2",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfig.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-05T13:11:42Z",
+      "side": 1,
+      "message": "use AtomicBoolean to synchronize threads\n\nhttps://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicBoolean.html",
+      "revId": "139c6a8ea7d211c5b8bf165509089d6c5fdaf2f4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
