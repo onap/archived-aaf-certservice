@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9330f790_28a37615",
+        "filename": "certService/helm/aaf-cert-service/templates/deployment.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-05T12:49:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5f02f078_1e8db812",
+      "revId": "fced5babc6769c22f104ba65a41e0e8661d5c71c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b2c744cd_de8a6c62",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfig.java",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2020-03-05T12:06:36Z",
       "side": 1,
       "message": "This kind of implementation can be tricky, cause race condition may happen between K8s and manual configuration reload, which could end up in not desired setting pod in NotReady state during configuration reloading. This of course can happen if readiness probe failureThreshold is set to 1, but because we are not allowing to change failureThreshold via helm chart value and default value is 3 - such implementation has no side effects.\n\n\"failureThreshold: When a Pod starts and the probe fails, Kubernetes will try failureThreshold times before giving up. Giving up in case of liveness probe means restarting the container. In case of readiness probe the Pod will be marked Unready. Defaults to 3. Minimum value is 1.\"",
+      "revId": "fced5babc6769c22f104ba65a41e0e8661d5c71c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5044c2ad_b2a58fec",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfig.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-05T12:49:37Z",
+      "side": 1,
+      "message": "I was considering that, but I came to a conclusion that while reloading, the application is actually Unready, am I wrong?",
+      "parentUuid": "b2c744cd_de8a6c62",
       "revId": "fced5babc6769c22f104ba65a41e0e8661d5c71c",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
