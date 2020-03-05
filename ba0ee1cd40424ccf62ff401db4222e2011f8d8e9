@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "341615f8_fde6c46e",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/certification/adapter/CSRMetaBuilderTest.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-05T11:49:23Z",
+      "side": 1,
+      "message": "Missing senderKid checking",
+      "revId": "ba0ee1cd40424ccf62ff401db4222e2011f8d8e9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
