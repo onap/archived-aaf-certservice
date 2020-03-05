@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "310e4295_adbacbbf",
+        "filename": "certService/helm/aaf-cert-service/resources/cmpServers.json",
+        "patchSetId": 14
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-05T09:40:31Z",
+      "side": 1,
+      "message": "Maybe it will be easier if we call it Client?",
+      "revId": "479633b7856afb4a66d23cf8ce8c3b8eaf67c781",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c41135c7_848d6a59",
+        "filename": "certService/helm/aaf-cert-service/resources/cmpServers.json",
+        "patchSetId": 14
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-05T09:40:31Z",
+      "side": 1,
+      "message": "Maybe it will be easier if we call it RA?",
+      "revId": "479633b7856afb4a66d23cf8ce8c3b8eaf67c781",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "295b8dde_c6b6c08e",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/adapter/CSRMetaBuilder.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-05T09:40:31Z",
+      "side": 1,
+      "message": "Cause Emmetts PR was already merged, please set up also senderKID: \ncsrMeta.setSenderKID(server.getAuthentication().getRv());",
+      "revId": "479633b7856afb4a66d23cf8ce8c3b8eaf67c781",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f344972e_054ea4ee",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/adapter/Cmpv2ClientAdapter.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-05T09:40:31Z",
+      "side": 1,
+      "message": "method name - \u003e convertCSRToX509Certificate",
+      "revId": "479633b7856afb4a66d23cf8ce8c3b8eaf67c781",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dd4d48a7_5ea79edf",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/adapter/Cmpv2ClientAdapter.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-05T09:40:31Z",
+      "side": 1,
+      "message": "mthod name -\u003e convertFromX509CertificateListToPEMList?",
+      "revId": "479633b7856afb4a66d23cf8ce8c3b8eaf67c781",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
