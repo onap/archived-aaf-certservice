@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9ddb8ca9_ce34e171",
+        "filename": "certService/docker-compose.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-03-06T14:00:28Z",
+      "side": 1,
+      "message": "maybe we could change container name to be more meaningful",
+      "range": {
+        "startLine": 7,
+        "startChar": 20,
+        "endLine": 7,
+        "endChar": 31
+      },
+      "revId": "97da70f674a19169bec9c3da725a800e37d71b66",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
