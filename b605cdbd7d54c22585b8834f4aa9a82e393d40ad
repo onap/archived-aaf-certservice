@@ -1,0 +1,7 @@
+Code-Review+2: Paweł Baniewski <pawel.baniewski@nokia.com>
+Verified+1: ONAP Jobbuilder <onap-jobbuilder@jenkins.onap.org>
+Submitted-by: Bogumil Zebek <bogumil.zebek@nokia.com>
+Submitted-at: Fri, 06 Mar 2020 12:51:34 +0000
+Reviewed-on: https://gerrit.onap.org/r/c/aaf/certservice/+/103237
+Project: aaf/certservice
+Branch: refs/heads/master
