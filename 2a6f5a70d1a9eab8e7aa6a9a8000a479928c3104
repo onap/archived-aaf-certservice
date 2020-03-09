@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a85013aa_6908f1ac",
+        "filename": "certService/src/main/resources/scripts/ejbca-configuration.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-03-09T09:34:15Z",
+      "side": 1,
+      "message": "I would set the same number of retries as in docker-compose file, so either set here 1..9 or change the value of healthcheck retries in docker-compose.yml to 5.",
+      "revId": "2a6f5a70d1a9eab8e7aa6a9a8000a479928c3104",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
