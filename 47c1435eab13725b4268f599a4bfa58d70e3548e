@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ca25a99d_e7515ae7",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/Factory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-10T12:48:42Z",
+      "side": 1,
+      "message": "pls log here full stack, not only error message",
+      "revId": "47c1435eab13725b4268f599a4bfa58d70e3548e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
