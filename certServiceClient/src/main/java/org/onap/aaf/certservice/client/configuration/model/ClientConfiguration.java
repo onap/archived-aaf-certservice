@@ -23,7 +23,7 @@ package org.onap.aaf.certservice.client.configuration.model;
 public class ClientConfiguration implements ConfigurationModel {
 
     Integer DEFAULT_TIMEOUT_MS = 30000;
-    String DEFAULT_REQUEST_URL = "http://cert-service:8080/v1/certificate/";
+    String DEFAULT_REQUEST_URL = "http://aaf-cert-service-service:8080/v1/certificate/";
 
     private String urlToCertService;
     private Integer requestTimeout;
