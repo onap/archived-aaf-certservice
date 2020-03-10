@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a2e4de5_0c3f4236",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/EnvValidationUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-10T12:51:06Z",
+      "side": 1,
+      "message": "Do we have test for this method? If not then pls first write the test, then refactor the code.",
+      "revId": "a376952855d9d653a2fba7918154ec2bd8ad5237",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
