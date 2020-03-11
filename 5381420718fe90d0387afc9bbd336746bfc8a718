@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "168493ff_475ced7f",
+        "filename": "certServiceClient/docker-compose.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-11T08:57:19Z",
+      "side": 1,
+      "message": "Run :)",
+      "revId": "5381420718fe90d0387afc9bbd336746bfc8a718",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c2069998_1ae6ae9b",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/model/ClientConfiguration.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-11T08:57:19Z",
+      "side": 1,
+      "message": "Thank you",
+      "revId": "5381420718fe90d0387afc9bbd336746bfc8a718",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
