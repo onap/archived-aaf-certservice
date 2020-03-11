@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "33482d9d_8ca7ca84",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-03-11T15:29:59Z",
+      "side": 1,
+      "message": "In class EnvValidationUtils.java mark \"is...\" methods as a private and reorder functions from public to private.",
+      "revId": "3309e4acf916703538c079fe8c42858e1e952ded",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
