@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "26748fcb_7e6aa0b7",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/CSRMeta.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-03-11T10:44:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e0c11058_bbeac027",
+      "revId": "289edba3395ee80eddce0d69dba4d6e5f310c272",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8d1905c4_254763f3",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/CSRMeta.java",
         "patchSetId": 3
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "2130f2a3_739db1be",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/CSRMeta.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-03-11T10:44:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8d1905c4_254763f3",
+      "revId": "289edba3395ee80eddce0d69dba4d6e5f310c272",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ac85d376_1d7f5026",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/CSRMeta.java",
         "patchSetId": 3
@@ -47,6 +83,24 @@
       "writtenOn": "2020-03-10T12:55:10Z",
       "side": 1,
       "message": "rename to getKeyPair",
+      "revId": "289edba3395ee80eddce0d69dba4d6e5f310c272",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4c57cf33_205dc489",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/CSRMeta.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-03-11T10:44:48Z",
+      "side": 1,
+      "message": "There is another method with the same name which is pure getter of keyPair.",
+      "parentUuid": "ac85d376_1d7f5026",
       "revId": "289edba3395ee80eddce0d69dba4d6e5f310c272",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
