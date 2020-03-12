@@ -22,7 +22,6 @@ package org.onap.aaf.certservice.certification.adapter;
 
 import java.security.KeyPair;
 import java.util.Arrays;
-import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import org.bouncycastle.asn1.x500.style.BCStyle;
@@ -69,15 +68,12 @@ class CSRMetaBuilder {
         csrModel.getSans().forEach(csrMeta::addSan);
     }
 
-    private String convertRDNToString(org.bouncycastle.asn1.x500.RDN rdn) {
-        return BCStyle.INSTANCE.oidToDisplayName(rdn.getFirst().getType()) + "=" + IETFUtils.valueToString(
-                rdn.getFirst().getValue());
-    }
-
     private Optional<RDN> convertFromBcRDN(org.bouncycastle.asn1.x500.RDN rdn) {
         RDN result = null;
         try {
-            result = new RDN(convertRDNToString(rdn));
+            String tag = BCStyle.INSTANCE.oidToDisplayName(rdn.getFirst().getType());
+            String value = IETFUtils.valueToString(rdn.getFirst().getValue());
+            result = new RDN(tag, value);
         } catch (CertException e) {
             LOGGER.error("Exception occurred during convert of RDN", e);
         }
