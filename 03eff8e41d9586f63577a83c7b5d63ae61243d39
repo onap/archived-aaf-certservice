@@ -22,6 +22,30 @@
       "revId": "03eff8e41d9586f63577a83c7b5d63ae61243d39",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b110aef4_82720748",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/configuration/factory/AbstractConfigurationFactoryTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-03-12T12:29:14Z",
+      "side": 1,
+      "message": "Good finding I will use assertJ consequently.",
+      "parentUuid": "62f9c019_f3a3f7b0",
+      "range": {
+        "startLine": 38,
+        "startChar": 8,
+        "endLine": 38,
+        "endChar": 50
+      },
+      "revId": "03eff8e41d9586f63577a83c7b5d63ae61243d39",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
