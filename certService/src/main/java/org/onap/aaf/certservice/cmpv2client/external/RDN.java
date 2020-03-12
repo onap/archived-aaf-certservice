@@ -42,59 +42,17 @@ public class RDN {
         return aoi;
     }
 
+    public RDN(final String tag, final String value) throws CertException {
+        this.tag = tag;
+        this.value = value;
+        this.aoi = getAoi(tag);
+    }
+
     public RDN(final String tagValue) throws CertException {
-        String[] tv = Split.splitTrim('=', tagValue);
-        switch (tv[0].toLowerCase()) {
-            case "cn":
-                aoi = BCStyle.CN;
-                break;
-            case "c":
-                aoi = BCStyle.C;
-                break;
-            case "st":
-                aoi = BCStyle.ST;
-                break;
-            case "l":
-                aoi = BCStyle.L;
-                break;
-            case "o":
-                aoi = BCStyle.O;
-                break;
-            case "ou":
-                aoi = BCStyle.OU;
-                break;
-            case "dc":
-                aoi = BCStyle.DC;
-                break;
-            case "gn":
-                aoi = BCStyle.GIVENNAME;
-                break;
-            case "sn":
-                aoi = BCStyle.SN;
-                break;
-            case "email":
-            case "e":
-            case "emailaddress":
-                aoi = BCStyle.EmailAddress;
-                break; // should be SAN extension
-            case "initials":
-                aoi = BCStyle.INITIALS;
-                break;
-            case "pseudonym":
-                aoi = BCStyle.PSEUDONYM;
-                break;
-            case "generationQualifier":
-                aoi = BCStyle.GENERATION;
-                break;
-            case "serialNumber":
-                aoi = BCStyle.SERIALNUMBER;
-                break;
-            default:
-                throw new CertException(
-                    "Unknown ASN1ObjectIdentifier for " + tv[0] + " in " + tagValue);
-        }
-        tag = tv[0];
-        value = tv[1];
+        List<String> tv = StringUtils.splitAndTrim("=", tagValue);
+        this.tag = tv.get(0);
+        this.value = tv.get(1);
+        this.aoi = getAoi(this.tag);
     }
 
     /**
@@ -139,5 +97,43 @@ public class RDN {
     @Override
     public String toString() {
         return tag + '=' + value;
+    }
+
+    ASN1ObjectIdentifier getAoi(String tag) throws CertException {
+        switch (tag.toLowerCase()) {
+            case "cn":
+                return BCStyle.CN;
+            case "c":
+                return BCStyle.C;
+            case "st":
+                return BCStyle.ST;
+            case "l":
+                return BCStyle.L;
+            case "o":
+                return BCStyle.O;
+            case "ou":
+                return BCStyle.OU;
+            case "dc":
+                return BCStyle.DC;
+            case "gn":
+                return BCStyle.GIVENNAME;
+            case "sn":
+                return BCStyle.SN;
+            case "email":
+            case "e":
+            case "emailaddress":
+                return BCStyle.EmailAddress;
+            case "initials":
+                return BCStyle.INITIALS;
+            case "pseudonym":
+                return BCStyle.PSEUDONYM;
+            case "generationqualifier":
+                return BCStyle.GENERATION;
+            case "serialnumber":
+                return BCStyle.SERIALNUMBER;
+            default:
+                throw new CertException(
+                        "Unknown ASN1ObjectIdentifier for tag " + tag);
+        }
     }
 }
