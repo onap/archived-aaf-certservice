@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "62f9c019_f3a3f7b0",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/configuration/factory/AbstractConfigurationFactoryTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-03-12T11:40:16Z",
+      "side": 1,
+      "message": "Why is it different than the other ones?",
+      "range": {
+        "startLine": 38,
+        "startChar": 8,
+        "endLine": 38,
+        "endChar": 50
+      },
+      "revId": "03eff8e41d9586f63577a83c7b5d63ae61243d39",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
