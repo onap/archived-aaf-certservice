@@ -1,4 +1,5 @@
-/*============LICENSE_START=======================================================
+/*
+ * ============LICENSE_START=======================================================
  * aaf-certservice-client
  * ================================================================================
  * Copyright (C) 2020 Nokia. All rights reserved.
@@ -16,27 +17,31 @@
  * limitations under the License.
  * ============LICENSE_END=========================================================
  */
-package org.onap.aaf.certservice.client.api;
 
-public enum ExitCode {
-    SUCCESS_EXIT_CODE(0),
-    CLIENT_CONFIGURATION_EXCEPTION(1),
-    CSR_CONFIGURATION_EXCEPTION(2),
-    KEY_PAIR_GENERATION_EXCEPTION(3),
-    CSR_GENERATION_EXCEPTION(4),
-    CERT_SERVICE_API_CONNECTION_EXCEPTION(5),
-    HTTP_CLIENT_EXCEPTION(6),
-    PKCS12_CONVERSION_EXCEPTION(7),
-    PK_TO_PEM_ENCODING_EXCEPTION(8),
-    TLS_CONFIGURATION_EXCEPTION(9);
+package org.onap.aaf.certservice.client.configuration;
 
-    private final int value;
+import java.util.Optional;
 
-    ExitCode(int value) {
-        this.value = value;
+public class EnvsForTls {
+    private final EnvProvider envProvider = new EnvProvider();
+
+    public Optional<String> getKeystorePath() {
+        return readEnv(TlsConfigurationEnvs.KEYSTORE_PATH);
     }
 
-    public int getValue() {
-        return value;
+    public Optional<String> getKeystorePassword() {
+        return readEnv(TlsConfigurationEnvs.KEYSTORE_PASSWORD);
+    }
+
+    public Optional<String> getTruststorePath() {
+        return readEnv(TlsConfigurationEnvs.TRUSTSTORE_PATH);
+    }
+
+    public Optional<String> getTruststorePassword() {
+        return readEnv(TlsConfigurationEnvs.TRUSTSTORE_PASSWORD);
+    }
+
+    private Optional<String> readEnv(TlsConfigurationEnvs envName) {
+        return envProvider.readEnvVariable(envName.toString());
     }
 }
