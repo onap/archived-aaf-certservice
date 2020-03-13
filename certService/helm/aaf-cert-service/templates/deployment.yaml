@@ -16,6 +16,9 @@ spec:
       - name: {{ .Values.volume.name }}
         secret:
           secretName: {{ .Values.secret.name }}
+      - name: {{ .Values.tls.server.volume.name }}
+        secret:
+          secretName: {{ .Values.tls.server.secret.name }}
       containers:
       - name: aaf-cert-service
         image: {{ .Values.repository }}/{{ .Values.image }}
@@ -23,20 +26,27 @@ spec:
         ports:
         - containerPort: {{ .Values.containerPort }}
         livenessProbe:
-          httpGet:
-            port: {{ .Values.containerPort }}
-            path: {{ .Values.liveness.path }}
+          exec:
+            command:
+              - /bin/bash
+              - -c
+              - {{ .Values.liveness.command }}
             initialDelaySeconds: {{ .Values.liveness.initialDelaySeconds }}
             periodSeconds: {{ .Values.liveness.periodSeconds }}
         readinessProbe:
-          httpGet:
-            port: {{ .Values.containerPort }}
-            path: {{ .Values.readiness.path }}
+          exec:
+            command:
+              - /bin/bash
+              - -c
+              - {{ .Values.readiness.command }}
             initialDelaySeconds: {{ .Values.readiness.initialDelaySeconds }}
             periodSeconds: {{ .Values.readiness.periodSeconds }}
         volumeMounts:
         - name: {{ .Values.volume.name }}
           mountPath: {{ .Values.volume.mountPath }}
+          readOnly: true
+        - name: {{ .Values.tls.server.volume.name }}
+          mountPath: {{ .Values.tls.server.volume.mountPath }}
           readOnly: true
         resources:
           {{ toYaml .Values.resources }}
