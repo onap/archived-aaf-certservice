@@ -1,5 +1,6 @@
-/*============LICENSE_START=======================================================
- * aaf-certservice-client
+/*
+ * ============LICENSE_START=======================================================
+ * PROJECT
  * ================================================================================
  * Copyright (C) 2020 Nokia. All rights reserved.
  * ================================================================================
@@ -16,27 +17,12 @@
  * limitations under the License.
  * ============LICENSE_END=========================================================
  */
-package org.onap.aaf.certservice.client.api;
 
-public enum ExitCode {
-    SUCCESS_EXIT_CODE(0),
-    CLIENT_CONFIGURATION_EXCEPTION(1),
-    CSR_CONFIGURATION_EXCEPTION(2),
-    KEY_PAIR_GENERATION_EXCEPTION(3),
-    CSR_GENERATION_EXCEPTION(4),
-    CERT_SERVICE_API_CONNECTION_EXCEPTION(5),
-    HTTP_CLIENT_EXCEPTION(6),
-    PKCS12_CONVERSION_EXCEPTION(7),
-    PK_TO_PEM_ENCODING_EXCEPTION(8),
-    TLS_CONFIGURATION_EXCEPTION(9);
+package org.onap.aaf.certservice.client.configuration;
 
-    private final int value;
-
-    ExitCode(int value) {
-        this.value = value;
-    }
-
-    public int getValue() {
-        return value;
-    }
+public enum TlsConfigurationEnvs {
+    KEYSTORE_PATH,
+    KEYSTORE_PASSWORD,
+    TRUSTSTORE_PATH,
+    TRUSTSTORE_PASSWORD
 }
