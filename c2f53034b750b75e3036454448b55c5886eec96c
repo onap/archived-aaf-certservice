@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3dcbadd6_e4dc85e9",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/adapter/CSRMetaBuilder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-13T09:10:14Z",
+      "side": 1,
+      "message": "Why did u inline that method here?",
+      "revId": "c2f53034b750b75e3036454448b55c5886eec96c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8eafa2a0_ffdf3fba",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/RDN.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-13T09:10:14Z",
+      "side": 1,
+      "message": "I think there should be a unit test to check if it still works as expected",
+      "revId": "c2f53034b750b75e3036454448b55c5886eec96c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
