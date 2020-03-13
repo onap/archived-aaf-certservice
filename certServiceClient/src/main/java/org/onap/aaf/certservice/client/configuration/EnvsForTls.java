@@ -1,6 +1,6 @@
 /*
  * ============LICENSE_START=======================================================
- * aaf-certservice-client
+ * PROJECT
  * ================================================================================
  * Copyright (C) 2020 Nokia. All rights reserved.
  * ================================================================================
@@ -18,23 +18,30 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.client.httpclient;
+package org.onap.aaf.certservice.client.configuration;
 
-import org.apache.http.client.config.RequestConfig;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClientBuilder;
+import java.util.Optional;
 
-public class CloseableHttpClientProvider {
+public class EnvsForTls {
+    private final EnvProvider envProvider = new EnvProvider();
 
-    private final int timeout;
-
-    public CloseableHttpClientProvider(int timeout) {
-        this.timeout = timeout;
+    public Optional<String> getKeystorePath() {
+        return readEnv(TlsConfigurationEnvs.KEYSTORE_PATH);
     }
 
-    public CloseableHttpClient getClient() {
-        RequestConfig config =
-                RequestConfig.custom().setConnectionRequestTimeout(timeout).build();
-        return HttpClientBuilder.create().setDefaultRequestConfig(config).build();
+    public Optional<String> getKeystorePassword() {
+        return readEnv(TlsConfigurationEnvs.KEYSTORE_PASSWORD);
+    }
+
+    public Optional<String> getTruststorePath() {
+        return readEnv(TlsConfigurationEnvs.TRUSTSTORE_PATH);
+    }
+
+    public Optional<String> getTruststorePassword() {
+        return readEnv(TlsConfigurationEnvs.TRUSTSTORE_PASSWORD);
+    }
+
+    private Optional<String> readEnv(TlsConfigurationEnvs envName) {
+        return envProvider.readEnvVariable(envName.toString());
     }
 }
