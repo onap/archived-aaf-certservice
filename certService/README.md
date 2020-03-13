@@ -148,3 +148,12 @@ http://localchost:8080/docs
 ```     
 https://sonarcloud.io/dashboard?id=onap_aaf-certservice
 ```
+
+### Generate certificates
+```     
+make all
+```
+### Clear certificates
+```     
+make clear
+```
