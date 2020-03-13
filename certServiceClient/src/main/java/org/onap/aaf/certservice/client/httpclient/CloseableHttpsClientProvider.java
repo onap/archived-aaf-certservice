@@ -21,20 +21,29 @@
 package org.onap.aaf.certservice.client.httpclient;
 
 import org.apache.http.client.config.RequestConfig;
+import org.apache.http.conn.ssl.NoopHostnameVerifier;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 
-public class CloseableHttpClientProvider {
+import javax.net.ssl.SSLContext;
+
+public class CloseableHttpsClientProvider {
 
     private final int timeout;
+    private final SSLContext sslContext;
 
-    public CloseableHttpClientProvider(int timeout) {
+    public CloseableHttpsClientProvider(SSLContext sslContext, int timeout) {
+        this.sslContext = sslContext;
         this.timeout = timeout;
     }
 
     public CloseableHttpClient getClient() {
         RequestConfig config =
                 RequestConfig.custom().setConnectionRequestTimeout(timeout).build();
-        return HttpClientBuilder.create().setDefaultRequestConfig(config).build();
+
+        return HttpClientBuilder.create()
+                .setSSLContext(sslContext)
+                .setSSLHostnameVerifier(NoopHostnameVerifier.INSTANCE)
+                .setDefaultRequestConfig(config).build();
     }
 }
