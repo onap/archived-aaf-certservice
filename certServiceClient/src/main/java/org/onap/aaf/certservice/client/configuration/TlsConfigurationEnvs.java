@@ -18,23 +18,11 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.client.httpclient;
+package org.onap.aaf.certservice.client.configuration;
 
-import org.apache.http.client.config.RequestConfig;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClientBuilder;
-
-public class CloseableHttpClientProvider {
-
-    private final int timeout;
-
-    public CloseableHttpClientProvider(int timeout) {
-        this.timeout = timeout;
-    }
-
-    public CloseableHttpClient getClient() {
-        RequestConfig config =
-                RequestConfig.custom().setConnectionRequestTimeout(timeout).build();
-        return HttpClientBuilder.create().setDefaultRequestConfig(config).build();
-    }
+public enum TlsConfigurationEnvs {
+    KEYSTORE_PATH,
+    KEYSTORE_PASSWORD,
+    TRUSTSTORE_PATH,
+    TRUSTSTORE_PASSWORD
 }
