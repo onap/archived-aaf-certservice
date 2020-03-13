@@ -28,7 +28,7 @@ services:
       - ./helm/aaf-cert-service/resources/cmpServers.json:/etc/onap/aaf/certservice/cmpServers.json
     container_name: aafcert-service
     ports:
-      - "8080:8080"
+      - "8443:8443"
     depends_on:
       ejbca:
         condition: service_healthy

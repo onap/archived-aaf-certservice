@@ -38,19 +38,9 @@ import java.util.List;
 
 import static java.net.HttpURLConnection.HTTP_BAD_REQUEST;
 import static java.net.HttpURLConnection.HTTP_OK;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.mockito.Mockito.any;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
-import static org.onap.aaf.certservice.client.CerServiceRequestTestData.CA_NAME;
-import static org.onap.aaf.certservice.client.CerServiceRequestTestData.CORRECT_RESPONSE;
-import static org.onap.aaf.certservice.client.CerServiceRequestTestData.CSR;
-import static org.onap.aaf.certservice.client.CerServiceRequestTestData.EXPECTED_FIRST_ELEMENT_OF_CERTIFICATE_CHAIN;
-import static org.onap.aaf.certservice.client.CerServiceRequestTestData.EXPECTED_FIRST_ELEMENT_OF_TRUSTED_CERTIFICATES;
-import static org.onap.aaf.certservice.client.CerServiceRequestTestData.MISSING_PK_RESPONSE;
-import static org.onap.aaf.certservice.client.CerServiceRequestTestData.PK;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+import static org.onap.aaf.certservice.client.CerServiceRequestTestData.*;
 
 class HttpClientTest {
 
@@ -68,7 +58,7 @@ class HttpClientTest {
         statusLine = mock(StatusLine.class);
         httpResponse = mock(CloseableHttpResponse.class);
 
-        CloseableHttpClientProvider httpClientProvider = mock(CloseableHttpClientProvider.class);
+        CloseableHttpsClientProvider httpClientProvider = mock(CloseableHttpsClientProvider.class);
 
         when(httpClientProvider.getClient()).thenReturn(closeableHttpClient);
         String testCertServiceAddress = "";
