@@ -25,10 +25,10 @@ import org.onap.aaf.certservice.client.configuration.EnvsForCsr;
 import org.onap.aaf.certservice.client.configuration.exception.CsrConfigurationException;
 import org.onap.aaf.certservice.client.configuration.model.CsrConfiguration;
 
+
 public class CsrConfigurationFactory extends AbstractConfigurationFactory<CsrConfiguration> {
 
     private final EnvsForCsr envsForCsr;
-
 
     public CsrConfigurationFactory(EnvsForCsr envsForCsr) {
         this.envsForCsr = envsForCsr;

@@ -18,23 +18,24 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.client.httpclient;
+package org.onap.aaf.certservice.client.configuration.exception;
 
-import org.apache.http.client.config.RequestConfig;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClientBuilder;
+import org.onap.aaf.certservice.client.api.ExitCode;
+import org.onap.aaf.certservice.client.api.ExitableException;
 
-public class CloseableHttpClientProvider {
+public class TlsConfigurationException extends ExitableException {
+    private static final ExitCode EXIT_CODE = ExitCode.TLS_CONFIGURATION_EXCEPTION;
 
-    private final int timeout;
-
-    public CloseableHttpClientProvider(int timeout) {
-        this.timeout = timeout;
+    public TlsConfigurationException(String message) {
+        super(message);
     }
 
-    public CloseableHttpClient getClient() {
-        RequestConfig config =
-                RequestConfig.custom().setConnectionRequestTimeout(timeout).build();
-        return HttpClientBuilder.create().setDefaultRequestConfig(config).build();
+    public TlsConfigurationException(String s, Exception e) {
+        super();
+    }
+
+    @Override
+    public int applicationExitCode() {
+        return EXIT_CODE.getValue();
     }
 }
