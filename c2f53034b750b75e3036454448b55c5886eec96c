@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "47d53d25_e7999dd9",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/adapter/CSRMetaBuilder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-13T09:31:39Z",
+      "side": 1,
+      "message": "OK, I See. Looks good, but I recommend extracting the content of try block to a sperate method. You also call rdn.getFirst() twice. You can consider assigning it to a variable and then just call getType() and getValue() method on that.",
+      "parentUuid": "481d8153_129d6b83",
+      "revId": "c2f53034b750b75e3036454448b55c5886eec96c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "8eafa2a0_ffdf3fba",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/RDN.java",
         "patchSetId": 1
