@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ca248c26_85f4ad44",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/external/RDNTest.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-13T11:26:38Z",
+      "side": 1,
+      "message": "I was thinking about testing the constructor which you refactored.\n\nSo sample test could look like\n\nRDN rdn \u003d new RDN(\"CN\u003dManagmentCA\");\nassertEquals(BCStyle.CD, rdn.getAoi());\nassertEquals(\"ManagmentCA, rdn.getValue());\n\nAnd other tests which will cover the case when RDN needs trimming like new RDN(\" CN \u003d ManagmentCA \");",
+      "revId": "7aed821150eb8c0ca5960abe244601ad55283100",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
