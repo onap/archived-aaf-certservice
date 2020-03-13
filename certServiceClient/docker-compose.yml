@@ -22,18 +22,21 @@ services:
     networks:
       - certservice
 
-  certservice:
+  aaf-cert-service-service:
     image: onap/org.onap.aaf.certservice.aaf-certservice-api:latest
     volumes:
       - ../certService/helm/aaf-cert-service/resources/cmpServers.json:/etc/onap/aaf/certservice/cmpServers.json
+      - ../certs/certServiceServer-keystore.jks:/etc/onap/aaf/certservice/certs/certServiceServer-keystore.jks
+      - ../certs/certServiceServer-keystore.p12:/etc/onap/aaf/certservice/certs/certServiceServer-keystore.p12
+      - ../certs/truststore.jks:/etc/onap/aaf/certservice/certs/truststore.jks
     container_name: aafcert-service
     ports:
-      - "8080:8080"
+      - "8443:8443"
     depends_on:
       ejbca:
         condition: service_healthy
     healthcheck:
-      test: ["CMD-SHELL", "curl -f http://localhost:8080/actuator/health"]
+      test: ["CMD-SHELL", "curl https://localhost:8443/actuator/health -k --cert-type p12 --cert /etc/onap/aaf/certservice/certs/certServiceServer-keystore.p12 --pass secret"]
       interval: 10s
       timeout: 3s
       retries: 9
@@ -48,8 +51,10 @@ services:
     user: root #Run as root to avoid volume permission issues
     volumes:
       - ./certs_volume/:/var/certs
+      - ../certs/certServiceClient-keystore.jks:/etc/onap/aaf/certservice/certs/certServiceClient-keystore.jks
+      - ../certs/truststore.jks:/etc/onap/aaf/certservice/certs/truststore.jks
     depends_on:
-      certservice:
+      aaf-cert-service-service:
         condition: service_healthy
     networks:
       - certservice
