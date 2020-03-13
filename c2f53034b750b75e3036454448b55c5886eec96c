@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "481d8153_129d6b83",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/adapter/CSRMetaBuilder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-03-13T09:16:25Z",
+      "side": 1,
+      "message": "I didn\u0027t inline whole method. To create RDN we need just \u0027tag\u0027 and \u0027value\u0027. These were used to create string (that format: \"tag\u003dvalue\"), which was later parsed to get tag and value from it.\n\nIt was unnecessary conversion, so I just made new constructor and passed these values.",
+      "parentUuid": "3dcbadd6_e4dc85e9",
+      "revId": "c2f53034b750b75e3036454448b55c5886eec96c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "8eafa2a0_ffdf3fba",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/RDN.java",
         "patchSetId": 1
