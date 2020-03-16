@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ad774bb_b8d894d4",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/StringUtils.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-03-16T06:48:04Z",
+      "side": 1,
+      "message": "I think we should update licence when we modify/add file",
+      "revId": "f055a4722559a67c1c1d928194b7a5161e4bf4ee",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
