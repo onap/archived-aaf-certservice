@@ -16,6 +16,24 @@
       "revId": "7aed821150eb8c0ca5960abe244601ad55283100",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "723c5cca_382d88c6",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/external/RDNTest.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-03-16T01:33:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ca248c26_85f4ad44",
+      "revId": "7aed821150eb8c0ca5960abe244601ad55283100",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
