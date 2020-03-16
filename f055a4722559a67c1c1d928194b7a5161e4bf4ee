@@ -16,6 +16,41 @@
       "revId": "f055a4722559a67c1c1d928194b7a5161e4bf4ee",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "231587d7_b8267d3d",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/StringUtils.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-16T06:53:04Z",
+      "side": 1,
+      "message": "yes we should",
+      "parentUuid": "3ad774bb_b8d894d4",
+      "revId": "f055a4722559a67c1c1d928194b7a5161e4bf4ee",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e4452977_599051a2",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/external/StringUtils.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-16T06:53:04Z",
+      "side": 1,
+      "message": "do not use \"And\" in method name. Method must describe a single action. If you want to add an additional information for developers then use the javadoc",
+      "revId": "f055a4722559a67c1c1d928194b7a5161e4bf4ee",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
