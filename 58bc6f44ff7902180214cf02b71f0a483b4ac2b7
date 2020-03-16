@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bfc83a9a_17025a14",
+        "filename": "certService/src/main/resources/application.properties",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-03-16T10:27:54Z",
+      "side": 1,
+      "message": "i think that for our purpose it should be set to \u0027need\u0027",
+      "range": {
+        "startLine": 16,
+        "startChar": 1,
+        "endLine": 16,
+        "endChar": 27
+      },
+      "revId": "58bc6f44ff7902180214cf02b71f0a483b4ac2b7",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "80496668_627c5841",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-03-16T10:27:54Z",
+      "side": 1,
+      "message": "please don\u0027t use asterisk (*) in imports",
+      "range": {
+        "startLine": 36,
+        "startChar": 0,
+        "endLine": 36,
+        "endChar": 52
+      },
+      "revId": "58bc6f44ff7902180214cf02b71f0a483b4ac2b7",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0005a302_c81f5d30",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-03-16T10:27:54Z",
+      "side": 1,
+      "message": "please don\u0027t use asterisk (*) in imports",
+      "range": {
+        "startLine": 29,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 23
+      },
+      "revId": "58bc6f44ff7902180214cf02b71f0a483b4ac2b7",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "46ff22bb_59e7152c",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/httpclient/HttpClientTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-03-16T10:27:54Z",
+      "side": 1,
+      "message": "please don\u0027t use asterisk (*) in imports",
+      "range": {
+        "startLine": 41,
+        "startChar": 0,
+        "endLine": 43,
+        "endChar": 74
+      },
+      "revId": "58bc6f44ff7902180214cf02b71f0a483b4ac2b7",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
