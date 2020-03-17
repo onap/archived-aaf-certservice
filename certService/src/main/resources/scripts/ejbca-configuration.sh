@@ -20,5 +20,5 @@ configureEjbca() {
     ejbca.sh ca getcacert --caname ManagementCA -f /dev/stdout > cacert.pem
 }
 
-waitForEjbcaStartUp 30
+waitForEjbcaStartUp 50
 configureEjbca
