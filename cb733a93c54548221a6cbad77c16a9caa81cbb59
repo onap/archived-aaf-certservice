@@ -1,0 +1,123 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "32520530_8a9555d3",
+        "filename": "certService/src/main/resources/application.properties",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-17T12:02:21Z",
+      "side": 1,
+      "message": "What about ENV variables, that we have discussed, here? All 4 settings should be provided using ENV variables",
+      "revId": "cb733a93c54548221a6cbad77c16a9caa81cbb59",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d0f35733_c2eb79d1",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-17T12:02:21Z",
+      "side": 1,
+      "message": "Such should be read from ENV variables, as agreed",
+      "revId": "cb733a93c54548221a6cbad77c16a9caa81cbb59",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1ceef1f9_08c128d6",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-17T12:02:21Z",
+      "side": 1,
+      "message": "Different passwords to keystore and truststore",
+      "revId": "cb733a93c54548221a6cbad77c16a9caa81cbb59",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3d9d76eb_fb6e7382",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-17T12:02:21Z",
+      "side": 1,
+      "message": "Why CERT_PASSWORD is used also here?",
+      "revId": "cb733a93c54548221a6cbad77c16a9caa81cbb59",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "83a42cfc_340a28a6",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-17T12:02:21Z",
+      "side": 1,
+      "message": "I propose to introduce new exception for TLS exceptions",
+      "revId": "cb733a93c54548221a6cbad77c16a9caa81cbb59",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bb064fb4_eb25a0d3",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-17T12:02:21Z",
+      "side": 1,
+      "message": "Are we going to use JKS, not PKCS12? Any reason to use legacy solution?",
+      "revId": "cb733a93c54548221a6cbad77c16a9caa81cbb59",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dd6478d0_fa7603fc",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/CloseableHttpsClientProvider.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-17T12:02:21Z",
+      "side": 1,
+      "message": "Unacceptable! We are the owners of the certificate generation so hostname verification should be turned on.\n\nBTW: generated certificate should have CN\u003daaf-cert-service-service or SAN\u003daaf-cert-service-service",
+      "revId": "cb733a93c54548221a6cbad77c16a9caa81cbb59",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
