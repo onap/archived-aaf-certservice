@@ -2,13 +2,13 @@
  * ============LICENSE_START==================================================== org.onap.aaf
  * =========================================================================== Copyright (c) 2018
  * AT&T Intellectual Property. All rights reserved.
- *
+ * <p>
  * Modifications Copyright (C) 2019 IBM. ===========================================================================
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
  * in compliance with the License. You may obtain a copy of the License at
- *
+ * <p>
  * http://www.apache.org/licenses/LICENSE-2.0
- *
+ * <p>
  * Unless required by applicable law or agreed to in writing, software distributed under the License
  * is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
  * or implied. See the License for the specific language governing permissions and limitations under
@@ -24,7 +24,10 @@ package org.onap.aaf.certservice.cmpv2client.external;
  *
  * <p>8/20/2015
  */
-public class Split {
+public final class Split {
+
+    private Split() {
+    }
 
     private static final String[] EMPTY = new String[0];
 
@@ -42,11 +45,11 @@ public class Split {
         }
 
         // Count items to preallocate Array (memory alloc is more expensive than counting twice)
-        int count, idx;
+        int count;
+        int idx;
         for (count = 1, idx = value.indexOf(c, start);
-            idx >= 0 && idx < end;
-            idx = value.indexOf(c, ++idx), ++count) {
-            ;
+             idx >= 0 && idx < end;
+             idx = value.indexOf(c, ++idx), ++count) {
         }
         String[] rv = new String[count];
         if (count == 1) {
@@ -55,7 +58,7 @@ public class Split {
             int last = 0;
             count = -1;
             for (idx = value.indexOf(c, start); idx >= 0 && idx < end;
-                idx = value.indexOf(c, idx)) {
+                 idx = value.indexOf(c, idx)) {
                 rv[++count] = value.substring(last, idx);
                 last = ++idx;
             }
@@ -70,11 +73,11 @@ public class Split {
         }
 
         // Count items to preallocate Array (memory alloc is more expensive than counting twice)
-        int count, idx;
+        int count;
+        int idx;
         for (count = 1, idx = value.indexOf(c, start);
-            idx >= 0 && idx < end;
-            idx = value.indexOf(c, ++idx), ++count) {
-            ;
+             idx >= 0 && idx < end;
+             idx = value.indexOf(c, ++idx), ++count) {
         }
         String[] rv = new String[count];
         if (count == 1) {
@@ -83,7 +86,7 @@ public class Split {
             int last = start;
             count = -1;
             for (idx = value.indexOf(c, start); idx >= 0 && idx < end;
-                idx = value.indexOf(c, idx)) {
+                 idx = value.indexOf(c, idx)) {
                 rv[++count] = value.substring(last, idx).trim();
                 last = ++idx;
             }

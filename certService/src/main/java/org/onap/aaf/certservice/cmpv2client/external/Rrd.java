@@ -20,15 +20,17 @@
  * ============LICENSE_END====================================================
  *
  */
+
 package org.onap.aaf.certservice.cmpv2client.external;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import org.bouncycastle.asn1.ASN1ObjectIdentifier;
 import org.bouncycastle.asn1.x500.style.BCStyle;
 import org.bouncycastle.cert.CertException;
 
-public class RDN {
+public class Rrd {
 
     private String tag;
     private String value;
@@ -42,7 +44,7 @@ public class RDN {
         return aoi;
     }
 
-    public RDN(final String tagValue) throws CertException {
+    public Rrd(final String tagValue) throws CertException {
         String[] tv = Split.splitTrim('=', tagValue);
         switch (tv[0].toLowerCase()) {
             case "cn":
@@ -91,7 +93,7 @@ public class RDN {
                 break;
             default:
                 throw new CertException(
-                    "Unknown ASN1ObjectIdentifier for " + tv[0] + " in " + tagValue);
+                        "Unknown ASN1ObjectIdentifier for " + tv[0] + " in " + tagValue);
         }
         tag = tv[0];
         value = tv[1];
@@ -105,24 +107,24 @@ public class RDN {
      * @return
      * @throws CertException
      */
-    public static List<RDN> parse(final char delim, final String dnString) throws CertException {
-        List<RDN> lrnd = new ArrayList<>();
+    public static List<Rrd> parse(final char delim, final String dnString) throws CertException {
+        List<Rrd> lrnd = new ArrayList<>();
         StringBuilder sb = new StringBuilder();
         boolean inQuotes = false;
         for (int i = 0; i < dnString.length(); ++i) {
-            char c = dnString.charAt(i);
+            char currentCharacter = dnString.charAt(i);
             if (inQuotes) {
-                if ('"' == c) {
+                if ('"' == currentCharacter) {
                     inQuotes = false;
                 } else {
                     sb.append(dnString.charAt(i));
                 }
             } else {
-                if ('"' == c) {
+                if ('"' == currentCharacter) {
                     inQuotes = true;
-                } else if (delim == c) {
+                } else if (delim == currentCharacter) {
                     if (sb.length() > 0) {
-                        lrnd.add(new RDN(sb.toString()));
+                        lrnd.add(new Rrd(sb.toString()));
                         sb.setLength(0);
                     }
                 } else {
@@ -131,7 +133,7 @@ public class RDN {
             }
         }
         if (sb.indexOf("=") > 0) {
-            lrnd.add(new RDN(sb.toString()));
+            lrnd.add(new Rrd(sb.toString()));
         }
         return lrnd;
     }
