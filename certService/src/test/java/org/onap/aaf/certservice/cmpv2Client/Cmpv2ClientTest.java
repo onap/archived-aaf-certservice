@@ -16,6 +16,7 @@
 package org.onap.aaf.certservice.cmpv2Client;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.spy;
@@ -29,7 +30,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.security.KeyFactory;
 import java.security.KeyPair;
-import java.security.KeyPairGenerator;
 import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 import java.security.PrivateKey;
@@ -41,22 +41,24 @@ import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.impl.client.CloseableHttpClient;
-import org.bouncycastle.cert.CertException;
+import org.bouncycastle.asn1.x500.X500Name;
+import org.bouncycastle.asn1.x500.X500NameBuilder;
+import org.bouncycastle.asn1.x500.style.BCStyle;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
+import org.onap.aaf.certservice.certification.configuration.model.Authentication;
+import org.onap.aaf.certservice.certification.configuration.model.Cmpv2Server;
+import org.onap.aaf.certservice.certification.model.CsrModel;
 import org.onap.aaf.certservice.cmpv2client.exceptions.CmpClientException;
-import org.onap.aaf.certservice.cmpv2client.external.CSRMeta;
-import org.onap.aaf.certservice.cmpv2client.external.RDN;
 import org.onap.aaf.certservice.cmpv2client.impl.CmpClientImpl;
 
 class Cmpv2ClientTest {
@@ -65,11 +67,11 @@ class Cmpv2ClientTest {
     Security.addProvider(new BouncyCastleProvider());
   }
 
-  private CSRMeta csrMeta;
+  private CsrModel csrModel;
+  private Cmpv2Server server;
   private Date notBefore;
   private Date notAfter;
-
-  @Mock KeyPairGenerator kpg;
+  private X500Name dn;
 
   @Mock X509Certificate cert;
 
@@ -80,22 +82,15 @@ class Cmpv2ClientTest {
   @Mock HttpEntity httpEntity;
 
   private static KeyPair keyPair;
-  private static ArrayList<RDN> rdns;
 
   @BeforeEach
   void setUp()
       throws NoSuchProviderException, NoSuchAlgorithmException, IOException,
           InvalidKeySpecException {
-    KeyPairGenerator keyGenerator;
-    keyGenerator = KeyPairGenerator.getInstance("RSA", BouncyCastleProvider.PROVIDER_NAME);
-    keyGenerator.initialize(2048);
     keyPair = loadKeyPair();
-    rdns = new ArrayList<>();
-    try {
-      rdns.add(new RDN("O=CommonCompany"));
-    } catch (CertException e) {
-      e.printStackTrace();
-    }
+    dn = new X500NameBuilder()
+            .addRDN(BCStyle.O, "TestOrganization")
+            .build();
     initMocks(this);
   }
 
@@ -127,16 +122,11 @@ class Cmpv2ClientTest {
     Date beforeDate = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").parse("2019/11/11 12:00:00");
     Date afterDate = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").parse("2020/11/11 12:00:00");
     setCsrMetaValuesAndDateValues(
-        rdns,
-        "CN=CommonName",
-        "CN=ManagementCA",
-        "CommonName.com",
-        "CommonName@cn.com",
-        "mypassword",
-        "http://127.0.0.1/ejbca/publicweb/cmp/cmp",
-        "senderKID",
-        beforeDate,
-        afterDate);
+            "mypassword",
+            "senderKID",
+            "http://127.0.0.1/ejbca/publicweb/cmp/cmp",
+            beforeDate,
+            afterDate);
     when(httpClient.execute(any())).thenReturn(httpResponse);
     when(httpResponse.getEntity()).thenReturn(httpEntity);
 
@@ -157,7 +147,7 @@ class Cmpv2ClientTest {
     CmpClientImpl cmpClient = spy(new CmpClientImpl(httpClient));
     // when
     List<List<X509Certificate>> cmpClientResult =
-        cmpClient.createCertificate("data", "RA", csrMeta, cert, notBefore, notAfter);
+        cmpClient.createCertificate("data", "RA", csrModel, server, cert, notBefore, notAfter);
     // then
     assertNotNull(cmpClientResult);
   }
@@ -170,16 +160,11 @@ class Cmpv2ClientTest {
     Date beforeDate = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").parse("2019/11/11 12:00:00");
     Date afterDate = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").parse("2020/11/11 12:00:00");
     setCsrMetaValuesAndDateValues(
-        rdns,
-        "CN=CommonName",
-        "CN=ManagementCA",
-        "CommonName.com",
-        "CommonName@cn.com",
-        "password",
-        "http://127.0.0.1/ejbca/publicweb/cmp/cmp",
-        "senderKID",
-        beforeDate,
-        afterDate);
+            "password",
+            "senderKID",
+            "http://127.0.0.1/ejbca/publicweb/cmp/cmp",
+            beforeDate,
+            afterDate);
     when(httpClient.execute(any())).thenReturn(httpResponse);
     when(httpResponse.getEntity()).thenReturn(httpEntity);
 
@@ -199,9 +184,9 @@ class Cmpv2ClientTest {
     }
     CmpClientImpl cmpClient = spy(new CmpClientImpl(httpClient));
     // then
-    Assertions.assertThrows(
+    assertThrows(
         CmpClientException.class,
-        () -> cmpClient.createCertificate("data", "RA", csrMeta, cert, notBefore, notAfter));
+        () -> cmpClient.createCertificate("data", "RA", csrModel, server, cert, notBefore, notAfter));
   }
 
   @Test
@@ -211,16 +196,11 @@ class Cmpv2ClientTest {
     Date beforeDate = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").parse("2019/11/11 12:00:00");
     Date afterDate = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").parse("2020/11/11 12:00:00");
     setCsrMetaValuesAndDateValues(
-        rdns,
-        "CN=CommonName",
-        "CN=ManagementCA",
-        "CommonName.com",
-        "CommonName@cn.com",
-        "password",
-        "http://127.0.0.1/ejbca/publicweb/cmp/cmp",
-        "senderKID",
-        beforeDate,
-        afterDate);
+            "password",
+            "senderKID",
+            "http://127.0.0.1/ejbca/publicweb/cmp/cmp",
+            beforeDate,
+            afterDate);
     when(httpClient.execute(any())).thenReturn(httpResponse);
     when(httpResponse.getEntity()).thenReturn(httpEntity);
 
@@ -241,9 +221,9 @@ class Cmpv2ClientTest {
     CmpClientImpl cmpClient = spy(new CmpClientImpl(httpClient));
 
     // then
-    Assertions.assertThrows(
+    assertThrows(
         CmpClientException.class,
-        () -> cmpClient.createCertificate("data", "RA", csrMeta, cert, notBefore, notAfter));
+        () -> cmpClient.createCertificate("data", "RA", csrModel, server, cert, notBefore, notAfter));
   }
 
   @Test
@@ -253,21 +233,16 @@ class Cmpv2ClientTest {
     Date beforeDate = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").parse("2020/11/11 12:00:00");
     Date afterDate = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").parse("2019/11/11 12:00:00");
     setCsrMetaValuesAndDateValues(
-        rdns,
-        "CN=CommonName",
-        "CN=ManagementCA",
-        "CommonName.com",
-        "CommonName@cn.com",
-        "password",
-        "http://127.0.0.1/ejbca/publicweb/cmp/cmp",
-        "senderKID",
-        beforeDate,
-        afterDate);
+            "password",
+            "senderKID",
+            "http://127.0.0.1/ejbca/publicweb/cmp/cmp",
+            beforeDate,
+            afterDate);
     CmpClientImpl cmpClient = new CmpClientImpl(httpClient);
     // then
-    Assertions.assertThrows(
+    assertThrows(
         IllegalArgumentException.class,
-        () -> cmpClient.createCertificate("data", "RA", csrMeta, cert, notBefore, notAfter));
+        () -> cmpClient.createCertificate("data", "RA", csrModel, server, cert, notBefore, notAfter));
   }
 
   @Test
@@ -277,45 +252,36 @@ class Cmpv2ClientTest {
     Date beforeDate = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").parse("2019/11/11 12:00:00");
     Date afterDate = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").parse("2020/11/11 12:00:00");
     setCsrMetaValuesAndDateValues(
-        rdns,
-        "CN=Common",
-        "CN=CommonCA",
-        "Common.com",
-        "Common@cn.com",
-        "myPassword",
-        "http://127.0.0.1/ejbca/publicweb/cmp/cmpTest",
-        "sender",
-        beforeDate,
-        afterDate);
+            "myPassword",
+            "sender",
+            "http://127.0.0.1/ejbca/publicweb/cmp/cmpTest",
+            beforeDate,
+            afterDate);
     when(httpClient.execute(any())).thenThrow(IOException.class);
     CmpClientImpl cmpClient = spy(new CmpClientImpl(httpClient));
     // then
-    Assertions.assertThrows(
+    assertThrows(
         CmpClientException.class,
-        () -> cmpClient.createCertificate("data", "RA", csrMeta, cert, notBefore, notAfter));
+        () -> cmpClient.createCertificate("data", "RA", csrModel, server, cert, notBefore, notAfter));
   }
 
   private void setCsrMetaValuesAndDateValues(
-      List<RDN> rdns,
-      String cn,
-      String issuerCn,
-      String san,
-      String email,
-      String password,
-      String externalCaUrl,
-      String senderKid,
-      Date notBefore,
-      Date notAfter) {
-    csrMeta = new CSRMeta(rdns);
-    csrMeta.setCn(cn);
-    csrMeta.addSan(san);
-    csrMeta.setPassword(password);
-    csrMeta.setEmail(email);
-    csrMeta.setIssuerCn(issuerCn);
-    when(kpg.generateKeyPair()).thenReturn(keyPair);
-    csrMeta.getKeyPairOrGenerateIfNull();
-    csrMeta.setCaUrl(externalCaUrl);
-    csrMeta.setSenderKid(senderKid);
+          String iak,
+          String rv,
+          String externalCaUrl,
+          Date notBefore,
+          Date notAfter
+  ) {
+    csrModel = new CsrModel(null, dn, keyPair.getPrivate(), keyPair.getPublic(), Collections.emptyList());
+
+    Authentication authentication = new Authentication();
+    authentication.setIak(iak);
+    authentication.setRv(rv);
+    server = new Cmpv2Server();
+    server.setAuthentication(authentication);
+    server.setUrl(externalCaUrl);
+    server.setIssuerDN(dn);
+
     this.notBefore = notBefore;
     this.notAfter = notAfter;
   }

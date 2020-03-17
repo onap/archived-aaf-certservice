@@ -23,8 +23,10 @@ package org.onap.aaf.certservice.cmpv2client.api;
 import java.security.cert.X509Certificate;
 import java.util.Date;
 import java.util.List;
+
+import org.onap.aaf.certservice.certification.configuration.model.Cmpv2Server;
+import org.onap.aaf.certservice.certification.model.CsrModel;
 import org.onap.aaf.certservice.cmpv2client.exceptions.CmpClientException;
-import org.onap.aaf.certservice.cmpv2client.external.CSRMeta;
 
 /**
  * This class represent CmpV2Client Interface for obtaining X.509 Digital Certificates in a Public
@@ -43,7 +45,8 @@ public interface CmpClient {
    *     event CA Name. Could be {@code null}.
    * @param profile Profile on CA server Client/RA Mode configuration on Server. Could be {@code
    *     null}.
-   * @param csrMeta Certificate Signing Request Meta Data. Must not be {@code null}.
+   * @param csrModel  Certificate Signing Request model. Must not be {@code null}.
+   * @param server CMPv2 Server. Must not be {@code null}.
    * @param csr Certificate Signing Request {.cer} file. Must not be {@code null}.
    * @param notBefore An optional validity to set in the created certificate, Certificate not valid
    *     before this date.
@@ -55,7 +58,8 @@ public interface CmpClient {
   List<List<X509Certificate>> createCertificate(
       String caName,
       String profile,
-      CSRMeta csrMeta,
+      CsrModel csrModel,
+      Cmpv2Server server,
       X509Certificate csr,
       Date notBefore,
       Date notAfter)
@@ -71,7 +75,8 @@ public interface CmpClient {
    *     event CA Name. Could be {@code null}.
    * @param profile Profile on CA server Client/RA Mode configuration on Server. Could be {@code
    *     null}.
-   * @param csrMeta Certificate Signing Request Meta Data. Must not be {@code null}.
+   * @param csrModel Certificate Signing Request Model. Must not be {@code null}.
+   * @param server CMPv2 server. Must not be {@code null}.
    * @param csr Certificate Signing Request {.cer} file. Must not be {@code null}.
    * @return {@link X509Certificate} The newly created Certificate.
    * @throws CmpClientException if client error occurs.
@@ -79,7 +84,8 @@ public interface CmpClient {
   List<List<X509Certificate>> createCertificate(
       String caName,
       String profile,
-      CSRMeta csrMeta,
+      CsrModel csrModel,
+      Cmpv2Server server,
       X509Certificate csr)
       throws CmpClientException;
 }

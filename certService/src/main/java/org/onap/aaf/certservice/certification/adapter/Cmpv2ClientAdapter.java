@@ -54,17 +54,15 @@ public class Cmpv2ClientAdapter {
     private static final Logger LOGGER = LoggerFactory.getLogger(Cmpv2ClientAdapter.class);
 
     private final CmpClient cmpClient;
-    private final CSRMetaBuilder csrMetaBuilder;
     private final RSAContentSignerBuilder rsaContentSignerBuilder;
     private final X509CertificateBuilder x509CertificateBuilder;
     private final CertificateFactoryProvider certificateFactoryProvider;
 
     @Autowired
-    public Cmpv2ClientAdapter(CmpClient cmpClient, CSRMetaBuilder csrMetaBuilder,
-            RSAContentSignerBuilder rsaContentSignerBuilder, X509CertificateBuilder x509CertificateBuilder,
-            CertificateFactoryProvider certificateFactoryProvider) {
+    public Cmpv2ClientAdapter(CmpClient cmpClient, RSAContentSignerBuilder rsaContentSignerBuilder,
+                              X509CertificateBuilder x509CertificateBuilder,
+                              CertificateFactoryProvider certificateFactoryProvider) {
         this.cmpClient = cmpClient;
-        this.csrMetaBuilder = csrMetaBuilder;
         this.rsaContentSignerBuilder = rsaContentSignerBuilder;
         this.x509CertificateBuilder = x509CertificateBuilder;
         this.certificateFactoryProvider = certificateFactoryProvider;
@@ -82,7 +80,7 @@ public class Cmpv2ClientAdapter {
     public CertificationModel callCmpClient(CsrModel csrModel, Cmpv2Server server)
             throws CmpClientException, Cmpv2ClientAdapterException {
         List<List<X509Certificate>> certificates = cmpClient.createCertificate(server.getCaName(),
-                server.getCaMode().getProfile(), csrMetaBuilder.build(csrModel, server),
+                server.getCaMode().getProfile(), csrModel, server,
                 convertCSRToX509Certificate(csrModel.getCsr(), csrModel.getPrivateKey()));
         return new CertificationModel(convertFromX509CertificateListToPEMList(certificates.get(0)),
                 convertFromX509CertificateListToPEMList(certificates.get(1)));
