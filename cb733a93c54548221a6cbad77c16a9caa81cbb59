@@ -124,6 +124,24 @@
     },
     {
       "key": {
+        "uuid": "8e6bffc9_67d5fc42",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-17T13:19:29Z",
+      "side": 1,
+      "message": "As far as I understand it, it requires the password to keystore. Which is CERT_PASSWORD.",
+      "parentUuid": "3d9d76eb_fb6e7382",
+      "revId": "cb733a93c54548221a6cbad77c16a9caa81cbb59",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "83a42cfc_340a28a6",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
         "patchSetId": 2
@@ -135,6 +153,24 @@
       "writtenOn": "2020-03-17T12:02:21Z",
       "side": 1,
       "message": "I propose to introduce new exception for TLS exceptions",
+      "revId": "cb733a93c54548221a6cbad77c16a9caa81cbb59",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "21ac5f24_9a0eabff",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-17T13:19:29Z",
+      "side": 1,
+      "message": "Can I use the next available ExitCode (9) for that Exception?",
+      "parentUuid": "83a42cfc_340a28a6",
       "revId": "cb733a93c54548221a6cbad77c16a9caa81cbb59",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
