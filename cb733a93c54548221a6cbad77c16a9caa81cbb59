@@ -158,6 +158,24 @@
     },
     {
       "key": {
+        "uuid": "15a26bd8_9c87bea5",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-17T12:52:31Z",
+      "side": 1,
+      "message": "It was not specified actually, I used jks, because Pawel Kasperkiewiecz provided to me in such form. Should we use PKCS12?",
+      "parentUuid": "bb064fb4_eb25a0d3",
+      "revId": "cb733a93c54548221a6cbad77c16a9caa81cbb59",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "dd6478d0_fa7603fc",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/CloseableHttpsClientProvider.java",
         "patchSetId": 2
