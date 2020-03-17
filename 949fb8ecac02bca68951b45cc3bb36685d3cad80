@@ -51,6 +51,24 @@
       "revId": "949fb8ecac02bca68951b45cc3bb36685d3cad80",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a4fb01be_28cce090",
+        "filename": "certService/checkstyle-suppressions.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-17T12:17:54Z",
+      "side": 1,
+      "message": "ok. Se we do not turn it off.",
+      "parentUuid": "92fd3642_93ba3ba8",
+      "revId": "949fb8ecac02bca68951b45cc3bb36685d3cad80",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
