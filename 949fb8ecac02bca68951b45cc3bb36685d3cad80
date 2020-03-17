@@ -33,6 +33,24 @@
       "revId": "949fb8ecac02bca68951b45cc3bb36685d3cad80",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "92fd3642_93ba3ba8",
+        "filename": "certService/checkstyle-suppressions.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-03-17T12:12:28Z",
+      "side": 1,
+      "message": "In our case all errors reported by this check are connected with constructors and setters. With this check enabled we have to change all constructors with parameters and setters, because when we use \nconstruct(parameter) {\n    this.parameter \u003d parameter\n}  \nwe have hidden name, and error in stylecheck occures. Do we want to change that in all constructors and setters ?",
+      "parentUuid": "195a375b_b1dbea53",
+      "revId": "949fb8ecac02bca68951b45cc3bb36685d3cad80",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
