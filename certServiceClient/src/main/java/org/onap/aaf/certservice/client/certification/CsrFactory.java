@@ -40,9 +40,7 @@ import org.slf4j.LoggerFactory;
 import javax.security.auth.x500.X500Principal;
 import java.io.IOException;
 import java.io.StringWriter;
-import java.nio.charset.StandardCharsets;
 import java.security.KeyPair;
-import java.util.Base64;
 import java.util.Optional;
 
 import static org.onap.aaf.certservice.client.certification.EncryptionAlgorithmConstants.COMMON_NAME;
@@ -56,7 +54,7 @@ import static org.onap.aaf.certservice.client.certification.EncryptionAlgorithmC
 
 public class CsrFactory {
 
-    private final Logger LOGGER = LoggerFactory.getLogger(CsrFactory.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(CsrFactory.class);
     private static final String SANS_DELIMITER = ":";
     private final CsrConfiguration configuration;
 
@@ -67,6 +65,7 @@ public class CsrFactory {
 
 
     public String createCsrInPem(KeyPair keyPair) throws CsrGenerationException {
+        LOGGER.info("Creation of Csr has been started with following mandatory parameters: {}", getMandatoryParameters());
         PKCS10CertificationRequest request;
         String csrParameters = getMandatoryParameters().append(getOptionalParameters()).toString();
         X500Principal subject = new X500Principal(csrParameters);
@@ -101,6 +100,7 @@ public class CsrFactory {
             builder.addAttribute(PKCSObjectIdentifiers.pkcs_9_at_extensionRequest, generateSansExtension());
         }
 
+        LOGGER.info("Creation of Csr has been completed successfully");
         return builder.build(getContentSigner(keyPair));
     }
 
