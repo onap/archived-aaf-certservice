@@ -119,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "4cb28a8a_3f66f1c2",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrFactory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 6222
+      },
+      "writtenOn": "2020-03-18T14:38:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4ed4e2b4_f99ff0bf",
+      "range": {
+        "startLine": 105,
+        "startChar": 0,
+        "endLine": 105,
+        "endChar": 3
+      },
+      "revId": "7311e46d964375551d436ac67d5c6cafe00eb8f2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a72ca51_145181af",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/KeyPairFactory.java",
         "patchSetId": 1
@@ -142,6 +166,30 @@
     },
     {
       "key": {
+        "uuid": "91d83189_1066e143",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/KeyPairFactory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 6222
+      },
+      "writtenOn": "2020-03-18T14:38:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9a72ca51_145181af",
+      "range": {
+        "startLine": 40,
+        "startChar": 0,
+        "endLine": 48,
+        "endChar": 5
+      },
+      "revId": "7311e46d964375551d436ac67d5c6cafe00eb8f2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8f414c65_b7da2cc1",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/PrivateKeyToPemEncoder.java",
         "patchSetId": 1
@@ -162,6 +210,30 @@
       "revId": "7311e46d964375551d436ac67d5c6cafe00eb8f2",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4ab5e6a8_951d1605",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/PrivateKeyToPemEncoder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 6222
+      },
+      "writtenOn": "2020-03-18T14:38:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8f414c65_b7da2cc1",
+      "range": {
+        "startLine": 44,
+        "startChar": 0,
+        "endLine": 44,
+        "endChar": 3
+      },
+      "revId": "7311e46d964375551d436ac67d5c6cafe00eb8f2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
