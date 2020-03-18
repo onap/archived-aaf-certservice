@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "51215ed7_434a50e3",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/AbstractConfigurationFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-03-18T13:06:15Z",
+      "side": 1,
+      "message": "Reorder it to be close to other public methods.",
+      "revId": "0d4320e07d220219876e77f5faf301be3a8a8a49",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a5d9b6d_6347406a",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/AbstractConfigurationFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-03-18T13:06:15Z",
+      "side": 1,
+      "message": "I think it\u0027s better to declare it as private final field in class:\n```\nprivate final Set\u003cString\u003e countryNames \u003d new HashSet\u003c\u003e(Arrays.asList(Locale.getISOCountries()));\n```",
+      "range": {
+        "startLine": 69,
+        "startChar": 0,
+        "endLine": 69,
+        "endChar": 90
+      },
+      "revId": "0d4320e07d220219876e77f5faf301be3a8a8a49",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
