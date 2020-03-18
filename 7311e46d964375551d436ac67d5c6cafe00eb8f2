@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "aadb5771_1de75c40",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrFactory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-18T11:45:45Z",
+      "side": 1,
+      "message": "I know that it is not your change, but please remove unused import",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 24
+      },
+      "revId": "7311e46d964375551d436ac67d5c6cafe00eb8f2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fc756528_742409f2",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrFactory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-18T11:45:45Z",
+      "side": 1,
+      "message": "Please add info about csr data. You can get it from \u0027configuration\u0027",
+      "range": {
+        "startLine": 70,
+        "startChar": 8,
+        "endLine": 70,
+        "endChar": 56
+      },
+      "revId": "7311e46d964375551d436ac67d5c6cafe00eb8f2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "eb7eeb35_60a65420",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/ClientConfigurationFactory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-18T11:45:45Z",
+      "side": 1,
+      "message": "Please rename to e.g \u0027Cert Service URL\u0027 / \u0027Request URL\u0027",
+      "range": {
+        "startLine": 60,
+        "startChar": 43,
+        "endLine": 60,
+        "endChar": 46
+      },
+      "revId": "7311e46d964375551d436ac67d5c6cafe00eb8f2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e5562862_6d6ec022",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/ClientConfigurationFactory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-18T11:45:45Z",
+      "side": 1,
+      "message": "Consider to avoid Strings concatenation. \nLogger provide solution e.g.\nLOGGER.info(\"Client has been configured with following data: \\n{}\", logDetails);",
+      "range": {
+        "startLine": 62,
+        "startChar": 7,
+        "endLine": 62,
+        "endChar": 87
+      },
+      "revId": "7311e46d964375551d436ac67d5c6cafe00eb8f2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
