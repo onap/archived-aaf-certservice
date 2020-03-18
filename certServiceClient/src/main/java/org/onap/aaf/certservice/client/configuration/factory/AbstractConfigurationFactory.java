@@ -27,7 +27,6 @@ import org.onap.aaf.certservice.client.configuration.model.ConfigurationModel;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Locale;
-import java.util.Set;
 import java.util.regex.Pattern;
 
 public abstract class AbstractConfigurationFactory<T extends ConfigurationModel> {
@@ -53,6 +52,10 @@ public abstract class AbstractConfigurationFactory<T extends ConfigurationModel>
         return Pattern.compile("[~#@*$+%!()?/{}<>\\|_^]").matcher(stringToCheck).find();
     }
 
+    public boolean isCountryValid(String country) {
+        return new HashSet<>(Arrays.asList(Locale.getISOCountries())).contains(country);
+    }
+
     private boolean isPortNumberPresent(String stringToCheck) {
         return Pattern.compile(":[0-9]{1,5}").matcher(stringToCheck).find();
     }
@@ -63,10 +66,5 @@ public abstract class AbstractConfigurationFactory<T extends ConfigurationModel>
 
     private boolean isHttpProtocolsPresent(String stringToCheck) {
         return Pattern.compile("[h][t][t][p][:][/][/]|[h][t][t][p][s][:][/][/]").matcher(stringToCheck).find();
-    }
-
-    public boolean isCountryValid(String country) {
-        Set<String> countryNames = new HashSet<>(Arrays.asList(Locale.getISOCountries()));
-        return countryNames.contains(country);
     }
 }
