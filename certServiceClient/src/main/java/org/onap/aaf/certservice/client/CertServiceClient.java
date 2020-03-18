@@ -37,7 +37,7 @@ import org.onap.aaf.certservice.client.httpclient.CloseableHttpClientProvider;
 import org.onap.aaf.certservice.client.httpclient.HttpClient;
 import org.onap.aaf.certservice.client.httpclient.model.CertServiceResponse;
 
-import static org.onap.aaf.certservice.client.api.ExitCode.SUCCESS_EXIT_CODE;
+import static org.onap.aaf.certservice.client.api.ExitStatus.SUCCESS;
 import static org.onap.aaf.certservice.client.certification.EncryptionAlgorithmConstants.KEY_SIZE;
 import static org.onap.aaf.certservice.client.certification.EncryptionAlgorithmConstants.RSA_ENCRYPTION_ALGORITHM;
 
@@ -74,8 +74,8 @@ public class CertServiceClient {
             filesCreator.createKeystore(certServiceData.getCertificateChain(), keyPair.getPrivate());
             filesCreator.createTruststore(certServiceData.getTrustedCertificates());
         } catch (ExitableException e) {
-            appExitHandler.exit(e.applicationExitCode());
+            appExitHandler.exit(e.applicationExitStatus());
         }
-        appExitHandler.exit(SUCCESS_EXIT_CODE.getValue());
+        appExitHandler.exit(SUCCESS);
     }
 }
