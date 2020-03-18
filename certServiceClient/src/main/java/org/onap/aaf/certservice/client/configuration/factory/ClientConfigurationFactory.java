@@ -24,10 +24,13 @@ import org.onap.aaf.certservice.client.configuration.ClientConfigurationEnvs;
 import org.onap.aaf.certservice.client.configuration.EnvsForClient;
 import org.onap.aaf.certservice.client.configuration.exception.ClientConfigurationException;
 import org.onap.aaf.certservice.client.configuration.model.ClientConfiguration;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ClientConfigurationFactory extends AbstractConfigurationFactory<ClientConfiguration> {
 
     private final EnvsForClient envsForClient;
+    private final Logger LOGGER = LoggerFactory.getLogger(ClientConfigurationFactory.class);
 
     public ClientConfigurationFactory(EnvsForClient envsForClient) {
         this.envsForClient = envsForClient;
@@ -53,6 +56,10 @@ public class ClientConfigurationFactory extends AbstractConfigurationFactory<Cli
                 .filter(this::isAlphaNumeric)
                 .map(configuration::setCaName)
                 .orElseThrow(() -> new ClientConfigurationException(ClientConfigurationEnvs.CA_NAME + " is invalid."));
+
+        String logDetails = String.format("URL: %s Request Timeout: %s Output Path: %s CA name: %s", configuration.getUrlToCertService(),
+                configuration.getRequestTimeout(), configuration.getCertsOutputPath(), configuration.getCaName());
+        LOGGER.info("Client has been configured with following data: \n" + logDetails);
 
         return configuration;
     }

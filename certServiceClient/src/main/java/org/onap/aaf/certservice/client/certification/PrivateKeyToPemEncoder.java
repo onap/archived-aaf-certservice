@@ -41,6 +41,7 @@ public class PrivateKeyToPemEncoder {
         LOGGER.info("Encoding PrivateKey to PEM");
         StringWriter stringWriter = new StringWriter();
         try (JcaPEMWriter pemWriter = new JcaPEMWriter(stringWriter)) {
+            LOGGER.info("PrivateKey has been encoded to PEM successfully");
             pemWriter.writeObject(new PemObject(PEM_OBJECT_TYPE, pk.getEncoded()));
         } catch (IOException e) {
             LOGGER.error("Exception occurred during encoding PrivateKey to PEM", e);

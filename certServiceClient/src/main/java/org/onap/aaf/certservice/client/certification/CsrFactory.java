@@ -67,6 +67,7 @@ public class CsrFactory {
 
 
     public String createCsrInPem(KeyPair keyPair) throws CsrGenerationException {
+        LOGGER.info("Creation of Csr has been started");
         PKCS10CertificationRequest request;
         String csrParameters = getMandatoryParameters().append(getOptionalParameters()).toString();
         X500Principal subject = new X500Principal(csrParameters);
@@ -101,6 +102,7 @@ public class CsrFactory {
             builder.addAttribute(PKCSObjectIdentifiers.pkcs_9_at_extensionRequest, generateSansExtension());
         }
 
+        LOGGER.info("Creation of Csr has been completed successfully");
         return builder.build(getContentSigner(keyPair));
     }
 
