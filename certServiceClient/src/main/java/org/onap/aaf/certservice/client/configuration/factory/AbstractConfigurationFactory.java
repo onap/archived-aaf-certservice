@@ -32,6 +32,8 @@ import java.util.regex.Pattern;
 
 public abstract class AbstractConfigurationFactory<T extends ConfigurationModel> {
 
+    private final Set<String> countryNames = new HashSet<>(Arrays.asList(Locale.getISOCountries()));
+
     abstract T create() throws ClientConfigurationException, CsrConfigurationException;
 
     public boolean isPathValid(String path) {
@@ -53,6 +55,10 @@ public abstract class AbstractConfigurationFactory<T extends ConfigurationModel>
         return Pattern.compile("[~#@*$+%!()?/{}<>\\|_^]").matcher(stringToCheck).find();
     }
 
+    public boolean isCountryValid(String country) {
+        return countryNames.contains(country);
+    }
+
     private boolean isPortNumberPresent(String stringToCheck) {
         return Pattern.compile(":[0-9]{1,5}").matcher(stringToCheck).find();
     }
@@ -63,10 +69,5 @@ public abstract class AbstractConfigurationFactory<T extends ConfigurationModel>
 
     private boolean isHttpProtocolsPresent(String stringToCheck) {
         return Pattern.compile("[h][t][t][p][:][/][/]|[h][t][t][p][s][:][/][/]").matcher(stringToCheck).find();
-    }
-
-    public boolean isCountryValid(String country) {
-        Set<String> countryNames = new HashSet<>(Arrays.asList(Locale.getISOCountries()));
-        return countryNames.contains(country);
     }
 }
