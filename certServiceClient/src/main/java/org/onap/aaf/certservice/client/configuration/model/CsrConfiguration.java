@@ -21,6 +21,8 @@
 package org.onap.aaf.certservice.client.configuration.model;
 
 
+import org.onap.aaf.certservice.client.certification.EncryptionAlgorithmConstants;
+
 public class CsrConfiguration implements ConfigurationModel {
 
     private String commonName;
@@ -93,5 +95,17 @@ public class CsrConfiguration implements ConfigurationModel {
     public CsrConfiguration setSubjectAlternativeNames(String subjectAlternativeNames) {
         this.sans = subjectAlternativeNames;
         return this;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s= %s, %s= %s, %s= %s, %s= %s, %s= %s, %s= %s, SANS= %s",
+                EncryptionAlgorithmConstants.COMMON_NAME, commonName,
+                EncryptionAlgorithmConstants.COUNTRY, country,
+                EncryptionAlgorithmConstants.STATE, state,
+                EncryptionAlgorithmConstants.ORGANIZATION, organization,
+                EncryptionAlgorithmConstants.ORGANIZATION_UNIT, organizationUnit,
+                EncryptionAlgorithmConstants.LOCATION, location,
+                sans);
     }
 }

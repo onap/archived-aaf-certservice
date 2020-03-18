@@ -39,9 +39,10 @@ public class KeyPairFactory {
 
     public KeyPair create() throws KeyPairGenerationException {
         try {
+            LOGGER.info("KeyPair generation started with algorithm {}", encryptionAlgorithm);
             return createKeyPairGenerator().generateKeyPair();
         } catch (NoSuchAlgorithmException e) {
-            LOGGER.error("Generation of KeyPair failed, exception message: " + e.getMessage());
+            LOGGER.error("Generation of KeyPair failed, exception message: {}", e.getMessage());
             throw new KeyPairGenerationException(e);
         }
     }
