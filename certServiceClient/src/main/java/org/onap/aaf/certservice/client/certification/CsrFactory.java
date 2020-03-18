@@ -40,9 +40,7 @@ import org.slf4j.LoggerFactory;
 import javax.security.auth.x500.X500Principal;
 import java.io.IOException;
 import java.io.StringWriter;
-import java.nio.charset.StandardCharsets;
 import java.security.KeyPair;
-import java.util.Base64;
 import java.util.Optional;
 
 import static org.onap.aaf.certservice.client.certification.EncryptionAlgorithmConstants.COMMON_NAME;
@@ -56,7 +54,7 @@ import static org.onap.aaf.certservice.client.certification.EncryptionAlgorithmC
 
 public class CsrFactory {
 
-    private final Logger LOGGER = LoggerFactory.getLogger(CsrFactory.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(CsrFactory.class);
     private static final String SANS_DELIMITER = ":";
     private final CsrConfiguration configuration;
 
@@ -67,10 +65,13 @@ public class CsrFactory {
 
 
     public String createCsrInPem(KeyPair keyPair) throws CsrGenerationException {
+        LOGGER.info("Creation of Csr has been started with following parameters: {}", getAllParameters());
         PKCS10CertificationRequest request;
         String csrParameters = getMandatoryParameters().append(getOptionalParameters()).toString();
         X500Principal subject = new X500Principal(csrParameters);
         request = createPKCS10Csr(subject, keyPair);
+
+        LOGGER.info("Creation of Csr has been completed successfully");
         return convertPKC10CsrToPem(request);
     }
 
@@ -92,6 +93,16 @@ public class CsrFactory {
                 .filter(CsrFactory::isParameterPresent)
                 .map(location -> optionalParameters.append(String.format(", %s=%s", LOCATION, location)));
         return optionalParameters.toString();
+    }
+
+    private StringBuilder getAllParameters() {
+        StringBuilder allParameters = new StringBuilder();
+        allParameters.append(String.format("%s, %s", getMandatoryParameters(), getOptionalParameters()));
+
+        Optional.ofNullable(configuration.getSans())
+                .filter(CsrFactory::isParameterPresent)
+                .map(sans -> allParameters.append(String.format(", %s=%s", "SANS", sans)));
+        return allParameters;
     }
 
     private PKCS10CertificationRequest createPKCS10Csr(X500Principal subject, KeyPair keyPair) throws CsrGenerationException {
