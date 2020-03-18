@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d301c0a0_2039d79a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-03-18T12:44:48Z",
+      "side": 1,
+      "message": "5. Use the imperative mood in the subject line\nhttps://chris.beams.io/posts/git-commit/#imperative",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 11
+      },
+      "revId": "683b3a9d768bbfeb9300a0f8c4472bc775606df3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
