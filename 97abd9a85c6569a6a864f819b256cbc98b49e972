@@ -1,0 +1,140 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6fb14201_9dea304f",
+        "filename": "certService/src/main/resources/application.properties",
+        "patchSetId": 5
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-18T09:52:10Z",
+      "side": 1,
+      "message": "I remember that last time we discussed that all endpoints should be disabled while only needed (e.g. health) should be enabled. Why this has changes since then?",
+      "revId": "97abd9a85c6569a6a864f819b256cbc98b49e972",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "322fe967_c106e25b",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-18T09:52:10Z",
+      "side": 1,
+      "message": "Please log also whole exception to not loose root cause.",
+      "revId": "97abd9a85c6569a6a864f819b256cbc98b49e972",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d5edef89_7c11f2bc",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/EnvsForTls.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-18T09:52:10Z",
+      "side": 1,
+      "message": "PROJECT?",
+      "revId": "97abd9a85c6569a6a864f819b256cbc98b49e972",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4ad037b0_e8cdc897",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/TlsConfigurationEnvs.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-18T09:52:10Z",
+      "side": 1,
+      "message": "PROJECT?",
+      "revId": "97abd9a85c6569a6a864f819b256cbc98b49e972",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f8d65afc_200aa8bc",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/exception/TlsConfigurationException.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-18T09:52:10Z",
+      "side": 1,
+      "message": "PROJECT?",
+      "revId": "97abd9a85c6569a6a864f819b256cbc98b49e972",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c1d0193a_b5a05273",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-18T09:52:10Z",
+      "side": 1,
+      "message": "Would be good to not loose whole exception, so please add constructor which takes as input String and Exception :) And return here:\n\nthrow new TlsConfigurationException(\"TLS configuration exception: \" + e, e);",
+      "revId": "97abd9a85c6569a6a864f819b256cbc98b49e972",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "653c083f_9d2ec5df",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/CloseableHttpsClientProvider.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-18T09:52:10Z",
+      "side": 1,
+      "message": "To be removed :)",
+      "revId": "97abd9a85c6569a6a864f819b256cbc98b49e972",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bf3f4d39_28dc98e0",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactoryTest.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-18T09:52:10Z",
+      "side": 1,
+      "message": "PROJECT?",
+      "revId": "97abd9a85c6569a6a864f819b256cbc98b49e972",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
