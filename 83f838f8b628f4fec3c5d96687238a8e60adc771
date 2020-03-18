@@ -22,6 +22,23 @@
       "revId": "83f838f8b628f4fec3c5d96687238a8e60adc771",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "281c44c2_861e14e6",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/configuration/factory/AbstractConfigurationFactoryTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-18T08:00:23Z",
+      "side": 1,
+      "message": "Also, please add lower letters test as invalid :) e.g. pl",
+      "revId": "83f838f8b628f4fec3c5d96687238a8e60adc771",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
