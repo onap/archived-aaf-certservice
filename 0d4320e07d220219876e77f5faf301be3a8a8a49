@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "68b05416_0469b400",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/AbstractConfigurationFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-03-18T15:54:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "51215ed7_434a50e3",
+      "revId": "0d4320e07d220219876e77f5faf301be3a8a8a49",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a5d9b6d_6347406a",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/AbstractConfigurationFactory.java",
         "patchSetId": 4
@@ -30,6 +48,30 @@
       "writtenOn": "2020-03-18T13:06:15Z",
       "side": 1,
       "message": "I think it\u0027s better to declare it as private final field in class:\n```\nprivate final Set\u003cString\u003e countryNames \u003d new HashSet\u003c\u003e(Arrays.asList(Locale.getISOCountries()));\n```",
+      "range": {
+        "startLine": 69,
+        "startChar": 0,
+        "endLine": 69,
+        "endChar": 90
+      },
+      "revId": "0d4320e07d220219876e77f5faf301be3a8a8a49",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ffc155d_295ff0c1",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/AbstractConfigurationFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-03-18T15:54:37Z",
+      "side": 1,
+      "message": "There will be an issue with NullPointerException in the AbstractConfigurationFactoryTest class. \n\nI resolve it in the following ticket https://gerrit.onap.org/r/c/aaf/certservice/+/103876 by inlining: \n\n public boolean isCountryValid(String country) {\t\n        return new HashSet\u003c\u003e(Arrays.asList(Locale.getISOCountries())).contains(country);\t\n }",
+      "parentUuid": "1a5d9b6d_6347406a",
       "range": {
         "startLine": 69,
         "startChar": 0,
