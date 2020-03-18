@@ -63,7 +63,7 @@ public class HttpClient {
             return extractCertServiceResponse(httpResponse);
 
         } catch (IOException e) {
-            LOGGER.error("Failed execute request to API for URL: {}{} . Exception message: {}",
+            LOGGER.error("Failed execute request to API for URL: {}{} , exception message: {}",
                     certServiceAddress, caName, e.getMessage());
             throw new HttpClientException(e);
         }
@@ -88,7 +88,7 @@ public class HttpClient {
         try {
             return EntityUtils.toString(httpEntity, CHARSET_UTF_8);
         } catch (IOException e) {
-            LOGGER.error("Cannot parse response to string", e);
+            LOGGER.error("Cannot parse response to string, exception message: {}", e.getMessage());
             throw new HttpClientException(e);
         }
     }
@@ -101,17 +101,12 @@ public class HttpClient {
         return httpGet;
     }
 
-
     private CertServiceApiResponseException generateApiResponseException(HttpResponse httpResponse)
             throws HttpClientException {
         String stringResponse = getStringResponse(httpResponse.getEntity());
         ErrorCertServiceResponse errorCertServiceResponse =
                 gson.fromJson(stringResponse, ErrorCertServiceResponse.class);
 
-        String messageFromApi = errorCertServiceResponse.getMessage();
-        String path = errorCertServiceResponse.getPath();
-        int httpResponseCode = getStatusCode(httpResponse);
-
-        return new CertServiceApiResponseException(certServiceAddress + path, httpResponseCode, messageFromApi);
+        return new CertServiceApiResponseException(getStatusCode(httpResponse), errorCertServiceResponse.getMessage());
     }
 }

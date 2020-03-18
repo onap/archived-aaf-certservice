@@ -27,7 +27,6 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.onap.aaf.certservice.client.api.ExitCode;
 import org.onap.aaf.certservice.client.httpclient.exception.CertServiceApiResponseException;
 import org.onap.aaf.certservice.client.httpclient.exception.HttpClientException;
 import org.onap.aaf.certservice.client.httpclient.model.CertServiceResponse;
@@ -51,6 +50,8 @@ import static org.onap.aaf.certservice.client.CerServiceRequestTestData.EXPECTED
 import static org.onap.aaf.certservice.client.CerServiceRequestTestData.EXPECTED_FIRST_ELEMENT_OF_TRUSTED_CERTIFICATES;
 import static org.onap.aaf.certservice.client.CerServiceRequestTestData.MISSING_PK_RESPONSE;
 import static org.onap.aaf.certservice.client.CerServiceRequestTestData.PK;
+import static org.onap.aaf.certservice.client.api.ExitStatus.CERT_SERVICE_API_CONNECTION_EXCEPTION;
+import static org.onap.aaf.certservice.client.api.ExitStatus.HTTP_CLIENT_EXCEPTION;
 
 class HttpClientTest {
 
@@ -111,11 +112,11 @@ class HttpClientTest {
                         () -> httpClient.retrieveCertServiceData(CA_NAME, CSR, ""));
 
         // then
-        assertEquals(ExitCode.CERT_SERVICE_API_CONNECTION_EXCEPTION.getValue(), exception.applicationExitCode());
+        assertEquals(CERT_SERVICE_API_CONNECTION_EXCEPTION, exception.applicationExitStatus());
     }
 
     @Test
-    void shouldThrowHttpClientException_WhenCannotExecuteRequestToAPI() throws Exception{
+    void shouldThrowHttpClientException_WhenCannotExecuteRequestToAPI() throws Exception {
 
         //given
         when(closeableHttpClient.execute(any(HttpGet.class))).thenThrow(IOException.class);
@@ -126,11 +127,11 @@ class HttpClientTest {
                         () -> httpClient.retrieveCertServiceData(CA_NAME, CSR, ""));
 
         //then
-        assertEquals(ExitCode.HTTP_CLIENT_EXCEPTION.getValue(), exception.applicationExitCode());
+        assertEquals(HTTP_CLIENT_EXCEPTION, exception.applicationExitStatus());
     }
 
     @Test
-    void shouldThrowHttpClientException_WhenCannotParseResponseToString() throws Exception{
+    void shouldThrowHttpClientException_WhenCannotParseResponseToString() throws Exception {
 
         //given
         mockServerResponse(HTTP_OK, CORRECT_RESPONSE);
@@ -142,7 +143,7 @@ class HttpClientTest {
                         () -> httpClient.retrieveCertServiceData(CA_NAME, CSR, ""));
 
         //then
-        assertEquals(ExitCode.HTTP_CLIENT_EXCEPTION.getValue(), exception.applicationExitCode());
+        assertEquals(HTTP_CLIENT_EXCEPTION, exception.applicationExitStatus());
     }
 
     private void mockServerResponse(int serverCodeResponse, String stringResponse)

@@ -43,7 +43,7 @@ public class PrivateKeyToPemEncoder {
         try (JcaPEMWriter pemWriter = new JcaPEMWriter(stringWriter)) {
             pemWriter.writeObject(new PemObject(PEM_OBJECT_TYPE, pk.getEncoded()));
         } catch (IOException e) {
-            LOGGER.error("Exception occurred during encoding PrivateKey to PEM", e);
+            LOGGER.error("Exception occurred during encoding PrivateKey to PEM. Exception message: {}", e.getMessage());
             throw new PkEncodingException(e);
         }
         return stringWriter.toString();
