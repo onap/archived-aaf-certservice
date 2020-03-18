@@ -33,11 +33,11 @@ class PKCS12FilesCreator {
     private static final String KEYSTORE_PASS = "keystore.pass";
     private static final String TRUSTSTORE_JKS = "truststore.jks";
     private static final String TRUSTSTORE_PASS = "truststore.pass";
+    private static final Logger LOGGER = LoggerFactory.getLogger(PKCS12FilesCreator.class);
     private final String keystoreJksPath;
     private final String keystorePassPath;
     private final String truststoreJksPath;
     private final String truststorePassPath;
-    private final Logger LOGGER = LoggerFactory.getLogger(PKCS12FilesCreator.class);
 
 
     PKCS12FilesCreator(String path) {
