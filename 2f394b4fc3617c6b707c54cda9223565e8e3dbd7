@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0554b2aa_1916cef5",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/AbstractConfigurationFactory.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 2789
+      },
+      "writtenOn": "2020-03-18T16:32:18Z",
+      "side": 1,
+      "message": "maybe just Arrays.asList(Locale.getISOCountries()).contains(country);",
+      "range": {
+        "startLine": 56,
+        "startChar": 8,
+        "endLine": 56,
+        "endChar": 88
+      },
+      "revId": "2f394b4fc3617c6b707c54cda9223565e8e3dbd7",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
