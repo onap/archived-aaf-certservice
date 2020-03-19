@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d813b1ce_fee58e3b",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrFactory.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-19T15:11:34Z",
+      "side": 1,
+      "message": "\"Conversion of CSR to PEM has been started\"",
+      "revId": "ebacb12fcfccd2f00856e8f8277856b910f7bfd2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "60dc49a1_c65379f1",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/PrivateKeyToPemEncoder.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-19T15:11:34Z",
+      "side": 1,
+      "message": "private key",
+      "revId": "ebacb12fcfccd2f00856e8f8277856b910f7bfd2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f03c6e90_c3ccd42f",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/PrivateKeyToPemEncoder.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-19T15:11:34Z",
+      "side": 1,
+      "message": "private key",
+      "revId": "ebacb12fcfccd2f00856e8f8277856b910f7bfd2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "811156b9_fbb5193e",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-19T15:11:34Z",
+      "side": 1,
+      "message": "Why this is DEBUG level while others are INFO?",
+      "revId": "ebacb12fcfccd2f00856e8f8277856b910f7bfd2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0453cea9_91202569",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-19T15:11:34Z",
+      "side": 1,
+      "message": "Why this is DEBUG level while others are INFO?",
+      "revId": "ebacb12fcfccd2f00856e8f8277856b910f7bfd2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
