@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e10b2415_94701b16",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrFactory.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-03-19T09:04:50Z",
+      "side": 1,
+      "message": "Only for logging purposes so consider moving this to CsrConfiguration toString method.",
+      "range": {
+        "startLine": 98,
+        "startChar": 0,
+        "endLine": 106,
+        "endChar": 5
+      },
+      "revId": "d901ff389dda91e03860b0de11b6bf7a426d8aa9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "80f38c21_1387a1b5",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/ClientConfigurationFactory.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-03-19T09:04:50Z",
+      "side": 1,
+      "message": "Consider moving this to toString method of configuration.",
+      "range": {
+        "startLine": 60,
+        "startChar": 0,
+        "endLine": 62,
+        "endChar": 112
+      },
+      "revId": "d901ff389dda91e03860b0de11b6bf7a426d8aa9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
