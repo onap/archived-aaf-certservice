@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3168c9aa_e8a3deb0",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrFactory.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 6222
+      },
+      "writtenOn": "2020-03-19T12:34:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c4f641d1_dfe40ada",
+      "revId": "ef25c3c3fcb8b3af11c6b0325763c648bd0e4b8f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "212eaaab_e046b817",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrFactory.java",
         "patchSetId": 8
@@ -33,6 +51,24 @@
       "revId": "ef25c3c3fcb8b3af11c6b0325763c648bd0e4b8f",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2087ebf2_7620fdf5",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrFactory.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 6222
+      },
+      "writtenOn": "2020-03-19T12:34:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "212eaaab_e046b817",
+      "revId": "ef25c3c3fcb8b3af11c6b0325763c648bd0e4b8f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "15e3ebbd_6d2ddcd6",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/KeyPairFactory.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 6222
+      },
+      "writtenOn": "2020-03-19T12:34:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6f755641_18cf6e06",
+      "revId": "ef25c3c3fcb8b3af11c6b0325763c648bd0e4b8f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ef09ff14_5a33ea93",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/PrivateKeyToPemEncoder.java",
         "patchSetId": 8
@@ -70,6 +124,24 @@
     },
     {
       "key": {
+        "uuid": "f0f9a1bf_df387434",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/PrivateKeyToPemEncoder.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 6222
+      },
+      "writtenOn": "2020-03-19T12:34:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ef09ff14_5a33ea93",
+      "revId": "ef25c3c3fcb8b3af11c6b0325763c648bd0e4b8f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "62ecbb8a_7618bdd9",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/model/CsrConfiguration.java",
         "patchSetId": 8
@@ -84,6 +156,24 @@
       "revId": "ef25c3c3fcb8b3af11c6b0325763c648bd0e4b8f",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "17c595b9_d69b1a39",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/model/CsrConfiguration.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 6222
+      },
+      "writtenOn": "2020-03-19T12:34:26Z",
+      "side": 1,
+      "message": "After look into this code once again I think the better way there is to use CsrConfigurationEnvs. Thanks that there will be no longer hardcoded SANS.",
+      "parentUuid": "62ecbb8a_7618bdd9",
+      "revId": "ef25c3c3fcb8b3af11c6b0325763c648bd0e4b8f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
