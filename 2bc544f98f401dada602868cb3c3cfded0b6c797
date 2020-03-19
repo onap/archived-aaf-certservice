@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "efd2ebde_c3c01f76",
+        "filename": "Makefile",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-19T06:36:36Z",
+      "side": 1,
+      "message": "rename to start-backend",
+      "revId": "2bc544f98f401dada602868cb3c3cfded0b6c797",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "555902f6_7988434c",
+        "filename": "Makefile",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-19T06:36:36Z",
+      "side": 1,
+      "message": "when I don\u0027t execute run-client goal then I have an error:\n\n##### Stop Cert Service #####\ndocker-compose down\nStopping aafcert-service ... done\nStopping aafcert-ejbca   ... done\nRemoving aafcert-service ... done\nRemoving aafcert-ejbca   ... done\nRemoving network certservice_certservice\n##### Remove Cert Service Client #####\ndocker rm aafcert-client \u0026\u003e /dev/null || true\n##### DONE #####\nError: No such container: aafcert-client\n\n\nRename stop to stop-backend",
+      "revId": "2bc544f98f401dada602868cb3c3cfded0b6c797",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "014eebf7_4671ca70",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-19T06:36:36Z",
+      "side": 1,
+      "message": "Pls remove duplicated information\u0027s from certService/README.md",
+      "revId": "2bc544f98f401dada602868cb3c3cfded0b6c797",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
