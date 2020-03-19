@@ -25,6 +25,52 @@
     },
     {
       "key": {
+        "uuid": "4ddfc961_0c203073",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/AppExitHandler.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 2789
+      },
+      "writtenOn": "2020-03-19T11:07:52Z",
+      "side": 1,
+      "message": "private",
+      "range": {
+        "startLine": 26,
+        "startChar": 4,
+        "endLine": 26,
+        "endChar": 10
+      },
+      "revId": "813699c273f6b1a950c0e2979e1c63f5fe20b9fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "74dfe56d_fc2154cf",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 2789
+      },
+      "writtenOn": "2020-03-19T11:07:52Z",
+      "side": 1,
+      "message": "private",
+      "range": {
+        "startLine": 50,
+        "startChar": 4,
+        "endLine": 50,
+        "endChar": 10
+      },
+      "revId": "813699c273f6b1a950c0e2979e1c63f5fe20b9fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "a0a42e4c_63659c36",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
         "patchSetId": 2
@@ -41,6 +87,29 @@
         "startChar": 0,
         "endLine": 81,
         "endChar": 3
+      },
+      "revId": "813699c273f6b1a950c0e2979e1c63f5fe20b9fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1ee99b00_e160e8b2",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/api/ExitableException.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 2789
+      },
+      "writtenOn": "2020-03-19T11:07:52Z",
+      "side": 1,
+      "message": "Almost all exceptions that extends ExitableException has only specific ExitStatus and that\u0027s it, that is the difference.\n\nI would make ExitableException not abstract, and put into constructor additional parameter - ExitStatus. Thanks to this, most of subclasses can be deleted.",
+      "range": {
+        "startLine": 21,
+        "startChar": 22,
+        "endLine": 21,
+        "endChar": 39
       },
       "revId": "813699c273f6b1a950c0e2979e1c63f5fe20b9fb",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
