@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e1ba6d54_2dc6d7a7",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-03-19T08:50:41Z",
+      "side": 1,
+      "message": "Minor thing but commit messages should be written using imperative mood, so improve instead of improving.",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 9
+      },
+      "revId": "813699c273f6b1a950c0e2979e1c63f5fe20b9fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a0a42e4c_63659c36",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-03-19T08:50:41Z",
+      "side": 1,
+      "message": "Please remove any error logging in other classes to avoid displaying the same exception multiple times. Examples: HttpClient getStringResponse method; PKCS12FilesCreator saveDataToLocation.\n\nConsider introducing exception constructors accepting messages and preserving stacktrace where possible.",
+      "range": {
+        "startLine": 81,
+        "startChar": 0,
+        "endLine": 81,
+        "endChar": 3
+      },
+      "revId": "813699c273f6b1a950c0e2979e1c63f5fe20b9fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
