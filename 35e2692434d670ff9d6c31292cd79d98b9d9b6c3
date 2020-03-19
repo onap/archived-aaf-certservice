@@ -48,6 +48,30 @@
     },
     {
       "key": {
+        "uuid": "1337bf27_7cbd67b5",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrFactory.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 6222
+      },
+      "writtenOn": "2020-03-19T14:44:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8541a813_bf7b0774",
+      "range": {
+        "startLine": 72,
+        "startChar": 8,
+        "endLine": 72,
+        "endChar": 52
+      },
+      "revId": "35e2692434d670ff9d6c31292cd79d98b9d9b6c3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9cc1b5f6_cf703935",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrFactory.java",
         "patchSetId": 9
@@ -71,6 +95,30 @@
     },
     {
       "key": {
+        "uuid": "aacd36fd_e6d30953",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrFactory.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 6222
+      },
+      "writtenOn": "2020-03-19T14:44:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9cc1b5f6_cf703935",
+      "range": {
+        "startLine": 120,
+        "startChar": 4,
+        "endLine": 120,
+        "endChar": 107
+      },
+      "revId": "35e2692434d670ff9d6c31292cd79d98b9d9b6c3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "98e5df97_eaacbfa4",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/ClientConfigurationFactory.java",
         "patchSetId": 9
@@ -82,6 +130,30 @@
       "writtenOn": "2020-03-19T14:01:12Z",
       "side": 1,
       "message": "I would log here that \"Successful validation of Client configuration. Configuration data: {}\"\n\nAlso pay attention, you have CsrConfigurationFactory with similar method which needs something similar.\n\nGeneral comment: \n1. Look at each method name \n2. Think what it does\n3. Verify if it does what it says\n4. than log what you observed",
+      "range": {
+        "startLine": 60,
+        "startChar": 20,
+        "endLine": 60,
+        "endChar": 68
+      },
+      "revId": "35e2692434d670ff9d6c31292cd79d98b9d9b6c3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6363e923_d359a3ce",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/ClientConfigurationFactory.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 6222
+      },
+      "writtenOn": "2020-03-19T14:44:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "98e5df97_eaacbfa4",
       "range": {
         "startLine": 60,
         "startChar": 20,
