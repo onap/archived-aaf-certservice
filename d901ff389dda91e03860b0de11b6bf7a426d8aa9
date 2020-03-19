@@ -45,6 +45,30 @@
       "revId": "d901ff389dda91e03860b0de11b6bf7a426d8aa9",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f80f4976_2a4b9b07",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/ClientConfigurationFactory.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-03-19T09:13:27Z",
+      "side": 1,
+      "message": "Improve readability for example: \n\nString logDetails \u003d String.format(\"%s\u003d %s, %s\u003d %s, %s\u003d %s, %s\u003d %s\", \n                ClientConfigurationEnvs.REQUEST_URL, configuration.getUrlToCertService(),\n                ClientConfigurationEnvs.REQUEST_TIMEOUT, configuration.getRequestTimeout(), \n                ClientConfigurationEnvs.OUTPUT_PATH, ClientConfigurationEnvs.CA_NAME, \n                configuration.getCertsOutputPath(), configuration.getCaName());\n\nWhen you do it you will see the following:\n\nOUTPUT_PATH \u003d CA_NAME\ngetCertsOutputPath() \u003d getCaName()\n\n\nFix these bugs :)",
+      "parentUuid": "80f38c21_1387a1b5",
+      "range": {
+        "startLine": 60,
+        "startChar": 0,
+        "endLine": 62,
+        "endChar": 112
+      },
+      "revId": "d901ff389dda91e03860b0de11b6bf7a426d8aa9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
