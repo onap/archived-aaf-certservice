@@ -190,6 +190,30 @@
     },
     {
       "key": {
+        "uuid": "d4374143_bd65de84",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/PrivateKeyToPemEncoder.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-03-19T10:24:57Z",
+      "side": 1,
+      "message": "I think PEM_OBJECT_TYPE access should actually be private. Can you fix it and then move it down so that the logger is first?",
+      "parentUuid": "1740a481_839d9866",
+      "range": {
+        "startLine": 38,
+        "startChar": 4,
+        "endLine": 38,
+        "endChar": 95
+      },
+      "revId": "d901ff389dda91e03860b0de11b6bf7a426d8aa9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "80f38c21_1387a1b5",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/ClientConfigurationFactory.java",
         "patchSetId": 5
