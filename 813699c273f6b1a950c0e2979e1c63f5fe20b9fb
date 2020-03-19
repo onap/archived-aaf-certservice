@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "0a40e068_10145759",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-19T13:44:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e1ba6d54_2dc6d7a7",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 9
+      },
+      "revId": "813699c273f6b1a950c0e2979e1c63f5fe20b9fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4ddfc961_0c203073",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/AppExitHandler.java",
         "patchSetId": 2
@@ -45,6 +69,30 @@
       "revId": "813699c273f6b1a950c0e2979e1c63f5fe20b9fb",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d9321811_4f6732b6",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/AppExitHandler.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-19T13:44:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4ddfc961_0c203073",
+      "range": {
+        "startLine": 26,
+        "startChar": 4,
+        "endLine": 26,
+        "endChar": 10
+      },
+      "revId": "813699c273f6b1a950c0e2979e1c63f5fe20b9fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "240bfb76_573572dc",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-19T13:44:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "74dfe56d_fc2154cf",
+      "range": {
+        "startLine": 50,
+        "startChar": 4,
+        "endLine": 50,
+        "endChar": 10
+      },
+      "revId": "813699c273f6b1a950c0e2979e1c63f5fe20b9fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a0a42e4c_63659c36",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
         "patchSetId": 2
@@ -94,6 +166,30 @@
     },
     {
       "key": {
+        "uuid": "cc7c01a7_84d1c44a",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-19T13:44:39Z",
+      "side": 1,
+      "message": "1. I removed  printing stack trace from other classes\n2. I was investigating this solution. If I introduce message to constructor, i will have duplicated message.",
+      "parentUuid": "a0a42e4c_63659c36",
+      "range": {
+        "startLine": 81,
+        "startChar": 0,
+        "endLine": 81,
+        "endChar": 3
+      },
+      "revId": "813699c273f6b1a950c0e2979e1c63f5fe20b9fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "1ee99b00_e160e8b2",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/api/ExitableException.java",
         "patchSetId": 2
@@ -105,6 +201,30 @@
       "writtenOn": "2020-03-19T11:07:52Z",
       "side": 1,
       "message": "Almost all exceptions that extends ExitableException has only specific ExitStatus and that\u0027s it, that is the difference.\n\nI would make ExitableException not abstract, and put into constructor additional parameter - ExitStatus. Thanks to this, most of subclasses can be deleted.",
+      "range": {
+        "startLine": 21,
+        "startChar": 22,
+        "endLine": 21,
+        "endChar": 39
+      },
+      "revId": "813699c273f6b1a950c0e2979e1c63f5fe20b9fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6e95aa5d_50620bf4",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/api/ExitableException.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-19T13:44:39Z",
+      "side": 1,
+      "message": "I think that in current solution we throwing most specific exception for each step of client execution.",
+      "parentUuid": "1ee99b00_e160e8b2",
       "range": {
         "startLine": 21,
         "startChar": 22,
