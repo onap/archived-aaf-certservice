@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f345c82e_46529604",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/PrivateKeyToPemEncoder.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-03-19T11:03:42Z",
+      "side": 1,
+      "message": "It\u0027s not about private/public fields. \n\nA logger is not a part of business logic. \nIt\u0027s rather a cross-cutting concern (aspect), so it should be distinguished from other class fields.\n\nI strongly recommend to place it on top.",
+      "range": {
+        "startLine": 38,
+        "startChar": 3,
+        "endLine": 38,
+        "endChar": 95
+      },
+      "revId": "50a1b4d76dc892e614d87f6365ab4da53f3491c8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
