@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c4f641d1_dfe40ada",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrFactory.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-19T11:32:08Z",
+      "side": 1,
+      "message": "CSR :)",
+      "revId": "ef25c3c3fcb8b3af11c6b0325763c648bd0e4b8f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "212eaaab_e046b817",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/CsrFactory.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-19T11:32:08Z",
+      "side": 1,
+      "message": "CSR :)",
+      "revId": "ef25c3c3fcb8b3af11c6b0325763c648bd0e4b8f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6f755641_18cf6e06",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/KeyPairFactory.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-19T11:32:08Z",
+      "side": 1,
+      "message": "Please log also exception stack trace",
+      "revId": "ef25c3c3fcb8b3af11c6b0325763c648bd0e4b8f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ef09ff14_5a33ea93",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/PrivateKeyToPemEncoder.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-19T11:32:08Z",
+      "side": 1,
+      "message": "Sorry, but sentence is not logical",
+      "revId": "ef25c3c3fcb8b3af11c6b0325763c648bd0e4b8f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "62ecbb8a_7618bdd9",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/model/CsrConfiguration.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-19T11:32:08Z",
+      "side": 1,
+      "message": "Two comments:\nWhy SANS is hardcoded?\nWhy all these envs are coming from EncryptionAlgorithmConstants?",
+      "revId": "ef25c3c3fcb8b3af11c6b0325763c648bd0e4b8f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
