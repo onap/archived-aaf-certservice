@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9245bd09_b9166e04",
+        "filename": "certService/helm/aaf-cert-service/values.yaml",
+        "patchSetId": 12
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-20T16:07:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bf59cf96_2732bb8a",
+      "revId": "f8041bfc09090f6a917c9f71794b71bb5f254bc2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1167e05f_f31689d2",
         "filename": "certService/helm/aaf-cert-service/values.yaml",
         "patchSetId": 12
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "7938f6df_fd44230f",
+        "filename": "certService/helm/aaf-cert-service/values.yaml",
+        "patchSetId": 12
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-20T16:07:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1167e05f_f31689d2",
+      "revId": "f8041bfc09090f6a917c9f71794b71bb5f254bc2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ee248b70_2575edfa",
         "filename": "certServiceClient/docker-compose.yml",
         "patchSetId": 12
@@ -50,6 +86,24 @@
       "revId": "f8041bfc09090f6a917c9f71794b71bb5f254bc2",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f5843040_12c6f447",
+        "filename": "certServiceClient/docker-compose.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-20T16:07:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ee248b70_2575edfa",
+      "revId": "f8041bfc09090f6a917c9f71794b71bb5f254bc2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
