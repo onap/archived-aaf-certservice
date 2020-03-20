@@ -212,6 +212,24 @@
     },
     {
       "key": {
+        "uuid": "9f052215_b4eebf27",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-20T16:07:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1505a45a_1988347d",
+      "revId": "97abd9a85c6569a6a864f819b256cbc98b49e972",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "653c083f_9d2ec5df",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/CloseableHttpsClientProvider.java",
         "patchSetId": 5
