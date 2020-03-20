@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "97c3904e_6f222bae",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-20T14:36:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b47b2b95_1d68cdde",
+      "revId": "0d4d8711d0e96495c5a8254e825b913734d1fa76",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9e446d8e_13ab7418",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/AppExitHandler.java",
         "patchSetId": 4
@@ -30,6 +48,30 @@
       "writtenOn": "2020-03-20T12:47:40Z",
       "side": 1,
       "message": "Since logging is done here on the same level I would suggest here use String formatter.\nAlso as first place exit code and than concrete message.\nI would rather log it as a info. \ne.g.\n\"Application exits with following exit code: %s and message: %s\"",
+      "range": {
+        "startLine": 29,
+        "startChar": 7,
+        "endLine": 30,
+        "endChar": 102
+      },
+      "revId": "0d4d8711d0e96495c5a8254e825b913734d1fa76",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0e9029bc_7a504bad",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/AppExitHandler.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-20T14:36:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9e446d8e_13ab7418",
       "range": {
         "startLine": 29,
         "startChar": 7,
@@ -65,6 +107,30 @@
     },
     {
       "key": {
+        "uuid": "ab07862b_ebe2fcd3",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-20T14:36:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f84c408b_9ad9bda2",
+      "range": {
+        "startLine": 81,
+        "startChar": 46,
+        "endLine": 81,
+        "endChar": 62
+      },
+      "revId": "0d4d8711d0e96495c5a8254e825b913734d1fa76",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5dfb557f_5be34728",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/PrivateKeyToPemEncoder.java",
         "patchSetId": 4
@@ -76,6 +142,30 @@
       "writtenOn": "2020-03-20T12:47:40Z",
       "side": 1,
       "message": "Use consequently \", exception message...\" \nI would replace the beginning with:\n\"Encode of private key to PEM failed...\"",
+      "range": {
+        "startLine": 46,
+        "startChar": 25,
+        "endLine": 46,
+        "endChar": 98
+      },
+      "revId": "0d4d8711d0e96495c5a8254e825b913734d1fa76",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "44d033d6_055283e5",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/PrivateKeyToPemEncoder.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-20T14:36:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5dfb557f_5be34728",
       "range": {
         "startLine": 46,
         "startChar": 25,
@@ -105,6 +195,24 @@
     },
     {
       "key": {
+        "uuid": "18db3737_f8e67aaa",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/HttpClient.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-20T14:36:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "71d1dd4a_cc3e29be",
+      "revId": "0d4d8711d0e96495c5a8254e825b913734d1fa76",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "471ce2d2_60e69606",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/HttpClient.java",
         "patchSetId": 4
@@ -116,6 +224,30 @@
       "writtenOn": "2020-03-20T12:47:40Z",
       "side": 1,
       "message": "This exception is missing message field. Add to constructor custom message.\nIn test remember to check Exception message.",
+      "range": {
+        "startLine": 68,
+        "startChar": 21,
+        "endLine": 68,
+        "endChar": 45
+      },
+      "revId": "0d4d8711d0e96495c5a8254e825b913734d1fa76",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3e16a0e8_8c24e9f3",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/HttpClient.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-20T14:36:24Z",
+      "side": 1,
+      "message": "As we talked, in that case message is creating by IOExcepion e.g. \"Timeout\"",
+      "parentUuid": "471ce2d2_60e69606",
       "range": {
         "startLine": 68,
         "startChar": 21,
@@ -145,6 +277,24 @@
     },
     {
       "key": {
+        "uuid": "e7ad1619_8e1d3155",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/httpclient/HttpClientTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-20T14:36:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "805517b1_65d35c38",
+      "revId": "0d4d8711d0e96495c5a8254e825b913734d1fa76",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6a435d7e_5671062d",
         "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/httpclient/HttpClientTest.java",
         "patchSetId": 4
@@ -156,6 +306,30 @@
       "writtenOn": "2020-03-20T12:47:40Z",
       "side": 1,
       "message": "Example test written with assertj:\n@Test\n    void shouldThrowHttpClientException_WhenCannotExecuteRequestToAPI() throws Exception {\n\n        //given\n        when(closeableHttpClient.execute(any(HttpGet.class))).thenThrow(IOException.class);\n\n        //when\n        //then\n        assertThatThrownBy(() -\u003e httpClient.retrieveCertServiceData(CA_NAME, CSR, \"\"))\n                .isInstanceOf(HttpClientException.class).hasMessageContaining(\"java.io.IOException\");\n\n    }",
+      "range": {
+        "startLine": 118,
+        "startChar": 1,
+        "endLine": 131,
+        "endChar": 5
+      },
+      "revId": "0d4d8711d0e96495c5a8254e825b913734d1fa76",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f262de1_702e4bec",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/httpclient/HttpClientTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-20T14:36:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6a435d7e_5671062d",
       "range": {
         "startLine": 118,
         "startChar": 1,
