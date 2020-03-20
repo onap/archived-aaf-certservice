@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "8654e050_aac57389",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-20T13:04:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4ae46a38_63d0378c",
+      "range": {
+        "startLine": 36,
+        "startChar": 13,
+        "endLine": 36,
+        "endChar": 30
+      },
+      "revId": "8e7f45718595194bfb8b29a4d6bca90e8a91696e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e708b4c7_3d7fa298",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
         "patchSetId": 13
@@ -39,6 +63,24 @@
       "revId": "8e7f45718595194bfb8b29a4d6bca90e8a91696e",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6a4c0534_fba59da1",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-20T13:04:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e708b4c7_3d7fa298",
+      "revId": "8e7f45718595194bfb8b29a4d6bca90e8a91696e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -59,6 +101,24 @@
     },
     {
       "key": {
+        "uuid": "45bb1b59_c49fafa7",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-20T13:04:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bc2d4850_137336e9",
+      "revId": "8e7f45718595194bfb8b29a4d6bca90e8a91696e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ec9004b8_f27667fd",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
         "patchSetId": 13
@@ -73,6 +133,24 @@
       "revId": "8e7f45718595194bfb8b29a4d6bca90e8a91696e",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "89f7deb5_2eed54cd",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-20T13:04:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ec9004b8_f27667fd",
+      "revId": "8e7f45718595194bfb8b29a4d6bca90e8a91696e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -96,6 +174,30 @@
       "revId": "8e7f45718595194bfb8b29a4d6bca90e8a91696e",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "aa64c6cf_be711877",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactoryTest.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-20T13:04:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9bce2bc3_41dd9c51",
+      "range": {
+        "startLine": 40,
+        "startChar": 13,
+        "endLine": 40,
+        "endChar": 34
+      },
+      "revId": "8e7f45718595194bfb8b29a4d6bca90e8a91696e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
