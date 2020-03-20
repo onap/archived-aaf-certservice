@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "e14c8256_4d51d387",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/KeyPairFactory.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 6222
+      },
+      "writtenOn": "2020-03-20T14:33:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b81f566b_f4029672",
+      "range": {
+        "startLine": 42,
+        "startChar": 66,
+        "endLine": 42,
+        "endChar": 69
+      },
+      "revId": "81e0cfe9fe4c3bb553026a303033c04592266996",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e24de8e4_db05369c",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/PrivateKeyToPemEncoder.java",
         "patchSetId": 13
@@ -36,6 +60,30 @@
       "writtenOn": "2020-03-20T14:05:32Z",
       "side": 1,
       "message": "Attempt to encode",
+      "range": {
+        "startLine": 41,
+        "startChar": 21,
+        "endLine": 41,
+        "endChar": 29
+      },
+      "revId": "81e0cfe9fe4c3bb553026a303033c04592266996",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c5d801c3_94a3fa65",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/PrivateKeyToPemEncoder.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 6222
+      },
+      "writtenOn": "2020-03-20T14:33:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e24de8e4_db05369c",
       "range": {
         "startLine": 41,
         "startChar": 21,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "4cb1874f_7c268ae3",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12FilesCreator.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 6222
+      },
+      "writtenOn": "2020-03-20T14:33:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9d17522d_1bee85bf",
+      "range": {
+        "startLine": 51,
+        "startChar": 22,
+        "endLine": 51,
+        "endChar": 68
+      },
+      "revId": "81e0cfe9fe4c3bb553026a303033c04592266996",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "736b5446_4a52ed4d",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12FilesCreator.java",
         "patchSetId": 13
@@ -82,6 +154,30 @@
       "writtenOn": "2020-03-20T14:05:32Z",
       "side": 1,
       "message": "same here",
+      "range": {
+        "startLine": 59,
+        "startChar": 22,
+        "endLine": 59,
+        "endChar": 70
+      },
+      "revId": "81e0cfe9fe4c3bb553026a303033c04592266996",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e3719cdd_cefa0deb",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12FilesCreator.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 6222
+      },
+      "writtenOn": "2020-03-20T14:33:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "736b5446_4a52ed4d",
       "range": {
         "startLine": 59,
         "startChar": 22,
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "1b2da89d_f3a95c3c",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 6222
+      },
+      "writtenOn": "2020-03-20T14:33:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9837596c_2d7573bb",
+      "range": {
+        "startLine": 51,
+        "startChar": 21,
+        "endLine": 51,
+        "endChar": 32
+      },
+      "revId": "81e0cfe9fe4c3bb553026a303033c04592266996",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a0e8039_c1f8b9b0",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
         "patchSetId": 13
@@ -128,6 +248,30 @@
       "writtenOn": "2020-03-20T14:05:32Z",
       "side": 1,
       "message": "same here",
+      "range": {
+        "startLine": 57,
+        "startChar": 21,
+        "endLine": 57,
+        "endChar": 32
+      },
+      "revId": "81e0cfe9fe4c3bb553026a303033c04592266996",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "df1dd302_0a4e5d22",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemToPKCS12Converter.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 6222
+      },
+      "writtenOn": "2020-03-20T14:33:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a0e8039_c1f8b9b0",
       "range": {
         "startLine": 57,
         "startChar": 21,
@@ -163,6 +307,30 @@
     },
     {
       "key": {
+        "uuid": "54aa9e10_90cf03bd",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/model/CsrConfiguration.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 6222
+      },
+      "writtenOn": "2020-03-20T14:33:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8a974501_a19e26a5",
+      "range": {
+        "startLine": 102,
+        "startChar": 30,
+        "endLine": 102,
+        "endChar": 85
+      },
+      "revId": "81e0cfe9fe4c3bb553026a303033c04592266996",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c5ff39d8_45497ce1",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/HttpClient.java",
         "patchSetId": 13
@@ -174,6 +342,30 @@
       "writtenOn": "2020-03-20T14:05:32Z",
       "side": 1,
       "message": "Avoid present continuous.\nAttempt to send request to CertService Api, on url:",
+      "range": {
+        "startLine": 59,
+        "startChar": 25,
+        "endLine": 59,
+        "endChar": 52
+      },
+      "revId": "81e0cfe9fe4c3bb553026a303033c04592266996",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e33aa7d4_9afa57c2",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/HttpClient.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 6222
+      },
+      "writtenOn": "2020-03-20T14:33:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c5ff39d8_45497ce1",
       "range": {
         "startLine": 59,
         "startChar": 25,
