@@ -37,6 +37,29 @@
     },
     {
       "key": {
+        "uuid": "ce47d5b8_c4cc6bb6",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/KeyPairFactory.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-20T08:09:56Z",
+      "side": 1,
+      "message": "Please remove printing stack trace here. We will printing stack trace in CertServiceClient class\nhttps://gerrit.onap.org/r/c/aaf/certservice/+/103868",
+      "range": {
+        "startLine": 45,
+        "startChar": 95,
+        "endLine": 45,
+        "endChar": 97
+      },
+      "revId": "ebacb12fcfccd2f00856e8f8277856b910f7bfd2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "60dc49a1_c65379f1",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/PrivateKeyToPemEncoder.java",
         "patchSetId": 10
