@@ -142,6 +142,24 @@
     },
     {
       "key": {
+        "uuid": "d249f9d0_8e51f869",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-20T16:07:40Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "8e6bffc9_67d5fc42",
+      "revId": "cb733a93c54548221a6cbad77c16a9caa81cbb59",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "83a42cfc_340a28a6",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
         "patchSetId": 2
@@ -177,6 +195,24 @@
     },
     {
       "key": {
+        "uuid": "5bbcdd1c_43e68e06",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-20T16:07:40Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "21ac5f24_9a0eabff",
+      "revId": "cb733a93c54548221a6cbad77c16a9caa81cbb59",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bb064fb4_eb25a0d3",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
         "patchSetId": 2
@@ -209,6 +245,24 @@
       "revId": "cb733a93c54548221a6cbad77c16a9caa81cbb59",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a212605c_3c8bb041",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-20T16:07:40Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "15a26bd8_9c87bea5",
+      "revId": "cb733a93c54548221a6cbad77c16a9caa81cbb59",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
