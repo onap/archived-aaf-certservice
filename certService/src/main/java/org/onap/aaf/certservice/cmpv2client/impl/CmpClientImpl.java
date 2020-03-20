@@ -64,7 +64,6 @@ public class CmpClientImpl implements CmpClient {
     private static final Logger LOG = LoggerFactory.getLogger(CmpClientImpl.class);
     private final CloseableHttpClient httpClient;
 
-    private static final String DEFAULT_PROFILE = "RA";
     private static final String DEFAULT_CA_NAME = "Certification Authority";
 
     public CmpClientImpl(CloseableHttpClient httpClient) {
@@ -73,16 +72,13 @@ public class CmpClientImpl implements CmpClient {
 
     @Override
     public List<List<X509Certificate>> createCertificate(
-            String caName,
-            String profile,
             CsrModel csrModel,
             Cmpv2Server server,
-            X509Certificate cert,
             Date notBefore,
             Date notAfter)
             throws CmpClientException {
 
-        validate(csrModel, server, cert, caName, profile, httpClient, notBefore, notAfter);
+        validate(csrModel, server, httpClient, notBefore, notAfter);
         KeyPair keyPair = new KeyPair(csrModel.getPublicKey(), csrModel.getPrivateKey());
 
         final CreateCertRequest certRequest =
@@ -99,14 +95,13 @@ public class CmpClientImpl implements CmpClient {
 
         final PKIMessage pkiMessage = certRequest.generateCertReq();
         Cmpv2HttpClient cmpv2HttpClient = new Cmpv2HttpClient(httpClient);
-        return retrieveCertificates(caName, csrModel, server, pkiMessage, cmpv2HttpClient);
+        return retrieveCertificates(csrModel, server, pkiMessage, cmpv2HttpClient);
     }
 
     @Override
-    public List<List<X509Certificate>> createCertificate(
-            String caName, String profile, CsrModel csrModel, Cmpv2Server server, X509Certificate csr)
+    public List<List<X509Certificate>> createCertificate(CsrModel csrModel, Cmpv2Server server)
             throws CmpClientException {
-        return createCertificate(caName, profile, csrModel, server, csr, null, null);
+        return createCertificate(csrModel, server, null, null);
     }
 
     private void checkCmpResponse(
@@ -197,25 +192,17 @@ public class CmpClientImpl implements CmpClient {
      *
      * @param csrModel        Certificate Signing Request model. Must not be {@code null}.
      * @param server          CMPv2 Server. Must not be {@code null}.
-     * @param cert            Certificate object needed to validate response from CA server.
-     * @param incomingCaName  Date specifying certificate is not valid before this date.
-     * @param incomingProfile Date specifying certificate is not valid after this date.
      * @throws IllegalArgumentException if Before Date is set after the After Date.
      */
     private static void validate(
             final CsrModel csrModel,
             final Cmpv2Server server,
-            final X509Certificate cert,
-            final String incomingCaName,
-            final String incomingProfile,
             final CloseableHttpClient httpClient,
             final Date notBefore,
             final Date notAfter) {
 
-        String caName = CmpUtil.isNullOrEmpty(incomingCaName) ? incomingCaName : DEFAULT_CA_NAME;
-        String caProfile = CmpUtil.isNullOrEmpty(incomingProfile) ? incomingProfile : DEFAULT_PROFILE;
-        LOG.info(
-                "Validate before creating Certificate Request for CA :{} in Mode {} ", caName, caProfile);
+        String caName = CmpUtil.isNullOrEmpty(server.getCaName()) ? server.getCaName() : DEFAULT_CA_NAME;
+        LOG.info("Validate before creating Certificate Request for CA :{}", caName);
 
         CmpUtil.notNull(csrModel, "CsrModel Instance");
         CmpUtil.notNull(csrModel.getSubjectData(), "Subject DN");
@@ -224,7 +211,6 @@ public class CmpClientImpl implements CmpClient {
         CmpUtil.notNull(server.getIssuerDN(), "Issuer DN");
         CmpUtil.notNull(server.getUrl(), "External CA URL");
         CmpUtil.notNull(server.getAuthentication().getIak(), "IAK/RV Password");
-        CmpUtil.notNull(cert, "Certificate Signing Request (CSR)");
         CmpUtil.notNull(httpClient, "Closeable Http Client");
 
         if (notBefore != null && notAfter != null && notBefore.compareTo(notAfter) > 0) {
@@ -233,9 +219,9 @@ public class CmpClientImpl implements CmpClient {
     }
 
     private List<List<X509Certificate>> retrieveCertificates(
-            String caName, CsrModel csrModel, Cmpv2Server server, PKIMessage pkiMessage, Cmpv2HttpClient cmpv2HttpClient)
+            CsrModel csrModel, Cmpv2Server server, PKIMessage pkiMessage, Cmpv2HttpClient cmpv2HttpClient)
             throws CmpClientException {
-        final byte[] respBytes = cmpv2HttpClient.postRequest(pkiMessage, server.getUrl(), caName);
+        final byte[] respBytes = cmpv2HttpClient.postRequest(pkiMessage, server.getUrl(), server.getCaName());
         try {
             final PKIMessage respPkiMessage = PKIMessage.getInstance(respBytes);
             LOG.info("Received response from Server");
