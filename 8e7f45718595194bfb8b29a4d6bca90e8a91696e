@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "4ae46a38_63d0378c",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-03-20T12:49:36Z",
+      "side": 1,
+      "message": "should follow UpperCamelCase rules, could by, for example: SslContextFactory",
+      "range": {
+        "startLine": 36,
+        "startChar": 13,
+        "endLine": 36,
+        "endChar": 30
+      },
+      "revId": "8e7f45718595194bfb8b29a4d6bca90e8a91696e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "e708b4c7_3d7fa298",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactory.java",
         "patchSetId": 13
@@ -47,6 +70,29 @@
       "writtenOn": "2020-03-20T12:28:11Z",
       "side": 1,
       "message": "Extract to const",
+      "revId": "8e7f45718595194bfb8b29a4d6bca90e8a91696e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9bce2bc3_41dd9c51",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/configuration/factory/SSLContextFactoryTest.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-03-20T12:49:36Z",
+      "side": 1,
+      "message": "should follow UpperCamelCase rules, could by for example: SslContextFactoryTest",
+      "range": {
+        "startLine": 40,
+        "startChar": 13,
+        "endLine": 40,
+        "endChar": 34
+      },
       "revId": "8e7f45718595194bfb8b29a4d6bca90e8a91696e",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
