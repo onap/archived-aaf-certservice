@@ -39,7 +39,8 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 class CmpServersConfigLoaderTest {
     private static final String EXISTING_CONFIG_FILENAME = "cmpServers.json";
     private static final String INVALID_CONFIG_FILENAME = "invalidCmpServers.json";
-    private static final String NONEXISTENT_CONFIG_FILENAME = "nonExisting_cmpServers.json";
+    private static final String NONEXISTENT_CONFIG_FILENAME = "nonExistingCmpServers.json";
+    private static final String NOT_UNIQUE_CANAME_CONFIG_FILENAME = "notUniqueCmpServers.json";
 
     private static final Map<String, String> EXPECTED_FIRST_CMP_SERVER = Map.of(
             "CA_NAME", "TEST",
@@ -99,10 +100,26 @@ class CmpServersConfigLoaderTest {
 
         // Then
         assertThat(exception.getMessage()).contains("Validation of CMPv2 servers configuration failed");
+        assertThat(exception.getCause().getMessage()).contains("caName", "authentication");
     }
 
-    private String getResourcePath(String invalidConfigFilename) {
-        return getClass().getClassLoader().getResource(invalidConfigFilename).getFile();
+    @Test
+    void shouldThrowExceptionWhenCaNamesAreNotUnique() {
+        // Given
+        String path = getResourcePath(NOT_UNIQUE_CANAME_CONFIG_FILENAME);
+
+        // When
+        Exception exception = assertThrows(
+                CmpServersConfigLoadingException.class,
+                () -> configLoader.load(path));
+
+        // Then
+        assertThat(exception.getMessage()).contains("Validation of CMPv2 servers configuration failed");
+        assertThat(exception.getCause().getMessage()).contains("CA names are not unique within given CMPv2 servers");
+    }
+
+    private String getResourcePath(String configFilename) {
+        return getClass().getClassLoader().getResource(configFilename).getFile();
     }
 
     private void verifyThatCmpServerEquals(Cmpv2Server cmpv2Server, Map<String, String> expected) {

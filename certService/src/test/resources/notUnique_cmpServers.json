@@ -1,0 +1,19 @@
+{
+  "cmpv2Servers": [
+    {
+      "caName": "NOTUNIQUECANAME",
+      "url": "http://127.0.0.1/ejbca/publicweb/cmp/cmp",
+      "issuerDN": "CN=ManagementCA",
+      "caMode": "CLIENT"
+    },
+    {
+      "caName": "NOTUNIQUECANAME",
+      "url": "http://127.0.0.1/ejbca/publicweb/cmp/cmpRA",
+      "caMode": "RA",
+      "authentication": {
+        "iak": "xxx",
+        "rv": "yyy"
+      }
+    }
+  ]
+}
