@@ -166,6 +166,30 @@
     },
     {
       "key": {
+        "uuid": "c50c80d6_2c980c23",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-23T06:58:39Z",
+      "side": 1,
+      "message": "On patchset 5 it is on top.",
+      "parentUuid": "e71a05d8_49eb8e4c",
+      "range": {
+        "startLine": 50,
+        "startChar": 4,
+        "endLine": 50,
+        "endChar": 89
+      },
+      "revId": "813699c273f6b1a950c0e2979e1c63f5fe20b9fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "a0a42e4c_63659c36",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
         "patchSetId": 2
