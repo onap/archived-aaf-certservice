@@ -24,25 +24,35 @@ import org.onap.aaf.certservice.certification.configuration.model.Cmpv2Server;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.Validator;
 import java.security.InvalidParameterException;
-import java.util.Set;
+import java.util.List;
 
 @Service
-class Cmpv2ServerConfigurationValidator {
+public class Cmpv2ServersConfigurationValidator {
 
-    private final Validator validator;
+    private final Cmpv2ServerConfigurationValidator validator;
 
     @Autowired
-    Cmpv2ServerConfigurationValidator(Validator validator) {
+    public Cmpv2ServersConfigurationValidator(Cmpv2ServerConfigurationValidator validator) {
         this.validator = validator;
     }
 
-    public void validate(Cmpv2Server serverDetails) {
-        Set<ConstraintViolation<Cmpv2Server>> violations = validator.validate(serverDetails);
-        if (!violations.isEmpty()) {
-            throw new InvalidParameterException(violations.toString());
+    public void validate(List<Cmpv2Server> servers) {
+        servers.forEach(validator::validate);
+        validateUniqueCaNames(servers);
+    }
+
+    private void validateUniqueCaNames(List<Cmpv2Server> servers) {
+        long distinctCAs = getNumberOfUniqueCaNames(servers);
+        if (servers.size() != distinctCAs) {
+            throw new InvalidParameterException("CA names are not unique within given CMPv2 servers");
         }
     }
+
+    private long getNumberOfUniqueCaNames(List<Cmpv2Server> servers) {
+        return servers.stream().map(Cmpv2Server::getCaName)
+                .distinct()
+                .count();
+    }
+
 }
