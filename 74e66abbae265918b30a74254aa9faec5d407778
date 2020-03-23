@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "d481d7a4_ee533b45",
+        "filename": "certService/helm/aaf-cert-service/templates/deployment.yaml",
+        "patchSetId": 18
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-23T14:17:01Z",
+      "side": 1,
+      "message": "I meant that if you provide KEYSTORE_PATH it should be like this {{Values.tls.server.volume.mountPath}}/keystore.jks. \nYou don\u0027t need to provide in helm chart values for every path. I don\u0027t mind to hardcode names of files on deployment layer. \n\nBTW: I was aware that templating in values.yaml is not possible. Nokia Software (NSW) has its own plugin for helm to do this.",
+      "parentUuid": "66090f0c_5b8e16e7",
+      "revId": "74e66abbae265918b30a74254aa9faec5d407778",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "a948523b_20b5ce08",
         "filename": "certService/helm/aaf-cert-service/values.yaml",
         "patchSetId": 18
@@ -66,6 +84,24 @@
       "side": 1,
       "message": "We store only .jks format in ENV variables. And here we use root.crt and .p12 format. \nSo I see 2 options:\n1. Leave it as it is (just change pass to use ENV)\n2. Add 2 more ENV Variables (for root.crt and certServiceServer-keystore.p12)\n\nWhich one you prefer?",
       "parentUuid": "a948523b_20b5ce08",
+      "revId": "74e66abbae265918b30a74254aa9faec5d407778",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b7f7c6f0_25cb9b75",
+        "filename": "certService/helm/aaf-cert-service/values.yaml",
+        "patchSetId": 18
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-23T14:17:01Z",
+      "side": 1,
+      "message": "In deployment please provide two new ENV vars, but prefix them with mountPoint variable :) I don\u0027t mind to hardcode names of files on deployment layer.",
+      "parentUuid": "15fa0002_72cc1fd4",
       "revId": "74e66abbae265918b30a74254aa9faec5d407778",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
@@ -118,6 +154,24 @@
       "side": 1,
       "message": "we use truststore.jks in aaf-certservice-api and aaf-certservice-client.",
       "parentUuid": "8518c747_133d7111",
+      "revId": "74e66abbae265918b30a74254aa9faec5d407778",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8b7e33ea_bccf9e1e",
+        "filename": "certs/Makefile",
+        "patchSetId": 18
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-23T14:17:01Z",
+      "side": 1,
+      "message": "My comment was related to unnecessary root-keystore.jks creation. Why we cannot in step 1 create truststore.jks, export from it root.crt and remove step_3 completly?",
+      "parentUuid": "234da18a_c85219cf",
       "revId": "74e66abbae265918b30a74254aa9faec5d407778",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
