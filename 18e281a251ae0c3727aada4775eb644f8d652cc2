@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5216aae0_5cc34080",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/EnvProvider.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-23T11:56:13Z",
+      "side": 1,
+      "message": "Consider to rename \"getGet\"",
+      "range": {
+        "startLine": 30,
+        "startChar": 11,
+        "endLine": 30,
+        "endChar": 17
+      },
+      "revId": "18e281a251ae0c3727aada4775eb644f8d652cc2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
