@@ -67,6 +67,24 @@
       "revId": "74e66abbae265918b30a74254aa9faec5d407778",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "234da18a_c85219cf",
+        "filename": "certs/Makefile",
+        "patchSetId": 18
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 3435
+      },
+      "writtenOn": "2020-03-23T13:15:37Z",
+      "side": 1,
+      "message": "we use truststore.jks in aaf-certservice-api and aaf-certservice-client.",
+      "parentUuid": "8518c747_133d7111",
+      "revId": "74e66abbae265918b30a74254aa9faec5d407778",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
