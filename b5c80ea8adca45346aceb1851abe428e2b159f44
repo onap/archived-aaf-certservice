@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8a024c38_9c7202e4",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/httpclient/HttpClient.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-03-23T07:38:37Z",
+      "side": 1,
+      "message": "consider to inline url variable\n\nHttpGet httpGet \u003d new HttpGet(certServiceAddress + caName);",
+      "range": {
+        "startLine": 73,
+        "startChar": 8,
+        "endLine": 74,
+        "endChar": 43
+      },
+      "revId": "b5c80ea8adca45346aceb1851abe428e2b159f44",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
