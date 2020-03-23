@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "66090f0c_5b8e16e7",
+        "filename": "certService/helm/aaf-cert-service/templates/deployment.yaml",
+        "patchSetId": 18
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-23T14:07:33Z",
+      "side": 1,
+      "message": "You right, I forget about those ENVS. I will add them, but I have a question about \" e.g. PATHs should be prefixed with  .Values.tls.server.volume.mountPath\".\nIf I understand correctly, you want me to declare those 4 envs (for keystores and paths) here and get value for them from values.yaml file, right? \nBut in that case I cannot use prefix (.Values.tls.server.volume.mountPath), becacuse Helm doesn\u0027t support templating in values.yaml file \u003d\u003e i cannot use values to declare other values in same file.",
+      "parentUuid": "8f13b1d1_974a36d6",
+      "revId": "74e66abbae265918b30a74254aa9faec5d407778",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "a948523b_20b5ce08",
         "filename": "certService/helm/aaf-cert-service/values.yaml",
         "patchSetId": 18
@@ -30,6 +48,24 @@
       "writtenOn": "2020-03-23T12:47:16Z",
       "side": 1,
       "message": "Command should rely on ENV variables provided by deployment for both - keystore and truststore and password",
+      "revId": "74e66abbae265918b30a74254aa9faec5d407778",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "15fa0002_72cc1fd4",
+        "filename": "certService/helm/aaf-cert-service/values.yaml",
+        "patchSetId": 18
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-23T14:07:33Z",
+      "side": 1,
+      "message": "We store only .jks format in ENV variables. And here we use root.crt and .p12 format. \nSo I see 2 options:\n1. Leave it as it is (just change pass to use ENV)\n2. Add 2 more ENV Variables (for root.crt and certServiceServer-keystore.p12)\n\nWhich one you prefer?",
+      "parentUuid": "a948523b_20b5ce08",
       "revId": "74e66abbae265918b30a74254aa9faec5d407778",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
