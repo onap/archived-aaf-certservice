@@ -20,8 +20,6 @@
 
 package org.onap.aaf.certservice.certification.configuration.validation;
 
-import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.bouncycastle.asn1.x500.X500Name;
 import org.junit.jupiter.api.BeforeEach;
@@ -35,28 +33,49 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
+import java.security.InvalidParameterException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = CertServiceApplication.class)
-class Cmpv2ServerConfigurationValidatorTest {
+class Cmpv2ServersConfigurationValidatorTest {
 
-    private static final String EMPTY_STRING = "";
+    private final static String EMPTY_STRING = "";
 
     @Autowired
-    private Cmpv2ServerConfigurationValidator validator;
+    private Cmpv2ServersConfigurationValidator validator;
 
     private Authentication authentication;
     private Cmpv2Server server;
+    private List<Cmpv2Server> servers;
 
     @BeforeEach
     private void init() {
         setAuthentication();
         setServerConfiguration();
+        servers = new ArrayList<>();
+        servers.add(server);
     }
 
     @Test
-    void shouldNotThrowExceptionWhenServerConfigurationIsValid() {
+    void shouldThrowExceptionWhenCaNamesAreNotUnique() {
+        // Given
+        servers.add(server);
+
+        // When
+        Exception exception = assertThrows(
+                InvalidParameterException.class,
+                () -> validator.validate(servers));
+
         // Then
-        assertDoesNotThrow(() -> validator.validate(server));
+        assertThat(exception.getMessage()).contains("CA names are not unique within given CMPv2 servers");
     }
 
     @Test
@@ -168,8 +187,14 @@ class Cmpv2ServerConfigurationValidatorTest {
         assertExceptionIsThrown();
     }
 
+    @Test
+    void shouldNotThrowExceptionWhenServerConfigurationIsValid() {
+        // Then
+        assertDoesNotThrow(() -> validator.validate(servers));
+    }
+
     private void assertExceptionIsThrown() {
-        assertThrows(IllegalArgumentException.class, () -> validator.validate(server));
+        assertThrows(IllegalArgumentException.class, () -> validator.validate(servers));
     }
 
     private void setServerConfiguration() {
@@ -186,4 +211,22 @@ class Cmpv2ServerConfigurationValidatorTest {
         authentication.setRv("testRV");
         authentication.setIak("testIAK");
     }
+
+    private Cmpv2Server getServer() {
+        Cmpv2Server server = new Cmpv2Server();
+        server.setCaName("NOTUNIQUECANAME");
+        server.setCaMode(CaMode.CLIENT);
+        server.setIssuerDN(new X500Name("CN=ManagementCA"));
+        server.setUrl("http://127.0.0.1/ejbca/publicweb/cmp/cmp");
+        server.setAuthentication(getAuthentication());
+        return server;
+    }
+
+    private Authentication getAuthentication() {
+        Authentication authentication = new Authentication();
+        authentication.setRv("testRV");
+        authentication.setIak("testIAK");
+        return authentication;
+    }
+
 }
