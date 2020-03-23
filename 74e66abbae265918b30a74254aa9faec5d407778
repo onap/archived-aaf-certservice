@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8f13b1d1_974a36d6",
+        "filename": "certService/helm/aaf-cert-service/templates/deployment.yaml",
+        "patchSetId": 18
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-23T12:47:16Z",
+      "side": 1,
+      "message": "Deployment should provide ENV variables: KEYSTORE_PATH, KEYSTORE_PASSWORD, TRUSTSTORE_PATH, TRUSTSTORE_PASSWORD. But such shouldn\u0027t be hardcoded but provided by values from helm chart, e.g. PATHs should be prefixed with  .Values.tls.server.volume.mountPath",
+      "revId": "74e66abbae265918b30a74254aa9faec5d407778",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a948523b_20b5ce08",
+        "filename": "certService/helm/aaf-cert-service/values.yaml",
+        "patchSetId": 18
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-23T12:47:16Z",
+      "side": 1,
+      "message": "Command should rely on ENV variables provided by deployment for both - keystore and truststore and password",
+      "revId": "74e66abbae265918b30a74254aa9faec5d407778",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b0c789f9_3bcb7469",
+        "filename": "certService/helm/aaf-cert-service/values.yaml",
+        "patchSetId": 18
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-23T12:47:16Z",
+      "side": 1,
+      "message": "Command should rely on ENV variables provided by deployment for both - keystore and truststore and password",
+      "revId": "74e66abbae265918b30a74254aa9faec5d407778",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8518c747_133d7111",
+        "filename": "certs/Makefile",
+        "patchSetId": 18
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-23T12:47:16Z",
+      "side": 1,
+      "message": "Just wondering if both root-keystore.jks and truststore.jks are needed",
+      "revId": "74e66abbae265918b30a74254aa9faec5d407778",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
