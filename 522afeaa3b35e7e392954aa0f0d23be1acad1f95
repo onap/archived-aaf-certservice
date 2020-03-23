@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bfa3eb38_1e8aadf9",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpClientImpl.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 204,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-23T07:25:17Z",
+      "side": 1,
+      "message": "why did you remove information about mode?\nPls fix it!",
+      "revId": "522afeaa3b35e7e392954aa0f0d23be1acad1f95",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
