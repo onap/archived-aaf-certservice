@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "a2331ea9_687f447f",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfigLoader.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-03-24T10:18:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7a01c185_7fdba0fc",
+      "revId": "c07b4b8e9d3413d24ac0dc9a0ec123cb50ffbe6c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6e9680e7_b48e6de8",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfigLoader.java",
         "patchSetId": 2
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "979a137e_9bea80bf",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfigLoader.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-03-24T10:18:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6e9680e7_b48e6de8",
+      "revId": "c07b4b8e9d3413d24ac0dc9a0ec123cb50ffbe6c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d12628ee_f7da8595",
         "filename": "certService/src/test/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfigLoaderTest.java",
         "patchSetId": 2
@@ -50,6 +86,24 @@
       "revId": "c07b4b8e9d3413d24ac0dc9a0ec123cb50ffbe6c",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "241e729d_5ff22dce",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/certification/configuration/CmpServersConfigLoaderTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 5234
+      },
+      "writtenOn": "2020-03-24T10:18:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d12628ee_f7da8595",
+      "revId": "c07b4b8e9d3413d24ac0dc9a0ec123cb50ffbe6c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
