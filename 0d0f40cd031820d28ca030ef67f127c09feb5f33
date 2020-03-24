@@ -34,6 +34,24 @@
       "revId": "0d0f40cd031820d28ca030ef67f127c09feb5f33",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "db7ef030_d1828195",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/configuration/validation/Cmpv2ServersConfigurationValidator.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-24T11:23:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "71663659_9976874e",
+      "revId": "0d0f40cd031820d28ca030ef67f127c09feb5f33",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
