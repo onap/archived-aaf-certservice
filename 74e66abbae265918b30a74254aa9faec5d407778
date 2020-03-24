@@ -55,6 +55,24 @@
     },
     {
       "key": {
+        "uuid": "48dc7830_dea3ac5d",
+        "filename": "certService/helm/aaf-cert-service/templates/deployment.yaml",
+        "patchSetId": 18
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-24T11:19:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d481d7a4_ee533b45",
+      "revId": "74e66abbae265918b30a74254aa9faec5d407778",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a948523b_20b5ce08",
         "filename": "certService/helm/aaf-cert-service/values.yaml",
         "patchSetId": 18
@@ -108,6 +126,24 @@
     },
     {
       "key": {
+        "uuid": "ca4d3421_60442c9f",
+        "filename": "certService/helm/aaf-cert-service/values.yaml",
+        "patchSetId": 18
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-24T11:19:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b7f7c6f0_25cb9b75",
+      "revId": "74e66abbae265918b30a74254aa9faec5d407778",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b0c789f9_3bcb7469",
         "filename": "certService/helm/aaf-cert-service/values.yaml",
         "patchSetId": 18
@@ -122,6 +158,24 @@
       "revId": "74e66abbae265918b30a74254aa9faec5d407778",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0a094337_2d15d80f",
+        "filename": "certService/helm/aaf-cert-service/values.yaml",
+        "patchSetId": 18
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-03-24T11:19:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b0c789f9_3bcb7469",
+      "revId": "74e66abbae265918b30a74254aa9faec5d407778",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
