@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "de3fb5e7_8f1b0cd9",
+        "filename": "docs/_conf/conf.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-25T12:32:45Z",
+      "side": 1,
+      "message": "Should it be a sample ?",
+      "range": {
+        "startLine": 104,
+        "startChar": 21,
+        "endLine": 104,
+        "endChar": 37
+      },
+      "revId": "97b19bbb3750ac35e9e4f72e122f57d3c9730c70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d35eae7c_be351974",
+        "filename": "docs/_conf/conf.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-03-25T12:32:45Z",
+      "side": 1,
+      "message": "As above",
+      "range": {
+        "startLine": 153,
+        "startChar": 14,
+        "endLine": 153,
+        "endChar": 26
+      },
+      "revId": "97b19bbb3750ac35e9e4f72e122f57d3c9730c70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
