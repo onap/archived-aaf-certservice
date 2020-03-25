@@ -229,6 +229,24 @@
       "revId": "74e66abbae265918b30a74254aa9faec5d407778",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "267979e2_af3c99d9",
+        "filename": "certs/Makefile",
+        "patchSetId": 18
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 3435
+      },
+      "writtenOn": "2020-03-25T12:11:06Z",
+      "side": 1,
+      "message": "We need root-keystore.jks to sign another certificate for example in step 6 or step 11.",
+      "parentUuid": "8b7e33ea_bccf9e1e",
+      "revId": "74e66abbae265918b30a74254aa9faec5d407778",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
