@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "95c43e68_8b8fcca4",
+        "filename": "docs/sections/logging.rst",
+        "patchSetId": 8
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-03-26T15:00:16Z",
+      "side": 1,
+      "message": "I see here problem that there is no explicit information that this part is applicable just for cert service api.\nI think is good just to mark it here.",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 27
+      },
+      "revId": "8fa1a536d68f52a29cd03c52980ac3c9a3966c23",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
