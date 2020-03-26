@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7b9a3e62_7c1013a7",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 426,
+      "author": {
+        "id": 3435
+      },
+      "writtenOn": "2020-03-26T10:21:57Z",
+      "side": 1,
+      "message": "consider extract \"Something was wrong with the supplied certificate\" into the variable",
+      "revId": "0294c50d897bf9f6d90769400b631d529d6c10d9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
