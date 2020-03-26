@@ -67,6 +67,24 @@
       "revId": "b0ffc7c440a03a7b31cdff4c5592bcd4b4ce31e0",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a5c6f493_30aae3d9",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 218,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-26T11:12:46Z",
+      "side": 1,
+      "message": "Only if you see deeper you will find out that mockPkiMessage uses extraCerts, while mockCertRepMessage caPubs",
+      "parentUuid": "1a852036_eebfe0f6",
+      "revId": "b0ffc7c440a03a7b31cdff4c5592bcd4b4ce31e0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
