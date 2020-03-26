@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1e471cfb_0ee75d94",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelper.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-26T13:59:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a0c79ae4_1ec0c49f",
+      "revId": "b0ffc7c440a03a7b31cdff4c5592bcd4b4ce31e0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9ed7f651_9dd1b756",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelper.java",
         "patchSetId": 4
@@ -50,6 +68,24 @@
       "revId": "b0ffc7c440a03a7b31cdff4c5592bcd4b4ce31e0",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5a040cad_a569840e",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-26T13:59:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6232b3ff_6456171d",
+      "revId": "b0ffc7c440a03a7b31cdff4c5592bcd4b4ce31e0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -85,6 +121,24 @@
       "revId": "b0ffc7c440a03a7b31cdff4c5592bcd4b4ce31e0",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "28282395_da0d2bf3",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 218,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-26T13:59:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a5c6f493_30aae3d9",
+      "revId": "b0ffc7c440a03a7b31cdff4c5592bcd4b4ce31e0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
