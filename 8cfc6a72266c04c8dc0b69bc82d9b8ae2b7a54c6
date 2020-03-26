@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8d595c41_d245ab3c",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelper.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-26T09:14:39Z",
+      "side": 1,
+      "message": "Uppercase -\u003e Put, not put",
+      "revId": "8cfc6a72266c04c8dc0b69bc82d9b8ae2b7a54c6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ff2bb00e_ed8f9f9f",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelper.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 348,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-26T09:14:39Z",
+      "side": 1,
+      "message": "why this section is not in try section?\ndo we need to check the result?\nif the line 342 executes then result won\u0027t be a null. Correct?",
+      "revId": "8cfc6a72266c04c8dc0b69bc82d9b8ae2b7a54c6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4d08bd1a_e3f11fa2",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/model/Cmpv2CertificationModel.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-26T09:14:39Z",
+      "side": 1,
+      "message": "Collections.unmodifiableList",
+      "revId": "8cfc6a72266c04c8dc0b69bc82d9b8ae2b7a54c6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e954de9b_f6897f7e",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/cmpv2client/model/Cmpv2CertificationModel.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-26T09:14:39Z",
+      "side": 1,
+      "message": "Collections.unmodifiableList",
+      "revId": "8cfc6a72266c04c8dc0b69bc82d9b8ae2b7a54c6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
