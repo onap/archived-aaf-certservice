@@ -5,19 +5,35 @@
 Logging
 =======
 
-.. note::
-   * This section is used to describe the informational or diagnostic messages emitted from 
-     a software component and the methods or collecting them.
-   
-   * This section is typically: provided for a platform-component and sdk; and
-     referenced in developer and user guides
-   
-   * This note must be removed after content has been added.
+Cert Service Client
+-------------------
+All client logs can be found inside client container 
+Log path:
 
+.. code-block::
 
-Where to Access Information
----------------------------
+  /var/logs
 
+Client exiting with following exit codes:
 
-Error / Warning Messages
-------------------------
++-------+------------------------------------------------+
+| Code  | Information                                    |
++=======+================================================+
+| 0     | Success                                        |
++-------+------------------------------------------------+
+| 1     | Invalid client configuration                   |
++-------+------------------------------------------------+
+| 2     | Invalid CSR configuration                      |
++-------+------------------------------------------------+
+| 3     | Fail in key pair generation                    |
++-------+------------------------------------------------+
+| 4     | Fail in CSR generation                         |
++-------+------------------------------------------------+
+| 5     | CertService HTTP unsuccessful response         |
++-------+------------------------------------------------+
+| 6     | Internal HTTP Client connection problem        |
++-------+------------------------------------------------+
+| 7     | Fail in PKCS12 conversion                      |
++-------+------------------------------------------------+
+| 8     | Fail in Private Key to PEM Encoding            |
++-------+------------------------------------------------+
