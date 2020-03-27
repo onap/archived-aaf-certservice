@@ -1,0 +1,276 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b2278c1e_6a4d5641",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 192,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-27T08:27:52Z",
+      "side": 1,
+      "message": "returnListOfCertificationWhenGivenCaCertInCaPubsAndEntityCertInLeafCertificate",
+      "revId": "268d0fb5294c8de4c70292ffd6b9f50174bd545f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "09956784_cf749712",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 214,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-27T08:27:52Z",
+      "side": 1,
+      "message": "returnListOfCertificationWhenGivenCaCertInExtraCertsAndEntityCertInLeafCertificat",
+      "revId": "268d0fb5294c8de4c70292ffd6b9f50174bd545f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a5a1f0ef_13c26de1",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 236,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-27T08:27:52Z",
+      "side": 1,
+      "message": "returnListOfCertificationWhenGivenCaCertInExtraCertsAndExtraTrustAnchorInCaPubsAndEntityCertInLeafCertificate",
+      "revId": "268d0fb5294c8de4c70292ffd6b9f50174bd545f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1d3c5ce0_8aa6a918",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 243,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-27T08:27:52Z",
+      "side": 1,
+      "message": "extraTrustAnchor",
+      "revId": "268d0fb5294c8de4c70292ffd6b9f50174bd545f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2747c84e_0fc1f35b",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 263,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-27T08:27:52Z",
+      "side": 1,
+      "message": "returnListOfCertificationWhenGivenCaCertInExtraCertsAndExtraTrustAnchorInExtraCertsAndEntityCertInLeafCertificate",
+      "revId": "268d0fb5294c8de4c70292ffd6b9f50174bd545f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "47b4c36d_a96d41d7",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 289,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-27T08:27:52Z",
+      "side": 1,
+      "message": "returnListOfCertificationWhenGivenCaCertAndIntermediateCertInExtraCertsAndEntityCertInLeafCertificate",
+      "revId": "268d0fb5294c8de4c70292ffd6b9f50174bd545f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "292843c2_ff8de424",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 315,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-27T08:27:52Z",
+      "side": 1,
+      "message": "returnListOfCertificationWhenGivenCaCertAndIntermediateCertInCaPubsAndEntityCertInLeafCertificate",
+      "revId": "268d0fb5294c8de4c70292ffd6b9f50174bd545f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1e603e3d_750f87c7",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 341,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-27T08:27:52Z",
+      "side": 1,
+      "message": "returnListOfCertificationWhenGivenCaCertInCaPubsAndIntermediateCertInExtraCertsAndEntityCertInLeafCertificate",
+      "revId": "268d0fb5294c8de4c70292ffd6b9f50174bd545f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2d80342d_4939b18d",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 366,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-27T08:27:52Z",
+      "side": 1,
+      "message": "Missing test that tests that some certificates are returned both in caPubs and extraCerts, e.g. in 2 layer, intermediate is returned in caPubs while intermediate and root in extraCerts\nin 1 layer, root returned in caPubs and extraCerts",
+      "revId": "268d0fb5294c8de4c70292ffd6b9f50174bd545f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "43603254_4b419fd0",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 368,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-27T08:27:52Z",
+      "side": 1,
+      "message": "returnListOfCertificationWhenGivenCaCertAndExtraTrustAnchorInCaPubsAndIntermediateCertInExtraCertsAndEntityCertInLeafCertificate",
+      "revId": "268d0fb5294c8de4c70292ffd6b9f50174bd545f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8e035949_25241ee4",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 376,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-27T08:27:52Z",
+      "side": 1,
+      "message": "extraTrustAnchor",
+      "revId": "268d0fb5294c8de4c70292ffd6b9f50174bd545f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e0d57961_e87cd3c5",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 396,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-27T08:27:52Z",
+      "side": 1,
+      "message": "returnListOfCertificationWhenGivenCaCertAndFirstExtraTrustAnchorInCaPubsAndIntermediateCertAndSecondExtraTrustAnchorInExtraCertsAndEntityCertInLeafCertificate",
+      "revId": "268d0fb5294c8de4c70292ffd6b9f50174bd545f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4774482f_8a8a5165",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 400,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-27T08:27:52Z",
+      "side": 1,
+      "message": "extraTrustAnchor01",
+      "revId": "268d0fb5294c8de4c70292ffd6b9f50174bd545f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c6678d3d_23f28006",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 405,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-27T08:27:52Z",
+      "side": 1,
+      "message": "extraTrustAnchor02",
+      "revId": "268d0fb5294c8de4c70292ffd6b9f50174bd545f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a790ee27_68ba62ef",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 425,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-27T08:27:52Z",
+      "side": 1,
+      "message": "throwsExceptionWhenNoCaCertForEntityCertIsGivenAndOnlyExtraTrustAnchorIsReturned",
+      "revId": "268d0fb5294c8de4c70292ffd6b9f50174bd545f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8004a148_b3bc454c",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 452,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-27T08:27:52Z",
+      "side": 1,
+      "message": "throwsExceptionWhenBothExtraCertsAndCaPubsAreEmpty",
+      "revId": "268d0fb5294c8de4c70292ffd6b9f50174bd545f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
