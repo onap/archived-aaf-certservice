@@ -317,6 +317,24 @@
     },
     {
       "key": {
+        "uuid": "15ee5724_9529c496",
+        "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 366,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-03-27T09:58:25Z",
+      "side": 1,
+      "message": "And add following test to cover \"in 2 layer, intermediate is returned in caPubs while intermediate and root in extraCerts\"\n\n    @Test\n\t\n    void returnListOfCertificationWhenGivenCaCertAndIntermediateCertInExtraCertsAndIntermediateCertInCaPubsAndEntityCertInLeafCertificate()\n\t\n            throws CertificateException, CmpClientException, IOException, NoSuchProviderException {\n\t\n        //  given\n\t\n        CMPCertificate caCmpCertificate \u003d mockCmpCertificateFromPem(TEST_2LAYER_CA_CERT);\n\t\n        CMPCertificate intermediateCmpCertificate \u003d mockCmpCertificateFromPem(TEST_2LAYER_INTERMEDIATE_CERT);\n\t\n        CMPCertificate[] extraCmpCertificates \u003d {caCmpCertificate, intermediateCmpCertificate};\n\t\n        PKIMessage respPkiMessage \u003d mockExtraCerts(extraCmpCertificates);\n\t\n\t\n        CMPCertificate[] cmpCertificates \u003d {intermediateCmpCertificate};\n\t\n        CertRepMessage certRepMessage \u003d mockCaPubs(cmpCertificates);\n\t\n\t\n        X509Certificate leafCertificate \u003d getX509CertificateFromPem(TEST_2LAYER_ENTITY_CERT);\n\t\n\t\n        //  when\n\t\n        Cmpv2CertificationModel certs \u003d CmpResponseHelper.verifyAndReturnCertChainAndTrustSTore(\n\t\n                respPkiMessage, certRepMessage, leafCertificate);\n\t\n\t\n        // then\n\t\n        assertThatChainContainsEntityAndIntermediateCertificate(certs, TEST_2LAYER_ENTITY_CERT, TEST_2LAYER_INTERMEDIATE_CERT);\n\t\n\t\n        assertThatRootCaAndTrustedCaAreInSecondList(\n\t\n                certs,\n\t\n                caCmpCertificate\n\t\n        );\n\t\n    }",
+      "parentUuid": "6985d2a1_4b64294e",
+      "revId": "268d0fb5294c8de4c70292ffd6b9f50174bd545f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "43603254_4b419fd0",
         "filename": "certService/src/test/java/org/onap/aaf/certservice/cmpv2client/impl/CmpResponseHelperTest.java",
         "patchSetId": 6
