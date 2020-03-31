@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d8b6c5df_5a45effb",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/certification/CertificationModelFactory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-03-31T10:20:27Z",
+      "side": 1,
+      "message": "no space after CmpClientException",
+      "revId": "478f77f82093bb8b5961a58a85d9302bcfbb9519",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
