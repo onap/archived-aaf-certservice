@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "49b49c63_e213475d",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-04-01T12:48:36Z",
+      "side": 1,
+      "message": "if -\u003e If. Pls change to capital letter.",
+      "revId": "39222b1949e191fee4f92eebc8c29b750c9fb1df",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
