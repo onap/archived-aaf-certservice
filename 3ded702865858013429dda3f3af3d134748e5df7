@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "858848e9_fc2e83a5",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/exception/KeyPairGenerationException.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 3435
+      },
+      "writtenOn": "2020-04-01T09:20:52Z",
+      "side": 1,
+      "message": "consider to remove multiple \"Enter\" between methods",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 31,
+        "endChar": 0
+      },
+      "revId": "3ded702865858013429dda3f3af3d134748e5df7",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
