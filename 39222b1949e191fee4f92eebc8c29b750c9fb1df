@@ -2,6 +2,40 @@
   "comments": [
     {
       "key": {
+        "uuid": "25c3f25c_c20bd950",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-01T14:06:30Z",
+      "side": 1,
+      "message": "Dot at the end :)",
+      "revId": "39222b1949e191fee4f92eebc8c29b750c9fb1df",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fb45db5f_69e5ed0f",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-01T14:06:30Z",
+      "side": 1,
+      "message": "You should also mention what default coniguration is (e.g. name - RA_TEST, mode - RA, response type, 1 layer CA, etc)",
+      "revId": "39222b1949e191fee4f92eebc8c29b750c9fb1df",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "49b49c63_e213475d",
         "filename": "docs/sections/configuration.rst",
         "patchSetId": 1
