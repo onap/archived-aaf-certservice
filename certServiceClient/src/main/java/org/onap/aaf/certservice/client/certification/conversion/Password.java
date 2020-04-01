@@ -21,7 +21,7 @@
 package org.onap.aaf.certservice.client.certification.conversion;
 
 class Password {
-    private static final String PASSWORD_PATTERN = "[\\w$#]{16,}";
+    private static final String PATTERN = "[\\w$#]{16,}";
     private final String password;
 
     Password(String password) {
@@ -37,6 +37,6 @@ class Password {
     }
 
     boolean isCorrectPasswordPattern() {
-        return password.matches(PASSWORD_PATTERN);
+        return password.matches(PATTERN);
     }
 }
