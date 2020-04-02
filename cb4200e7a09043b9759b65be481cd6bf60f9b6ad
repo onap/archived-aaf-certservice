@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6b0ec15a_62c6bbfc",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-02T11:28:08Z",
+      "side": 1,
+      "message": "Don\u0027t mix values from CertService\u0027s client call (e.g. from SDNC) with EJBCA configuration :)\n\nPlease remove eveything which is below alias",
+      "revId": "cb4200e7a09043b9759b65be481cd6bf60f9b6ad",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
