@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "fc0fba2c_ffa00ad2",
+        "filename": "certService/OpenAPI.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-04-02T07:34:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fb60eb01_4b3ea712",
+      "revId": "e8ddeec59870b62d567314c37b5bdb6f2c330465",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "88ca08b9_33780c65",
         "filename": "certService/OpenAPI.yaml",
         "patchSetId": 2
@@ -54,6 +72,24 @@
     },
     {
       "key": {
+        "uuid": "ee941974_18e8005a",
+        "filename": "certService/OpenAPI.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-04-02T07:34:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8af2b171_96112aeb",
+      "revId": "e8ddeec59870b62d567314c37b5bdb6f2c330465",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7f3aeee8_a4261f49",
         "filename": "certService/OpenAPI.yaml",
         "patchSetId": 2
@@ -68,6 +104,24 @@
       "revId": "e8ddeec59870b62d567314c37b5bdb6f2c330465",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b9fe423a_0ae873f1",
+        "filename": "certService/OpenAPI.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-04-02T07:34:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7f3aeee8_a4261f49",
+      "revId": "e8ddeec59870b62d567314c37b5bdb6f2c330465",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -88,6 +142,24 @@
     },
     {
       "key": {
+        "uuid": "251ec37c_703fb585",
+        "filename": "certService/OpenAPI.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-04-02T07:34:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1cbe77d6_476461e8",
+      "revId": "e8ddeec59870b62d567314c37b5bdb6f2c330465",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "194b6dbb_d44e74b6",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/api/CertificationController.java",
         "patchSetId": 2
@@ -102,6 +174,24 @@
       "revId": "e8ddeec59870b62d567314c37b5bdb6f2c330465",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cc77f1e2_aa67fcfa",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/api/CertificationController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-04-02T07:34:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "194b6dbb_d44e74b6",
+      "revId": "e8ddeec59870b62d567314c37b5bdb6f2c330465",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -122,6 +212,24 @@
     },
     {
       "key": {
+        "uuid": "504aa832_7107c2ef",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/api/ReadinessController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-04-02T07:34:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "02466983_d4a6d53e",
+      "revId": "e8ddeec59870b62d567314c37b5bdb6f2c330465",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e4ae0faa_5fba9499",
         "filename": "certService/src/main/java/org/onap/aaf/certservice/api/ReloadConfigController.java",
         "patchSetId": 2
@@ -136,6 +244,24 @@
       "revId": "e8ddeec59870b62d567314c37b5bdb6f2c330465",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "725301aa_0e92286f",
+        "filename": "certService/src/main/java/org/onap/aaf/certservice/api/ReloadConfigController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-04-02T07:34:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e4ae0faa_5fba9499",
+      "revId": "e8ddeec59870b62d567314c37b5bdb6f2c330465",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
