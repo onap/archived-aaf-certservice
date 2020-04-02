@@ -16,6 +16,24 @@
       "revId": "675cb9e502f86c9f5a289c5c785f39699bf52005",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c023f6e3_3a109501",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/Password.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 6482
+      },
+      "writtenOn": "2020-04-02T08:49:46Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "0bf6762e_d649a082",
+      "revId": "675cb9e502f86c9f5a289c5c785f39699bf52005",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
