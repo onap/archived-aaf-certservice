@@ -16,6 +16,24 @@
       "revId": "126e0127c386c9281a5f46687d4db17eedc2e116",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f707841d_686c3d79",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/RandomPasswordGenerator.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 6482
+      },
+      "writtenOn": "2020-04-02T10:06:04Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "860d7ae3_a2df2736",
+      "revId": "126e0127c386c9281a5f46687d4db17eedc2e116",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
