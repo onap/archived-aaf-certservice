@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c8e97f6d_eca6558c",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/RandomPasswordGenerator.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-04-06T06:45:13Z",
+      "side": 1,
+      "message": "you should move //NOSONAR to line \n        return new Password(RandomStringUtils.random( //NOSONAR",
+      "revId": "c7e377b095d47892cdf57fa3a214888f7da94c39",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
