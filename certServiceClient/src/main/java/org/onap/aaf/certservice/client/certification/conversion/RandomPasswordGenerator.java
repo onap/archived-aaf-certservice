@@ -45,7 +45,8 @@ class RandomPasswordGenerator {
                 USE_LETTERS_ONLY,
                 USE_NUMBERS_ONLY,
                 SET_OF_CHARS,
-                new SecureRandom())); //NOSONAR
+                new SecureRandom())//NOSONAR
+        );
     }
 }
 
