@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d65820b7_b8e464ce",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-07T06:20:59Z",
+      "side": 1,
+      "message": "Correct URL - http://aaf-ejbca:8080/ejbca/publicweb/cmp/cmpRA",
+      "revId": "e27811a9e860fa8274f29f83d4375544bd038413",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
