@@ -1,0 +1,8 @@
+Verified+1: ONAP Jobbuilder <onap-jobbuilder@jenkins.onap.org>
+Verified+1: Bogumil Zebek <bogumil.zebek@nokia.com>
+Code-Review+2: Bogumil Zebek <bogumil.zebek@nokia.com>
+Submitted-by: Bogumil Zebek <bogumil.zebek@nokia.com>
+Submitted-at: Thu, 09 Apr 2020 16:44:04 +0000
+Reviewed-on: https://gerrit.onap.org/r/c/aaf/certservice/+/105684
+Project: aaf/certservice
+Branch: refs/heads/master
