@@ -7,9 +7,25 @@ Logging
 
 Certification Service API 
 --------------------------
+To see console Certification Service logs use:
 
+- Docker:
 
-Certification Service logs are available in the Docker container
+.. code-block:: bash
+
+   docker logs cert-service-api
+
+- Kubernetes:
+
+.. code-block:: bash
+
+   kubectl logs <pod-name> cert-service-api
+
+Console logs contain logs for logging levels from **DEBUG** to **ERROR**.
+
+Certification Service logs for different logging levels are available in the Docker container
+
+.. code-block:: bash
 
     docker exec -it aaf-certservice-api bash
 
@@ -18,9 +34,12 @@ Path to logs:
     /var/log/onap/aaf/certservice
 
 Available log files:
-    * audit.log
-    * debug.log
-    * error.log
+
+    - audit.log - contains logs for **INFO** logging level
+    - debug.log - contains logs for logging levels from **DEBUG** to **ERROR**
+    - error.log - contains logs for **ERROR** logging level
+
+User cannot change logging levels.
 
 
 Certification Service Client
@@ -67,4 +86,6 @@ Client application exits with following exit codes:
 | 7     | Fail in PKCS12 conversion                      |
 +-------+------------------------------------------------+
 | 8     | Fail in Private Key to PEM Encoding            |
++-------+------------------------------------------------+
+| 9     | Wrong TLS configuration                        |
 +-------+------------------------------------------------+
