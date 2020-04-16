@@ -2,6 +2,8 @@
 .. http://creativecommons.org/licenses/by/4.0
 .. Copyright 2020 NOKIA
 
+.. _cert_logs:
+
 Logging
 =======
 
@@ -21,6 +23,7 @@ Available log files:
     * audit.log
     * debug.log
     * error.log
+
 
 
 Certification Service Client
