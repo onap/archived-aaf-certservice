@@ -10,14 +10,14 @@ Standalone docker container
 
 Certification Service Client image:
 
-.. code-block:: 
+.. code-block:: bash
 
   nexus3.onap.org:10001/onap/org.onap.aaf.certservice.aaf-certservice-client:latest 
 
 
 1. Create file with environments as in example below.
 
-.. code-block:: 
+.. code-block:: bash
 
   #Client envs
   REQUEST_URL=http://aaf-cert-service:8080/v1/certificate/
