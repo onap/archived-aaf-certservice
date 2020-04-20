@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8e8569eb_33d0ed26",
+        "filename": "docs/sections/logging.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-04-20T15:07:18Z",
+      "side": 1,
+      "message": "TLS failure code is missing",
+      "range": {
+        "startLine": 73,
+        "startChar": 0,
+        "endLine": 73,
+        "endChar": 58
+      },
+      "revId": "2bc44fa34aee55daf972eab41009246c5f953cb8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "24b26641_d1791fbe",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-04-20T15:07:18Z",
+      "side": 1,
+      "message": "I think it\u0027s 8443 now.",
+      "range": {
+        "startLine": 14,
+        "startChar": 52,
+        "endLine": 14,
+        "endChar": 56
+      },
+      "revId": "2bc44fa34aee55daf972eab41009246c5f953cb8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e2201eb2_767793a8",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-04-20T15:07:18Z",
+      "side": 1,
+      "message": "Could be specified (like above) if those variables are required",
+      "range": {
+        "startLine": 32,
+        "startChar": 0,
+        "endLine": 35,
+        "endChar": 23
+      },
+      "revId": "2bc44fa34aee55daf972eab41009246c5f953cb8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3d562385_6b3e8ea2",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-04-20T15:07:18Z",
+      "side": 1,
+      "message": "Doesn\u0027t match URL used to get successful logs",
+      "range": {
+        "startLine": 55,
+        "startChar": 14,
+        "endLine": 55,
+        "endChar": 58
+      },
+      "revId": "2bc44fa34aee55daf972eab41009246c5f953cb8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "28bff3ed_54cadc06",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-04-20T15:07:18Z",
+      "side": 1,
+      "message": "Section needs to be updated for TLS support",
+      "range": {
+        "startLine": 111,
+        "startChar": 0,
+        "endLine": 111,
+        "endChar": 32
+      },
+      "revId": "2bc44fa34aee55daf972eab41009246c5f953cb8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
