@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "f4424d25_a897309a",
+        "filename": "docs/sections/logging.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-04-21T14:31:37Z",
+      "side": 1,
+      "message": "this will be added by Bogumił team.",
+      "parentUuid": "8e8569eb_33d0ed26",
+      "range": {
+        "startLine": 73,
+        "startChar": 0,
+        "endLine": 73,
+        "endChar": 58
+      },
+      "revId": "2bc44fa34aee55daf972eab41009246c5f953cb8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "24b26641_d1791fbe",
         "filename": "docs/sections/usage.rst",
         "patchSetId": 4
@@ -94,6 +118,23 @@
     },
     {
       "key": {
+        "uuid": "fd9590ac_8d586e0a",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-04-21T14:31:37Z",
+      "side": 1,
+      "message": "I think this should be located in logging page. @Remigiusz @PawełBaniewski, ...: What others think?",
+      "revId": "2bc44fa34aee55daf972eab41009246c5f953cb8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "28bff3ed_54cadc06",
         "filename": "docs/sections/usage.rst",
         "patchSetId": 4
@@ -105,6 +146,30 @@
       "writtenOn": "2020-04-20T15:07:18Z",
       "side": 1,
       "message": "Section needs to be updated for TLS support",
+      "range": {
+        "startLine": 111,
+        "startChar": 0,
+        "endLine": 111,
+        "endChar": 32
+      },
+      "revId": "2bc44fa34aee55daf972eab41009246c5f953cb8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8a0099b0_3337d0eb",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-04-21T14:31:37Z",
+      "side": 1,
+      "message": "This will be supportted by Bogumiłs team",
+      "parentUuid": "28bff3ed_54cadc06",
       "range": {
         "startLine": 111,
         "startChar": 0,
