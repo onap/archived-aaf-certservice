@@ -8,7 +8,7 @@ To generate a documentation locally follow below steps.
 2. Install all required dependencies
 
     ```
-    pip install -r requirements-docs.txt
+    python install -r requirements-docs.txt
    ```
 3. Generate local documentation
     ```
