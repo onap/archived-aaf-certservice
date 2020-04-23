@@ -1,0 +1,327 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "023f39a7_e4c1499e",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T12:29:35Z",
+      "side": 1,
+      "message": "Common information to docker and Kubernetes modes described below",
+      "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fb8fb7d2_3235a7fa",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T12:29:35Z",
+      "side": 1,
+      "message": "Is anywhere else describe what each parameter means? If not, such should be added here",
+      "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d05ba5ae_ba7ce25d",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T12:29:35Z",
+      "side": 1,
+      "message": "Certification Service client or Cert Service client",
+      "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "95a328d6_2a30741e",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T12:29:35Z",
+      "side": 1,
+      "message": "and generate trustore and keystore -\u003e to obtain certificate and trust anchors\nIt is better to write like this cause in Guilin we will create not only keystore/truststore",
+      "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7900fed4_fa804193",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T12:29:35Z",
+      "side": 1,
+      "message": "Need to inform that this is in milisecond, so 30000 is 30s",
+      "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "04d23c16_7f1a6a87",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T12:29:35Z",
+      "side": 1,
+      "message": "to instead of for",
+      "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e8107b84_29327d74",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T12:29:35Z",
+      "side": 1,
+      "message": "add example with multiple SANs, like onap.com;onap.org",
+      "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7d28f31a_3b830236",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T12:29:35Z",
+      "side": 1,
+      "message": "Parameters to establish secure communication",
+      "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "afa1fb90_a78ba2f4",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T12:29:35Z",
+      "side": 1,
+      "message": "found",
+      "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "479c2000_189b78a2",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T12:29:35Z",
+      "side": 1,
+      "message": "latest -\u003e $VERSION,\nand below example which uses latest\nnexus3.onap.org:10001/onap/org.onap.aaf.certservice.aaf-certservice-client:latest",
+      "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cb1ca054_756ba445",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T12:29:35Z",
+      "side": 1,
+      "message": "certification files -\u003e certificate and trust anchors\nhttps -\u003e HTTPS",
+      "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "eed9c2a6_600862c1",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T12:29:35Z",
+      "side": 1,
+      "message": "CertService or Certification Service",
+      "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "36135365_699d5822",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T12:29:35Z",
+      "side": 1,
+      "message": "Here,  you should define any path and file name and use it in step nr 2",
+      "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9b6cfdc8_27fe687c",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T12:29:35Z",
+      "side": 1,
+      "message": "CSR",
+      "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c0bd774c_53e23af2",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T12:29:35Z",
+      "side": 1,
+      "message": "TLS",
+      "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "87817c5d_fe4e1107",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T12:29:35Z",
+      "side": 1,
+      "message": "Why paths have pats while passwords files not?",
+      "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5ab2d8d7_df3a16c6",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T12:29:35Z",
+      "side": 1,
+      "message": "path to local directory -\u003e path to local host directory where certificate and trust anchor will be created\n\nOUTPUT_PATH -\u003e inform that it has to be the same as in step 1",
+      "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0d51bf39_68fc7ef8",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T12:29:35Z",
+      "side": 1,
+      "message": "I\u0027m not sure but you can\u0027t mount files, only directories.\n\nIF I\u0027m wrong, this is also wrong, cause 2 files with passwords are missing",
+      "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9bc53e0c_964d8752",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T12:29:35Z",
+      "side": 1,
+      "message": "CertService or Certification Service",
+      "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
