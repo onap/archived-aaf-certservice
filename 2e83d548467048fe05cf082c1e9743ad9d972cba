@@ -1,0 +1,344 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6db9721e_26a61d6f",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T08:08:26Z",
+      "side": 1,
+      "message": "Need to inform where this value is used?",
+      "revId": "2e83d548467048fe05cf082c1e9743ad9d972cba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ab8ea368_73f24f88",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T08:08:26Z",
+      "side": 1,
+      "message": "URL",
+      "revId": "2e83d548467048fe05cf082c1e9743ad9d972cba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3d163ece_5d606113",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T08:08:26Z",
+      "side": 1,
+      "message": "What are allowed values? Can I put here TEST?",
+      "revId": "2e83d548467048fe05cf082c1e9743ad9d972cba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "00bbb1f6_a9a9fc91",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T08:08:26Z",
+      "side": 1,
+      "message": "Reference value\nti?",
+      "revId": "2e83d548467048fe05cf082c1e9743ad9d972cba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "767afd69_663666d8",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T08:08:26Z",
+      "side": 1,
+      "message": "There is no HTTP endpoint anymore. Right now it is difficult to reload configuration cause client certificate is needed. Need to add information how to RELOAD configuration using client cert in docker and K8s mode (in K8s mode need to read secret).",
+      "revId": "2e83d548467048fe05cf082c1e9743ad9d972cba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "744cdb00_326e9a4c",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T08:08:26Z",
+      "side": 1,
+      "message": "Static - means before start?",
+      "revId": "2e83d548467048fe05cf082c1e9743ad9d972cba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "61b72651_6c71d6ff",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T08:08:26Z",
+      "side": 1,
+      "message": "And dynamic means when docker is already started?",
+      "revId": "2e83d548467048fe05cf082c1e9743ad9d972cba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e96c124f_67c34471",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T08:08:26Z",
+      "side": 1,
+      "message": "Is this ephemeral change? Or this file is mounted from host volume so changes made here are persistently stored in file from host?",
+      "revId": "2e83d548467048fe05cf082c1e9743ad9d972cba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "98607f4b_cb8c3be3",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T08:08:26Z",
+      "side": 1,
+      "message": "Save the file",
+      "revId": "2e83d548467048fe05cf082c1e9743ad9d972cba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0e6eb9dd_8ed9b92f",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T08:08:26Z",
+      "side": 1,
+      "message": "6. Exit container and command",
+      "revId": "2e83d548467048fe05cf082c1e9743ad9d972cba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3ef74089_1749034e",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T08:08:26Z",
+      "side": 1,
+      "message": "Please change this to inform that this means before OOM installation.",
+      "revId": "2e83d548467048fe05cf082c1e9743ad9d972cba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "946d9380_c5d4c418",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T08:08:26Z",
+      "side": 1,
+      "message": "What make all? Could you be more specific that we are talking here about make all from ONAP OOM installation",
+      "revId": "2e83d548467048fe05cf082c1e9743ad9d972cba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3d00c248_b2593d15",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T08:08:26Z",
+      "side": 1,
+      "message": "Need to inform what test deployment means - which OOM flag controls this",
+      "revId": "2e83d548467048fe05cf082c1e9743ad9d972cba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3400460e_bebad74f",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T08:08:26Z",
+      "side": 1,
+      "message": "in opposite case:",
+      "revId": "2e83d548467048fe05cf082c1e9743ad9d972cba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3a666d07_0bc46122",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 142,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T08:08:26Z",
+      "side": 1,
+      "message": "Please inform that this is after ONAP installation so when CertService is up and running",
+      "revId": "2e83d548467048fe05cf082c1e9743ad9d972cba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b04ec6d8_aff485a6",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T08:08:26Z",
+      "side": 1,
+      "message": "Remove brackets and inform how to encode in base64 using CLI - give command",
+      "revId": "2e83d548467048fe05cf082c1e9743ad9d972cba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "65f76131_859c2d0d",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 168,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T08:08:26Z",
+      "side": 1,
+      "message": "but pod reload is needed",
+      "revId": "2e83d548467048fe05cf082c1e9743ad9d972cba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8a006a55_df6893bd",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 169,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T08:08:26Z",
+      "side": 1,
+      "message": "To reload configuration enterCertService pod",
+      "revId": "2e83d548467048fe05cf082c1e9743ad9d972cba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "962ad817_6a50bb75",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 176,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T08:08:26Z",
+      "side": 1,
+      "message": "8. Exit container",
+      "revId": "2e83d548467048fe05cf082c1e9743ad9d972cba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "490fe7de_179a0c49",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 229,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-23T08:08:26Z",
+      "side": 1,
+      "message": "Why : was removed?",
+      "revId": "2e83d548467048fe05cf082c1e9743ad9d972cba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
