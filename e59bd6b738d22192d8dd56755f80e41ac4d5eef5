@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fdede5f5_929f3970",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-24T07:30:08Z",
+      "side": 1,
+      "message": "Certificates are generated during CertService installation.",
+      "revId": "e59bd6b738d22192d8dd56755f80e41ac4d5eef5",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "78a1309f_d48667bf",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-24T07:30:08Z",
+      "side": 1,
+      "message": "Docker mode",
+      "revId": "e59bd6b738d22192d8dd56755f80e41ac4d5eef5",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "28c07ed3_71269c2b",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 188,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-24T07:30:08Z",
+      "side": 1,
+      "message": "CertService client",
+      "revId": "e59bd6b738d22192d8dd56755f80e41ac4d5eef5",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "65b1e492_4240f44f",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 196,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-24T07:30:08Z",
+      "side": 1,
+      "message": "ONAP OOM installation",
+      "revId": "e59bd6b738d22192d8dd56755f80e41ac4d5eef5",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1804066c_a255369a",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 200,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-24T07:30:08Z",
+      "side": 1,
+      "message": "building (using Make)",
+      "revId": "e59bd6b738d22192d8dd56755f80e41ac4d5eef5",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "928bdb0f_97e3f878",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 203,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-24T07:30:08Z",
+      "side": 1,
+      "message": "There is no info how to use certificates delivered by OPS team - what Sylvain has suggested.",
+      "revId": "e59bd6b738d22192d8dd56755f80e41ac4d5eef5",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
