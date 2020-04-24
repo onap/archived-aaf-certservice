@@ -274,6 +274,24 @@
     },
     {
       "key": {
+        "uuid": "8b72584c_02907404",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-04-24T11:03:26Z",
+      "side": 1,
+      "message": "These are passwords, not password files.",
+      "parentUuid": "87817c5d_fe4e1107",
+      "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5ab2d8d7_df3a16c6",
         "filename": "docs/sections/usage.rst",
         "patchSetId": 9
@@ -302,6 +320,24 @@
       "writtenOn": "2020-04-23T12:29:35Z",
       "side": 1,
       "message": "I\u0027m not sure but you can\u0027t mount files, only directories.\n\nIF I\u0027m wrong, this is also wrong, cause 2 files with passwords are missing",
+      "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d4553e12_e8707151",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-04-24T11:03:26Z",
+      "side": 1,
+      "message": "It\u0027s possible to mount files. This solution here works fine, it was tested multiple times.\nPasswords files are not missing, because passwords are passed as ENVs, as mentioned above.",
+      "parentUuid": "0d51bf39_68fc7ef8",
       "revId": "c1ad93cac1e7b7a900c86e7c1bff4a01555fd5fb",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
