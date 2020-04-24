@@ -111,7 +111,7 @@ If container exits with non 0 exit code, you can find more information in logs, 
 As init container for Kubernetes
 --------------------------------
 
-To run Certification Client as init container for ONAP component, add following configuration to deploymnet:
+To run Certification Client as init container for ONAP component, add following configuration to deployment:
 
 .. code-block:: yaml
 
@@ -159,13 +159,26 @@ To run Certification Client as init container for ONAP component, add following 
                 value: US
               - name: SANS
                 value: test.onap.org:onap.com
+              - name: KEYSTORE_PATH
+                value: /etc/onap/aaf/certservice/certs/certServiceClient-keystore.jks
+              - name: KEYSTORE_PASSWORD
+                value: secret
+              - name: TRUSTSTORE_PATH
+                value: /etc/onap/aaf/certservice/certs/truststore.jks
+              - name: TRUSTSTORE_PASSWORD
+                value: secret
             volumeMounts:
               - mountPath: /var/certs
                 name: certs
+              - mountPath: /etc/onap/aaf/certservice/certs/
+                name: tls-volume
           ...
         volumes: 
-          -emptyDir: {}
-           name: certs
+        - name: certs
+          emptyDir: {}
+        - name tls-volume
+          secret:
+            secretName: aaf-cert-service-client-tls-secret  # Value of global.aaf.certService.client.secret.name
         ...
 
  
