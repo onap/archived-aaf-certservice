@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b063296e_c1a6c67e",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-27T22:02:29Z",
+      "side": 1,
+      "message": "Description ok, but there is no info about passwords that protects files.",
+      "revId": "d427d58438f76d322da3769d754194ff50c5cd9c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
