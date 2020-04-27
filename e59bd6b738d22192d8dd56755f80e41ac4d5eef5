@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "14dfd33d_ecddd294",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-27T22:00:45Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "05d8f199_f4d168ee",
+      "revId": "e59bd6b738d22192d8dd56755f80e41ac4d5eef5",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "78a1309f_d48667bf",
         "filename": "docs/sections/configuration.rst",
         "patchSetId": 1
@@ -66,6 +84,24 @@
       "side": 1,
       "message": "Done",
       "parentUuid": "78a1309f_d48667bf",
+      "revId": "e59bd6b738d22192d8dd56755f80e41ac4d5eef5",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "52bc8d9d_bab44b4a",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-27T22:00:45Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "bf281e28_2de8ac28",
       "revId": "e59bd6b738d22192d8dd56755f80e41ac4d5eef5",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
@@ -107,6 +143,24 @@
     },
     {
       "key": {
+        "uuid": "42cf971b_68a94c6f",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 188,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-27T22:00:45Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "209f94df_5e4b0353",
+      "revId": "e59bd6b738d22192d8dd56755f80e41ac4d5eef5",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "65b1e492_4240f44f",
         "filename": "docs/sections/configuration.rst",
         "patchSetId": 1
@@ -136,6 +190,24 @@
       "side": 1,
       "message": "Done",
       "parentUuid": "65b1e492_4240f44f",
+      "revId": "e59bd6b738d22192d8dd56755f80e41ac4d5eef5",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4db228e6_8be17fb0",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 196,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-27T22:00:45Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "e27a8f25_5a8f8a5a",
       "revId": "e59bd6b738d22192d8dd56755f80e41ac4d5eef5",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
@@ -213,6 +285,24 @@
     },
     {
       "key": {
+        "uuid": "1388d5f7_0276efa4",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 200,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-27T22:00:45Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "34977afd_b9d5074e",
+      "revId": "e59bd6b738d22192d8dd56755f80e41ac4d5eef5",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "928bdb0f_97e3f878",
         "filename": "docs/sections/configuration.rst",
         "patchSetId": 1
@@ -242,6 +332,24 @@
       "side": 1,
       "message": "Done",
       "parentUuid": "928bdb0f_97e3f878",
+      "revId": "e59bd6b738d22192d8dd56755f80e41ac4d5eef5",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f11f8ef5_dbffdc59",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 203,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-04-27T22:00:45Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "faac1614_89ae7330",
       "revId": "e59bd6b738d22192d8dd56755f80e41ac4d5eef5",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
