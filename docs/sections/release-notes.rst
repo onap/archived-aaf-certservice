@@ -13,7 +13,8 @@ Version: 1.0.1
 
 **New Features**
 
-The Frankfurt Release is the first release of the Certification Service.
+ In Frankfurt release only `Initialization Request <https://tools.ietf.org/html/rfc4210#section-5.3.1>`_ with `ImplicitConfirm <https://tools.ietf.org/html/rfc4210#section-5.1.1.1>`_ is supported. 
+ Request sent to CMPv2 server is authenticated by secret value (initial authentication key) and reference value (used to identify the secret value) as described in `RFC-4210 <https://tools.ietf.org/html/rfc4210#section-4.2.1.2>`_.
 
 **Bug Fixes**
 
