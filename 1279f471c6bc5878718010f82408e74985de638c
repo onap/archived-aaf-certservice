@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "72426cd4_c4068215",
+        "filename": "docs/sections/introduction.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2020-05-07T05:26:22Z",
+      "side": 1,
+      "message": "shouldn\u0027t it be \"the goal of this project\" instead of requirement ?",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 28
+      },
+      "revId": "1279f471c6bc5878718010f82408e74985de638c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
