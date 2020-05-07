@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cfbc1efc_fa127435",
+        "filename": "docs/sections/introduction.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-07T06:41:52Z",
+      "side": 1,
+      "message": "As it was previously written: \nThe micro-service called CertService is designed for requesting certificates\nsigned by external Certificate Authority (CA) using CMP over HTTP protocol. It uses CMPv2 client to send and receive CMPv2 messages.",
+      "revId": "733beebc483f7303d0f1b3534861494f2bba5dee",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a32efb7f_36f4df52",
+        "filename": "docs/sections/introduction.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-07T06:41:52Z",
+      "side": 1,
+      "message": "will be -\u003e is",
+      "revId": "733beebc483f7303d0f1b3534861494f2bba5dee",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c0c4091c_903c281c",
+        "filename": "docs/sections/introduction.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-07T06:41:52Z",
+      "side": 1,
+      "message": "will be -\u003e is",
+      "revId": "733beebc483f7303d0f1b3534861494f2bba5dee",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
