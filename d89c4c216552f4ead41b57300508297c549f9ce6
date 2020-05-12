@@ -1,0 +1,752 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c6f3833b_79de196b",
+        "filename": "docs/sections/architecture.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "Please use new picture as I fixed it",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f5a259ed_ff1714a5",
+        "filename": "docs/sections/architecture.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "Move this subchapter to Introduction - as last (after Functionality)",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b307bb4a_8ca53b0f",
+        "filename": "docs/sections/build.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "information",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c4174e9a_cc2d27a3",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "CertService client",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3ad2685f_7e869342",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "space between local and bracket",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "033bf1fd_72c71a6f",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "add below\ne.g. docker exec -it (name under which CertService starts when it starts via make start-backend) bash",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "78804518_14a3d186",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "Can I use env variables here as it is in OOM mode?",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "615c7dd5_2d7c590c",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "AAF charts",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dd3183b9_8bc23466",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "@Adam - have you tried to encode JSON file? Maybe it will be easier to follow such path",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f9a4da4a_c961f598",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "add below\ne.g. kubectl edit secret aaf-cert-service-secret\n\nand remove comment",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6f4842bb_34234000",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "add below\ne.g. kubectl exec -it (name under which CertService starts when is installed via OOM) bash",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d6d32999_aaaea88c",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 188,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "JKS",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "615c036d_e29d711d",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 189,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "PKCS#12 format",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8d29a5fd_02260338",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 190,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "JKS",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b56df4b4_087b1fda",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "CRT",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "45952836_0eabc616",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 197,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "JKS",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9d528fa2_4d51cd6e",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 198,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "JKS",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "59e4912e_1decb039",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 200,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "from what file?",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ade76389_a4b12725",
+        "filename": "docs/sections/introduction.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "Add following sentence as first and the only one in Overview:\nIn Frankfurt release AAF was enhanced by Certificate Management Protocol ver. 2 (CMPv2) support. Such support is handled by new AAF\u0027s microservice called CertService. CertService provides certificates signed by external CMPv2 server - further on such certificates are called operators certificates. Operators certificates are meant to secure external ONAP traffic - traffic between network functions (xNFs) and ONAP.",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6d2c5228_94c68900",
+        "filename": "docs/sections/introduction.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "Move four paragraphs (From the micro-service.... to To proof) to Architecture chapter (above Interaction between components).",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b535af8b_9d1ffbb8",
+        "filename": "docs/sections/introduction.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "Move this paragraph to Context View above picture",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5cd57d1e_c3b97239",
+        "filename": "docs/sections/introduction.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "Before this sentence add subchapter called Supported Funtionality",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "58633c87_783063e0",
+        "filename": "docs/sections/logging.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "All Certification Service -\u003e CertService\nAll Certification Service Client -\u003e CertService client",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d16a560f_880d81e6",
+        "filename": "docs/sections/logging.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "CertService console logs",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5b2da76a_e9cf754a",
+        "filename": "docs/sections/logging.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "add below\ne.g. docker logs (name under which CertService starts when it starts via make start-backend)",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5fc3d479_4b100c5f",
+        "filename": "docs/sections/logging.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "add below\ne.g. kubectl logs (name under which CertService starts when is installed via OOM)",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e2c27d2d_ab879bf0",
+        "filename": "docs/sections/logging.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "Console log contains",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5bf89d08_129fd358",
+        "filename": "docs/sections/logging.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "add below\ne.g. docker exec -it (name under which CertService starts when it starts via make start-backend) bash",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b54a19b1_e850c8ce",
+        "filename": "docs/sections/logging.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "add below\ne.g. kubectl exec -it (name under which CertService starts when is installed via OOM) bash",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3c729eba_22a8dc36",
+        "filename": "docs/sections/logging.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "CertService client console",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "43d4b861_0def81c9",
+        "filename": "docs/sections/logging.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "add below\ne.g. docker logs (name under which CertService client starts when it starts via make run-client)",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cad5d3d4_c3e62b81",
+        "filename": "docs/sections/logging.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "add below\ne.g. kubectl logs \u003csome-component-pod-name\u003e -c cert-service-client",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dc0bcd32_656b5696",
+        "filename": "docs/sections/logging.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "available logs are printed on console",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3a2f9cea_10768382",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "All Certification Service -\u003e CertService\nAll Certification Service Client -\u003e CertService client",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "97328131_05b7e72c",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "In -\u003e in",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "df0e2494_69a8e8e4",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "Parameters to generate Certificate Signing Request (CSR):",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "80d7ed7f_6ac257c2",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "Missing description what is what",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a4a62388_ed54da38",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "URL",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dbec0aa4_1d4a77fb",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "password to certServiceClient-keystore.jks",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "46aaa70b_fad91405",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "local path to keystore in JKS format",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8c36fea9_f3367b4a",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "local path to truststore in JKS format",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "41baba0b_72c3ace6",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "expected logs -\u003e expected log",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7e3380db_d5626360",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "Link doesn\u0027t point to logs from client side. Please fix this",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bc46b6a0_164f46c5",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-12T21:30:34Z",
+      "side": 1,
+      "message": "following? Really - I thought that this is an example and every component has to provide its own configuration for CSR - please include such information\ndeployment",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
