@@ -4,7 +4,7 @@
 .. _architecture:
 
 Architecture
-============
+=============
 
 Interaction between components
 ------------------------------

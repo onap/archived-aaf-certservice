@@ -5,7 +5,7 @@
 .. _cert_logs:
 
 Logging
-=======
+========
 
 Certification Service API 
 --------------------------

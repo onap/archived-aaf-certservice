@@ -3,7 +3,7 @@
 .. Copyright 2020 NOKIA
 
 How to use functionality
-========================
+=========================
 Common information to docker and Kubernetes modes described below
 
 Basic information
