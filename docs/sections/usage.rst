@@ -3,7 +3,7 @@
 .. Copyright 2020 NOKIA
 
 How to use functionality
-========================
+=========================
 Common information to docker and Kubernetes modes described below
 
 Basic information
@@ -13,12 +13,12 @@ Certification Service Client needs the following configuration parameters to wor
 1. Parameters for connection to Certification Service API to obtain certificate and trust anchors
   
   - REQUEST_URL *(default: https://aaf-cert-service:8443/v1/certificate/)* - URL to Certification Service API
-  - REQUEST_TIMEOUT *(default: 30000[ms])* - Timeout In miliseconds for REST API calls
+  - REQUEST_TIMEOUT *(default: 30000[ms])* - Timeout in milliseconds for REST API calls
   - OUTPUT_PATH *(required)* - Path where client will output generated certificate and trust anchor
   - CA_NAME *(required)* - Name of CA which will enroll certificate. Must be same as configured on server side. Used in REST API calls
 
 
-2. Parameters to generate CSR file:
+2. Parameters to generate Certificate Signing Request (CSR):
   
   - COMMON_NAME *(required)* - Common name for which certificate from CMPv2 server should be issued
   - ORGANIZATION *(required)* - Organization for which certificate from CMPv2 server should be issued
@@ -67,7 +67,7 @@ To run Certification Service Client as standalone docker container execute follo
   SANS=test.onap.org:onap.com
   #TLS config envs
   KEYSTORE_PATH=/etc/onap/aaf/certservice/certs/certServiceClient-keystore.jks
-  KEYSTORE_PASSWORD=<password to keystore.jks>
+  KEYSTORE_PASSWORD=<password to certServiceClient-keystore.jks>
   TRUSTSTORE_PATH=/etc/onap/aaf/certservice/certs/certServiceClient-truststore.jks
   TRUSTSTORE_PASSWORD=<password to certServiceClient-truststore.jks>
 
@@ -81,13 +81,13 @@ To run Certification Service Client as standalone docker container execute follo
     --env-file <$PWD/client.env (same as in step1)> \
     --network <docker network of cert service> \
     --mount type=bind,src=<path to local host directory where certificate and trust anchor will be created>,dst=<OUTPUT_PATH (same as in step 1)> \
-    --volume <local path to keystore.jks>:<KEYSTORE_PATH> \
-    --volume <local path to trustore.jks>:<TRUSTSTORE_PATH> \
+    --volume <local path to keystore in JKS format>:<KEYSTORE_PATH> \
+    --volume <local path to truststore in JKS format>:<TRUSTSTORE_PATH> \
     nexus3.onap.org:10001/onap/org.onap.aaf.certservice.aaf-certservice-client:$VERSION
 
 
 
-After successful creation of certifications, container exits with exit code 0, expected logs looks like:
+After successful creation of certifications, container exits with exit code 0, expected log looks like:
 
 .. code-block:: bash
 

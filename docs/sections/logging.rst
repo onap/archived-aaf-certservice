@@ -5,25 +5,26 @@
 .. _cert_logs:
 
 Logging
-=======
+========
 
 Certification Service API 
 --------------------------
-To see console Certification Service logs use:
+To see CertService console logs use:
 
 - Docker:
 
 .. code-block:: bash
 
-   docker logs <cert-service-container-name>
+    docker logs <cert-service-container-name>
+    docker logs aafcert-service
 
 - Kubernetes:
 
 .. code-block:: bash
 
-   kubectl logs <cert-service-pod-name>
+    kubectl logs <cert-service-pod-name>
 
-Console logs contain logs for logging levels from **DEBUG** to **ERROR**.
+Console logs contains logs for logging levels from **DEBUG** to **ERROR**.
 
 Certification Service logs for different logging levels are available in the container:
 
@@ -32,6 +33,7 @@ Certification Service logs for different logging levels are available in the con
 .. code-block:: bash
 
     docker exec -it <cert-service-container-name> bash
+    docker exec -it aafcert-service bash
 
 - Kubernetes:
 
@@ -55,13 +57,14 @@ User cannot change logging levels.
 
 Certification Service Client
 ----------------------------
-To see console Certification Service Client logs use :
+To see CertService client console logs use :
 
 - Docker: 
 
 .. code-block:: bash
    
-   docker logs <cert-service-client-container-name>
+    docker logs <cert-service-client-container-name>
+    docker logs aafcert-client
 
 - Kubernetes: 
   CertService Client is used as init container in other components. In the following example:
@@ -70,11 +73,12 @@ To see console Certification Service Client logs use :
 
 .. code-block:: bash
 
-   kubectl logs <some-component-pod-name> -c <cert-service-client-init-container-name>
+    kubectl logs <some-component-pod-name> -c <cert-service-client-init-container-name>
+    kubectl logs <some-component-pod-name> -c cert-service-client
 
 
 
-| Container stops after execution, so all logs available are printed to console.
+| Container stops after execution, so all available logs are printed on console.
 | User cannot change logging levels.
 
 Client application exits with following exit codes:

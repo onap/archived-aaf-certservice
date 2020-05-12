@@ -3,7 +3,7 @@
 .. Copyright 2020 NOKIA
 
 Configuration
-=============
+==============
 
 
 Configuring Cert Service
@@ -41,7 +41,7 @@ Example cmpServers.json file:
 
 This contains list of CMP Servers, where each server has following properties:
 
-    - *caName* - name of the external CA server. It's used to match *CA_NAME* sent by client in order to match proper configuration.
+    - *caName* - name of the external CA server. It's used to match *CA_NAME* sent by CertService client in order to match proper configuration.
     - *url* - URL to CMPv2 server
     - *issuerDN* - Distinguished Name of the CA that will sign the certificate
     - *caMode* - Issuer mode. Allowed values are *CLIENT* and *RA*
@@ -57,7 +57,7 @@ This configuration is read on the application start. It can also be reloaded in 
 Next sections explain how to configure Cert Service in local (docker-compose) and OOM Deployments.
 
 
-Configuring in local(docker-compose) deployment:
+Configuring in local (docker-compose) deployment:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Before application start:
@@ -75,6 +75,7 @@ When application is running:
 2. Enter container::
 
     docker exec -it <certservice-container-name> bash
+    docker exec -it aafcert-service bash
 
 3. Edit *cmpServers.json* file::
 
@@ -96,7 +97,7 @@ Configuring in OOM deployment:
 Before OOM installation:
 """"""""""""""""""""""""
 
-Note! This must be executed before calling *make all* (from OOM Installation) or needs remaking aaf Charts.
+Note! This must be executed before calling *make all* (from OOM Installation) or needs remaking AAF charts.
 
 
 1. Edit *cmpServers.json* file. If OOM *global.addTestingComponents* flag is set to:
@@ -115,7 +116,8 @@ When CertService is deployed:
 
 2. Edit secret::
 
-    kubectl edit secret <cmp-servers-secret-name> # aaf-cert-service-secret by default
+    kubectl edit secret <cmp-servers-secret-name>
+    kubectl edit secret aaf-cert-service-secret
 
 3. Replace value for *cmpServers.json* with your base64 encoded configuration. For example:
 
@@ -139,6 +141,7 @@ When CertService is deployed:
 6. To reload configuration enter CertService pod::
 
     kubectl exec -it <cert-service-pod-name> bash
+    kubectl exec -it (name-under-which-CertService-starts-when-is-installed-via-oom) bash
 
 7. Reload configuration::
 
@@ -185,17 +188,17 @@ This section describes how to use custom, external certificates for CertService 
 1. Set *tls.certificateExternalSecret* flag to true in *kubernetes/aaf/charts/aaf-cert-service/values.yaml*
 2. Prepare secret for CertService. It must be provided before OOM installation. It must contain four files:
 
-    - *certServiceServer-keystore.jks*  - keystore in jks format. Signed by some Root CA
-    - *certServiceServer-keystore.p12* - same keystore in p12 format
-    - *truststore.jks* - truststore in jks format, containing certificates of the Root CA that signed CertService Client certificate
-    - *root.crt* - certificate of the RootCA that signed Client certificate in crt format
+    - *certServiceServer-keystore.jks*  - keystore in JKS format. Signed by some Root CA
+    - *certServiceServer-keystore.p12* - same keystore in PKCS#12 format
+    - *truststore.jks* - truststore in JKS format, containing certificates of the Root CA that signed CertService Client certificate
+    - *root.crt* - certificate of the RootCA that signed Client certificate in CRT format
 
 3. Name the secret properly - the name should match *tls.server.secret.name* value from *kubernetes/aaf/charts/aaf-cert-service/values.yaml* file
 
 4. Prepare secret for CertService Client. It must be provided before OOM installation. It must contain two files:
 
-    - *certServiceClient-keystore.jks*  - keystore in jks format. Signed by some Root CA
-    - *truststore.jks* - truststore in jks format, containing certificates of the RootCA that signed CertService certificate
+    - *certServiceClient-keystore.jks*  - keystore in JKS format. Signed by some Root CA
+    - *truststore.jks* - truststore in JKS format, containing certificates of the RootCA that signed CertService certificate
 
 5. Name the secret properly - the name should match *global.aaf.certService.client.secret.name*
 
