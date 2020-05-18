@@ -5,17 +5,19 @@
 Installation
 ============
 
-.. note::
-   * This section is used to describe how a software component is acquired and installed.
-   
-   * This section is typically: provided for a platform-component and application; and
-     referenced in user guides.
-
-   * This note must be removed after content has been added.
-
-Environment
------------
+CertService can be easily installed with OOM installation, simply by setting proper flag.
+It's possible to also install EJBCA server for testing purposes. It also can be done by setting proper flag.
 
 
-Steps
------
+Enabling CertService
+--------------------
+
+In order to install CertService during OOM deployment, global flag *global.cmpv2Enabled* in *kubernetes/onap/values.yaml* file must be set to true.
+
+
+Enabling EJBCA - testing CMPV2 server
+-------------------------------------
+
+In order to install EJBCA server, global flag *global.addTestingComponents* in *kubernetes/onap/values.yaml* file must be set to true.
+
+Setting this flag, will also cause CertService to load test configuration from *kubernetes/aaf/charts/aaf-cert-service/resources/test/cmpServers.json*
