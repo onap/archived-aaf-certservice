@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "066d3a1d_272be728",
+        "filename": "docs/sections/architecture.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-05-18T12:39:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c6f3833b_79de196b",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f5a259ed_ff1714a5",
         "filename": "docs/sections/architecture.rst",
         "patchSetId": 1
@@ -211,6 +229,24 @@
     },
     {
       "key": {
+        "uuid": "4fe558af_bd6c86a9",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-05-18T12:39:10Z",
+      "side": 1,
+      "message": "We can use env variable for password, but not for paths, because they are not stored in ENV variables in docker-compose deployment. Should I use env for password?",
+      "parentUuid": "78804518_14a3d186",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "615c7dd5_2d7c590c",
         "filename": "docs/sections/configuration.rst",
         "patchSetId": 1
@@ -257,6 +293,24 @@
       "writtenOn": "2020-05-12T21:30:34Z",
       "side": 1,
       "message": "@Adam - have you tried to encode JSON file? Maybe it will be easier to follow such path",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4c7e11b4_7775c6db",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-05-18T12:39:10Z",
+      "side": 1,
+      "message": "It\u0027s possible to store configuration in file (e.g. sample-config.json) and encode it with the command:\necho sample-config.json | base64\n\nBut it will require additional step (creating a file).\nHowever it be easier to modify configuration later on.\n\nDo you want me to change it to the described approach?",
+      "parentUuid": "dd3183b9_8bc23466",
       "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
@@ -554,6 +608,24 @@
       "writtenOn": "2020-05-12T21:30:34Z",
       "side": 1,
       "message": "from what file?",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4dd02c7e_85cd9a9e",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 200,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-05-18T12:39:10Z",
+      "side": 1,
+      "message": "I had a problem with that, because global values can be overwritten in multiple places (parent charts, override files or even during deployment). I\u0027d leave it as it is, global prefix indicates that it\u0027s global value, so if we assume that user knows kubernetes, he knows where he should change it.",
+      "parentUuid": "59e4912e_1decb039",
       "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
@@ -1207,6 +1279,24 @@
     },
     {
       "key": {
+        "uuid": "c4d30c8b_1bc06f96",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-05-18T12:39:10Z",
+      "side": 1,
+      "message": "I\u0027d change section description to \"Parameters to establish secure communication to CertService\"\nand leave ENVs as it is, because they are self explanatory in that scope.\nWhat do you think?",
+      "parentUuid": "80d7ed7f_6ac257c2",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "a4a62388_ed54da38",
         "filename": "docs/sections/usage.rst",
         "patchSetId": 1
@@ -1399,6 +1489,24 @@
     },
     {
       "key": {
+        "uuid": "af271423_b154a184",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-05-18T12:39:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7e3380db_d5626360",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bc46b6a0_164f46c5",
         "filename": "docs/sections/usage.rst",
         "patchSetId": 1
@@ -1413,6 +1521,24 @@
       "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f385f6b0_9360b702",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-05-18T12:39:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bc46b6a0_164f46c5",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
