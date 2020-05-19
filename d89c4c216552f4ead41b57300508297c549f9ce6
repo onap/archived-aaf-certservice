@@ -247,6 +247,24 @@
     },
     {
       "key": {
+        "uuid": "676fd711_f1cae2cf",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-19T10:03:51Z",
+      "side": 1,
+      "message": "Yes, use as many ENVs as possible. Especially that e.g. passwords can be different if operator provides own secret.",
+      "parentUuid": "4fe558af_bd6c86a9",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "615c7dd5_2d7c590c",
         "filename": "docs/sections/configuration.rst",
         "patchSetId": 1
@@ -311,6 +329,24 @@
       "side": 1,
       "message": "It\u0027s possible to store configuration in file (e.g. sample-config.json) and encode it with the command:\necho sample-config.json | base64\n\nBut it will require additional step (creating a file).\nHowever it be easier to modify configuration later on.\n\nDo you want me to change it to the described approach?",
       "parentUuid": "dd3183b9_8bc23466",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c67e0731_b6e19b13",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-19T10:03:51Z",
+      "side": 1,
+      "message": "Yes, please use file",
+      "parentUuid": "4c7e11b4_7775c6db",
       "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
@@ -626,6 +662,24 @@
       "side": 1,
       "message": "I had a problem with that, because global values can be overwritten in multiple places (parent charts, override files or even during deployment). I\u0027d leave it as it is, global prefix indicates that it\u0027s global value, so if we assume that user knows kubernetes, he knows where he should change it.",
       "parentUuid": "59e4912e_1decb039",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2d4027f2_e3590be0",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 200,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-19T10:03:51Z",
+      "side": 1,
+      "message": "Not acceptable. This is not K8s, but helm so we must be precise in which file it should be checked.",
+      "parentUuid": "4dd02c7e_85cd9a9e",
       "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
@@ -1291,6 +1345,24 @@
       "side": 1,
       "message": "I\u0027d change section description to \"Parameters to establish secure communication to CertService\"\nand leave ENVs as it is, because they are self explanatory in that scope.\nWhat do you think?",
       "parentUuid": "80d7ed7f_6ac257c2",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c4ee4f5f_0c86fcbb",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-19T10:03:51Z",
+      "side": 1,
+      "message": "ok",
+      "parentUuid": "c4d30c8b_1bc06f96",
       "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
