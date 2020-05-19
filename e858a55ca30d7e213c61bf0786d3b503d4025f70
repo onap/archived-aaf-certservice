@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "92eb2070_b8efa6bb",
+        "filename": "docs/sections/installation.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-19T10:35:23Z",
+      "side": 1,
+      "message": "in which file?",
+      "revId": "e858a55ca30d7e213c61bf0786d3b503d4025f70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dd4b22ca_9217114e",
+        "filename": "docs/sections/installation.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-19T10:35:23Z",
+      "side": 1,
+      "message": "EJBCA - testing CMPV2 server",
+      "revId": "e858a55ca30d7e213c61bf0786d3b503d4025f70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8ac975eb_eda14129",
+        "filename": "docs/sections/installation.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-19T10:35:23Z",
+      "side": 1,
+      "message": "in which file?",
+      "revId": "e858a55ca30d7e213c61bf0786d3b503d4025f70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
