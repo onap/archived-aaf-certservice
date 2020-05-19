@@ -686,6 +686,24 @@
     },
     {
       "key": {
+        "uuid": "0cfc8fa8_eaaff987",
+        "filename": "docs/sections/configuration.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 200,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-05-19T11:09:01Z",
+      "side": 1,
+      "message": "Yes Helm, my bad. However to be honest I don\u0027t know which file should be checked, because this can be even override in multiple places as I mentioned. Should I point to \nkubernetes/onap/values.yaml? However changing it there does not guarantee that will be the value used..",
+      "parentUuid": "2d4027f2_e3590be0",
+      "revId": "d89c4c216552f4ead41b57300508297c549f9ce6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "ade76389_a4b12725",
         "filename": "docs/sections/introduction.rst",
         "patchSetId": 1
