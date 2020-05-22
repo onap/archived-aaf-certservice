@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e23c25ad_529c0af7",
+        "filename": "docs/sections/installation.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-22T08:05:39Z",
+      "side": 1,
+      "message": "Please mention that when you install CMPv2 you need to use extra variables file - kubernetes/onap/resources/overrides/aaf-cert-service-environment.yaml",
+      "revId": "8487bee147925cbc4a99b98c4483ffe1c7e105bb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cb86e85f_f9c6635c",
+        "filename": "docs/sections/installation.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-22T08:05:39Z",
+      "side": 1,
+      "message": "Incorrect file - should be - kubernetes/onap/resources/overrides/aaf-cert-service-environment.yaml",
+      "revId": "8487bee147925cbc4a99b98c4483ffe1c7e105bb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1d1bb38a_2656f3a6",
+        "filename": "docs/sections/installation.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-05-22T08:05:39Z",
+      "side": 1,
+      "message": "in kubernetes/onap/values.yaml or other file with override values",
+      "revId": "8487bee147925cbc4a99b98c4483ffe1c7e105bb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
