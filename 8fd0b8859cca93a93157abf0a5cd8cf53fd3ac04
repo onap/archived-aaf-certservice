@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3c084228_87e8b966",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-05-22T10:52:01Z",
+      "side": 0,
+      "message": "add version.properties to client folder\nset in three version.properties to 1.0.2",
+      "revId": "8fd0b8859cca93a93157abf0a5cd8cf53fd3ac04",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
