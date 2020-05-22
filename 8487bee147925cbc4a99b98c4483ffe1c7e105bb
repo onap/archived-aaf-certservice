@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "ece07829_5a76422b",
+        "filename": "docs/sections/installation.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-05-22T09:04:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e23c25ad_529c0af7",
+      "revId": "8487bee147925cbc4a99b98c4483ffe1c7e105bb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "cb86e85f_f9c6635c",
         "filename": "docs/sections/installation.rst",
         "patchSetId": 2
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "a9109b39_fead0059",
+        "filename": "docs/sections/installation.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-05-22T09:04:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cb86e85f_f9c6635c",
+      "revId": "8487bee147925cbc4a99b98c4483ffe1c7e105bb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1d1bb38a_2656f3a6",
         "filename": "docs/sections/installation.rst",
         "patchSetId": 2
@@ -50,6 +86,24 @@
       "revId": "8487bee147925cbc4a99b98c4483ffe1c7e105bb",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b51abfd3_5a8d7d59",
+        "filename": "docs/sections/installation.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-05-22T09:04:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1d1bb38a_2656f3a6",
+      "revId": "8487bee147925cbc4a99b98c4483ffe1c7e105bb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
