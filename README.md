@@ -8,7 +8,7 @@ More information about the project and all its functionalities you can find unde
     ``` 
   
 Project consists of two submodules:
-1. aaf-certservice-api
+1. aaf-certservice-api 
 2. aaf-certservice-client
 
 Detailed information about submodules can be found in ```README.md``` in their directories.
