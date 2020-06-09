@@ -78,6 +78,9 @@ public class CertServiceClient {
                             base64Encoder.encode(csrFactory.createCsrInPem(keyPair)),
                             base64Encoder.encode(pkEncoder.encodePrivateKeyToPem(keyPair.getPrivate())));
 
+            String outputType = clientConfiguration.getOutputType();
+            LOGGER.info("OUTPUT type: " + outputType);
+
             KeystoreTruststoreCreator filesCreator = new KeystoreTruststoreCreatorFactory(
                     clientConfiguration.getCertsOutputPath()).create();
             filesCreator.createKeystore(certServiceData.getCertificateChain(), keyPair.getPrivate());
