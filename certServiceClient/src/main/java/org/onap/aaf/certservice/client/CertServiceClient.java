@@ -23,8 +23,7 @@ import org.onap.aaf.certservice.client.api.ExitableException;
 import org.onap.aaf.certservice.client.certification.CsrFactory;
 import org.onap.aaf.certservice.client.certification.KeyPairFactory;
 import org.onap.aaf.certservice.client.certification.PrivateKeyToPemEncoder;
-import org.onap.aaf.certservice.client.certification.conversion.KeystoreTruststoreCreator;
-import org.onap.aaf.certservice.client.certification.conversion.KeystoreTruststoreCreatorFactory;
+import org.onap.aaf.certservice.client.certification.conversion.ArtifactCreationStrategy;
 import org.onap.aaf.certservice.client.common.Base64Encoder;
 import org.onap.aaf.certservice.client.configuration.EnvsForClient;
 import org.onap.aaf.certservice.client.configuration.EnvsForCsr;
@@ -77,13 +76,16 @@ public class CertServiceClient {
                             clientConfiguration.getCaName(),
                             base64Encoder.encode(csrFactory.createCsrInPem(keyPair)),
                             base64Encoder.encode(pkEncoder.encodePrivateKeyToPem(keyPair.getPrivate())));
+            
+            ArtifactCreationStrategy.getStrategyOfString(clientConfiguration.getOutputType())
+                    .generateArtifactCreator(clientConfiguration.getCertsOutputPath())
+                    .generateArtifacts(
+                            certServiceData.getCertificateChain(),
+                            certServiceData.getTrustedCertificates(),
+                            keyPair.getPrivate());
 
-            KeystoreTruststoreCreator filesCreator = new KeystoreTruststoreCreatorFactory(
-                    clientConfiguration.getCertsOutputPath()).create();
-            filesCreator.createKeystore(certServiceData.getCertificateChain(), keyPair.getPrivate());
-            filesCreator.createTruststore(certServiceData.getTrustedCertificates());
         } catch (ExitableException e) {
-            LOGGER.error("Cert Service Client fail in execution: ", e);
+            LOGGER.error("Cert Service Client fails in execution: ", e);
             appExitHandler.exit(e.applicationExitStatus());
         }
         appExitHandler.exit(SUCCESS);
