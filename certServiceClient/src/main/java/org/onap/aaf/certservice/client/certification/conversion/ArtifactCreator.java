@@ -16,20 +16,14 @@
  * limitations under the License.
  * ============LICENSE_END=========================================================
  */
-
 package org.onap.aaf.certservice.client.certification.conversion;
 
-public class KeystoreTruststoreCreatorFactory {
-    private final String outputPath;
+import org.onap.aaf.certservice.client.api.ExitableException;
 
-    public KeystoreTruststoreCreatorFactory(String outputPath) {
-        this.outputPath = outputPath;
-    }
+import java.security.PrivateKey;
+import java.util.List;
 
-    public KeystoreTruststoreCreator create() {
-        return new KeystoreTruststoreCreator(
-            new PKCS12FilesCreator(outputPath),
-            new RandomPasswordGenerator(),
-            new PemToPKCS12Converter());
-    }
+public interface ArtifactCreator {
+     void generateArtifacts(List<String> keystoreData, List<String> truststoreData, PrivateKey privateKey)
+            throws ExitableException;
 }
