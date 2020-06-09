@@ -43,6 +43,10 @@ class PKCS12FilesCreatorTest {
     private static final String KEYSTORE_PASS_PATH = OUTPUT_PATH + "keystore.pass";
     private static final String TRUSTSTORE_PATH = OUTPUT_PATH + "truststore.jks";
     private static final String TRUSTSTORE_PASS_PATH = OUTPUT_PATH + "truststore.pass";
+    private static final String KEY_PEM = OUTPUT_PATH + "key.pem";
+    private static final String KEYSTORE_PEM_PATH = OUTPUT_PATH + "keystore.pem";
+    private static final String TRUSTSTORE_PEM_PATH = OUTPUT_PATH + "truststore.pem";
+
     private static final String ERROR_MESSAGE = "java.io.FileNotFoundException: src/test/resources/generatedFiles/thisPathDoesNotExist/keystore.jks (No such file or directory)";
 
     private File outputDirectory = new File(OUTPUT_PATH);
@@ -107,5 +111,28 @@ class PKCS12FilesCreatorTest {
         // when then
         assertThatThrownBy(() -> filesCreator.saveKeystoreData(data, password))
             .isInstanceOf(PemToPKCS12ConverterException.class).hasMessage(ERROR_MESSAGE);
+    }
+
+    @Test
+    void savePemArtifactsShouldCreateFilesWithDataInGivenLocation() throws PemToPKCS12ConverterException, IOException {
+        // given
+        final String keystore = "mykeystore";
+        final String truststore = "mytruststore";
+        final String privateKey = "mykey";
+        File keyPem = new File(KEY_PEM);
+        File keystorePem = new File(KEYSTORE_PEM_PATH);
+        File truststorePem = new File(TRUSTSTORE_PEM_PATH);
+        PKCS12FilesCreator filesCreator = new PKCS12FilesCreator(OUTPUT_PATH);
+
+        // when
+        filesCreator.savePemArtifacts(keystore.getBytes(), truststore.getBytes(), privateKey.getBytes());
+
+        // then
+        assertTrue(keyPem.exists());
+        assertTrue(keystorePem.exists());
+        assertTrue(truststorePem.exists());
+        assertEquals(privateKey, Files.readString(Path.of(KEY_PEM), StandardCharsets.UTF_8));
+        assertEquals(keystore, Files.readString(Path.of(KEYSTORE_PEM_PATH), StandardCharsets.UTF_8));
+        assertEquals(truststore, Files.readString(Path.of(TRUSTSTORE_PEM_PATH), StandardCharsets.UTF_8));
     }
 }

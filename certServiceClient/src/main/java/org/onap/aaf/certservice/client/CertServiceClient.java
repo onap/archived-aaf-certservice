@@ -82,6 +82,10 @@ public class CertServiceClient {
                     clientConfiguration.getCertsOutputPath()).create();
             filesCreator.createKeystore(certServiceData.getCertificateChain(), keyPair.getPrivate());
             filesCreator.createTruststore(certServiceData.getTrustedCertificates());
+            // TODO: move to some output format related logic
+            filesCreator.createPemArtifacts(certServiceData.getCertificateChain(),
+                certServiceData.getTrustedCertificates(),
+                pkEncoder.encodePrivateKeyToPem(keyPair.getPrivate()));
         } catch (ExitableException e) {
             LOGGER.error("Cert Service Client fail in execution: ", e);
             appExitHandler.exit(e.applicationExitStatus());

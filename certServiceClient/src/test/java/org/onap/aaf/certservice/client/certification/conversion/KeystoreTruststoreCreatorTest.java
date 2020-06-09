@@ -77,4 +77,21 @@ class KeystoreTruststoreCreatorTest {
         verify(converter, times(1)).convertTruststore(certificates, password, alias);
         verify(filesCreator, times(1)).saveTruststoreData(truststoreBytes, password.getCurrentPassword());
     }
+
+    @Test
+    void createPemArtifactsShouldCallRequiredMethods() throws PemToPKCS12ConverterException {
+        // given
+        final List<String> certificates = List.of("a", "b");
+        final String privateKey = "my_key";
+        KeystoreTruststoreCreator creator = new KeystoreTruststoreCreator(filesCreator, passwordGenerator, converter);
+
+        // when
+        creator.createPemArtifacts(certificates, certificates, privateKey);
+
+        // then
+        verify(filesCreator, times(1)).savePemArtifacts(
+            String.join("\n", certificates).getBytes(),
+            String.join("\n", certificates).getBytes(),
+            privateKey.getBytes());
+    }
 }

@@ -52,4 +52,12 @@ public class KeystoreTruststoreCreator {
         creator.saveTruststoreData(converter.convertTruststore(data, password, TRUSTED_CERTIFICATE_ALIAS),
             password.getCurrentPassword());
     }
+
+    public void createPemArtifacts(List<String> keystoreData, List<String> truststoreData, String privateKey)
+        throws PemToPKCS12ConverterException {
+        creator.savePemArtifacts(
+            String.join("\n", keystoreData).getBytes(),
+            String.join("\n", truststoreData).getBytes(),
+            privateKey.getBytes());
+    }
 }
