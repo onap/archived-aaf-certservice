@@ -23,7 +23,7 @@ import java.security.PrivateKey;
 import java.util.List;
 import org.onap.aaf.certservice.client.certification.exception.PemToPKCS12ConverterException;
 
-public class KeystoreTruststoreCreator {
+public class PKCS12ArtifactCreator implements ArtifactCreator{
 
     private static final String CERTIFICATE_ALIAS = "certificate";
     private static final String TRUSTED_CERTIFICATE_ALIAS = "trusted-certificate-";
@@ -32,8 +32,8 @@ public class KeystoreTruststoreCreator {
     private final PemToPKCS12Converter converter;
     private final PKCS12FilesCreator creator;
 
-    public KeystoreTruststoreCreator(PKCS12FilesCreator creator, RandomPasswordGenerator generator,
-        PemToPKCS12Converter converter) {
+    public PKCS12ArtifactCreator(PKCS12FilesCreator creator, RandomPasswordGenerator generator,
+                                 PemToPKCS12Converter converter) {
         this.generator = generator;
         this.converter = converter;
         this.creator = creator;
@@ -51,5 +51,11 @@ public class KeystoreTruststoreCreator {
         Password password = generator.generate(PASSWORD_LENGTH);
         creator.saveTruststoreData(converter.convertTruststore(data, password, TRUSTED_CERTIFICATE_ALIAS),
             password.getCurrentPassword());
+    }
+
+    @Override
+    public void generateArtifacts(List<String> keystoreData, List<String> truststoreData, PrivateKey privateKey) throws PemToPKCS12ConverterException {
+        createKeystore(keystoreData,privateKey);
+        createTruststore(truststoreData);
     }
 }
