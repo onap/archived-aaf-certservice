@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "99c43b75_a7254918",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/OutputTypes.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-10T12:38:06Z",
+      "side": 1,
+      "message": "Consider to change class to enum",
+      "range": {
+        "startLine": 23,
+        "startChar": 7,
+        "endLine": 23,
+        "endChar": 13
+      },
+      "revId": "e08d45ad5394e251eff978dd0545856c7fbe7112",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "36a8069c_2ff3ef28",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/configuration/factory/AbstractConfigurationFactoryTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-10T12:38:06Z",
+      "side": 1,
+      "message": "Just p12",
+      "range": {
+        "startLine": 88,
+        "startChar": 37,
+        "endLine": 88,
+        "endChar": 38
+      },
+      "revId": "e08d45ad5394e251eff978dd0545856c7fbe7112",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
