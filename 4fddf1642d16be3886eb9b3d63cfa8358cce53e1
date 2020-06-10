@@ -42,6 +42,24 @@
     },
     {
       "key": {
+        "uuid": "765dab55_391fd23f",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/api/ExitStatus.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-06-10T08:51:44Z",
+      "side": 1,
+      "message": "Hey Pawel, \ncould we rename OUTPUT_TYPE env variable to be more precise like CERTIFICATES_OUTPUT_TYPE?\nI think it would be better for users",
+      "parentUuid": "b72fc609_1157025d",
+      "revId": "4fddf1642d16be3886eb9b3d63cfa8358cce53e1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "79086f4b_f9f3b615",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/exception/InputParameterValidationException.java",
         "patchSetId": 1
