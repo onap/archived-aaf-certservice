@@ -25,6 +25,40 @@
     },
     {
       "key": {
+        "uuid": "b6b7721f_675118d9",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-06-10T09:14:13Z",
+      "side": 1,
+      "message": "I think we should pass outputType here to KeystoreTruststoreCreatorFactory like we are passing clientConfiguration.getCertsOutputPath() or you have other approach?",
+      "revId": "f737a99910e9bf9914d8b7d89c8503eef8b93dbd",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "31deaf62_8e96b084",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/ClientConfigurationFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-06-10T09:14:13Z",
+      "side": 1,
+      "message": "I don\u0027t see filter and orElseThrow clause here. I suppose it will be added later, yes?",
+      "revId": "f737a99910e9bf9914d8b7d89c8503eef8b93dbd",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "180dc85f_d8a8e768",
         "filename": "compose-resources/client-configuration.env",
         "patchSetId": 4
@@ -36,6 +70,24 @@
       "writtenOn": "2020-06-10T08:46:43Z",
       "side": 1,
       "message": "Can this env be renamed to be more descriptive? Like CERTIFICATES_OUTPUT_TYPE?",
+      "revId": "f737a99910e9bf9914d8b7d89c8503eef8b93dbd",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1c6941a2_45d1cbf6",
+        "filename": "compose-resources/client-configuration.env",
+        "patchSetId": 4
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-06-10T09:14:13Z",
+      "side": 1,
+      "message": "Please leave it as it is 😊",
+      "parentUuid": "180dc85f_d8a8e768",
       "revId": "f737a99910e9bf9914d8b7d89c8503eef8b93dbd",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
