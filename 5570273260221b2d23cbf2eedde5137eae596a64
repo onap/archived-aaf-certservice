@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d0e2c4ff_5f4e144f",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/model/ClientConfiguration.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-10T12:31:09Z",
+      "side": 1,
+      "message": "It should has default value \"P12\", look Timeout and Request Url",
+      "range": {
+        "startLine": 34,
+        "startChar": 19,
+        "endLine": 34,
+        "endChar": 29
+      },
+      "revId": "5570273260221b2d23cbf2eedde5137eae596a64",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
