@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "09641ef3_b7e8486f",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12ArtifactCreator.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-06-10T13:57:09Z",
+      "side": 1,
+      "message": "consider more restrictive access modifiers",
+      "range": {
+        "startLine": 42,
+        "startChar": 4,
+        "endLine": 42,
+        "endChar": 10
+      },
+      "revId": "efb61614395f16fa3a0712de88412bc329c5697d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "04367dce_d38e5e1e",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12ArtifactCreator.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-06-10T13:57:09Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 49,
+        "startChar": 4,
+        "endLine": 49,
+        "endChar": 10
+      },
+      "revId": "efb61614395f16fa3a0712de88412bc329c5697d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d5cc9d3b_afcc45ff",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12ArtifactCreator.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-06-10T13:57:09Z",
+      "side": 1,
+      "message": "consider moving above createKeystore and createTruststore",
+      "range": {
+        "startLine": 57,
+        "startChar": 4,
+        "endLine": 60,
+        "endChar": 5
+      },
+      "revId": "efb61614395f16fa3a0712de88412bc329c5697d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6bec2b47_e589bf0c",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactCreationStrategyTest.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-06-10T13:57:09Z",
+      "side": 1,
+      "message": "Why use final String in previous test but not here?\n\nConsider extracting \"P12\" etc. to constants",
+      "range": {
+        "startLine": 51,
+        "startChar": 0,
+        "endLine": 51,
+        "endChar": 3
+      },
+      "revId": "efb61614395f16fa3a0712de88412bc329c5697d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
