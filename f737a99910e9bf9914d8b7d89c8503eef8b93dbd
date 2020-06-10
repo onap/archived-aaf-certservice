@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "316a0ada_a0e3056a",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 6592
+      },
+      "writtenOn": "2020-06-10T09:46:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f194a41b_9697c157",
+      "range": {
+        "startLine": 81,
+        "startChar": 12,
+        "endLine": 82,
+        "endChar": 54
+      },
+      "revId": "f737a99910e9bf9914d8b7d89c8503eef8b93dbd",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "b6b7721f_675118d9",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
         "patchSetId": 4
@@ -36,6 +60,24 @@
       "writtenOn": "2020-06-10T09:14:13Z",
       "side": 1,
       "message": "I think we should pass outputType here to KeystoreTruststoreCreatorFactory like we are passing clientConfiguration.getCertsOutputPath() or you have other approach?",
+      "revId": "f737a99910e9bf9914d8b7d89c8503eef8b93dbd",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "961e0420_e29159b5",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 6592
+      },
+      "writtenOn": "2020-06-10T09:46:15Z",
+      "side": 1,
+      "message": "I think we have the same approach, but it will be done later in other task. Here I only put logger to check if values are correctly read from envs. I removed it from this class according to Piotr comment.",
+      "parentUuid": "b6b7721f_675118d9",
       "revId": "f737a99910e9bf9914d8b7d89c8503eef8b93dbd",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
@@ -106,6 +148,24 @@
       "side": 1,
       "message": "Please leave it as it is 😊",
       "parentUuid": "180dc85f_d8a8e768",
+      "revId": "f737a99910e9bf9914d8b7d89c8503eef8b93dbd",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e41d3fad_61d65897",
+        "filename": "compose-resources/client-configuration.env",
+        "patchSetId": 4
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 6592
+      },
+      "writtenOn": "2020-06-10T09:46:15Z",
+      "side": 1,
+      "message": "I left it",
+      "parentUuid": "1c6941a2_45d1cbf6",
       "revId": "f737a99910e9bf9914d8b7d89c8503eef8b93dbd",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
