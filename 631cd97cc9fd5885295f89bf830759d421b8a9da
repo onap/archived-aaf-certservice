@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e24a7ebf_72b6b4ea",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/model/ClientConfiguration.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-10T13:35:53Z",
+      "side": 1,
+      "message": "Please extract it to constant, and set value in constructor.",
+      "range": {
+        "startLine": 34,
+        "startChar": 33,
+        "endLine": 34,
+        "endChar": 36
+      },
+      "revId": "631cd97cc9fd5885295f89bf830759d421b8a9da",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
