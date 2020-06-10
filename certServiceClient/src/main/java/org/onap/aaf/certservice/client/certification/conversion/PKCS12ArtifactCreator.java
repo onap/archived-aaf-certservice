@@ -22,17 +22,23 @@ package org.onap.aaf.certservice.client.certification.conversion;
 import java.security.PrivateKey;
 import java.util.List;
 import org.onap.aaf.certservice.client.certification.exception.PemToPKCS12ConverterException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class PKCS12ArtifactCreator implements ArtifactCreator{
-
+    private static final Logger LOGGER = LoggerFactory.getLogger(PKCS12ArtifactCreator.class);
     private static final String CERTIFICATE_ALIAS = "certificate";
     private static final String TRUSTED_CERTIFICATE_ALIAS = "trusted-certificate-";
     private static final int PASSWORD_LENGTH = 24;
+    private static final String KEYSTORE_P12 = "keystore.p12";
+    private static final String KEYSTORE_PASS = "keystore.pass";
+    private static final String TRUSTSTORE_P12 = "truststore.p12";
+    private static final String TRUSTSTORE_PASS = "truststore.pass";
     private final RandomPasswordGenerator generator;
     private final PemToPKCS12Converter converter;
-    private final PKCS12FilesCreator creator;
+    private final FilesCreator creator;
 
-    public PKCS12ArtifactCreator(PKCS12FilesCreator creator, RandomPasswordGenerator generator,
+    public PKCS12ArtifactCreator(FilesCreator creator, RandomPasswordGenerator generator,
                                  PemToPKCS12Converter converter) {
         this.generator = generator;
         this.converter = converter;
@@ -42,15 +48,21 @@ public class PKCS12ArtifactCreator implements ArtifactCreator{
     public void createKeystore(List<String> data, PrivateKey privateKey)
         throws PemToPKCS12ConverterException {
         Password password = generator.generate(PASSWORD_LENGTH);
-        creator.saveKeystoreData(converter.convertKeystore(data, password, CERTIFICATE_ALIAS, privateKey),
-            password.getCurrentPassword());
+
+        LOGGER.debug("Attempt to create PKCS12 keystore files and saving data. File names: {}, {}", KEYSTORE_P12, KEYSTORE_PASS);
+
+        creator.saveDataToLocation(converter.convertKeystore(data, password, CERTIFICATE_ALIAS, privateKey), KEYSTORE_P12);
+        creator.saveDataToLocation(password.getCurrentPassword().getBytes(), KEYSTORE_PASS);
     }
 
     public void createTruststore(List<String> data)
         throws PemToPKCS12ConverterException {
         Password password = generator.generate(PASSWORD_LENGTH);
-        creator.saveTruststoreData(converter.convertTruststore(data, password, TRUSTED_CERTIFICATE_ALIAS),
-            password.getCurrentPassword());
+
+        LOGGER.debug("Attempt to create PKCS12 truststore files and saving data. File names: {}, {}", TRUSTSTORE_P12, TRUSTSTORE_PASS);
+
+        creator.saveDataToLocation(converter.convertTruststore(data, password, TRUSTED_CERTIFICATE_ALIAS), TRUSTSTORE_P12);
+        creator.saveDataToLocation(password.getCurrentPassword().getBytes(), TRUSTSTORE_PASS);
     }
 
     @Override

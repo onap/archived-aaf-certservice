@@ -37,7 +37,7 @@ class PKCS12ArtifactCreatorTest {
     private static final String CERTIFICATE_ALIAS = "certificate";
     private static final String TRUSTED_CERTIFICATE_ALIAS = "trusted-certificate-";
 
-    private PKCS12FilesCreator filesCreator;
+    private FilesCreator filesCreator;
     private RandomPasswordGenerator passwordGenerator;
     private PemToPKCS12Converter converter;
     private PrivateKey privateKey;
@@ -50,7 +50,7 @@ class PKCS12ArtifactCreatorTest {
 
     @BeforeEach
     void setUp() {
-        filesCreator = mock(PKCS12FilesCreator.class);
+        filesCreator = mock(FilesCreator.class);
         passwordGenerator = mock(RandomPasswordGenerator.class);
         converter = mock(PemToPKCS12Converter.class);
         privateKey = mock(PrivateKey.class);

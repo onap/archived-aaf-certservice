@@ -18,6 +18,7 @@
  */
 package org.onap.aaf.certservice.client.certification.conversion;
 
+import org.onap.aaf.certservice.client.certification.PrivateKeyToPemEncoder;
 import org.onap.aaf.certservice.client.configuration.exception.ClientConfigurationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -41,7 +42,7 @@ public enum ArtifactCreationStrategy {
     PEM {
         @Override
         public ArtifactCreator generateArtifactCreator(String outputPath) {
-            return null;
+            return new PEMArtifactCreator(new FilesCreator(outputPath), new PrivateKeyToPemEncoder());
         }
     };
 
