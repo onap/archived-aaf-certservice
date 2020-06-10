@@ -38,7 +38,7 @@ public enum ArtifactCreatorStrategy {
     PEM {
         @Override
         public ArtifactCreator generateArtifactCreator(String outputPath) {
-            return null;
+            return new PEMArtifactCreator(new PKCS12FilesCreator(outputPath));
         }
     };
 

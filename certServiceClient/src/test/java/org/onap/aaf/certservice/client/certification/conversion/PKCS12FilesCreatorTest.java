@@ -21,12 +21,10 @@ package org.onap.aaf.certservice.client.certification.conversion;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
@@ -39,11 +37,8 @@ class PKCS12FilesCreatorTest {
 
     private static final String RESOURCES_PATH = "src/test/resources";
     private static final String OUTPUT_PATH = RESOURCES_PATH + "/generatedFiles/";
-    private static final String KEYSTORE_PATH = OUTPUT_PATH + "keystore.jks";
-    private static final String KEYSTORE_PASS_PATH = OUTPUT_PATH + "keystore.pass";
-    private static final String TRUSTSTORE_PATH = OUTPUT_PATH + "truststore.jks";
-    private static final String TRUSTSTORE_PASS_PATH = OUTPUT_PATH + "truststore.pass";
-    private static final String ERROR_MESSAGE = "java.io.FileNotFoundException: src/test/resources/generatedFiles/thisPathDoesNotExist/keystore.jks (No such file or directory)";
+    private static final String TRUSTSTORE_P12 = "truststore.p12";
+    private static final String ERROR_MESSAGE = "java.io.FileNotFoundException: src/test/resources/generatedFiles/thisPathDoesNotExist/truststore.p12 (No such file or directory)";
 
     private File outputDirectory = new File(OUTPUT_PATH);
 
@@ -59,53 +54,29 @@ class PKCS12FilesCreatorTest {
     }
 
     @Test
-    void saveKeystoreDataShouldCreateFilesWithDataInGivenLocation() throws PemToPKCS12ConverterException, IOException {
-        // given
-        final byte[] data = new byte[]{-128, 1, 127};
-        final String password = "onap123";
-        File keystore = new File(KEYSTORE_PATH);
-        File keystorePass = new File(KEYSTORE_PASS_PATH);
-        PKCS12FilesCreator filesCreator = new PKCS12FilesCreator(OUTPUT_PATH);
-
-        // when
-        filesCreator.saveKeystoreData(data, password);
-
-        // then
-        assertTrue(keystore.exists());
-        assertTrue(keystorePass.exists());
-        assertArrayEquals(data, Files.readAllBytes(Path.of(KEYSTORE_PATH)));
-        assertEquals(password, Files.readString(Path.of(KEYSTORE_PASS_PATH), StandardCharsets.UTF_8));
-    }
-
-    @Test
-    void saveTruststoreDataShouldCreateFilesWithDataInGivenLocation()
+    void saveDataToLocationShouldCreateFilesWithDataInGivenLocation()
         throws PemToPKCS12ConverterException, IOException {
         // given
         final byte[] data = new byte[]{-128, 1, 2, 3, 127};
-        final String password = "nokia321";
-        File truststore = new File(TRUSTSTORE_PATH);
-        File truststorePass = new File(TRUSTSTORE_PASS_PATH);
+        File truststore = new File(OUTPUT_PATH + TRUSTSTORE_P12);
         PKCS12FilesCreator filesCreator = new PKCS12FilesCreator(OUTPUT_PATH);
 
         // when
-        filesCreator.saveTruststoreData(data, password);
+        filesCreator.saveDataToLocation(data, TRUSTSTORE_P12);
 
         // then
         assertTrue(truststore.exists());
-        assertTrue(truststorePass.exists());
-        assertArrayEquals(data, Files.readAllBytes(Path.of(TRUSTSTORE_PATH)));
-        assertEquals(password, Files.readString(Path.of(TRUSTSTORE_PASS_PATH), StandardCharsets.UTF_8));
+        assertArrayEquals(data, Files.readAllBytes(Path.of(OUTPUT_PATH + TRUSTSTORE_P12)));
     }
 
     @Test
     void saveKeystoreDataShouldThrowPemToPKCS12ConverterExceptionWhenOutputDirectoryDoesNotExist() {
         // given
         final byte[] data = new byte[]{-128, 1, 2, 3, 0};
-        final String password = "123aikon";
         PKCS12FilesCreator filesCreator = new PKCS12FilesCreator(OUTPUT_PATH + "thisPathDoesNotExist/");
 
         // when then
-        assertThatThrownBy(() -> filesCreator.saveKeystoreData(data, password))
+        assertThatThrownBy(() -> filesCreator.saveDataToLocation(data, TRUSTSTORE_P12))
             .isInstanceOf(PemToPKCS12ConverterException.class).hasMessage(ERROR_MESSAGE);
     }
 }

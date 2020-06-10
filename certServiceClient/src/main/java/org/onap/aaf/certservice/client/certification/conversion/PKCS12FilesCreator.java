@@ -30,43 +30,19 @@ import org.slf4j.LoggerFactory;
 class PKCS12FilesCreator {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(PKCS12FilesCreator.class);
-    private static final String KEYSTORE_JKS = "keystore.jks";
-    private static final String KEYSTORE_PASS = "keystore.pass";
-    private static final String TRUSTSTORE_JKS = "truststore.jks";
-    private static final String TRUSTSTORE_PASS = "truststore.pass";
-    private final String keystoreJksPath;
-    private final String keystorePassPath;
-    private final String truststoreJksPath;
-    private final String truststorePassPath;
+    private final String outputPath;
 
 
     PKCS12FilesCreator(String path) {
-        keystoreJksPath = Path.of(path, KEYSTORE_JKS).toString();
-        keystorePassPath = Path.of(path, KEYSTORE_PASS).toString();
-        truststoreJksPath = Path.of(path, TRUSTSTORE_JKS).toString();
-        truststorePassPath = Path.of(path, TRUSTSTORE_PASS).toString();
+        outputPath = path;
     }
 
-    void saveKeystoreData(byte[] keystoreData, String keystorePassword) throws PemToPKCS12ConverterException {
-        LOGGER.debug("Attempt to create PKCS12 keystore files and saving data. Keystore path: {}", keystoreJksPath);
-
-        saveDataToLocation(keystoreData, keystoreJksPath);
-        saveDataToLocation(keystorePassword.getBytes(), keystorePassPath);
-    }
-
-    void saveTruststoreData(byte[] truststoreData, String truststorePassword)
-        throws PemToPKCS12ConverterException {
-        LOGGER.debug("Attempt to create PKCS12 truststore files and saving data. Truststore path: {}", truststoreJksPath);
-
-        saveDataToLocation(truststoreData, truststoreJksPath);
-        saveDataToLocation(truststorePassword.getBytes(), truststorePassPath);
-    }
-
-    private void saveDataToLocation(byte[] data, String path) throws PemToPKCS12ConverterException {
-        try (FileOutputStream fos = new FileOutputStream(path)) {
+    void saveDataToLocation(byte[] data, String filename) throws PemToPKCS12ConverterException {
+        LOGGER.debug("Attempt to save file {} in path {}", filename, outputPath);
+        try (FileOutputStream fos = new FileOutputStream(outputPath + filename)) {
             fos.write(data);
         } catch (IOException e) {
-            LOGGER.error("PKCS12 files creation failed, exception message: {}", e.getMessage());
+            LOGGER.error("File creation failed, exception message: {}", e.getMessage());
             throw new PemToPKCS12ConverterException(e);
         }
     }
