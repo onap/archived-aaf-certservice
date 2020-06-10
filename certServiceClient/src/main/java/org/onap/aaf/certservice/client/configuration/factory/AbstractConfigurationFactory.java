@@ -20,6 +20,7 @@
 
 package org.onap.aaf.certservice.client.configuration.factory;
 
+import org.onap.aaf.certservice.client.configuration.OutputTypes;
 import org.onap.aaf.certservice.client.configuration.exception.ClientConfigurationException;
 import org.onap.aaf.certservice.client.configuration.exception.CsrConfigurationException;
 import org.onap.aaf.certservice.client.configuration.model.ConfigurationModel;
@@ -53,6 +54,12 @@ public abstract class AbstractConfigurationFactory<T extends ConfigurationModel>
 
     public boolean isCountryValid(String country) {
         return Arrays.asList(Locale.getISOCountries()).contains(country);
+    }
+
+    public boolean isOutputTypeValid(String outputType) {
+        return OutputTypes.PEM.equals(outputType) ||
+                OutputTypes.JKS.equals(outputType) ||
+                OutputTypes.P12.equals(outputType);
     }
 
     private boolean isPortNumberPresent(String stringToCheck) {

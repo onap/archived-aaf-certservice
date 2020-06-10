@@ -17,34 +17,11 @@
  * limitations under the License.
  * ============LICENSE_END=========================================================
  */
+
 package org.onap.aaf.certservice.client.configuration;
 
-import java.util.Optional;
-
-public class EnvsForClient {
-    private final EnvProvider envProvider = new EnvProvider();
-
-    public Optional<String> getUrlToCertService() {
-        return readEnv(ClientConfigurationEnvs.REQUEST_URL);
-    }
-
-    public Optional<String> getRequestTimeOut() {
-        return readEnv(ClientConfigurationEnvs.REQUEST_TIMEOUT);
-    }
-
-    public Optional<String> getOutputPath() {
-        return readEnv(ClientConfigurationEnvs.OUTPUT_PATH);
-    }
-
-    public Optional<String> getCaName() {
-        return readEnv(ClientConfigurationEnvs.CA_NAME);
-    }
-
-    public Optional<String> getOutputType() {
-        return readEnv(ClientConfigurationEnvs.OUTPUT_TYPE);
-    }
-
-    private Optional<String> readEnv(ClientConfigurationEnvs envName) {
-        return envProvider.readEnvVariable(envName.toString());
-    }
+public class OutputTypes {
+    public static final String JKS = "JKS";
+    public static final String PEM = "PEM";
+    public static final String P12 = "P12";
 }

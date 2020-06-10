@@ -18,13 +18,13 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.client.configuration.model;
+package org.onap.aaf.certservice.client.configuration.factory;
 
 import org.junit.jupiter.api.Test;
 import org.onap.aaf.certservice.client.configuration.ClientConfigurationEnvs;
 import org.onap.aaf.certservice.client.configuration.EnvsForClient;
 import org.onap.aaf.certservice.client.configuration.exception.ClientConfigurationException;
-import org.onap.aaf.certservice.client.configuration.factory.ClientConfigurationFactory;
+import org.onap.aaf.certservice.client.configuration.model.ClientConfiguration;
 
 import java.util.Optional;
 

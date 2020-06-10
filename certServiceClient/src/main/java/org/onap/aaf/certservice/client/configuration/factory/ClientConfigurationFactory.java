@@ -57,6 +57,11 @@ public class ClientConfigurationFactory extends AbstractConfigurationFactory<Cli
                 .map(configuration::setCaName)
                 .orElseThrow(() -> new ClientConfigurationException(ClientConfigurationEnvs.CA_NAME + " is invalid."));
 
+        envsForClient.getOutputType()
+                .filter(this::isOutputTypeValid)
+                .map(configuration::setOutputType)
+                .orElseThrow(() -> new ClientConfigurationException(ClientConfigurationEnvs.OUTPUT_TYPE + " is invalid."));
+
         LOGGER.info("Successful validation of Client configuration. Configuration data: {}", configuration.toString());
 
         return configuration;
