@@ -19,17 +19,30 @@
 
 package org.onap.aaf.certservice.client.certification.conversion;
 
-public class PKCS12ArtifactCreatorFactory {
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import org.onap.aaf.certservice.client.certification.exception.PemToPKCS12ConverterException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+class FilesCreator {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(FilesCreator.class);
     private final String outputPath;
 
-    public PKCS12ArtifactCreatorFactory(String outputPath) {
-        this.outputPath = outputPath;
+
+    FilesCreator(String path) {
+        outputPath = path;
     }
 
-    public PKCS12ArtifactCreator create() {
-        return new PKCS12ArtifactCreator(
-            new FilesCreator(outputPath),
-            new RandomPasswordGenerator(),
-            new PemToPKCS12Converter());
+    void saveDataToLocation(byte[] data, String filename) throws PemToPKCS12ConverterException {
+        LOGGER.debug("Attempt to save file {} in path {}", filename, outputPath);
+        try (FileOutputStream fos = new FileOutputStream(outputPath + filename)) {
+            fos.write(data);
+        } catch (IOException e) {
+            LOGGER.error("File creation failed, exception message: {}", e.getMessage());
+            throw new PemToPKCS12ConverterException(e);
+        }
     }
 }
