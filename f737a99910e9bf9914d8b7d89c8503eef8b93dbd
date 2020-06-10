@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "180dc85f_d8a8e768",
+        "filename": "compose-resources/client-configuration.env",
+        "patchSetId": 4
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 3771
+      },
+      "writtenOn": "2020-06-10T08:46:43Z",
+      "side": 1,
+      "message": "Can this env be renamed to be more descriptive? Like CERTIFICATES_OUTPUT_TYPE?",
+      "revId": "f737a99910e9bf9914d8b7d89c8503eef8b93dbd",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
