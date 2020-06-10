@@ -20,12 +20,15 @@
 
 package org.onap.aaf.certservice.client.configuration.factory;
 
+import org.onap.aaf.certservice.client.certification.exception.OutputTypeParameterValidationException;
 import org.onap.aaf.certservice.client.configuration.ClientConfigurationEnvs;
 import org.onap.aaf.certservice.client.configuration.EnvsForClient;
 import org.onap.aaf.certservice.client.configuration.exception.ClientConfigurationException;
 import org.onap.aaf.certservice.client.configuration.model.ClientConfiguration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Optional;
 
 public class ClientConfigurationFactory extends AbstractConfigurationFactory<ClientConfiguration> {
 
@@ -37,9 +40,11 @@ public class ClientConfigurationFactory extends AbstractConfigurationFactory<Cli
     }
 
     @Override
-    public ClientConfiguration create() throws ClientConfigurationException {
+    public ClientConfiguration create() throws ClientConfigurationException, OutputTypeParameterValidationException {
 
         ClientConfiguration configuration = new ClientConfiguration();
+
+        Optional<String> outPutType = envsForClient.getOutputType();
 
         envsForClient.getUrlToCertService()
                 .map(configuration::setUrlToCertService);
@@ -57,8 +62,11 @@ public class ClientConfigurationFactory extends AbstractConfigurationFactory<Cli
                 .map(configuration::setCaName)
                 .orElseThrow(() -> new ClientConfigurationException(ClientConfigurationEnvs.CA_NAME + " is invalid."));
 
-        envsForClient.getOutputType()
-                .map(configuration::setOutputType);
+        if (outPutType.isPresent()) {
+            outPutType.filter(this::isOutputTypeValid)
+                    .map(configuration::setOutputType)
+                    .orElseThrow(() -> new OutputTypeParameterValidationException(ClientConfigurationEnvs.OUTPUT_TYPE + " is invalid."));
+        }
 
         LOGGER.info("Successful validation of Client configuration. Configuration data: {}", configuration.toString());
 

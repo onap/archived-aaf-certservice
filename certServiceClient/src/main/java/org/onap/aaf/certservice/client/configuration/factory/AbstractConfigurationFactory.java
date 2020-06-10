@@ -20,6 +20,8 @@
 
 package org.onap.aaf.certservice.client.configuration.factory;
 
+import org.onap.aaf.certservice.client.certification.exception.OutputTypeParameterValidationException;
+import org.onap.aaf.certservice.client.configuration.OutputTypes;
 import org.onap.aaf.certservice.client.configuration.exception.ClientConfigurationException;
 import org.onap.aaf.certservice.client.configuration.exception.CsrConfigurationException;
 import org.onap.aaf.certservice.client.configuration.model.ConfigurationModel;
@@ -30,7 +32,7 @@ import java.util.regex.Pattern;
 
 public abstract class AbstractConfigurationFactory<T extends ConfigurationModel> {
 
-    abstract T create() throws ClientConfigurationException, CsrConfigurationException;
+    abstract T create() throws ClientConfigurationException, CsrConfigurationException, OutputTypeParameterValidationException;
 
     public boolean isPathValid(String path) {
         return path.matches("^/|(/[a-zA-Z0-9_-]+)+/?$");
@@ -53,6 +55,12 @@ public abstract class AbstractConfigurationFactory<T extends ConfigurationModel>
 
     public boolean isCountryValid(String country) {
         return Arrays.asList(Locale.getISOCountries()).contains(country);
+    }
+
+    public boolean isOutputTypeValid(String outputType) {
+        return OutputTypes.PEM.getOutputType().equals(outputType) ||
+                OutputTypes.JKS.getOutputType().equals(outputType) ||
+                OutputTypes.P12.getOutputType().equals(outputType);
     }
 
     private boolean isPortNumberPresent(String stringToCheck) {
