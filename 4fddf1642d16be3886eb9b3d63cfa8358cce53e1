@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b72fc609_1157025d",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/api/ExitStatus.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-06-10T08:30:21Z",
+      "side": 1,
+      "message": "If this new error should be used to report that OUTPUT_TYPE is incorrect than such error says nothing!\n\nShould be changed to e.g.:\nOUTPUT_TYPE_VALIDATION_EXCEPTION(10, \"Invalid output type parameter\")",
+      "revId": "4fddf1642d16be3886eb9b3d63cfa8358cce53e1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
