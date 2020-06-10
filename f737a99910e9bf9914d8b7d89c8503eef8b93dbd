@@ -59,6 +59,24 @@
     },
     {
       "key": {
+        "uuid": "90dab8fa_d535143b",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/ClientConfigurationFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-06-10T09:35:57Z",
+      "side": 1,
+      "message": "My ticket will add filter and orElseThrow. \nWe need to merge Jan Malkiewicz\u0027s and Piotr Marcinkiewicz\u0027s tickets first.",
+      "parentUuid": "31deaf62_8e96b084",
+      "revId": "f737a99910e9bf9914d8b7d89c8503eef8b93dbd",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "180dc85f_d8a8e768",
         "filename": "compose-resources/client-configuration.env",
         "patchSetId": 4
