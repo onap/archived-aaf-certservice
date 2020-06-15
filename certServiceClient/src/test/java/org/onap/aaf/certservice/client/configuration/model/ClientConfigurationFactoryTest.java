@@ -42,6 +42,8 @@ public class ClientConfigurationFactoryTest {
     private final String URL_TO_CERT_SERVICE_DEFAULT = "https://aaf-cert-service:8443/v1/certificate/";
     private final String CA_NAME_INVALID =  "caaaftest2#$";
     private final String OUTPUT_PATH_INVALID = "/opt//app/osaaf";
+    private final String OUTPUT_TYPE_JKS = "JKS";
+    private final String OUTPUT_TYPE_DEFAULT = "P12";
 
     private EnvsForClient envsForClient = mock(EnvsForClient.class);
 
@@ -52,6 +54,7 @@ public class ClientConfigurationFactoryTest {
         when(envsForClient.getOutputPath()).thenReturn(Optional.of(OUTPUT_PATH_VALID));
         when(envsForClient.getRequestTimeOut()).thenReturn(Optional.of(TIME_OUT_VALID));
         when(envsForClient.getUrlToCertService()).thenReturn(Optional.of(URL_TO_CERT_SERVICE_VALID));
+        when(envsForClient.getOutputType()).thenReturn(Optional.of(OUTPUT_TYPE_JKS));
 
         // when
         ClientConfiguration configuration = new ClientConfigurationFactory(envsForClient).create();
@@ -61,6 +64,7 @@ public class ClientConfigurationFactoryTest {
         assertThat(configuration.getRequestTimeout()).isEqualTo(Integer.valueOf(TIME_OUT_VALID));
         assertThat(configuration.getCertsOutputPath()).isEqualTo(OUTPUT_PATH_VALID);
         assertThat(configuration.getUrlToCertService()).isEqualTo(URL_TO_CERT_SERVICE_VALID);
+        assertThat(configuration.getOutputType()).isEqualTo(OUTPUT_TYPE_JKS);
     }
 
     @Test
@@ -77,6 +81,7 @@ public class ClientConfigurationFactoryTest {
         assertThat(configuration.getRequestTimeout()).isEqualTo(Integer.valueOf(TIME_OUT_VALID));
         assertThat(configuration.getCertsOutputPath()).isEqualTo(OUTPUT_PATH_VALID);
         assertThat(configuration.getUrlToCertService()).isEqualTo(URL_TO_CERT_SERVICE_DEFAULT);
+        assertThat(configuration.getOutputType()).isEqualTo(OUTPUT_TYPE_DEFAULT);
     }
 
     @Test
