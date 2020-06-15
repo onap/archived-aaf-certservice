@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8e1b2b6c_877ccdcc",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactCreationStrategy.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-06-15T11:08:45Z",
+      "side": 1,
+      "message": "Please align SW design. \nIF PKCS12 creator is returned from Factory this should be too (preferred) \n-- OR --\nPKCS12 creator should be returned directly",
+      "revId": "af105aff63406f8c04a091e6263c890bd1ecbf4d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e97b1429_761caa29",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/FilesCreator.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-06-15T11:08:45Z",
+      "side": 1,
+      "message": "You generalized FilesCreator but left exception P12 specific\nBTW: Why we have here \"conversion\" exception?",
+      "revId": "af105aff63406f8c04a091e6263c890bd1ecbf4d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
