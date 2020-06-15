@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6a09c067_ad6a40a4",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-06-15T10:48:29Z",
+      "side": 1,
+      "message": "IMO strategy should be logged in ArtifactCreationStrategy",
+      "revId": "58c7b1a6504c5343e68b23c94b36a096a17df5d9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "54d1d474_e3bdc9dc",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-06-15T10:48:29Z",
+      "side": 1,
+      "message": "Either fails or failed",
+      "revId": "58c7b1a6504c5343e68b23c94b36a096a17df5d9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
