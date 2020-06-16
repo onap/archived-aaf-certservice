@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "02d23800_53806fe2",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 9
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-16T11:30:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8f146baf_7cd737e0",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 18
+      },
+      "revId": "895376c86ee25ef9ab54f6c8c0d2c7e1c2878143",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5ad2a33d_837d3d24",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactsCreatorProvider.java",
         "patchSetId": 9
@@ -45,6 +69,30 @@
       "revId": "895376c86ee25ef9ab54f6c8c0d2c7e1c2878143",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "58d3561e_16e6e585",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactsCreatorProvider.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-16T11:30:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5ad2a33d_837d3d24",
+      "range": {
+        "startLine": 31,
+        "startChar": 8,
+        "endLine": 31,
+        "endChar": 14
+      },
+      "revId": "895376c86ee25ef9ab54f6c8c0d2c7e1c2878143",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "5ad0318e_a918b48d",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactsCreatorProvider.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-16T11:30:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "73af783a_4b9f4b99",
+      "range": {
+        "startLine": 40,
+        "startChar": 8,
+        "endLine": 40,
+        "endChar": 14
+      },
+      "revId": "895376c86ee25ef9ab54f6c8c0d2c7e1c2878143",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9ce2b1ed_63503b85",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactsCreatorProvider.java",
         "patchSetId": 9
@@ -94,6 +166,30 @@
     },
     {
       "key": {
+        "uuid": "48b0b301_7952a1ac",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactsCreatorProvider.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-16T11:30:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9ce2b1ed_63503b85",
+      "range": {
+        "startLine": 46,
+        "startChar": 8,
+        "endLine": 46,
+        "endChar": 14
+      },
+      "revId": "895376c86ee25ef9ab54f6c8c0d2c7e1c2878143",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f78410b2_132e4029",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/exception/CertOutputTypeNotSupportedException.java",
         "patchSetId": 9
@@ -114,6 +210,30 @@
       "revId": "895376c86ee25ef9ab54f6c8c0d2c7e1c2878143",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4b0c499f_3a88d8f4",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/exception/CertOutputTypeNotSupportedException.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-16T11:30:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f78410b2_132e4029",
+      "range": {
+        "startLine": 26,
+        "startChar": 61,
+        "endLine": 26,
+        "endChar": 108
+      },
+      "revId": "895376c86ee25ef9ab54f6c8c0d2c7e1c2878143",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
