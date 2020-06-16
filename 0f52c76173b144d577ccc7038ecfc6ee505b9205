@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c78ed114_4c0f336a",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactsCreator.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 5775
+      },
+      "writtenOn": "2020-06-16T12:12:37Z",
+      "side": 1,
+      "message": "ArtifactsCreator doesn\u0027t generate artifacts. It creates them.",
+      "revId": "0f52c76173b144d577ccc7038ecfc6ee505b9205",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
