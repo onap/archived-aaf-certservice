@@ -1,0 +1,348 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a31e4fa5_b5dc269b",
+        "filename": "certServiceClient/README.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T06:47:42Z",
+      "side": 1,
+      "message": "Change it with rename of exception.",
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3fbb09a8_2baf8489",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T06:47:42Z",
+      "side": 1,
+      "message": "just .create - \u003e check in ArtifactCreationStrategy",
+      "range": {
+        "startLine": 81,
+        "startChar": 21,
+        "endLine": 81,
+        "endChar": 44
+      },
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5887a17a_0ab3f5b3",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T06:47:42Z",
+      "side": 1,
+      "message": "Just .generate should be enough",
+      "range": {
+        "startLine": 82,
+        "startChar": 21,
+        "endLine": 82,
+        "endChar": 38
+      },
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "20b6256a_cc010997",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/api/ExitStatus.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T06:47:42Z",
+      "side": 1,
+      "message": "same here",
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6329fbf2_9e67b7a2",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactCreationStrategy.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T06:47:42Z",
+      "side": 1,
+      "message": "Rename it to ArtifactsCreatorProvider",
+      "range": {
+        "startLine": 27,
+        "startChar": 12,
+        "endLine": 27,
+        "endChar": 36
+      },
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "efa7ef1d_795ac552",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactCreationStrategy.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T06:47:42Z",
+      "side": 1,
+      "message": "Change this method to create and allow it not just return object ArtifactCreationStrategy. This function should return ArtifactsCreator.",
+      "range": {
+        "startLine": 50,
+        "startChar": 43,
+        "endLine": 50,
+        "endChar": 62
+      },
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c8587724_175c0a3b",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactCreationStrategy.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T06:47:42Z",
+      "side": 1,
+      "message": "I think we could be more precise here and cath IllegalArgumentException",
+      "range": {
+        "startLine": 55,
+        "startChar": 17,
+        "endLine": 55,
+        "endChar": 28
+      },
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b55e7f87_372f25c7",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactCreationStrategy.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T06:47:42Z",
+      "side": 1,
+      "message": "make this method package private and rename it to just to provideArtifactsCreator(...)",
+      "range": {
+        "startLine": 61,
+        "startChar": 4,
+        "endLine": 61,
+        "endChar": 79
+      },
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e5c18e73_118f8087",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactCreator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T06:47:42Z",
+      "side": 1,
+      "message": "rename it to ArtifactsCreator.",
+      "range": {
+        "startLine": 26,
+        "startChar": 17,
+        "endLine": 26,
+        "endChar": 32
+      },
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ff28aef2_6fb3e71d",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactCreator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T06:47:42Z",
+      "side": 1,
+      "message": "remain here just generate, no need here to be so verbosive",
+      "range": {
+        "startLine": 27,
+        "startChar": 10,
+        "endLine": 27,
+        "endChar": 27
+      },
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1d41043a_9ad88c5c",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12ArtifactCreator.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T06:47:42Z",
+      "side": 1,
+      "message": "Here and elsewhere also plural",
+      "range": {
+        "startLine": 26,
+        "startChar": 13,
+        "endLine": 26,
+        "endChar": 34
+      },
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "975790c8_b2f1c646",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12ArtifactCreatorFactory.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T06:47:42Z",
+      "side": 1,
+      "message": "This class is not needed. Please remove it.",
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "127501f4_cfc621f8",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/exception/ArtifactCreationTypeNotSupportedException.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T06:47:42Z",
+      "side": 1,
+      "message": "I think this name is more clear and closer to Envs that user will define: \n```\nCertOutputTypeNotSupportedException or even OutputTypeNotSupportedException\n```\nChange in other places respectively.",
+      "range": {
+        "startLine": 25,
+        "startChar": 13,
+        "endLine": 25,
+        "endChar": 54
+      },
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e41f38cf_18efc322",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactCreationStrategyTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T06:47:42Z",
+      "side": 1,
+      "message": "private static ...",
+      "range": {
+        "startLine": 31,
+        "startChar": 4,
+        "endLine": 33,
+        "endChar": 71
+      },
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "88252a67_99d01cb1",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12ArtifactCreatorTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T06:47:42Z",
+      "side": 1,
+      "message": "Rewrite it in capital letters",
+      "range": {
+        "startLine": 36,
+        "startChar": 1,
+        "endLine": 36,
+        "endChar": 49
+      },
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "230bbcfb_eb6328a2",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12ArtifactCreatorTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T06:47:42Z",
+      "side": 1,
+      "message": "Check this sample code and reuse it: \n```\nprivate static final int PASSWORD_LENGTH \u003d 24;\n    private static final String CERTIFICATE_ALIAS \u003d \"certificate\";\n    private static final String TRUSTED_CERTIFICATE_ALIAS \u003d \"trusted-certificate-\";\n    private static final Password SAMPLE_PASSWORD \u003d new Password(\"d9D_u8LooYaXH4G48DtN#vw0\");\n    private static final List\u003cString\u003e SAMPLE_KEYSTORE_CERT_CHAIN \u003d List.of(\"a\", \"b\");\n    private static final List\u003cString\u003e SAMPLE_TRUSTSTORE_CERT_CHAIN \u003d List.of(\"c\", \"d\");\n    private static final byte[] SAMPLE_KEYSTORE_BYTES \u003d \"this is a keystore test\".getBytes();\n    private static final byte[] SAMPLE_TRUSTSTORE_BYTES \u003d \"this is a truststore test\".getBytes();\n\n    private PKCS12FilesCreator filesCreator;\n    private RandomPasswordGenerator passwordGenerator;\n    private PemToPKCS12Converter converter;\n    private PrivateKey privateKey;\n    private PKCS12ArtifactCreator artifactCreator;\n\n    @BeforeEach\n    void setUp() {\n        filesCreator \u003d mock(PKCS12FilesCreator.class);\n        passwordGenerator \u003d mock(RandomPasswordGenerator.class);\n        converter \u003d mock(PemToPKCS12Converter.class);\n        privateKey \u003d mock(PrivateKey.class);\n        artifactCreator \u003d new PKCS12ArtifactCreator(filesCreator, passwordGenerator, converter);\n    }\n```",
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
