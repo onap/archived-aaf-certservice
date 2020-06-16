@@ -19,6 +19,74 @@
     },
     {
       "key": {
+        "uuid": "ea92e777_139c6209",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/FilesCreator.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-06-16T07:18:58Z",
+      "side": 1,
+      "message": "pls use singular class name: FileCreator",
+      "revId": "af105aff63406f8c04a091e6263c890bd1ecbf4d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5a544fb1_82007c3a",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/FilesCreator.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-06-16T07:18:58Z",
+      "side": 1,
+      "message": "I would be better to rename it to destPath",
+      "revId": "af105aff63406f8c04a091e6263c890bd1ecbf4d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "54cd0057_a1b96c12",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/FilesCreator.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-06-16T07:18:58Z",
+      "side": 1,
+      "message": "destPath",
+      "revId": "af105aff63406f8c04a091e6263c890bd1ecbf4d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3f9d1970_57585e42",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/FilesCreator.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-06-16T07:18:58Z",
+      "side": 1,
+      "message": "wrong method name. Where is location in method parameters?\nsaveDataToFile",
+      "revId": "af105aff63406f8c04a091e6263c890bd1ecbf4d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "e97b1429_761caa29",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/FilesCreator.java",
         "patchSetId": 4
@@ -30,6 +98,57 @@
       "writtenOn": "2020-06-15T11:08:45Z",
       "side": 1,
       "message": "You generalized FilesCreator but left exception P12 specific\nBTW: Why we have here \"conversion\" exception?",
+      "revId": "af105aff63406f8c04a091e6263c890bd1ecbf4d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "90810947_49eca39b",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PEMArtifactCreator.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-06-16T07:18:58Z",
+      "side": 1,
+      "message": "code duplication String.join(...)\nPls extract to separate method",
+      "revId": "af105aff63406f8c04a091e6263c890bd1ecbf4d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "39d21b36_1920c1a7",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12ArtifactCreator.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-06-16T07:18:58Z",
+      "side": 1,
+      "message": "code duplication: password.getCurrentPassword().getBytes()",
+      "revId": "af105aff63406f8c04a091e6263c890bd1ecbf4d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "654451c7_5135756e",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/FilesCreatorTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-06-16T07:18:58Z",
+      "side": 1,
+      "message": "do not use method name in test scenario name. When someone will change tested method name then it need to rename test name scenario too.",
       "revId": "af105aff63406f8c04a091e6263c890bd1ecbf4d",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
