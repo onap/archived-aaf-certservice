@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "9ed029fe_621f970d",
+        "filename": "certServiceClient/README.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T11:16:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1e1aa613_96a01446",
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3fbb09a8_2baf8489",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
         "patchSetId": 8
@@ -72,6 +90,30 @@
       "side": 1,
       "message": "Done",
       "parentUuid": "3fbb09a8_2baf8489",
+      "range": {
+        "startLine": 81,
+        "startChar": 21,
+        "endLine": 81,
+        "endChar": 44
+      },
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "21e68044_806ae337",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T11:16:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2c0f505b_1fd08c0e",
       "range": {
         "startLine": 81,
         "startChar": 21,
@@ -131,6 +173,30 @@
     },
     {
       "key": {
+        "uuid": "0b5b4d8c_758733c3",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/CertServiceClient.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T11:16:16Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "77b152d8_b0c8c6a1",
+      "range": {
+        "startLine": 82,
+        "startChar": 21,
+        "endLine": 82,
+        "endChar": 38
+      },
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "20b6256a_cc010997",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/api/ExitStatus.java",
         "patchSetId": 8
@@ -160,6 +226,24 @@
       "side": 1,
       "message": "Done",
       "parentUuid": "20b6256a_cc010997",
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4f0ab053_4c925dc7",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/api/ExitStatus.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T11:16:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "571996cd_2cc054d6",
       "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
@@ -201,6 +285,30 @@
       "side": 1,
       "message": "Done",
       "parentUuid": "6329fbf2_9e67b7a2",
+      "range": {
+        "startLine": 27,
+        "startChar": 12,
+        "endLine": 27,
+        "endChar": 36
+      },
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c97d2014_686c1edc",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactCreationStrategy.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T11:16:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "429ae11a_4dbc061a",
       "range": {
         "startLine": 27,
         "startChar": 12,
@@ -260,6 +368,30 @@
     },
     {
       "key": {
+        "uuid": "d39f1d55_8738f998",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactCreationStrategy.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T11:16:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a5f075d6_3a6f071f",
+      "range": {
+        "startLine": 50,
+        "startChar": 43,
+        "endLine": 50,
+        "endChar": 62
+      },
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c8587724_175c0a3b",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactCreationStrategy.java",
         "patchSetId": 8
@@ -307,6 +439,30 @@
     },
     {
       "key": {
+        "uuid": "63f7cdea_8be2cd7e",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactCreationStrategy.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T11:16:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a9de8fb5_504a0fe4",
+      "range": {
+        "startLine": 55,
+        "startChar": 17,
+        "endLine": 55,
+        "endChar": 28
+      },
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b55e7f87_372f25c7",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactCreationStrategy.java",
         "patchSetId": 8
@@ -342,6 +498,30 @@
       "side": 1,
       "message": "Done",
       "parentUuid": "b55e7f87_372f25c7",
+      "range": {
+        "startLine": 61,
+        "startChar": 4,
+        "endLine": 61,
+        "endChar": 79
+      },
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "87e5e6c8_16d68cc8",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactCreationStrategy.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T11:16:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fe721f32_28475e2d",
       "range": {
         "startLine": 61,
         "startChar": 4,
@@ -458,6 +638,24 @@
     },
     {
       "key": {
+        "uuid": "3cb52268_073518d7",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12ArtifactCreatorFactory.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T11:16:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "83e21097_db052493",
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "127501f4_cfc621f8",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/exception/ArtifactCreationTypeNotSupportedException.java",
         "patchSetId": 8
@@ -551,6 +749,30 @@
     },
     {
       "key": {
+        "uuid": "8696e5d4_aa74591d",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12ArtifactCreatorTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T11:16:16Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "9815c2f2_08ff86e1",
+      "range": {
+        "startLine": 36,
+        "startChar": 1,
+        "endLine": 36,
+        "endChar": 49
+      },
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "230bbcfb_eb6328a2",
         "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12ArtifactCreatorTest.java",
         "patchSetId": 8
@@ -580,6 +802,24 @@
       "side": 1,
       "message": "Done",
       "parentUuid": "230bbcfb_eb6328a2",
+      "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "346476c9_824e18b3",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12ArtifactCreatorTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-16T11:16:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2f765390_b11f2ed7",
       "revId": "d24cc20b37db4bf3865a9ab607010afe4564cc70",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
