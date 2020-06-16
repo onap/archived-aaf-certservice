@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b8f609dc_cd8bcf64",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/AbstractConfigurationFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-16T06:04:17Z",
+      "side": 1,
+      "message": "I think that, this exception should be moved from certification to configuration package",
+      "range": {
+        "startLine": 23,
+        "startChar": 39,
+        "endLine": 23,
+        "endChar": 100
+      },
+      "revId": "049d0faf19d4642779d11bfa5b23aa3e1b336186",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3ce96211_78b33410",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/configuration/factory/ClientConfigurationFactoryTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-16T06:04:17Z",
+      "side": 1,
+      "message": "Blah blah blah...",
+      "range": {
+        "startLine": 47,
+        "startChar": 48,
+        "endLine": 47,
+        "endChar": 54
+      },
+      "revId": "049d0faf19d4642779d11bfa5b23aa3e1b336186",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
