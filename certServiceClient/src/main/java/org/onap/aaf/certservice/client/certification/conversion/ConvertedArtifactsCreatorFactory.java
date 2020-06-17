@@ -16,41 +16,34 @@
  * limitations under the License.
  * ============LICENSE_END=========================================================
  */
+
 package org.onap.aaf.certservice.client.certification.conversion;
 
-import org.onap.aaf.certservice.client.certification.PrivateKeyToPemEncoder;
 import org.onap.aaf.certservice.client.certification.writer.CertFileWriter;
 
-public enum ArtifactsCreatorProvider {
-    P12("P12") {
-        @Override
-        ArtifactsCreator create(String destPath) {
-            return ConvertedArtifactsCreatorFactory.createPKCS12Converter(destPath, getName());
-        }
-    },
-    JKS("JKS") {
-        @Override
-        ArtifactsCreator create(String destPath) {
-            return ConvertedArtifactsCreatorFactory.createJKSConverter(destPath, getName());
-        }
-    },
-    PEM("PEM"){
-        @Override
-        ArtifactsCreator create(String destPath) {
-            return new PemArtifactsCreator(
-                    new CertFileWriter(destPath),
-                    new PrivateKeyToPemEncoder());
-        }
-    };
-    private final String name;
-    ArtifactsCreatorProvider(String name) {
-        this.name = name;
+public class ConvertedArtifactsCreatorFactory {
+
+    private ConvertedArtifactsCreatorFactory() { }
+
+    public static ConvertedArtifactsCreator createPKCS12Converter(String destPath, String conversionName) {
+        final String conversionTarget = "PKCS12";
+        return new ConvertedArtifactsCreator(
+                new CertFileWriter(destPath),
+                new RandomPasswordGenerator(),
+                new PemConverter(conversionTarget),
+                getExtension(conversionName));
     }
-    public static ArtifactsCreator getCreator(String outputType, String outputPath) {
-        return valueOf(outputType).create(outputPath);
+
+    public static ConvertedArtifactsCreator createJKSConverter(String destPath, String conversionName) {
+        return new ConvertedArtifactsCreator(
+                new CertFileWriter(destPath),
+                new RandomPasswordGenerator(),
+                new PemConverter(conversionName),
+                getExtension(conversionName));
     }
-    public String getName() {
-        return name;
+
+    private static String getExtension(String conversionName) {
+        return "." + conversionName.toLowerCase();
     }
-    abstract ArtifactsCreator create(String outputPath);
+
 }
