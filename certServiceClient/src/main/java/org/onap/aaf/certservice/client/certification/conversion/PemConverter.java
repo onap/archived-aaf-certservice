@@ -35,64 +35,76 @@ import org.bouncycastle.cert.X509CertificateHolder;
 import org.bouncycastle.cert.jcajce.JcaX509CertificateConverter;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.bouncycastle.openssl.PEMParser;
-import org.onap.aaf.certservice.client.certification.exception.PemToPKCS12ConverterException;
+import org.onap.aaf.certservice.client.certification.exception.PemConverterException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-class PemToPKCS12Converter {
+class PemConverter {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(PemToPKCS12Converter.class);
-    private static final String PKCS12 = "PKCS12";
+    private static final Logger LOGGER = LoggerFactory.getLogger(PemConverter.class);
     private static final String PASSWORD_ERROR_MSG = "Password should be min. 16 chars long and should contain only alphanumeric characters and special characters like Underscore (_), Dollar ($) and Pound (#)";
     private final LoadStoreParameter EMPTY_KEYSTORE_CONFIGURATION = null;
+    private final String conversionTarget;
+
+    public PemConverter(String conversionTarget) {
+        this.conversionTarget = conversionTarget;
+    }
+
+    static PemConverter createPEMToPKCS12Converter() {
+        return new PemConverter("PKCS12");
+    }
+
+    static PemConverter createPEMToJKSConverter() {
+        return new PemConverter("JKS");
+    }
 
     byte[] convertKeystore(List<String> certificateChain, Password password, String alias, PrivateKey privateKey)
-        throws PemToPKCS12ConverterException {
-        LOGGER.info("Conversion of PEM certificates to PKCS12 keystore");
+            throws PemConverterException {
+        LOGGER.info("Conversion of PEM certificates to " + conversionTarget + " keystore");
         return convert(certificateChain, password, certs -> getKeyStore(alias, password, certs, privateKey));
     }
 
     byte[] convertTruststore(List<String> trustAnchors, Password password, String alias)
-        throws PemToPKCS12ConverterException {
-        LOGGER.info("Conversion of PEM certificates to PKCS12 truststore");
+            throws PemConverterException {
+        LOGGER.info("Conversion of PEM certificates to " + conversionTarget + " truststore");
         return convert(trustAnchors, password, certs -> getTrustStore(alias, certs));
     }
 
     private byte[] convert(List<String> certificates, Password password, StoreEntryOperation operation)
-        throws PemToPKCS12ConverterException {
+            throws PemConverterException {
         checkPassword(password);
         final Certificate[] X509Certificates = convertToCertificateArray(certificates);
         return getKeyStoreBytes(password, operation, X509Certificates);
     }
 
-    private void checkPassword(Password password) throws PemToPKCS12ConverterException {
+    private void checkPassword(Password password) throws PemConverterException {
         if (!password.isCorrectPasswordPattern()) {
             LOGGER.error(PASSWORD_ERROR_MSG);
-            throw new PemToPKCS12ConverterException(PASSWORD_ERROR_MSG);
+            throw new PemConverterException(PASSWORD_ERROR_MSG);
         }
     }
 
     private byte[] getKeyStoreBytes(Password password, StoreEntryOperation op, Certificate[] x509Certificates)
-        throws PemToPKCS12ConverterException {
+            throws PemConverterException {
         try (ByteArrayOutputStream bos = new ByteArrayOutputStream()) {
             KeyStore ks = op.getStore(x509Certificates);
             ks.store(bos, password.toCharArray());
             return bos.toByteArray();
         } catch (IOException | CertificateException | NoSuchAlgorithmException | KeyStoreException e) {
             LOGGER.error("Pem to PKCS12 converter failed, exception message: {}", e.getMessage());
-            throw new PemToPKCS12ConverterException(e);
+            throw new PemConverterException(e);
         }
     }
 
     private KeyStore getKeyStore(String alias, Password password, Certificate[] certificates, PrivateKey privateKey)
-        throws KeyStoreException, CertificateException, NoSuchAlgorithmException, IOException {
+            throws KeyStoreException, CertificateException, NoSuchAlgorithmException, IOException {
         KeyStore ks = getKeyStoreInstance();
         ks.setKeyEntry(alias, privateKey, password.toCharArray(), certificates);
         return ks;
     }
 
     private KeyStore getTrustStore(String alias, Certificate[] certificates)
-        throws KeyStoreException, CertificateException, NoSuchAlgorithmException, IOException {
+            throws KeyStoreException, CertificateException, NoSuchAlgorithmException, IOException {
         KeyStore ks = getKeyStoreInstance();
         long i = 1L;
         for (Certificate c : certificates) {
@@ -102,14 +114,14 @@ class PemToPKCS12Converter {
     }
 
     private KeyStore getKeyStoreInstance()
-        throws KeyStoreException, CertificateException, NoSuchAlgorithmException, IOException {
-        KeyStore ks = KeyStore.getInstance(PKCS12);
+            throws KeyStoreException, CertificateException, NoSuchAlgorithmException, IOException {
+        KeyStore ks = KeyStore.getInstance(conversionTarget);
         ks.load(EMPTY_KEYSTORE_CONFIGURATION);
         return ks;
     }
 
     private Certificate[] convertToCertificateArray(List<String> certificates)
-        throws PemToPKCS12ConverterException {
+            throws PemConverterException {
         Certificate[] parsedCertificates = new Certificate[certificates.size()];
         for (String certificate : certificates) {
             parsedCertificates[certificates.indexOf(certificate)] = parseCertificate(certificate);
@@ -117,17 +129,17 @@ class PemToPKCS12Converter {
         return parsedCertificates;
     }
 
-    private Certificate parseCertificate(String certificate) throws PemToPKCS12ConverterException {
+    private Certificate parseCertificate(String certificate) throws PemConverterException {
         try (PEMParser pem = new PEMParser(new StringReader(certificate))) {
             X509CertificateHolder certHolder = Optional.ofNullable((X509CertificateHolder) pem.readObject())
-                .orElseThrow(
-                    () -> new PemToPKCS12ConverterException("The certificate couldn't be parsed correctly. " + certificate));
+                    .orElseThrow(
+                            () -> new PemConverterException("The certificate couldn't be parsed correctly. " + certificate));
             return new JcaX509CertificateConverter()
-                .setProvider(new BouncyCastleProvider())
-                .getCertificate(certHolder);
+                    .setProvider(new BouncyCastleProvider())
+                    .getCertificate(certHolder);
         } catch (IOException | CertificateException e) {
             LOGGER.error("Certificates conversion failed, exception message: {}", e.getMessage());
-            throw new PemToPKCS12ConverterException(e);
+            throw new PemConverterException(e);
         }
     }
 }
