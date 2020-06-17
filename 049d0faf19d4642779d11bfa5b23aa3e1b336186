@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3087911a_e04b48c5",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/OutputTypes.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-06-17T11:15:16Z",
+      "side": 1,
+      "message": "This enum is only for validation purpose which should be performed at the latest stage to throw an validation exception (OUTPUT_TYPE invalid) ASAP.",
+      "parentUuid": "01868968_f55c6722",
+      "revId": "049d0faf19d4642779d11bfa5b23aa3e1b336186",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "b8f609dc_cd8bcf64",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/AbstractConfigurationFactory.java",
         "patchSetId": 4
@@ -30,6 +48,30 @@
       "writtenOn": "2020-06-16T06:04:17Z",
       "side": 1,
       "message": "I think that, this exception should be moved from certification to configuration package",
+      "range": {
+        "startLine": 23,
+        "startChar": 39,
+        "endLine": 23,
+        "endChar": 100
+      },
+      "revId": "049d0faf19d4642779d11bfa5b23aa3e1b336186",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3b6fe932_a96f5664",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/AbstractConfigurationFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-06-17T11:15:16Z",
+      "side": 1,
+      "message": "N/A",
+      "parentUuid": "b8f609dc_cd8bcf64",
       "range": {
         "startLine": 23,
         "startChar": 39,
@@ -59,6 +101,24 @@
     },
     {
       "key": {
+        "uuid": "f45b63ac_772abb5a",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/AbstractConfigurationFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-06-17T11:15:16Z",
+      "side": 1,
+      "message": "I\u0027ve tested proposed solution and it didn\u0027t work. \nThere is no contains() method on pipeline.",
+      "parentUuid": "4284442a_645c338a",
+      "revId": "049d0faf19d4642779d11bfa5b23aa3e1b336186",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "c0bdd1ef_89a79dd3",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/ClientConfigurationFactory.java",
         "patchSetId": 4
@@ -70,6 +130,24 @@
       "writtenOn": "2020-06-16T12:13:03Z",
       "side": 1,
       "message": "output not outPut :)",
+      "revId": "049d0faf19d4642779d11bfa5b23aa3e1b336186",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "102e9ea4_21c2bb18",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/ClientConfigurationFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 2807
+      },
+      "writtenOn": "2020-06-17T11:15:16Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "c0bdd1ef_89a79dd3",
       "revId": "049d0faf19d4642779d11bfa5b23aa3e1b336186",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
