@@ -27,6 +27,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class ArtifactsCreatorProviderTest {
 
     private static final String P12 = "P12";
+    private static final String JKS = "JKS";
     private static final String PEM = "PEM";
     private static final String TEST_PATH = "testPath";
 
@@ -37,7 +38,17 @@ class ArtifactsCreatorProviderTest {
         ArtifactsCreator artifactsCreator =
                 ArtifactsCreatorProvider.getCreator(P12, TEST_PATH);
         // then
-        assertThat(artifactsCreator).isInstanceOf(PKCS12ArtifactsCreator.class);
+        assertThat(artifactsCreator).isInstanceOf(ConvertedArtifactsCreator.class);
+    }
+
+    @Test
+    void artifactsProviderShouldReturnJKSCreator(){
+
+        // when
+        ArtifactsCreator artifactsCreator =
+                ArtifactsCreatorProvider.getCreator(JKS, TEST_PATH);
+        // then
+        assertThat(artifactsCreator).isInstanceOf(ConvertedArtifactsCreator.class);
     }
 
     @Test
@@ -48,5 +59,15 @@ class ArtifactsCreatorProviderTest {
             ArtifactsCreatorProvider.getCreator(PEM, TEST_PATH);
         // then
         assertThat(artifactsCreator).isInstanceOf(PemArtifactsCreator.class);
+    }
+
+    @Test
+    void getExtensionShouldProvideExtensionBasedOnConversionType(){
+
+        //when
+        String jksFileExtension = ArtifactsCreatorProvider.getExtension(JKS);
+        //then
+        final String expectedJKSExtension = ".jks";
+        assertThat(jksFileExtension).isEqualTo(expectedJKSExtension);
     }
 }
