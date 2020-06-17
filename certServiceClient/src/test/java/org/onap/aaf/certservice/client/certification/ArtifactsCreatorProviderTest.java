@@ -17,9 +17,11 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.client.certification.conversion;
+package org.onap.aaf.certservice.client.certification;
 
 import org.junit.jupiter.api.Test;
+import org.onap.aaf.certservice.client.certification.conversion.ArtifactsCreator;
+import org.onap.aaf.certservice.client.certification.conversion.PKCS12ArtifactsCreator;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -31,10 +33,8 @@ class ArtifactsCreatorProviderTest {
 
     @Test
     void getStrategyOfStringShouldReturnCorrectCreator(){
-
         // when
-        ArtifactsCreator artifactsCreator =
-                ArtifactsCreatorProvider.getCreator(STRATEGY_P12, TEST_PATH);
+        ArtifactsCreator artifactsCreator = ArtifactsCreatorProvider.get(STRATEGY_P12, TEST_PATH);
         // then
         assertThat(artifactsCreator).isInstanceOf(PKCS12ArtifactsCreator.class);
     }
