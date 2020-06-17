@@ -20,6 +20,8 @@
 package org.onap.aaf.certservice.client.certification.conversion;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -27,17 +29,19 @@ import static org.assertj.core.api.Assertions.assertThat;
 class ArtifactsCreatorProviderTest {
 
     private static final String P12 = "P12";
+    private static final String JKS = "JKS";
     private static final String PEM = "PEM";
     private static final String TEST_PATH = "testPath";
 
-    @Test
-    void artifactsProviderShouldReturnP12Creator(){
+    @ParameterizedTest
+    @ValueSource(strings = {JKS, P12})
+    void artifactsProviderShouldReturnConvertedCreator(String outputType){
 
         // when
         ArtifactsCreator artifactsCreator =
-                ArtifactsCreatorProvider.getCreator(P12, TEST_PATH);
+                ArtifactsCreatorProvider.getCreator(outputType, TEST_PATH);
         // then
-        assertThat(artifactsCreator).isInstanceOf(PKCS12ArtifactsCreator.class);
+        assertThat(artifactsCreator).isInstanceOf(ConvertedArtifactsCreator.class);
     }
 
     @Test
@@ -49,4 +53,5 @@ class ArtifactsCreatorProviderTest {
         // then
         assertThat(artifactsCreator).isInstanceOf(PemArtifactsCreator.class);
     }
+
 }
