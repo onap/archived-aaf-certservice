@@ -43,9 +43,9 @@ import java.util.List;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.onap.aaf.certservice.client.certification.EncryptionAlgorithmConstants;
-import org.onap.aaf.certservice.client.certification.exception.PemToPKCS12ConverterException;
+import org.onap.aaf.certservice.client.certification.exception.PemConverterException;
 
-class PemToPKCS12ConverterTest {
+class PemConverterTest {
 
     private static final String RESOURCES_PATH = "src/test/resources";
     private static final String CERT1_PATH = RESOURCES_PATH + "/cert1.pem";
@@ -68,12 +68,12 @@ class PemToPKCS12ConverterTest {
 
     @Test
     void convertKeystoreShouldReturnKeystoreWithGivenPrivateKeyAndCertificateChain()
-        throws IOException, CertificateException, NoSuchAlgorithmException, KeyStoreException, UnrecoverableKeyException, PemToPKCS12ConverterException {
+        throws IOException, CertificateException, NoSuchAlgorithmException, KeyStoreException, UnrecoverableKeyException, PemConverterException {
         // given
         final String alias = "keystore-entry";
         final Password password = new Password("d9D_u8LooYaXH4G48DtN#vw0");
         final List<String> certificateChain = getCertificates();
-        final PemToPKCS12Converter converter = new PemToPKCS12Converter();
+        final PemConverter converter = PemConverter.createPEMToPKCS12Converter();
         final KeyStore expectedKeyStore = KeyStore.getInstance(PKCS12);
         expectedKeyStore.load(new ByteArrayInputStream(Files.readAllBytes(Path.of(EXPECTED_KEYSTORE_PATH))),
             password.toCharArray());
@@ -94,16 +94,16 @@ class PemToPKCS12ConverterTest {
     }
 
     @Test
-    void convertKeystoreShouldThrowPemToPKCS12ConverterExceptionBecauseOfWrongPassword() throws IOException {
+    void convertKeystoreShouldThrowPemConverterExceptionBecauseOfWrongPassword() throws IOException {
         // given
         final String alias = "keystore-entry";
         final Password password = new Password("apple");
         final List<String> certificateChain = getCertificates();
-        final PemToPKCS12Converter converter = new PemToPKCS12Converter();
+        final PemConverter converter = PemConverter.createPEMToPKCS12Converter();
         privateKeyMockSetup();
 
         // when
-        Exception exception = assertThrows(PemToPKCS12ConverterException.class, () ->
+        Exception exception = assertThrows(PemConverterException.class, () ->
             converter.convertKeystore(certificateChain, password, alias, privateKey)
         );
 
@@ -113,10 +113,10 @@ class PemToPKCS12ConverterTest {
 
     @Test
     void convertTruststoreShouldReturnTruststoreWithGivenCertificatesArray()
-        throws IOException, KeyStoreException, CertificateException, NoSuchAlgorithmException, PemToPKCS12ConverterException {
+        throws IOException, KeyStoreException, CertificateException, NoSuchAlgorithmException, PemConverterException {
 
         // given
-        final PemToPKCS12Converter converter = new PemToPKCS12Converter();
+        final PemConverter converter = PemConverter.createPEMToPKCS12Converter();
         final String alias = "trusted-certificate-";
         final String alias1 = alias + 1;
         final String alias2 = alias + 2;
@@ -140,44 +140,44 @@ class PemToPKCS12ConverterTest {
     }
 
     @Test
-    void convertTruststoreShouldThrowPemToPKCS12ConverterExceptionBecauseOfWrongPassword() throws IOException {
+    void convertTruststoreShouldThrowPemConverterExceptionBecauseOfWrongPassword() throws IOException {
         // given
         final String alias = "trusted-certificate-";
         final Password password = new Password("nokia");
         final List<String> trustedCertificates = getCertificates();
-        final PemToPKCS12Converter converter = new PemToPKCS12Converter();
+        final PemConverter converter = PemConverter.createPEMToPKCS12Converter();
 
         // when then
         assertThatThrownBy(() ->
             converter.convertTruststore(trustedCertificates, password, alias))
-            .isInstanceOf(PemToPKCS12ConverterException.class).hasMessage(PASSWORD_ERROR_MSG);
+            .isInstanceOf(PemConverterException.class).hasMessage(PASSWORD_ERROR_MSG);
     }
 
     @Test
-    void convertKeystoreShouldThrowPemToPKCS12ConverterExceptionBecauseOfWrongPrivateKey() throws IOException {
+    void convertKeystoreShouldThrowPemConverterExceptionBecauseOfWrongPrivateKey() throws IOException {
         // given
         final String alias = "keystore-entry";
         final Password password = new Password("d9D_u8LooYaXH4G48DtN#vw0");
         final List<String> certificateChain = getCertificates();
-        final PemToPKCS12Converter converter = new PemToPKCS12Converter();
+        final PemConverter converter = PemConverter.createPEMToPKCS12Converter();
 
         // when then
         assertThatThrownBy(() -> converter.convertKeystore(certificateChain, password, alias, privateKey))
-            .isInstanceOf(PemToPKCS12ConverterException.class).hasMessage(KEY_ERROR_MSG);
+            .isInstanceOf(PemConverterException.class).hasMessage(KEY_ERROR_MSG);
     }
 
     @Test
-    void convertKeystoreShouldThrowPemToPKCS12ConverterExceptionBecauseOfWrongCertificates() {
+    void convertKeystoreShouldThrowPemConverterExceptionBecauseOfWrongCertificates() {
         // given
         final String alias = "keystore-entry";
         final Password password = new Password("d9D_u8LooYaXH4G48DtN#vw0");
         final List<String> certificateChain = List.of("certificate1", "certificate2");
-        final PemToPKCS12Converter converter = new PemToPKCS12Converter();
+        final PemConverter converter = PemConverter.createPEMToPKCS12Converter();
         privateKeyMockSetup();
 
         // when then
         assertThatThrownBy(() -> converter.convertKeystore(certificateChain, password, alias, privateKey))
-            .isInstanceOf(PemToPKCS12ConverterException.class).hasMessage(CERTIFICATES_ERROR_MSG);
+            .isInstanceOf(PemConverterException.class).hasMessage(CERTIFICATES_ERROR_MSG);
     }
 
     private void privateKeyMockSetup() {
