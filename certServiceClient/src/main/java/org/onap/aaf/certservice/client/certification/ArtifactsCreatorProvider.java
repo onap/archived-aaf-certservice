@@ -16,9 +16,11 @@
  * limitations under the License.
  * ============LICENSE_END=========================================================
  */
-package org.onap.aaf.certservice.client.certification.conversion;
+package org.onap.aaf.certservice.client.certification;
 
+import org.onap.aaf.certservice.client.certification.conversion.ArtifactsCreator;
 import org.onap.aaf.certservice.client.certification.exception.CertOutputTypeNotSupportedException;
+import org.onap.aaf.certservice.client.certification.conversion.PKCS12ArtifactsCreatorFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -29,10 +31,7 @@ public enum ArtifactsCreatorProvider {
     P12 {
         @Override
         ArtifactsCreator create(String outputPath) {
-            return new PKCS12ArtifactsCreator(
-                    new PKCS12FilesCreator(outputPath),
-                    new RandomPasswordGenerator(),
-                    new PemToPKCS12Converter());
+            return PKCS12ArtifactsCreatorFactory.create(outputPath);
         }
     },
     JKS {
@@ -50,7 +49,7 @@ public enum ArtifactsCreatorProvider {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ArtifactsCreatorProvider.class);
 
-    public static ArtifactsCreator getCreator(String outputType, String outputPath)
+    public static ArtifactsCreator get(String outputType, String outputPath)
             throws CertOutputTypeNotSupportedException {
         try {
             LOGGER.info("Artifact creation type selected: {}", outputType);

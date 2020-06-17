@@ -17,9 +17,11 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.aaf.certservice.client.certification.conversion;
+package org.onap.aaf.certservice.client.certification;
 
 import org.junit.jupiter.api.Test;
+import org.onap.aaf.certservice.client.certification.conversion.ArtifactsCreator;
+import org.onap.aaf.certservice.client.certification.conversion.PKCS12ArtifactsCreator;
 import org.onap.aaf.certservice.client.certification.exception.CertOutputTypeNotSupportedException;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -36,8 +38,7 @@ class ArtifactsCreatorProviderTest {
     void getStrategyOfStringShouldReturnCorrectCreator() throws Exception {
 
         // when
-        ArtifactsCreator artifactsCreator =
-                ArtifactsCreatorProvider.getCreator(STRATEGY_P12, TEST_PATH);
+        ArtifactsCreator artifactsCreator = ArtifactsCreatorProvider.get(STRATEGY_P12, TEST_PATH);
         // then
         assertThat(artifactsCreator).isInstanceOf(PKCS12ArtifactsCreator.class);
     }
@@ -46,7 +47,7 @@ class ArtifactsCreatorProviderTest {
     void notSupportedStrategyShouldThrowException() {
         // when// then
         assertThatExceptionOfType(CertOutputTypeNotSupportedException.class)
-                .isThrownBy(() -> ArtifactsCreatorProvider.getCreator(NOT_SUPPORTED_STRATEGY, TEST_PATH));
+                .isThrownBy(() -> ArtifactsCreatorProvider.get(NOT_SUPPORTED_STRATEGY, TEST_PATH));
 
     }
 }
