@@ -16,6 +16,24 @@
       "revId": "1096694e0c7406063e6985080016e03e8eaf6e50",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "da4dceab_29ff75af",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12ArtifactCreatorFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 3699
+      },
+      "writtenOn": "2020-06-17T10:08:12Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "d642688e_c85614c8",
+      "revId": "1096694e0c7406063e6985080016e03e8eaf6e50",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
