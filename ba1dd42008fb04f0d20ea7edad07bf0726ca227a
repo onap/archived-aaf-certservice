@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "37d00b2e_7aefd5a5",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-17T16:04:06Z",
+      "side": 1,
+      "message": "To other files:\nSince not needed please remove OutputTypes class.\nIn ClientConfigurationFactory move declaration Optional\u003cString\u003e outputType \u003d envsForClient.getOutputType();\none line before its usage.",
+      "revId": "ba1dd42008fb04f0d20ea7edad07bf0726ca227a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
