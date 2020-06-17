@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b9ced404_7eede96b",
+        "filename": "certServiceClient/version.properties",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-17T09:19:38Z",
+      "side": 1,
+      "message": "I think that patch should be 0 in that case. \nhttps://semver.org/ point 7.",
+      "range": {
+        "startLine": 3,
+        "startChar": 6,
+        "endLine": 3,
+        "endChar": 7
+      },
+      "revId": "547cd0cca00fc2d598413c51805b9bde0699292c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
