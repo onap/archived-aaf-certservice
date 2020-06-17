@@ -16,17 +16,17 @@
  * limitations under the License.
  * ============LICENSE_END=========================================================
  */
-package org.onap.aaf.certservice.client.certification.conversion;
+package org.onap.aaf.certservice.client.certification;
+
+import org.onap.aaf.certservice.client.certification.conversion.ArtifactsCreator;
+import org.onap.aaf.certservice.client.certification.conversion.PKCS12ArtifactsCreatorFactory;
 
 public enum ArtifactsCreatorProvider {
 
     P12 {
         @Override
         ArtifactsCreator create(String outputPath) {
-            return new PKCS12ArtifactsCreator(
-                    new PKCS12FilesCreator(outputPath),
-                    new RandomPasswordGenerator(),
-                    new PemToPKCS12Converter());
+            return PKCS12ArtifactsCreatorFactory.create(outputPath);
         }
     },
     JKS {
@@ -42,7 +42,7 @@ public enum ArtifactsCreatorProvider {
         }
     };
 
-    public static ArtifactsCreator getCreator(String outputType, String outputPath) {
+    public static ArtifactsCreator get(String outputType, String outputPath) {
             return valueOf(outputType).create(outputPath);
     }
 
