@@ -37,7 +37,7 @@ class ArtifactsCreatorProviderTest {
         ArtifactsCreator artifactsCreator =
                 ArtifactsCreatorProvider.getCreator(P12, TEST_PATH);
         // then
-        assertThat(artifactsCreator).isInstanceOf(PKCS12ArtifactsCreator.class);
+        assertThat(artifactsCreator).isInstanceOf(ConvertedArtifactsCreator.class);
     }
 
     @Test
