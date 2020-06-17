@@ -35,6 +35,7 @@ Sample Environment file:
 REQUEST_TIMEOUT=1000
 OUTPUT_PATH=/var/log
 CA_NAME=RA
+OUTPUT_TYPE=P12
 #Csr config envs
 COMMON_NAME=onap.org
 ORGANIZATION=Linux-Foundation
