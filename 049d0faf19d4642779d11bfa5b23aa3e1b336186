@@ -119,6 +119,29 @@
     },
     {
       "key": {
+        "uuid": "b68f1044_5708000c",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/AbstractConfigurationFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-17T12:31:10Z",
+      "side": 1,
+      "message": "Consider to use ArtifactsCreatorProvider\nreturn Arrays.stream(ArtifactsCreatorProvider.values()).anyMatch(outputType)\n\nOutputTypes will be unnecessary.",
+      "range": {
+        "startLine": 61,
+        "startChar": 15,
+        "endLine": 61,
+        "endChar": 68
+      },
+      "revId": "049d0faf19d4642779d11bfa5b23aa3e1b336186",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "c0bdd1ef_89a79dd3",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/ClientConfigurationFactory.java",
         "patchSetId": 4
