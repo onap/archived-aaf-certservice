@@ -26,16 +26,19 @@ public enum ArtifactsCreatorProvider {
     P12 {
         @Override
         ArtifactsCreator create(String destPath) {
-            return new PKCS12ArtifactsCreator(
+            return ConvertedArtifactsCreator.P12Creator(
                     new CertFileWriter(destPath),
                     new RandomPasswordGenerator(),
-                    new PemToPKCS12Converter());
+                    PemConverter.createPEMToPKCS12Converter());
         }
     },
     JKS {
         @Override
         ArtifactsCreator create(String destPath) {
-            return null;
+            return ConvertedArtifactsCreator.JSKCreator(
+                    new CertFileWriter(destPath),
+                    new RandomPasswordGenerator(),
+                    PemConverter.createPEMToJKSConverter());
         }
     },
     PEM {
