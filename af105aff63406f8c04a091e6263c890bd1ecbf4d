@@ -19,6 +19,47 @@
     },
     {
       "key": {
+        "uuid": "9d5a813b_838346e6",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactCreationStrategy.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-17T09:19:32Z",
+      "side": 1,
+      "message": "agree",
+      "parentUuid": "8e1b2b6c_877ccdcc",
+      "revId": "af105aff63406f8c04a091e6263c890bd1ecbf4d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "24f123d4_d62c4815",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/FilesCreator.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-17T09:19:32Z",
+      "side": 1,
+      "message": "I think this package is becoming too big. Distinguish parts that do similar things and separate them.\ne.g. FileCreator potentially could be in other package.",
+      "range": {
+        "startLine": 20,
+        "startChar": 8,
+        "endLine": 20,
+        "endChar": 64
+      },
+      "revId": "af105aff63406f8c04a091e6263c890bd1ecbf4d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "ea92e777_139c6209",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/FilesCreator.java",
         "patchSetId": 4
@@ -30,6 +71,24 @@
       "writtenOn": "2020-06-16T07:18:58Z",
       "side": 1,
       "message": "pls use singular class name: FileCreator",
+      "revId": "af105aff63406f8c04a091e6263c890bd1ecbf4d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "35f04271_c5627264",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/FilesCreator.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-17T09:19:32Z",
+      "side": 1,
+      "message": "I would even rename:\n```\nCertFileWriter\n```\nand than method e.g. save or saveData",
+      "parentUuid": "ea92e777_139c6209",
       "revId": "af105aff63406f8c04a091e6263c890bd1ecbf4d",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
@@ -98,6 +157,24 @@
       "writtenOn": "2020-06-15T11:08:45Z",
       "side": 1,
       "message": "You generalized FilesCreator but left exception P12 specific\nBTW: Why we have here \"conversion\" exception?",
+      "revId": "af105aff63406f8c04a091e6263c890bd1ecbf4d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4531089b_20c5a460",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/FilesCreator.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-17T09:19:32Z",
+      "side": 1,
+      "message": "Agree, I think creating separate exception here is good idea.\ne.g. CertFileWriterException",
+      "parentUuid": "e97b1429_761caa29",
       "revId": "af105aff63406f8c04a091e6263c890bd1ecbf4d",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
