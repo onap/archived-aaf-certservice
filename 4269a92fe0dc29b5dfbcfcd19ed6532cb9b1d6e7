@@ -48,6 +48,29 @@
     },
     {
       "key": {
+        "uuid": "5c8f2272_bdfbff25",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12ArtifactsCreator.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-17T11:21:19Z",
+      "side": 1,
+      "message": "writer",
+      "range": {
+        "startLine": 42,
+        "startChar": 33,
+        "endLine": 42,
+        "endChar": 40
+      },
+      "revId": "4269a92fe0dc29b5dfbcfcd19ed6532cb9b1d6e7",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "092f16f5_996b8b89",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemArtifactsCreator.java",
         "patchSetId": 6
@@ -64,6 +87,121 @@
         "startChar": 33,
         "endLine": 37,
         "endChar": 40
+      },
+      "revId": "4269a92fe0dc29b5dfbcfcd19ed6532cb9b1d6e7",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c8028811_579b5e01",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemArtifactsCreator.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-17T11:21:19Z",
+      "side": 1,
+      "message": "Mark concrete exceptions: PkEncodingException, CertFileWriterException",
+      "range": {
+        "startLine": 47,
+        "startChar": 15,
+        "endLine": 47,
+        "endChar": 32
+      },
+      "revId": "4269a92fe0dc29b5dfbcfcd19ed6532cb9b1d6e7",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ea2cd8e1_2e51ecc2",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/writer/CertFileWriter.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-17T11:21:19Z",
+      "side": 1,
+      "message": "outputStream",
+      "range": {
+        "startLine": 40,
+        "startChar": 30,
+        "endLine": 40,
+        "endChar": 33
+      },
+      "revId": "4269a92fe0dc29b5dfbcfcd19ed6532cb9b1d6e7",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "68d22544_24a096f9",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/PKCS12ArtifactsCreatorTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-17T11:21:19Z",
+      "side": 1,
+      "message": "This is breaking convention of methods naming.\nartifactsCreationShouldCauseCallOfConvertAndDataSaveMethods",
+      "range": {
+        "startLine": 65,
+        "startChar": 9,
+        "endLine": 65,
+        "endChar": 72
+      },
+      "revId": "4269a92fe0dc29b5dfbcfcd19ed6532cb9b1d6e7",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "624bc365_03295734",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/PemArtifactsCreatorTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-17T11:21:19Z",
+      "side": 1,
+      "message": "move it above as a private static final -\u003e names in capital letters",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 44
+      },
+      "revId": "4269a92fe0dc29b5dfbcfcd19ed6532cb9b1d6e7",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "49456efc_3bf5e011",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/writer/CertFileWriterTest.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-17T11:21:19Z",
+      "side": 1,
+      "message": "Use Assertj assertions consequently",
+      "range": {
+        "startLine": 68,
+        "startChar": 8,
+        "endLine": 69,
+        "endChar": 91
       },
       "revId": "4269a92fe0dc29b5dfbcfcd19ed6532cb9b1d6e7",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
