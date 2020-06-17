@@ -18,42 +18,15 @@
  */
 package org.onap.aaf.certservice.client.certification.conversion;
 
-public enum ArtifactsCreatorProvider {
-    P12("P12") {
-        @Override
-        ArtifactsCreator create(String outputPath) {
-            return new PKCS12ArtifactsCreator(
-                    new PKCS12FilesCreator(outputPath),
-                    new RandomPasswordGenerator(),
-                    new PemToPKCS12Converter());
-        }
-    },
-    JKS("JKS") {
-        @Override
-        ArtifactsCreator create(String outputPath) {
-            return null;
-        }
-    },
-    PEM("PEM") {
-        @Override
-        ArtifactsCreator create(String outputPath) {
-            return null;
-        }
-    };
+public class PKCS12ArtifactsCreatorFactory {
 
-    private final String name;
+    private PKCS12ArtifactsCreatorFactory() { }
 
-    ArtifactsCreatorProvider(String name) {
-        this.name = name;
+    public static PKCS12ArtifactsCreator create(String outputPath) {
+        return new PKCS12ArtifactsCreator(
+                new PKCS12FilesCreator(outputPath),
+                new RandomPasswordGenerator(),
+                new PemToPKCS12Converter()
+        );
     }
-
-    public static ArtifactsCreator getCreator(String outputType, String outputPath) {
-        return valueOf(outputType).create(outputPath);
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    abstract ArtifactsCreator create(String outputPath);
 }
