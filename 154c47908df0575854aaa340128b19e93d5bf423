@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "68746942_4d7221ae",
+        "filename": "docs/sections/logging.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-06-18T07:40:43Z",
+      "side": 1,
+      "message": "I think this exception is going to be renamed to Fail in PEM conversion or something similar.",
+      "range": {
+        "startLine": 117,
+        "startChar": 10,
+        "endLine": 117,
+        "endChar": 36
+      },
+      "revId": "154c47908df0575854aaa340128b19e93d5bf423",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
