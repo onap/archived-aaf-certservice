@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "0199b1cf_27bcdf68",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactsCreatorProvider.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 6592
+      },
+      "writtenOn": "2020-06-18T11:30:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1e865862_8855c819",
+      "range": {
+        "startLine": 37,
+        "startChar": 8,
+        "endLine": 37,
+        "endChar": 50
+      },
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "6784e70b_1381bb60",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreator.java",
         "patchSetId": 5
@@ -36,6 +60,30 @@
       "writtenOn": "2020-06-18T07:01:09Z",
       "side": 1,
       "message": "I think it should has more meaningful name.",
+      "range": {
+        "startLine": 30,
+        "startChar": 13,
+        "endLine": 30,
+        "endChar": 22
+      },
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7a8e1425_640488c8",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreator.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 6592
+      },
+      "writtenOn": "2020-06-18T11:30:54Z",
+      "side": 1,
+      "message": "I remained this name because I couldn\u0027t find common name for JKS and P12 artifacts",
+      "parentUuid": "6784e70b_1381bb60",
       "range": {
         "startLine": 30,
         "startChar": 13,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "9390f229_7b301d9d",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreator.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 6592
+      },
+      "writtenOn": "2020-06-18T11:30:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6c438a42_952ecdf2",
+      "range": {
+        "startLine": 42,
+        "startChar": 33,
+        "endLine": 42,
+        "endChar": 40
+      },
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "7eefeeec_9a5d68f5",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreator.java",
         "patchSetId": 5
@@ -82,6 +154,30 @@
       "writtenOn": "2020-06-18T07:01:09Z",
       "side": 1,
       "message": "I think this method should be exported to factory, or use builder pattern.",
+      "range": {
+        "startLine": 53,
+        "startChar": 3,
+        "endLine": 53,
+        "endChar": 36
+      },
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "814b2f15_13a0b7ca",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreator.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 6592
+      },
+      "writtenOn": "2020-06-18T11:30:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7eefeeec_9a5d68f5",
       "range": {
         "startLine": 53,
         "startChar": 3,
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "159afb89_cea4898d",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreator.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 6592
+      },
+      "writtenOn": "2020-06-18T11:30:54Z",
+      "side": 1,
+      "message": "Design rebuilded. Function to get extension has been added",
+      "parentUuid": "50e51ebe_8f22bd9c",
+      "range": {
+        "startLine": 55,
+        "startChar": 77,
+        "endLine": 55,
+        "endChar": 81
+      },
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "54b5dfbf_146e2d3d",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreator.java",
         "patchSetId": 5
@@ -128,6 +248,30 @@
       "writtenOn": "2020-06-18T07:01:09Z",
       "side": 1,
       "message": "As above",
+      "range": {
+        "startLine": 58,
+        "startChar": 4,
+        "endLine": 58,
+        "endChar": 36
+      },
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b6e80c95_864daff5",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreator.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 6592
+      },
+      "writtenOn": "2020-06-18T11:30:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "54b5dfbf_146e2d3d",
       "range": {
         "startLine": 58,
         "startChar": 4,
@@ -163,6 +307,30 @@
     },
     {
       "key": {
+        "uuid": "c86c75b6_5c6b40c0",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreator.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 6592
+      },
+      "writtenOn": "2020-06-18T11:30:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "39e20fca_3de7addc",
+      "range": {
+        "startLine": 60,
+        "startChar": 77,
+        "endLine": 60,
+        "endChar": 81
+      },
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "fb59323d_4026beb0",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemConverter.java",
         "patchSetId": 5
@@ -180,6 +348,24 @@
     },
     {
       "key": {
+        "uuid": "c036997a_d913bf14",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemConverter.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 6592
+      },
+      "writtenOn": "2020-06-18T11:30:54Z",
+      "side": 1,
+      "message": "Done. ConvertedArtifactsCreatorFactory class with method getExtension has been created",
+      "parentUuid": "fb59323d_4026beb0",
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "a3d077f9_c107ea6f",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemConverter.java",
         "patchSetId": 5
@@ -191,6 +377,30 @@
       "writtenOn": "2020-06-18T09:19:29Z",
       "side": 1,
       "message": "delete it",
+      "range": {
+        "startLine": 53,
+        "startChar": 2,
+        "endLine": 59,
+        "endChar": 5
+      },
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b73e6c60_8c971a4d",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemConverter.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 6592
+      },
+      "writtenOn": "2020-06-18T11:30:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a3d077f9_c107ea6f",
       "range": {
         "startLine": 53,
         "startChar": 2,
@@ -226,6 +436,30 @@
     },
     {
       "key": {
+        "uuid": "cbecb139_ebfa708e",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/exception/PemConverterException.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 6592
+      },
+      "writtenOn": "2020-06-18T11:30:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2a6a39ab_1151fa20",
+      "range": {
+        "startLine": 25,
+        "startChar": 16,
+        "endLine": 25,
+        "endChar": 24
+      },
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "14ca0c53_2c413d35",
         "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreatorTest.java",
         "patchSetId": 5
@@ -237,6 +471,30 @@
       "writtenOn": "2020-06-18T07:26:22Z",
       "side": 1,
       "message": "I think this should be tested separately.",
+      "range": {
+        "startLine": 76,
+        "startChar": 0,
+        "endLine": 77,
+        "endChar": 115
+      },
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6f979845_bcece54c",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreatorTest.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 6592
+      },
+      "writtenOn": "2020-06-18T11:30:54Z",
+      "side": 1,
+      "message": "I reverted test and created new one to test if creator try to create artifact with given extension. Please check",
+      "parentUuid": "14ca0c53_2c413d35",
       "range": {
         "startLine": 76,
         "startChar": 0,
