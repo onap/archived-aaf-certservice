@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "128a5bb9_79422745",
+        "filename": "certServiceClient/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-06-18T06:36:07Z",
+      "side": 1,
+      "message": "you need change version in all project poms - cert service api too",
+      "revId": "e4f65e77fff7f771b7479d600d219e335de68419",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
