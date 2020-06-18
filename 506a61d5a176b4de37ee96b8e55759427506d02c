@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "42b9f406_ace76b68",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactsCreatorProvider.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-18T13:37:30Z",
+      "side": 1,
+      "message": "Abstract method at the bottom",
+      "range": {
+        "startLine": 54,
+        "startChar": 2,
+        "endLine": 54,
+        "endChar": 54
+      },
+      "revId": "506a61d5a176b4de37ee96b8e55759427506d02c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dc5905e7_147f2473",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreator.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-18T13:37:30Z",
+      "side": 1,
+      "message": "use String.format",
+      "range": {
+        "startLine": 63,
+        "startChar": 6,
+        "endLine": 64,
+        "endChar": 50
+      },
+      "revId": "506a61d5a176b4de37ee96b8e55759427506d02c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c79d27ea_65fd8b2f",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreator.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-18T13:37:30Z",
+      "side": 1,
+      "message": "same like above",
+      "range": {
+        "startLine": 75,
+        "startChar": 4,
+        "endLine": 76,
+        "endChar": 54
+      },
+      "revId": "506a61d5a176b4de37ee96b8e55759427506d02c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9a2a8b19_04eb4bfb",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemConverter.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-18T13:37:30Z",
+      "side": 1,
+      "message": "I think we have to follow here keyStoreType respectively.\nIn all places bellow.",
+      "range": {
+        "startLine": 49,
+        "startChar": 31,
+        "endLine": 49,
+        "endChar": 47
+      },
+      "revId": "506a61d5a176b4de37ee96b8e55759427506d02c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3657b066_5c430179",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactsCreatorProviderTest.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-18T13:37:30Z",
+      "side": 1,
+      "message": "Remove it. Last test is enough.\nalso remove getter",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 44,
+        "endChar": 74
+      },
+      "revId": "506a61d5a176b4de37ee96b8e55759427506d02c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "48e9a2c8_9b590069",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactsCreatorProviderTest.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-18T13:37:30Z",
+      "side": 1,
+      "message": "same like above",
+      "range": {
+        "startLine": 55,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 74
+      },
+      "revId": "506a61d5a176b4de37ee96b8e55759427506d02c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
