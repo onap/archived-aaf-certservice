@@ -163,6 +163,69 @@
     },
     {
       "key": {
+        "uuid": "fb59323d_4026beb0",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemConverter.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-18T09:19:29Z",
+      "side": 1,
+      "message": "provide function to return file extension for each container type.",
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a3d077f9_c107ea6f",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/PemConverter.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-18T09:19:29Z",
+      "side": 1,
+      "message": "delete it",
+      "range": {
+        "startLine": 53,
+        "startChar": 2,
+        "endLine": 59,
+        "endChar": 5
+      },
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2a6a39ab_1151fa20",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/exception/PemConverterException.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-18T09:19:29Z",
+      "side": 1,
+      "message": "I would say: \"Conversion\"",
+      "range": {
+        "startLine": 25,
+        "startChar": 16,
+        "endLine": 25,
+        "endChar": 24
+      },
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "14ca0c53_2c413d35",
         "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreatorTest.java",
         "patchSetId": 5
