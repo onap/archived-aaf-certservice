@@ -160,6 +160,52 @@
       "revId": "a232e13691b563a535706f04ebefe878d7140131",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "14ca0c53_2c413d35",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreatorTest.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-06-18T07:26:22Z",
+      "side": 1,
+      "message": "I think this should be tested separately.",
+      "range": {
+        "startLine": 76,
+        "startChar": 0,
+        "endLine": 77,
+        "endChar": 115
+      },
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "21fbd91d_58de339d",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreatorTest.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-06-18T07:26:22Z",
+      "side": 1,
+      "message": "Same as above.",
+      "range": {
+        "startLine": 99,
+        "startChar": 8,
+        "endLine": 100,
+        "endChar": 115
+      },
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
