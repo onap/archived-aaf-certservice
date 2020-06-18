@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1e865862_8855c819",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactsCreatorProvider.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-18T07:01:09Z",
+      "side": 1,
+      "message": "Please add test case",
+      "range": {
+        "startLine": 37,
+        "startChar": 8,
+        "endLine": 37,
+        "endChar": 50
+      },
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6784e70b_1381bb60",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreator.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-18T07:01:09Z",
+      "side": 1,
+      "message": "I think it should has more meaningful name.",
+      "range": {
+        "startLine": 30,
+        "startChar": 13,
+        "endLine": 30,
+        "endChar": 22
+      },
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6c438a42_952ecdf2",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreator.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-18T07:01:09Z",
+      "side": 1,
+      "message": "Consider to rename, eg fileWriter, fileCreator",
+      "range": {
+        "startLine": 42,
+        "startChar": 33,
+        "endLine": 42,
+        "endChar": 40
+      },
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7eefeeec_9a5d68f5",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreator.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-18T07:01:09Z",
+      "side": 1,
+      "message": "I think this method should be exported to factory, or use builder pattern.",
+      "range": {
+        "startLine": 53,
+        "startChar": 3,
+        "endLine": 53,
+        "endChar": 36
+      },
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "50e51ebe_8f22bd9c",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreator.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-18T07:01:09Z",
+      "side": 1,
+      "message": "It should be constant.",
+      "range": {
+        "startLine": 55,
+        "startChar": 77,
+        "endLine": 55,
+        "endChar": 81
+      },
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "54b5dfbf_146e2d3d",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreator.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-18T07:01:09Z",
+      "side": 1,
+      "message": "As above",
+      "range": {
+        "startLine": 58,
+        "startChar": 4,
+        "endLine": 58,
+        "endChar": 36
+      },
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "39e20fca_3de7addc",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ConvertedArtifactsCreator.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-18T07:01:09Z",
+      "side": 1,
+      "message": "As above",
+      "range": {
+        "startLine": 60,
+        "startChar": 77,
+        "endLine": 60,
+        "endChar": 81
+      },
+      "revId": "a232e13691b563a535706f04ebefe878d7140131",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
