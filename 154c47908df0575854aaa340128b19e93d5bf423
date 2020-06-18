@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "6529f0b6_3548ce21",
+        "filename": "docs/sections/logging.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-18T09:25:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "68e1df27_7548cd50",
+      "range": {
+        "startLine": 117,
+        "startChar": 10,
+        "endLine": 117,
+        "endChar": 36
+      },
+      "revId": "154c47908df0575854aaa340128b19e93d5bf423",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "85f1ea1c_6cde276a",
         "filename": "docs/sections/usage.rst",
         "patchSetId": 1
@@ -83,6 +107,54 @@
       "writtenOn": "2020-06-18T09:13:50Z",
       "side": 1,
       "message": "What do you mean?",
+      "range": {
+        "startLine": 13,
+        "startChar": 111,
+        "endLine": 13,
+        "endChar": 124
+      },
+      "revId": "154c47908df0575854aaa340128b19e93d5bf423",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "94416678_9f3325e3",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-18T09:25:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "85f1ea1c_6cde276a",
+      "range": {
+        "startLine": 13,
+        "startChar": 4,
+        "endLine": 13,
+        "endChar": 124
+      },
+      "revId": "154c47908df0575854aaa340128b19e93d5bf423",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bb78d6df_05a6bcc7",
+        "filename": "docs/sections/usage.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-18T09:25:13Z",
+      "side": 1,
+      "message": "CertService Client is generating Certification Artifact, which contains: keystore (certificate) and truststore (trust anchors).",
+      "parentUuid": "efeaaf10_e19e969d",
       "range": {
         "startLine": 13,
         "startChar": 111,
