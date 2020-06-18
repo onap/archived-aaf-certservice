@@ -10,12 +10,17 @@ Basic information
 -----------------
 CertService client needs the following configuration parameters to work properly:
 
-1. Parameters for connection to CertService API to obtain certificate and trust anchors
+1. Parameters for generate certification artifacts and connection to CertService API to obtain certificate and trust anchors
   
   - REQUEST_URL *(default: https://aaf-cert-service:8443/v1/certificate/)* - URL to CertService API
   - REQUEST_TIMEOUT *(default: 30000[ms])* - Timeout in milliseconds for REST API calls
   - OUTPUT_PATH *(required)* - Path where client will output generated certificate and trust anchor
   - CA_NAME *(required)* - Name of CA which will enroll certificate. Must be same as configured on server side. Used in REST API calls
+  - OUTPUT_TYPE *(default: P12)* - Type of certificate which will be generated. Supported types: 
+      
+      - JKS - Java KeyStore (JKS)
+      - P12 - Public Key Cryptography Standard #12 (PKCS#12)
+      - PEM - Privacy-Enhanced Mail (PEM)
 
 
 2. Parameters to generate Certificate Signing Request (CSR):
@@ -57,6 +62,7 @@ To run CertService client as standalone docker container execute following steps
   REQUEST_TIMEOUT=10000
   OUTPUT_PATH=/var/certs
   CA_NAME=RA
+  OUTPUT_TYPE=P12
 
   #CSR config envs
   COMMON_NAME=onap.org
@@ -152,13 +158,15 @@ You can use the following deployment example as a reference:
             imagePullPolicy: Always
             env:
               - name: REQUEST_URL
-                value: http://aaf-cert-service:8080/v1/certificate/
+                value: https://aaf-cert-service:8443/v1/certificate/
               - name: REQUEST_TIMEOUT
                 value: "1000"
               - name: OUTPUT_PATH
                 value: /var/certs
               - name: CA_NAME
                 value: RA
+              - name: OUTPUT_TYPE
+                value: P12
               - name: COMMON_NAME
                 value: onap.org
               - name: ORGANIZATION
