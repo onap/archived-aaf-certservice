@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0805b6bc_0d4c9b99",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactsCreatorProviderTest.java",
+        "patchSetId": 17
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-19T07:56:08Z",
+      "side": 1,
+      "message": "Add here parametrized test. I think we need to test it here.  This code could be used as a base:\n```\n    @Test\n    void getExtensionShouldProvideExtensionBasedOnConversionType() {\n\n        //when\n        String extension \u003d ArtifactsCreatorProvider.JKS.getExtension();\n        //then\n        final String expectedJKSExtension \u003d \"jks\";\n        assertThat(extension).isEqualTo(expectedJKSExtension);\n    }\n```",
+      "revId": "e03599647acd687b74e7b48b20fc32eeff98d51e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
