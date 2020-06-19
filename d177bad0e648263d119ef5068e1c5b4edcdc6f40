@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "9511db75_c1236995",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactsCreatorProvider.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-06-19T07:15:41Z",
+      "side": 1,
+      "message": "format this method as ones before",
+      "range": {
+        "startLine": 39,
+        "startChar": 0,
+        "endLine": 43,
+        "endChar": 9
+      },
+      "revId": "d177bad0e648263d119ef5068e1c5b4edcdc6f40",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "3a77d95d_354ec26c",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/conversion/ArtifactsCreatorProvider.java",
         "patchSetId": 15
