@@ -22,6 +22,30 @@
       "revId": "8d4b553176c9262f73a616464adeccdb22a366c9",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0a014831_3d2e56f3",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SslContextFactory.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 6592
+      },
+      "writtenOn": "2020-06-25T07:14:42Z",
+      "side": 1,
+      "message": "Checkstyle logs warning when method name contains more than 2 consecutive capital letters. Now, in this case method name is also consistent with class name (SslContextFactory)",
+      "parentUuid": "ea04f387_372eec37",
+      "range": {
+        "startLine": 72,
+        "startChar": 29,
+        "endLine": 72,
+        "endChar": 32
+      },
+      "revId": "8d4b553176c9262f73a616464adeccdb22a366c9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
