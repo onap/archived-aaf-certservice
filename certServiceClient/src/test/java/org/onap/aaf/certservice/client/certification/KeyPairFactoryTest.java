@@ -31,7 +31,7 @@ class KeyPairFactoryTest {
     private static final String NOT_EXISTING_ENCRYPTION_ALGORITHM = "FAKE_ALGORITHM";
 
     @Test
-    public void shouldProvideKeyPair_whenCreateKeyPairCalledWithCorrectArguments() throws KeyPairGenerationException {
+    void shouldProvideKeyPair_whenCreateKeyPairCalledWithCorrectArguments() throws KeyPairGenerationException {
         //  given
         KeyPairFactory keyPairFactory = new KeyPairFactory(EncryptionAlgorithmConstants.RSA_ENCRYPTION_ALGORITHM,
                 EncryptionAlgorithmConstants.KEY_SIZE);
@@ -42,7 +42,7 @@ class KeyPairFactoryTest {
     }
 
     @Test
-    public void shouldThrowKeyPairGenerationException_whenCreateTryCalledOnNotExistingAlgorithm() {
+    void shouldThrowKeyPairGenerationException_whenCreateTryCalledOnNotExistingAlgorithm() {
         //  given
         KeyPairFactory keyPairFactory = new KeyPairFactory(NOT_EXISTING_ENCRYPTION_ALGORITHM,
                 EncryptionAlgorithmConstants.KEY_SIZE);

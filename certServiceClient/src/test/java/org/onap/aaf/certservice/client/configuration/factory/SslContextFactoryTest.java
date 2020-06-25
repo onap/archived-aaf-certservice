@@ -37,7 +37,7 @@ import static org.mockito.Mockito.when;
 
 
 @ExtendWith(MockitoExtension.class)
-public class SslContextFactoryTest {
+class SslContextFactoryTest {
 
     public static final String INVALID_KEYSTORE_PATH = "nonexistent/keystore";
     public static final String VALID_KEYSTORE_NAME = "keystore.jks";
@@ -51,7 +51,7 @@ public class SslContextFactoryTest {
     private EnvsForTls envsForTls;
 
     @Test
-    public void shouldThrowExceptionWhenKeystorePathEnvIsMissing() {
+    void shouldThrowExceptionWhenKeystorePathEnvIsMissing() {
         // Given
         when(envsForTls.getKeystorePath()).thenReturn(Optional.empty());
         SslContextFactory sslContextFactory = new SslContextFactory(envsForTls);
@@ -64,7 +64,7 @@ public class SslContextFactoryTest {
     }
 
     @Test
-    public void shouldThrowExceptionWhenKeystorePasswordEnvIsMissing() {
+    void shouldThrowExceptionWhenKeystorePasswordEnvIsMissing() {
         // Given
         when(envsForTls.getKeystorePath()).thenReturn(Optional.of("keystore"));
         when(envsForTls.getKeystorePassword()).thenReturn(Optional.empty());
@@ -78,7 +78,7 @@ public class SslContextFactoryTest {
     }
 
     @Test
-    public void shouldThrowExceptionWhenTruststorePathEnvIsMissing() {
+    void shouldThrowExceptionWhenTruststorePathEnvIsMissing() {
         // Given
         when(envsForTls.getKeystorePath()).thenReturn(Optional.of("keystore"));
         when(envsForTls.getKeystorePassword()).thenReturn(Optional.of("password"));
@@ -93,7 +93,7 @@ public class SslContextFactoryTest {
     }
 
     @Test
-    public void shouldThrowExceptionWhenTruststorePasswordEnvIsMissing() {
+    void shouldThrowExceptionWhenTruststorePasswordEnvIsMissing() {
         // Given
         when(envsForTls.getKeystorePath()).thenReturn(Optional.of("keystore"));
         when(envsForTls.getKeystorePassword()).thenReturn(Optional.of("password"));
@@ -109,7 +109,7 @@ public class SslContextFactoryTest {
     }
 
     @Test
-    public void shouldThrowExceptionWhenKeystoreIsMissing() {
+    void shouldThrowExceptionWhenKeystoreIsMissing() {
         // Given
         when(envsForTls.getKeystorePath()).thenReturn(Optional.of(INVALID_KEYSTORE_PATH));
         when(envsForTls.getKeystorePassword()).thenReturn(Optional.of("secret"));
@@ -124,7 +124,7 @@ public class SslContextFactoryTest {
     }
 
     @Test
-    public void shouldThrowExceptionWhenKeystorePasswordIsWrong() {
+    void shouldThrowExceptionWhenKeystorePasswordIsWrong() {
         // Given
         String keystorePath = getResourcePath(VALID_KEYSTORE_NAME);
         when(envsForTls.getKeystorePath()).thenReturn(Optional.of(keystorePath));
@@ -140,7 +140,7 @@ public class SslContextFactoryTest {
     }
 
     @Test
-    public void shouldThrowExceptionWhenTruststoreIsMissing() {
+    void shouldThrowExceptionWhenTruststoreIsMissing() {
         // Given
         String keystorePath = getResourcePath(VALID_KEYSTORE_NAME);
         when(envsForTls.getKeystorePath()).thenReturn(Optional.of(keystorePath));
@@ -156,7 +156,7 @@ public class SslContextFactoryTest {
     }
 
     @Test
-    public void shouldThrowExceptionWhenTruststorePasswordIsWrong() {
+    void shouldThrowExceptionWhenTruststorePasswordIsWrong() {
         // Given
         String keystorePath = getResourcePath(VALID_KEYSTORE_NAME);
         String truststorePath = getResourcePath(VALID_TRUSTSTORE_NAME);
@@ -173,7 +173,7 @@ public class SslContextFactoryTest {
     }
 
     @Test
-    public void shouldReturnSSLContext() throws TlsConfigurationException {
+    void shouldReturnSSLContext() throws TlsConfigurationException {
         // Given
         String keystorePath = getResourcePath(VALID_KEYSTORE_NAME);
         String truststorePath = getResourcePath(VALID_TRUSTSTORE_NAME);
