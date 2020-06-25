@@ -46,6 +46,30 @@
       "revId": "8d4b553176c9262f73a616464adeccdb22a366c9",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c13c9522_26b9de47",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/configuration/factory/SslContextFactory.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-06-25T07:19:35Z",
+      "side": 1,
+      "message": "Consider to config checkstyle rules. As you can see in SslContextFactory apache use upper case for SSL\norg.apache.http.ssl.SSLContexts",
+      "parentUuid": "0a014831_3d2e56f3",
+      "range": {
+        "startLine": 72,
+        "startChar": 29,
+        "endLine": 72,
+        "endChar": 32
+      },
+      "revId": "8d4b553176c9262f73a616464adeccdb22a366c9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
