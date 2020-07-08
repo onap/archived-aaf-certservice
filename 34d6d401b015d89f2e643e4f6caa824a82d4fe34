@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6ea73136_6bacc164",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/writer/CertFileWriter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-07-08T14:19:17Z",
+      "side": 1,
+      "message": "I think that the client should just create whole directory tree if it doesn\u0027t exist and shouldn\u0027t append /external/ to given path. This way it would be more flexible, user would have full control of output and it wouldn\u0027t require changes to existing usage of certServiceClient (e.g. CSITs).",
+      "range": {
+        "startLine": 38,
+        "startChar": 7,
+        "endLine": 38,
+        "endChar": 48
+      },
+      "revId": "34d6d401b015d89f2e643e4f6caa824a82d4fe34",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5c60090c_aae1c003",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/writer/CertFileWriter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 6044
+      },
+      "writtenOn": "2020-07-08T14:19:17Z",
+      "side": 1,
+      "message": "I think \u0027createDirIfNotExists\u0027 would be better.",
+      "range": {
+        "startLine": 52,
+        "startChar": 17,
+        "endLine": 52,
+        "endChar": 39
+      },
+      "revId": "34d6d401b015d89f2e643e4f6caa824a82d4fe34",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
