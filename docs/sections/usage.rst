@@ -14,7 +14,7 @@ CertService client needs the following configuration parameters to work properly
   
   - REQUEST_URL *(default: https://aaf-cert-service:8443/v1/certificate/)* - URL to CertService API
   - REQUEST_TIMEOUT *(default: 30000[ms])* - Timeout in milliseconds for REST API calls
-  - OUTPUT_PATH *(required)* - Path where client will output generated certificate and trust anchor
+  - OUTPUT_PATH *(required)* - Path where client will create "external" directory, client place generated certificate and trust anchor to new subdirectory
   - CA_NAME *(required)* - Name of CA which will enroll certificate. Must be same as configured on server side. Used in REST API calls
   - OUTPUT_TYPE *(default: P12)* - Type of certificate which will be generated. Supported types: 
       

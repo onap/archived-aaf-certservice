@@ -23,6 +23,7 @@ import org.onap.aaf.certservice.client.certification.exception.CertFileWriterExc
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Path;
@@ -30,19 +31,29 @@ import java.nio.file.Path;
 public class CertFileWriter {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CertFileWriter.class);
+    private static final String EXTERNAL_DIR = "/external/";
     private final String destPath;
 
     public CertFileWriter(String destPath) {
-        this.destPath = destPath;
+        this.destPath = destPath + EXTERNAL_DIR;
     }
 
     public void saveData(byte[] data, String filename) throws CertFileWriterException {
         LOGGER.debug("Attempt to save file {} in path {}", filename, destPath);
+        createDirIfDoNotExists();
         try (FileOutputStream outputStream = new FileOutputStream(Path.of(destPath, filename).toString())) {
             outputStream.write(data);
         } catch (IOException e) {
             LOGGER.error("File creation failed, exception message: {}", e.getMessage());
             throw new CertFileWriterException(e);
+        }
+    }
+
+    private void createDirIfDoNotExists() {
+        File destFolderPath = new File(destPath);
+        if (!destFolderPath.exists()) {
+            LOGGER.debug("Subdirectory for external certificates is created");
+            destFolderPath.mkdir();
         }
     }
 }
