@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "2da6fa54_1f7fa5be",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/writer/CertFileWriter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-07-09T06:45:08Z",
+      "side": 1,
+      "message": "I agree with Remigiusz.",
+      "parentUuid": "6ea73136_6bacc164",
+      "range": {
+        "startLine": 38,
+        "startChar": 7,
+        "endLine": 38,
+        "endChar": 48
+      },
+      "revId": "34d6d401b015d89f2e643e4f6caa824a82d4fe34",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "5c60090c_aae1c003",
         "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/writer/CertFileWriter.java",
         "patchSetId": 1
@@ -41,6 +65,52 @@
         "startChar": 17,
         "endLine": 52,
         "endChar": 39
+      },
+      "revId": "34d6d401b015d89f2e643e4f6caa824a82d4fe34",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "992856b5_2266649a",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/writer/CertFileWriter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-07-09T06:45:08Z",
+      "side": 1,
+      "message": "Consider to introduce information \"Destination path not exists, subdirectory is created\".",
+      "range": {
+        "startLine": 55,
+        "startChar": 26,
+        "endLine": 55,
+        "endChar": 75
+      },
+      "revId": "34d6d401b015d89f2e643e4f6caa824a82d4fe34",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bba33faa_48f272bd",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/writer/CertFileWriterTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 6310
+      },
+      "writtenOn": "2020-07-09T06:45:08Z",
+      "side": 1,
+      "message": "I think \u0027deleteDirectoryRecursive\u0027 would be more readable. This method removes directory and files.",
+      "range": {
+        "startLine": 52,
+        "startChar": 8,
+        "endLine": 52,
+        "endChar": 23
       },
       "revId": "34d6d401b015d89f2e643e4f6caa824a82d4fe34",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
