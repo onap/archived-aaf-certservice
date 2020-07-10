@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5be2cfeb_d31471ed",
+        "filename": "certServiceClient/src/main/java/org/onap/aaf/certservice/client/certification/writer/CertFileWriter.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2020-07-10T12:58:51Z",
+      "side": 1,
+      "message": "It will be better to add factory method or create factory class which will prepare fully initialized CertFileWriter instance. \nFactory should check/create missing factory and pass path to CertFileWriter.\n\nWhy in saveData method we need to check does directory exist?\nEach method invocation will invoke checking mechanism.",
+      "revId": "4377bd55e102ebcf61d5f4fbddd9e7be16f1deed",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
