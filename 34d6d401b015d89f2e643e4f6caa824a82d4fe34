@@ -115,6 +115,30 @@
       "revId": "34d6d401b015d89f2e643e4f6caa824a82d4fe34",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1730b8ad_209a3fd0",
+        "filename": "certServiceClient/src/test/java/org/onap/aaf/certservice/client/certification/writer/CertFileWriterTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 2837
+      },
+      "writtenOn": "2020-07-14T07:18:01Z",
+      "side": 1,
+      "message": "\u0027deleteDirectoryRecursiveLY\u0027 would be even better ;). But could remain as it is.",
+      "parentUuid": "bba33faa_48f272bd",
+      "range": {
+        "startLine": 52,
+        "startChar": 8,
+        "endLine": 52,
+        "endChar": 23
+      },
+      "revId": "34d6d401b015d89f2e643e4f6caa824a82d4fe34",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
