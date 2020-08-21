@@ -6,20 +6,10 @@
 AAF Certification Service
 ==========================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
-   sections/introduction.rst
-   sections/architecture.rst
-   sections/build.rst
-   sections/offeredapis.rst
-   sections/usage.rst
-   sections/logging.rst
-   sections/installation.rst
-   sections/configuration.rst
-   sections/release-notes.rst
-   sections/troubleshooting.rst
+21-08-2020
+THIS PROJECT WAS ABANDON IN RELEASE Guilin!
+New version of CertService is developed begin release Guilin in https://gerrit.onap.org/r/admin/repos/oom/platform/cert-service
+repository.
 
 Indices and tables
 ==================
