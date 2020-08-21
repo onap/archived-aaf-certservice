@@ -11,7 +11,7 @@ AAF Certification Service
 
     THIS PROJECT WAS ABANDONED IN Guilin RELEASE!
 
-    The new version of CertService project is developed in oom/platform/cert-service repository since Guilin release.
+    The new version of CertService project is developed in `oom/platform/cert-service <https://gerrit.onap.org/r/admin/repos/oom/platform/cert-service>`_ repository since Guilin release.
     An official documentation is available at https://docs.onap.org/projects/onap-oom-platform-cert-service/en/latest/index.html#master-index
 
 Indices and tables
