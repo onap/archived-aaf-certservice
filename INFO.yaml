@@ -1,7 +1,7 @@
 ---
 project: 'aaf_certservice'
 project_creation_date: '2020-01-23'
-lifecycle_state: 'Incubation'
+lifecycle_state: 'Unmaintained'
 project_category: ''
 project_lead: &onap_aaf_certservice_ptl
     name: 'Bogumil Zebek'
@@ -23,13 +23,13 @@ realtime_discussion:
     server: 'freenode.net'
     channel: '#onap'
 meetings:
-    - type: 'gotomeeting+irc'
-      agenda: 'https://wiki.onap.org/display/'
-      url: ''
-      server: 'freenode.net'
-      channel: '#onap'
-      repeats: ''
-      time: ''
+    - type: 'n/a'
+      agenda: 'n/a'
+      url: 'n/a'
+      server: 'n/a'
+      channel: 'n/a'
+      repeats: 'n/a'
+      time: 'n/a'
 repositories:
     - aaf/certservice
 committers:
